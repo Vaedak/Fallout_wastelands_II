@@ -29,6 +29,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.falloutwastelands.init.FalloutWastelandsModTabs;
+import net.mcreator.falloutwastelands.init.FalloutWastelandsModItems;
+import net.mcreator.falloutwastelands.init.FalloutWastelandsModBlocks;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -46,6 +50,12 @@ public class FalloutWastelandsMod {
 	public FalloutWastelandsMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		FalloutWastelandsModBlocks.REGISTRY.register(bus);
+
+		FalloutWastelandsModItems.REGISTRY.register(bus);
+
+		FalloutWastelandsModTabs.REGISTRY.register(bus);
 
 	}
 

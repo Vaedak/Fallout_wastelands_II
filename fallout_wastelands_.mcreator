@@ -1,13 +1,96 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "WastelandDirt",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasteland_dirt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandDirtBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_dirt.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_dirt.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_dirt.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "WastelandStone",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasteland_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_stone.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_stone.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandStoneBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_stone.json"
+        ]
+      },
+      "path": "~/Blocks"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.fallout_wastelands_.wasteland_dirt": "Wasteland Dirt",
+      "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Biomes",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Armors",
+        "children": []
+      },
+      {
+        "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Weapons",
+        "children": []
+      },
+      {
+        "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Structures",
+        "children": []
+      },
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Tags",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "fallout_wastelands_",
