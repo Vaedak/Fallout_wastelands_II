@@ -10,9 +10,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/falloutwastelands/block/WastelandDirtBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_dirt.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_dirt.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_dirt.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_dirt.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_dirt.json"
         ]
       },
       "path": "~/Blocks"
@@ -26,10 +26,10 @@
       "registry_name": "wasteland_stone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_stone.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_stone.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_stone.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandStoneBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_stone.json"
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_stone.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandStoneBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -73,6 +73,18 @@
         ]
       },
       "path": "~/Biomes"
+    },
+    {
+      "name": "Wastelandblockstab",
+      "type": "tab",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandblockstab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Others"
     }
   ],
   "variable_elements": [],
@@ -82,6 +94,7 @@
       "block.fallout_wastelands_.wasteland_dirt": "Wasteland Dirt",
       "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone",
       "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",
+      "item_group.fallout_wastelands_.wastelandblockstab": "Wasteland Blocks",
       "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter"
     }
   },
