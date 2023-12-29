@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "fallout_wastelands_:block/wasteland_cobblestone",
+    "top": "fallout_wastelands_:block/wasteland_cobblestone",
+    "side": "fallout_wastelands_:block/wasteland_cobblestone"
+  },
+  "render_type": "solid"
+}

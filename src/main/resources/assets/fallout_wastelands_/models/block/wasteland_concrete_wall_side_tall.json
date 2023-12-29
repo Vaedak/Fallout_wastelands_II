@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "fallout_wastelands_:block/concrete",
+    "particle": "fallout_wastelands_:block/concrete"
+  },
+  "render_type": "solid"
+}

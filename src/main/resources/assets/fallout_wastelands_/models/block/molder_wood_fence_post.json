@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "fallout_wastelands_:block/rottenwoodplank",
+    "particle": "fallout_wastelands_:block/rottenwoodplank"
+  },
+  "render_type": "solid"
+}

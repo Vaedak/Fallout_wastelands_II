@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "fallout_wastelands_:block/rottenwoodplank",
+    "top": "fallout_wastelands_:block/rottenwoodplank",
+    "side": "fallout_wastelands_:block/rottenwoodplank"
+  },
+  "render_type": "solid"
+}

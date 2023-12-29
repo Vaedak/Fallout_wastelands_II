@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "fallout_wastelands_:molder_wood_planks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "fallout_wastelands_:molder_wood_planks"
+    },
+    "3": {
+      "item": "fallout_wastelands_:molder_wood_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "fallout_wastelands_:molder_wood_planks"
+    }
+  },
+  "result": {
+    "item": "fallout_wastelands_:molder_wood_fence",
+    "count": 3
+  }
+}

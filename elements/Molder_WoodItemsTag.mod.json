@@ -1,0 +1,21 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Molder_WoodWood"
+      },
+      {
+        "value": "CUSTOM:Molder_WoodLog"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "molder_wood_log",
+    "namespace": "forge"
+  }
+}

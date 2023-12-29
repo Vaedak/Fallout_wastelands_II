@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_stairs",
+  "category": "building",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "fallout_wastelands_:molder_wood_planks"
+    },
+    "3": {
+      "item": "fallout_wastelands_:molder_wood_planks"
+    },
+    "4": {
+      "item": "fallout_wastelands_:molder_wood_planks"
+    },
+    "6": {
+      "item": "fallout_wastelands_:molder_wood_planks"
+    },
+    "7": {
+      "item": "fallout_wastelands_:molder_wood_planks"
+    },
+    "8": {
+      "item": "fallout_wastelands_:molder_wood_planks"
+    }
+  },
+  "result": {
+    "item": "fallout_wastelands_:molder_wood_stairs",
+    "count": 4
+  }
+}

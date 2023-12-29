@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "  2",
+    " 45",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "fallout_wastelands_:wasteland_cobblestone"
+    },
+    "4": {
+      "item": "fallout_wastelands_:wasteland_cobblestone"
+    },
+    "5": {
+      "item": "fallout_wastelands_:wasteland_cobblestone"
+    },
+    "6": {
+      "item": "fallout_wastelands_:wasteland_cobblestone"
+    },
+    "7": {
+      "item": "fallout_wastelands_:wasteland_cobblestone"
+    },
+    "8": {
+      "item": "fallout_wastelands_:wasteland_cobblestone"
+    }
+  },
+  "result": {
+    "item": "fallout_wastelands_:stair_wasteland_cobblestone",
+    "count": 4
+  }
+}

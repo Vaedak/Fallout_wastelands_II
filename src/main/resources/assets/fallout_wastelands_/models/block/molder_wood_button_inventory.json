@@ -1,0 +1,7 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "fallout_wastelands_:block/rottenwoodplate"
+  },
+  "render_type": "solid"
+}

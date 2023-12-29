@@ -15,7 +15,7 @@ import java.util.Collections;
 
 public class WastelandDirtBlock extends Block {
 	public WastelandDirtBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(3.5f, 5f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 0.5f));
 	}
 
 	@Override
