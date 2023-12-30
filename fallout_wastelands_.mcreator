@@ -58,7 +58,7 @@
       "name": "Wastelands",
       "type": "dimension",
       "sortid": 4,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "wastelands",
       "metadata": {
@@ -1090,8 +1090,8 @@
     "en_us": {
       "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",
       "block.fallout_wastelands_.wasteland_dirt": "Wasteland Dirt",
-      "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
-      "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone"
+      "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone",
+      "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter"
     }
   },
   "foldersRoot": {
