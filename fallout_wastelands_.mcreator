@@ -1145,6 +1145,27 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "Wastelandrockydirt",
+      "type": "block",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandrockydirt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandrockydirt.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandrockydirt.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandrockydirt.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandrockydirt.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandrockydirt.json",
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandrockydirt_biome_modifier.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandrockydirtBlock.java",
+          "src/main/java/net/mcreator/falloutwastelands/world/features/ores/WastelandrockydirtFeature.java"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -1158,6 +1179,7 @@
       "block.fallout_wastelands_.slab_wasteland_cobblestone": "Wasteland Cobblestone Slab",
       "item_group.fallout_wastelands_.wastelandblockstab": "Wasteland Blocks",
       "block.fallout_wastelands_.wasteland_concrete": "Concrete",
+      "block.fallout_wastelands_.wastelandrockydirt": "Wasteland Dirt",
       "block.fallout_wastelands_.cracked_wasteland_concrete_wall": "Cracked Concrete Slab",
       "block.fallout_wastelands_.utsol": "Wasteland Utsol",
       "block.fallout_wastelands_.wasteland_concrete_wall": "Concrete Wall",

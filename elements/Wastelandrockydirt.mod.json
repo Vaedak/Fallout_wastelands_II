@@ -2,20 +2,20 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "wastelandrock",
-    "textureTop": "wastelandstonedde",
-    "textureLeft": "wastelandstonedde",
-    "textureFront": "wastelandstonedde",
-    "textureRight": "wastelandstonedde",
-    "textureBack": "wastelandstonedde",
+    "texture": "rockydirt",
+    "textureTop": "rockydirt",
+    "textureLeft": "rockydirt",
+    "textureFront": "rockydirt",
+    "textureRight": "rockydirt",
+    "textureBack": "rockydirt",
     "renderType": 11,
     "customModelName": "Single texture",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "rockydirt",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -33,28 +33,28 @@
         "subtract": false
       }
     ],
-    "name": "Wasteland Cobblestone",
+    "name": "Wasteland Dirt",
     "specialInfo": [],
-    "hardness": 0.3,
-    "resistance": 12.0,
+    "hardness": 1.0,
+    "resistance": 0.5,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Wastelandblockstab"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "shovel",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:WastelandCobblestone"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": true,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "EARTH"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
@@ -117,8 +117,17 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
+    "spawnWorldTypes": [
+      "CUSTOM:Wastelands"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:WastelandPlains"
+      },
+      {
+        "value": "CUSTOM:WastelandDryland"
+      }
+    ],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE#0"
@@ -131,12 +140,18 @@
       },
       {
         "value": "Blocks.STONE#5"
+      },
+      {
+        "value": "CUSTOM:Wastelandgrassblock"
+      },
+      {
+        "value": "CUSTOM:WastelandDirt"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "frequencyPerChunks": 24,
+    "frequencyOnChunk": 32,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 128
   }
 }
