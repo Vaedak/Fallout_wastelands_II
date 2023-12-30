@@ -57,7 +57,9 @@
     ],
     [],
     [],
-    [],
+    [
+      "fallout_wastelands_:wasteland_plains_tree"
+    ],
     [
       "minecraft:freeze_top_layer"
     ]
