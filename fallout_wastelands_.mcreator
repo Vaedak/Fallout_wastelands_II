@@ -1084,18 +1084,64 @@
       "path": "~/Blocks/MolderWoodSet"
     },
     {
-      "name": "Wastelandbush",
-      "type": "block",
+      "name": "Wastelandgrassbush",
+      "type": "plant",
       "sortid": 66,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "wastelandbush",
+      "registry_name": "wastelandgrassbush",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandbush.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandbush.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandbush.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandbushBlock.java"
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandgrassbush.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandgrassbush.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandgrassbush.json",
+          "src/main/java/net/mcreator/falloutwastelands/world/features/plants/WastelandgrassbushFeature.java",
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandgrassbush_biome_modifier.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandgrassbush.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandgrassbushBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandgrassbush.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Wastelandburntgrass",
+      "type": "plant",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandburntgrass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandburntgrass.json",
+          "src/main/java/net/mcreator/falloutwastelands/world/features/plants/WastelandburntgrassFeature.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandburntgrass.json",
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandburntgrass_biome_modifier.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandburntgrassBlock.java",
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandburntgrass.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandburntgrass.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandburntgrass.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Wastelandshortburntgrass",
+      "type": "plant",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandshortburntgrass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandshortburntgrass.json",
+          "src/main/java/net/mcreator/falloutwastelands/world/features/plants/WastelandshortburntgrassFeature.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandshortburntgrass.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandshortburntgrass.json",
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandshortburntgrass_biome_modifier.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandshortburntgrass.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandshortburntgrassBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandshortburntgrass.json"
         ]
       },
       "path": "~/Blocks"
@@ -1108,7 +1154,6 @@
       "block.fallout_wastelands_.the_glow_dirt": "Glow Dirt",
       "block.fallout_wastelands_.molder_wood_wood": "Molder Log Wood",
       "block.fallout_wastelands_.molder_wood_log": "Molder Wood Log",
-      "block.fallout_wastelands_.wastelandbush": "Wasteland Bush",
       "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",
       "block.fallout_wastelands_.slab_wasteland_cobblestone": "Wasteland Cobblestone Slab",
       "item_group.fallout_wastelands_.wastelandblockstab": "Wasteland Blocks",
@@ -1127,16 +1172,19 @@
       "block.fallout_wastelands_.molder_wood_button": "Molder Button",
       "block.fallout_wastelands_.molder_wood_pressure_plate": "Molder Pressure Plate",
       "block.fallout_wastelands_.molder_wood_door": "Molder Door",
+      "block.fallout_wastelands_.wastelandburntgrass": "Wasteland Burnt Grass",
       "block.fallout_wastelands_.cracked_wasteland_concrete": "Cracked Concrete",
-      "biome.fallout_wastelands_.wasteland_plains": "Wasteland Dryland",
+      "biome.fallout_wastelands_.wasteland_plains": "Wasteland Plains",
       "block.fallout_wastelands_.wasteland_brick": "Wasteland Stone",
       "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
       "block.fallout_wastelands_.molder_wood_trapdoor": "Molder TrapDoor",
       "block.fallout_wastelands_.wasteland_cobblestone": "Wasteland Cobblestone",
+      "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
       "block.fallout_wastelands_.molder_wood_fence": "Molder Fence",
       "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
       "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone",
       "block.fallout_wastelands_.stair_wasteland_cobblestone": "Wasteland Cobblestone Stairs",
+      "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
       "key.fallout_wastelands_.switch_game_mode_utility": "Switch Game Mode Utility",
       "block.fallout_wastelands_.wall_wasteland_cobblestone": "Wasteland Cobblestone Wall",
       "block.fallout_wastelands_.wasteland_concrete_slab": "Concrete Slab"

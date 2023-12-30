@@ -48,7 +48,9 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> MOLDER_WOOD_BUTTON = block(FalloutWastelandsModBlocks.MOLDER_WOOD_BUTTON);
 	public static final RegistryObject<Item> MOLDER_WOOD_DOOR = doubleBlock(FalloutWastelandsModBlocks.MOLDER_WOOD_DOOR);
 	public static final RegistryObject<Item> MOLDER_WOOD_TRAPDOOR = block(FalloutWastelandsModBlocks.MOLDER_WOOD_TRAPDOOR);
-	public static final RegistryObject<Item> WASTELANDBUSH = block(FalloutWastelandsModBlocks.WASTELANDBUSH);
+	public static final RegistryObject<Item> WASTELANDGRASSBUSH = block(FalloutWastelandsModBlocks.WASTELANDGRASSBUSH);
+	public static final RegistryObject<Item> WASTELANDBURNTGRASS = block(FalloutWastelandsModBlocks.WASTELANDBURNTGRASS);
+	public static final RegistryObject<Item> WASTELANDSHORTBURNTGRASS = block(FalloutWastelandsModBlocks.WASTELANDSHORTBURNTGRASS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

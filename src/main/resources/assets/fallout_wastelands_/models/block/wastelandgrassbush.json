@@ -4,5 +4,5 @@
     "cross": "fallout_wastelands_:block/grass2",
     "particle": "fallout_wastelands_:block/grass2"
   },
-  "render_type": "solid"
+  "render_type": "cutout"
 }
