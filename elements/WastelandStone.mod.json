@@ -117,8 +117,14 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
+    "spawnWorldTypes": [
+      "CUSTOM:Wastelands"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:WastelandPlains"
+      }
+    ],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE#0"
@@ -131,6 +137,12 @@
       },
       {
         "value": "Blocks.STONE#5"
+      },
+      {
+        "value": "CUSTOM:Wastelandgrassblock"
+      },
+      {
+        "value": "CUSTOM:WastelandDirt"
       }
     ],
     "generationShape": "UNIFORM",

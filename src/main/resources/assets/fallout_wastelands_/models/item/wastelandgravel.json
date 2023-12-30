@@ -1,5 +1,5 @@
 {
-  "parent": "fallout_wastelands_:block/wastelandrockydirt",
+  "parent": "fallout_wastelands_:block/wastelandgravel",
   "display": {
     "thirdperson": {
       "rotation": [

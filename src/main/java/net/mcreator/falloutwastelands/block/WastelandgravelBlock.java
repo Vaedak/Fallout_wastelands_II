@@ -4,21 +4,14 @@ package net.mcreator.falloutwastelands.block;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
-public class WastelandStoneBlock extends Block {
-	public WastelandStoneBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(0.35f, 10f).requiresCorrectToolForDrops());
+public class WastelandgravelBlock extends FallingBlock {
+	public WastelandgravelBlock() {
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 0.5f));
 	}
 
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
-	}
-
-	@Override
-	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
-			return tieredItem.getTier().getLevel() >= 0;
-		return false;
 	}
 
 	@Override

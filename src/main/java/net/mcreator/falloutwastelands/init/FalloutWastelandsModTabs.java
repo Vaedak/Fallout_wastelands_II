@@ -55,8 +55,8 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDGRASSBUSH.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDBURNTGRASS.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDSHORTBURNTGRASS.get().asItem());
-				tabData.accept(FalloutWastelandsModBlocks.WASTELANDROCKYDIRT.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BRICK_STAIRS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDGRAVEL.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BRICKSLAB.get().asItem());
 			})
 
@@ -67,6 +67,10 @@ public class FalloutWastelandsModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(FalloutWastelandsModItems.WASTELANDS.get());
+		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(FalloutWastelandsModBlocks.WASTELANDPEBBLE.get().asItem());
 		}
 	}
 }

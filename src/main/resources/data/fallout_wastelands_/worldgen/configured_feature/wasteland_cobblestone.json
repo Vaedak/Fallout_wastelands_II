@@ -1,7 +1,7 @@
 {
-  "type": "fallout_wastelands_:wastelandrockydirt",
+  "type": "fallout_wastelands_:wasteland_cobblestone",
   "config": {
-    "size": 32,
+    "size": 16,
     "discard_chance_on_air_exposure": 0,
     "targets": [
       {
@@ -12,7 +12,7 @@
           }
         },
         "state": {
-          "Name": "fallout_wastelands_:wastelandrockydirt"
+          "Name": "fallout_wastelands_:wasteland_cobblestone"
         }
       },
       {
@@ -23,7 +23,7 @@
           }
         },
         "state": {
-          "Name": "fallout_wastelands_:wastelandrockydirt"
+          "Name": "fallout_wastelands_:wasteland_cobblestone"
         }
       },
       {
@@ -34,7 +34,7 @@
           }
         },
         "state": {
-          "Name": "fallout_wastelands_:wastelandrockydirt"
+          "Name": "fallout_wastelands_:wasteland_cobblestone"
         }
       },
       {
@@ -45,7 +45,18 @@
           }
         },
         "state": {
-          "Name": "fallout_wastelands_:wastelandrockydirt"
+          "Name": "fallout_wastelands_:wasteland_cobblestone"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "fallout_wastelands_:wasteland_dirt"
+          }
+        },
+        "state": {
+          "Name": "fallout_wastelands_:wasteland_cobblestone"
         }
       },
       {
@@ -59,18 +70,18 @@
           }
         },
         "state": {
-          "Name": "fallout_wastelands_:wastelandrockydirt"
+          "Name": "fallout_wastelands_:wasteland_cobblestone"
         }
       },
       {
         "target": {
           "predicate_type": "blockstate_match",
           "block_state": {
-            "Name": "fallout_wastelands_:wasteland_dirt"
+            "Name": "fallout_wastelands_:wastelandgravel"
           }
         },
         "state": {
-          "Name": "fallout_wastelands_:wastelandrockydirt"
+          "Name": "fallout_wastelands_:wasteland_cobblestone"
         }
       }
     ]

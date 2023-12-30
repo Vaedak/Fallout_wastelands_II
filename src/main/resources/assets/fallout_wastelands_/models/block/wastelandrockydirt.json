@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "fallout_wastelands_:block/rockydirt",
-    "particle": "fallout_wastelands_:block/rockydirt"
-  },
-  "render_type": "solid"
-}
