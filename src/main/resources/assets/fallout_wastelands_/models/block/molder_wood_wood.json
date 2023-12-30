@@ -1,8 +1,13 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "fallout_wastelands_:block/deadtreelog",
-    "particle": "fallout_wastelands_:block/deadtreelog"
+    "down": "fallout_wastelands_:block/deadlogtop",
+    "up": "fallout_wastelands_:block/deadlogtop",
+    "north": "fallout_wastelands_:block/deadlog",
+    "east": "fallout_wastelands_:block/deadlog",
+    "south": "fallout_wastelands_:block/deadlog",
+    "west": "fallout_wastelands_:block/deadlog",
+    "particle": "fallout_wastelands_:block/deadlogtop"
   },
   "render_type": "solid"
 }
