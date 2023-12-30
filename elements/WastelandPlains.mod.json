@@ -75,21 +75,21 @@
       "min": -0.5,
       "max": 0.5
     },
-    "treesPerChunk": 0,
-    "vanillaTreeType": "Default",
-    "treeType": 0,
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Big trees",
+    "treeType": 1,
     "minHeight": 7,
     "treeStem": {
-      "value": ""
+      "value": "CUSTOM:Molder_WoodWood"
     },
     "treeBranch": {
-      "value": ""
+      "value": "CUSTOM:Molder_WoodWood"
     },
     "treeVines": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
-      "value": ""
+      "value": "Blocks.CAVE_AIR"
     },
     "defaultFeatures": [
       "Caves",

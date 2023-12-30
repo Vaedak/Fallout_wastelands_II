@@ -40,7 +40,7 @@
     "isSolid": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "DEEPSLATE"
     },
     "breakSound": {
       "value": ""
@@ -65,12 +65,12 @@
     "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,
-    "isReplaceable": false,
+    "isReplaceable": true,
     "colorOnMap": "STONE",
     "creativePickItem": {
       "value": ""
     },
-    "offsetType": "XYZ",
+    "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,
