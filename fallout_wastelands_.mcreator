@@ -63,17 +63,17 @@
       "registry_name": "wastelands",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/item/WastelandsItem.java",
           "src/main/resources/data/fallout_wastelands_/dimension_type/wastelands.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wastelands_portal_ew.json",
-          "src/main/java/net/mcreator/falloutwastelands/world/teleporter/WastelandsPortalShape.java",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandsPortalBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelands_portal.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/wastelands_portal_ns.json",
           "src/main/java/net/mcreator/falloutwastelands/world/dimension/WastelandsDimension.java",
-          "src/main/resources/data/fallout_wastelands_/dimension/wastelands.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/wastelands.json",
           "src/main/java/net/mcreator/falloutwastelands/world/teleporter/WastelandsTeleporter.java",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelands_portal.json"
+          "src/main/java/net/mcreator/falloutwastelands/world/teleporter/WastelandsPortalShape.java",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandsPortalBlock.java",
+          "src/main/java/net/mcreator/falloutwastelands/item/WastelandsItem.java",
+          "src/main/resources/data/fallout_wastelands_/dimension/wastelands.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelands_portal_ew.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelands.json"
         ]
       },
       "path": "~/Biomes"
