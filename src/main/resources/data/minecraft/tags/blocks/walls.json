@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "fallout_wastelands_:cracked_wasteland_concrete_wall"
+    "fallout_wastelands_:wall_wasteland_cobblestone",
+    "fallout_wastelands_:cracked_wasteland_concrete_wall",
+    "fallout_wastelands_:wasteland_concrete_wall"
   ]
 }

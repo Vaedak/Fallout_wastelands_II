@@ -1,8 +1,8 @@
 package net.mcreator.falloutwastelands.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
-
-import javax.annotation.Nullable;
+import net.minecraft.world.level.GameType;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerPlayer;
 
 public class SwitchGameModeUtilityOnKeyPressedProcedure {
 	public static void execute(Entity entity) {

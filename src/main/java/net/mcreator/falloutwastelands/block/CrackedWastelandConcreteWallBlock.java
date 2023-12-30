@@ -1,8 +1,25 @@
 
 package net.mcreator.falloutwastelands.block;
 
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.falloutwastelands.procedures.WhenCrackedConcreteDestroyedByPlayerProcedure;
+
+import java.util.List;
+import java.util.Collections;
 
 public class CrackedWastelandConcreteWallBlock extends WallBlock {
 	public CrackedWastelandConcreteWallBlock() {
@@ -27,7 +44,7 @@ public class CrackedWastelandConcreteWallBlock extends WallBlock {
 	@Override
 	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-		WhenCrackedConcreteDestroyedByPlayerProcedure.execute();
+		WhenCrackedConcreteDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		return retval;
 	}
 }

@@ -10,26 +10,26 @@
       "value": "CUSTOM:WastelandDirt"
     },
     "underwaterBlock": {
-      "value": "CUSTOM:WastelandStone"
+      "value": "CUSTOM:WastelandDirt"
     },
     "airColor": {
-      "value": -1974640,
+      "value": -1511208,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -9413056,
+      "value": -9082037,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -9413056,
+      "value": -11714259,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -15194846,
+      "value": -13942468,
       "falpha": 0.0
     },
     "waterFogColor": {
-      "value": -16248305,
+      "value": -15718631,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -56,24 +56,24 @@
     "spawnInCaves": true,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -1.5002,
-      "max": 2.0
+      "min": -0.5002,
+      "max": 0.9999
     },
     "genHumidity": {
       "min": -0.501,
-      "max": 2.0
+      "max": 1.0
     },
     "genContinentalness": {
       "min": 0.30019999999999997,
-      "max": 2.0
+      "max": 1.0
     },
     "genErosion": {
       "min": -0.5,
-      "max": 2.0
+      "max": 1.0
     },
     "genWeirdness": {
-      "min": -1.0,
-      "max": 2.0
+      "min": -0.0,
+      "max": 1.0
     },
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",

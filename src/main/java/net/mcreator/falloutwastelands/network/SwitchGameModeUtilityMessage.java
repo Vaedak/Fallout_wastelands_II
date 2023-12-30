@@ -1,11 +1,22 @@
 
 package net.mcreator.falloutwastelands.network;
 
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.FriendlyByteBuf;
+
+import net.mcreator.falloutwastelands.procedures.SwitchGameModeUtilityOnKeyPressedProcedure;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
+
+import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class SwitchGameModeUtilityMessage {
-
 	int type, pressedms;
 
 	public SwitchGameModeUtilityMessage(int type, int pressedms) {
@@ -36,21 +47,17 @@ public class SwitchGameModeUtilityMessage {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(entity.blockPosition()))
 			return;
-
 		if (type == 0) {
 
-			SwitchGameModeUtilityOnKeyPressedProcedure.execute();
+			SwitchGameModeUtilityOnKeyPressedProcedure.execute(entity);
 		}
-
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		FalloutWastelandsMod.addNetworkMessage(SwitchGameModeUtilityMessage.class, SwitchGameModeUtilityMessage::buffer, SwitchGameModeUtilityMessage::new, SwitchGameModeUtilityMessage::handler);
 	}
-
 }

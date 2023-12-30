@@ -30,9 +30,9 @@
       "registry_name": "wasteland_stone",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandStoneBlock.java",
           "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_stone.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_stone.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandStoneBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_stone.json"
         ]
       },
@@ -47,9 +47,9 @@
       "registry_name": "wasteland_dryland",
       "metadata": {
         "files": [
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wasteland_dryland_tree.json",
           "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wasteland_dryland_tree.json",
-          "src/main/resources/data/fallout_wastelands_/worldgen/biome/wasteland_dryland.json",
-          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wasteland_dryland_tree.json"
+          "src/main/resources/data/fallout_wastelands_/worldgen/biome/wasteland_dryland.json"
         ]
       },
       "path": "~/Biomes"
@@ -58,7 +58,7 @@
       "name": "Wastelands",
       "type": "dimension",
       "sortid": 4,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "wastelands",
       "metadata": {
@@ -1082,16 +1082,64 @@
         ]
       },
       "path": "~/Blocks/MolderWoodSet"
+    },
+    {
+      "name": "Wastelandbush",
+      "type": "block",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandbush",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandbush.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandbush.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandbush.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandbushBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.fallout_wastelands_.the_glow_dirt": "Glow Dirt",
+      "block.fallout_wastelands_.molder_wood_wood": "Molder Log Wood",
+      "block.fallout_wastelands_.molder_wood_log": "Molder Wood Log",
+      "block.fallout_wastelands_.wastelandbush": "Wasteland Bush",
       "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",
+      "block.fallout_wastelands_.slab_wasteland_cobblestone": "Wasteland Cobblestone Slab",
+      "item_group.fallout_wastelands_.wastelandblockstab": "Wasteland Blocks",
+      "block.fallout_wastelands_.wasteland_concrete": "Concrete",
+      "block.fallout_wastelands_.cracked_wasteland_concrete_wall": "Cracked Concrete Slab",
+      "block.fallout_wastelands_.utsol": "Wasteland Utsol",
+      "block.fallout_wastelands_.wasteland_concrete_wall": "Concrete Wall",
+      "block.fallout_wastelands_.cracked_wasteland_concrete_slabs": "Cracked Concrete Slab",
+      "block.fallout_wastelands_.molder_wood_slab": "Molder Wood Slab",
+      "block.fallout_wastelands_.wasteland_concrete_stairs": "Concrete Stairs",
       "block.fallout_wastelands_.wasteland_dirt": "Wasteland Dirt",
+      "block.fallout_wastelands_.wastelandgrassblock": "Wasteland Grass Block",
+      "block.fallout_wastelands_.molder_wood_fence_gate": "Molder Fence Gate",
+      "block.fallout_wastelands_.cracked_wasteland_concrete_stairs": "Cracked Concrete Stairs",
+      "block.fallout_wastelands_.molder_wood_stairs": "Molder Wood Stairs",
+      "block.fallout_wastelands_.molder_wood_button": "Molder Button",
+      "block.fallout_wastelands_.molder_wood_pressure_plate": "Molder Pressure Plate",
+      "block.fallout_wastelands_.molder_wood_door": "Molder Door",
+      "block.fallout_wastelands_.cracked_wasteland_concrete": "Cracked Concrete",
+      "biome.fallout_wastelands_.wasteland_plains": "Wasteland Dryland",
+      "block.fallout_wastelands_.wasteland_brick": "Wasteland Stone",
+      "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
+      "block.fallout_wastelands_.molder_wood_trapdoor": "Molder TrapDoor",
+      "block.fallout_wastelands_.wasteland_cobblestone": "Wasteland Cobblestone",
+      "block.fallout_wastelands_.molder_wood_fence": "Molder Fence",
+      "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
       "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone",
-      "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter"
+      "block.fallout_wastelands_.stair_wasteland_cobblestone": "Wasteland Cobblestone Stairs",
+      "key.fallout_wastelands_.switch_game_mode_utility": "Switch Game Mode Utility",
+      "block.fallout_wastelands_.wall_wasteland_cobblestone": "Wasteland Cobblestone Wall",
+      "block.fallout_wastelands_.wasteland_concrete_slab": "Concrete Slab"
     }
   },
   "foldersRoot": {

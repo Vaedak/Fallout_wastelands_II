@@ -25,6 +25,7 @@ public class FalloutWastelandsModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fallout_wastelands_.wastelandblockstab")).icon(() -> new ItemStack(FalloutWastelandsModBlocks.WASTELAND_STONE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_STONE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_DIRT.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDGRASSBLOCK.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_CONCRETE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.CRACKED_WASTELAND_CONCRETE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_CONCRETE_STAIRS.get().asItem());
@@ -51,6 +52,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.MOLDER_WOOD_BUTTON.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.MOLDER_WOOD_DOOR.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.MOLDER_WOOD_TRAPDOOR.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDBUSH.get().asItem());
 			})
 
 					.build());
@@ -60,10 +62,6 @@ public class FalloutWastelandsModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(FalloutWastelandsModItems.WASTELANDS.get());
-		}
-
-		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-			tabData.accept(FalloutWastelandsModBlocks.WASTELANDGRASSBLOCK.get().asItem());
 		}
 	}
 }

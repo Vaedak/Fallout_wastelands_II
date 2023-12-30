@@ -12,7 +12,7 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "CUSTOM:WastelandDirt"
+      "value": "CUSTOM:WastelandStone"
     },
     "fluidBlock": {
       "value": "Blocks.WATER"

@@ -2,23 +2,23 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "d",
-    "textureTop": "d",
-    "textureLeft": "d",
-    "textureFront": "d",
-    "textureRight": "d",
-    "textureBack": "d",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "grass2",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 120,
+    "customModelName": "Cross model",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "grass2",
     "particleTexture": "",
-    "tintType": "No tint",
-    "isItemTinted": false,
-    "hasTransparency": false,
+    "tintType": "Grass",
+    "isItemTinted": true,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -33,16 +33,16 @@
         "subtract": false
       }
     ],
-    "name": "Wasteland Dirt",
+    "name": "Wasteland Bush",
     "specialInfo": [],
     "hardness": 1.0,
-    "resistance": 0.5,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Wastelandblockstab"
     },
-    "destroyTool": "shovel",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -52,9 +52,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
-      "value": "EARTH"
+      "value": "LEAVES"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -98,7 +98,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -117,14 +117,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:Wastelands"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:WastelandPlains"
-      }
-    ],
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE#0"
@@ -137,15 +131,12 @@
       },
       {
         "value": "Blocks.STONE#5"
-      },
-      {
-        "value": "CUSTOM:Wastelandgrassblock"
       }
     ],
-    "generationShape": "TRIANGLE",
-    "frequencyPerChunks": 24,
-    "frequencyOnChunk": 32,
+    "generationShape": "UNIFORM",
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 128
+    "maxGenerateHeight": 64
   }
 }

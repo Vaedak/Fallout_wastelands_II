@@ -50,8 +50,8 @@ public class FalloutWastelandsModBiomes {
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1.5002f, 2f), Climate.Parameter.span(-0.501f, 2f), Climate.Parameter.span(0.3002f, 2f), Climate.Parameter.span(-0.5f, 2f),
-							Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-1f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("fallout_wastelands_", "wasteland_plains")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5002f, 0.9999f), Climate.Parameter.span(-0.501f, 1f), Climate.Parameter.span(0.3002f, 1f), Climate.Parameter.span(-0.5f, 1f),
+							Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("fallout_wastelands_", "wasteland_plains")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
 							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
@@ -63,7 +63,7 @@ public class FalloutWastelandsModBiomes {
 					if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 						List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
 						surfaceRules.add(1, anySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("fallout_wastelands_", "wasteland_plains")), FalloutWastelandsModBlocks.WASTELANDGRASSBLOCK.get().defaultBlockState(),
-								FalloutWastelandsModBlocks.WASTELAND_DIRT.get().defaultBlockState(), FalloutWastelandsModBlocks.WASTELAND_STONE.get().defaultBlockState()));
+								FalloutWastelandsModBlocks.WASTELAND_DIRT.get().defaultBlockState(), FalloutWastelandsModBlocks.WASTELAND_DIRT.get().defaultBlockState()));
 						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(), noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 								noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(SurfaceRules.RuleSource[]::new)), noiseGeneratorSettings.spawnTarget(), noiseGeneratorSettings.seaLevel(),
 								noiseGeneratorSettings.disableMobGeneration(), noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(), noiseGeneratorSettings.useLegacyRandomSource());

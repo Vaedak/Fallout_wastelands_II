@@ -7,26 +7,26 @@
   ],
   "key": {
     "0": {
-      "item": "fallout_wastelands_:deleted_mod_element"
+      "item": "fallout_wastelands_:molder_wood_planks"
     },
     "1": {
-      "item": "fallout_wastelands_:deleted_mod_element"
+      "item": "fallout_wastelands_:molder_wood_planks"
     },
     "2": {
-      "item": "fallout_wastelands_:deleted_mod_element"
+      "item": "fallout_wastelands_:molder_wood_planks"
     },
     "3": {
-      "item": "fallout_wastelands_:deleted_mod_element"
+      "item": "fallout_wastelands_:molder_wood_planks"
     },
     "4": {
-      "item": "fallout_wastelands_:deleted_mod_element"
+      "item": "fallout_wastelands_:molder_wood_planks"
     },
     "5": {
-      "item": "fallout_wastelands_:deleted_mod_element"
+      "item": "fallout_wastelands_:molder_wood_planks"
     }
   },
   "result": {
-    "item": "fallout_wastelands_:deleted_mod_element",
+    "item": "fallout_wastelands_:molder_wood_trapdoor",
     "count": 2
   }
 }

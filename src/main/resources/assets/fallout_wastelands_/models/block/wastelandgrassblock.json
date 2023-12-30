@@ -1,13 +1,11 @@
 {
-  "parent": "block/cube",
+  "parent": "block/grass_block",
   "textures": {
-    "down": "fallout_wastelands_:block/d",
-    "up": "fallout_wastelands_:block/wastelandgrasstop",
-    "north": "fallout_wastelands_:block/wastelandgrassside",
-    "east": "fallout_wastelands_:block/wastelandgrassside",
-    "south": "fallout_wastelands_:block/wastelandgrassside",
-    "west": "fallout_wastelands_:block/wastelandgrassside",
+    "bottom": "fallout_wastelands_:block/d",
+    "top": "fallout_wastelands_:block/wastelandgrasstopoverlay",
+    "side": "fallout_wastelands_:block/wastelandgrassside",
+    "overlay": "fallout_wastelands_:block/wastelandgrasssideoverlay",
     "particle": "fallout_wastelands_:block/wastelandgrassside"
   },
-  "render_type": "solid"
+  "render_type": "translucent"
 }

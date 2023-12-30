@@ -1,4 +1,6 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "fallout_wastelands_:molder_wood_slab"
+  ]
 }

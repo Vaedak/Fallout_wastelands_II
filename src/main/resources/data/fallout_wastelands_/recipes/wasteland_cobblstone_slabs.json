@@ -6,17 +6,17 @@
   ],
   "key": {
     "0": {
-      "item": "fallout_wastelands_:deleted_mod_element"
+      "item": "fallout_wastelands_:wasteland_cobblestone"
     },
     "1": {
-      "item": "fallout_wastelands_:deleted_mod_element"
+      "item": "fallout_wastelands_:wasteland_cobblestone"
     },
     "2": {
-      "item": "fallout_wastelands_:deleted_mod_element"
+      "item": "fallout_wastelands_:wasteland_cobblestone"
     }
   },
   "result": {
-    "item": "fallout_wastelands_:deleted_mod_element",
+    "item": "fallout_wastelands_:slab_wasteland_cobblestone",
     "count": 6
   }
 }

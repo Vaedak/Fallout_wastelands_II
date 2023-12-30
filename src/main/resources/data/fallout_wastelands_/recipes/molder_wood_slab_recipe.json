@@ -7,17 +7,17 @@
   ],
   "key": {
     "0": {
-      "item": "fallout_wastelands_:deleted_mod_element"
+      "item": "fallout_wastelands_:molder_wood_planks"
     },
     "1": {
-      "item": "fallout_wastelands_:deleted_mod_element"
+      "item": "fallout_wastelands_:molder_wood_planks"
     },
     "2": {
-      "item": "fallout_wastelands_:deleted_mod_element"
+      "item": "fallout_wastelands_:molder_wood_planks"
     }
   },
   "result": {
-    "item": "fallout_wastelands_:deleted_mod_element",
+    "item": "fallout_wastelands_:molder_wood_slab",
     "count": 6
   }
 }
