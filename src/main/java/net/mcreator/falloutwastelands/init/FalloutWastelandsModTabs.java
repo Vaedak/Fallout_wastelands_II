@@ -59,6 +59,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDGRAVEL.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BRICKSLAB.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDPEBBLE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDCOALORE.get().asItem());
 			})
 
 					.build());

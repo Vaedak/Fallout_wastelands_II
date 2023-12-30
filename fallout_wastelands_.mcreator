@@ -1238,6 +1238,23 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "Wastelandcoalore",
+      "type": "block",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandcoalore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandcoalore.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandcoaloreBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandcoalore.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandcoalore.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -1276,6 +1293,7 @@
       "block.fallout_wastelands_.wasteland_cobblestone": "Wasteland Cobblestone",
       "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
       "block.fallout_wastelands_.molder_wood_fence": "Molder Fence",
+      "block.fallout_wastelands_.wastelandcoalore": "Wasteland Coal Ore",
       "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
       "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
       "block.fallout_wastelands_.wastelandpebble": "Wasteland Pebbles",
