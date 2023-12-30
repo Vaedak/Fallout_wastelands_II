@@ -15,6 +15,7 @@ import net.mcreator.falloutwastelands.world.features.plants.Wastelandshortburntg
 import net.mcreator.falloutwastelands.world.features.plants.WastelandgrassbushFeature;
 import net.mcreator.falloutwastelands.world.features.plants.WastelandburntgrassFeature;
 import net.mcreator.falloutwastelands.world.features.ores.WastelandrockydirtFeature;
+import net.mcreator.falloutwastelands.world.features.ores.WastelandgravelFeature;
 import net.mcreator.falloutwastelands.world.features.ores.WastelandDirtFeature;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
@@ -26,4 +27,5 @@ public class FalloutWastelandsModFeatures {
 	public static final RegistryObject<Feature<?>> WASTELANDBURNTGRASS = REGISTRY.register("wastelandburntgrass", WastelandburntgrassFeature::new);
 	public static final RegistryObject<Feature<?>> WASTELANDSHORTBURNTGRASS = REGISTRY.register("wastelandshortburntgrass", WastelandshortburntgrassFeature::new);
 	public static final RegistryObject<Feature<?>> WASTELANDROCKYDIRT = REGISTRY.register("wastelandrockydirt", WastelandrockydirtFeature::new);
+	public static final RegistryObject<Feature<?>> WASTELANDGRAVEL = REGISTRY.register("wastelandgravel", WastelandgravelFeature::new);
 }

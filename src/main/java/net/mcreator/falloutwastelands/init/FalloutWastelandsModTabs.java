@@ -56,6 +56,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDBURNTGRASS.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDSHORTBURNTGRASS.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDROCKYDIRT.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDGRAVEL.get().asItem());
 			})
 
 					.build());

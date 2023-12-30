@@ -58,6 +58,6 @@ public class WastelandrockydirtBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(FalloutWastelandsModBlocks.WASTELAND_COBBLESTONE.get()));
+		return Collections.singletonList(new ItemStack(FalloutWastelandsModBlocks.WASTELAND_DIRT.get()));
 	}
 }

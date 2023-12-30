@@ -1166,6 +1166,27 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "Wastelandgravel",
+      "type": "block",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandgravel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandgravel.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandgravel.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandgravelBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandgravel.json",
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandgravel_biome_modifier.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandgravel.json",
+          "src/main/java/net/mcreator/falloutwastelands/world/features/ores/WastelandgravelFeature.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandgravel.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -1200,6 +1221,7 @@
       "block.fallout_wastelands_.wasteland_brick": "Wasteland Stone",
       "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
       "block.fallout_wastelands_.molder_wood_trapdoor": "Molder TrapDoor",
+      "block.fallout_wastelands_.wastelandgravel": "Wasteland Gravel",
       "block.fallout_wastelands_.wasteland_cobblestone": "Wasteland Cobblestone",
       "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
       "block.fallout_wastelands_.molder_wood_fence": "Molder Fence",

@@ -2,20 +2,20 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "rockydirt",
-    "textureTop": "rockydirt",
-    "textureLeft": "rockydirt",
-    "textureFront": "rockydirt",
-    "textureRight": "rockydirt",
-    "textureBack": "rockydirt",
+    "texture": "wastelandgravel",
+    "textureTop": "d",
+    "textureLeft": "d",
+    "textureFront": "d",
+    "textureRight": "d",
+    "textureBack": "d",
     "renderType": 11,
     "customModelName": "Single texture",
-    "rotationMode": 1,
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "rockydirt",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -33,18 +33,18 @@
         "subtract": false
       }
     ],
-    "name": "Wasteland Dirt",
+    "name": "Wasteland Gravel",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 0.5,
-    "hasGravity": false,
+    "hasGravity": true,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Wastelandblockstab"
     },
     "destroyTool": "shovel",
     "customDrop": {
-      "value": "CUSTOM:WastelandDirt"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -123,9 +123,6 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:WastelandPlains"
-      },
-      {
-        "value": "CUSTOM:WastelandDryland"
       }
     ],
     "blocksToReplace": [
@@ -143,12 +140,9 @@
       },
       {
         "value": "CUSTOM:Wastelandgrassblock"
-      },
-      {
-        "value": "CUSTOM:WastelandDirt"
       }
     ],
-    "generationShape": "UNIFORM",
+    "generationShape": "TRIANGLE",
     "frequencyPerChunks": 24,
     "frequencyOnChunk": 32,
     "minGenerateHeight": 0,
