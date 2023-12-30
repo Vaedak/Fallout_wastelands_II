@@ -1,0 +1,24 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:WastelandConcreteWall"
+      },
+      {
+        "value": "CUSTOM:WallWastelandCobblestone"
+      },
+      {
+        "value": "CUSTOM:CrackedWastelandConcreteWall"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "walls",
+    "namespace": "minecraft"
+  }
+}

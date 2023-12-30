@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fallout_wastelands_:block/wastelandtreelogtop",
+    "up": "fallout_wastelands_:block/wastelandtreelogtop",
+    "north": "fallout_wastelands_:block/deadtreelog",
+    "east": "fallout_wastelands_:block/deadtreelog",
+    "south": "fallout_wastelands_:block/deadtreelog",
+    "west": "fallout_wastelands_:block/deadtreelog",
+    "particle": "fallout_wastelands_:block/wastelandtreelogtop"
+  },
+  "render_type": "solid"
+}

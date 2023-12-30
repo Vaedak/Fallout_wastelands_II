@@ -1,8 +1,6 @@
 {
+  "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",
   "block.fallout_wastelands_.wasteland_dirt": "Wasteland Dirt",
   "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone",
-  "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",
-  "block.fallout_wastelands_.wastelandgrassblock": "Wasteland Grass Block",
-  "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
-  "biome.fallout_wastelands_.wasteland_plains": "Wasteland Dryland"
+  "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter"
 }

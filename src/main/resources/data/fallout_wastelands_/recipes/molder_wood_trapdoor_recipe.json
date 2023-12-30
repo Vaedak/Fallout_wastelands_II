@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "fallout_wastelands_:deleted_mod_element"
+    },
+    "1": {
+      "item": "fallout_wastelands_:deleted_mod_element"
+    },
+    "2": {
+      "item": "fallout_wastelands_:deleted_mod_element"
+    },
+    "3": {
+      "item": "fallout_wastelands_:deleted_mod_element"
+    },
+    "4": {
+      "item": "fallout_wastelands_:deleted_mod_element"
+    },
+    "5": {
+      "item": "fallout_wastelands_:deleted_mod_element"
+    }
+  },
+  "result": {
+    "item": "fallout_wastelands_:deleted_mod_element",
+    "count": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "fallout_wastelands_:block/concrete",
+    "top": "fallout_wastelands_:block/concrete",
+    "side": "fallout_wastelands_:block/concrete"
+  },
+  "render_type": "solid"
+}
