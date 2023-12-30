@@ -27,6 +27,8 @@ import net.mcreator.falloutwastelands.block.WastelandConcreteStairsBlock;
 import net.mcreator.falloutwastelands.block.WastelandConcreteSlabBlock;
 import net.mcreator.falloutwastelands.block.WastelandConcreteBlock;
 import net.mcreator.falloutwastelands.block.WastelandCobblestoneBlock;
+import net.mcreator.falloutwastelands.block.WastelandBrickslabBlock;
+import net.mcreator.falloutwastelands.block.WastelandBrickStairsBlock;
 import net.mcreator.falloutwastelands.block.WastelandBrickBlock;
 import net.mcreator.falloutwastelands.block.WallWastelandCobblestoneBlock;
 import net.mcreator.falloutwastelands.block.UtsolBlock;
@@ -86,6 +88,8 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> WASTELANDBURNTGRASS = REGISTRY.register("wastelandburntgrass", () -> new WastelandburntgrassBlock());
 	public static final RegistryObject<Block> WASTELANDSHORTBURNTGRASS = REGISTRY.register("wastelandshortburntgrass", () -> new WastelandshortburntgrassBlock());
 	public static final RegistryObject<Block> WASTELANDROCKYDIRT = REGISTRY.register("wastelandrockydirt", () -> new WastelandrockydirtBlock());
+	public static final RegistryObject<Block> WASTELAND_BRICK_STAIRS = REGISTRY.register("wasteland_brick_stairs", () -> new WastelandBrickStairsBlock());
+	public static final RegistryObject<Block> WASTELAND_BRICKSLAB = REGISTRY.register("wasteland_brickslab", () -> new WastelandBrickslabBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
