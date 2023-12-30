@@ -52,10 +52,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.MOLDER_WOOD_BUTTON.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.MOLDER_WOOD_DOOR.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.MOLDER_WOOD_TRAPDOOR.get().asItem());
-				tabData.accept(FalloutWastelandsModBlocks.WASTELANDGRASSBUSH.get().asItem());
-				tabData.accept(FalloutWastelandsModBlocks.WASTELANDBURNTGRASS.get().asItem());
-				tabData.accept(FalloutWastelandsModBlocks.WASTELANDSHORTBURNTGRASS.get().asItem());
-				tabData.accept(FalloutWastelandsModBlocks.WASTELANDGRAVEL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDBUSH.get().asItem());
 			})
 
 					.build());
@@ -65,10 +62,6 @@ public class FalloutWastelandsModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(FalloutWastelandsModItems.WASTELANDS.get());
-		}
-
-		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-			tabData.accept(FalloutWastelandsModBlocks.WASTELANDPEBBLE.get().asItem());
 		}
 	}
 }

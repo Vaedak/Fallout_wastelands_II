@@ -30,14 +30,14 @@
       "registry_name": "wasteland_stone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandStoneBlock.java",
           "src/main/java/net/mcreator/falloutwastelands/world/features/ores/WastelandStoneFeature.java",
-          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wasteland_stone_biome_modifier.json",
-          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wasteland_stone.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_stone.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wasteland_stone.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_stone.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandStoneBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_stone.json",
           "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wasteland_stone.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_stone.json"
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wasteland_stone_biome_modifier.json"
         ]
       },
       "path": "~/Blocks"
@@ -549,14 +549,14 @@
       "registry_name": "wasteland_cobblestone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandCobblestoneBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_cobblestone.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_cobblestone.json",
-          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wasteland_cobblestone_biome_modifier.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_cobblestone.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_cobblestone.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_cobblestone.json",
           "src/main/java/net/mcreator/falloutwastelands/world/features/ores/WastelandCobblestoneFeature.java",
-          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wasteland_cobblestone.json",
-          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wasteland_cobblestone.json"
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wasteland_cobblestone_biome_modifier.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wasteland_cobblestone.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandCobblestoneBlock.java",
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wasteland_cobblestone.json"
         ]
       },
       "path": "~/Blocks"
@@ -1160,22 +1160,39 @@
       "path": "~/Blocks"
     },
     {
-      "name": "Wastelandgravel",
+      "name": "WastelandBrickStairs",
       "type": "block",
       "sortid": 70,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "wastelandgravel",
+      "registry_name": "wasteland_brick_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandgravel.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandgravel.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandgravelBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandgravel.json",
-          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandgravel_biome_modifier.json",
-          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandgravel.json",
-          "src/main/java/net/mcreator/falloutwastelands/world/features/ores/WastelandgravelFeature.java",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandgravel.json"
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_brick_stairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick_stairs_inner.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick_stairs_outer.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_brick_stairs.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandBrickStairsBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick_stairs.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "WastelandBrickslab",
+      "type": "block",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasteland_brickslab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brickslab.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandBrickslabBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brickslab_top.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_brickslab.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_brickslab.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brickslab_full.json"
         ]
       },
       "path": "~/Blocks"
@@ -1190,13 +1207,34 @@
       "metadata": {
         "files": [
           "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandpebble.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandpebble.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/wastelandpebble.json",
           "src/main/java/net/mcreator/falloutwastelands/block/WastelandpebbleBlock.java",
-          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandpebble.json",
           "src/main/java/net/mcreator/falloutwastelands/world/features/plants/WastelandpebbleFeature.java",
           "src/main/resources/assets/fallout_wastelands_/models/item/wastelandpebble.json",
-          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandpebble_biome_modifier.json"
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandpebble_biome_modifier.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandpebble.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandpebble.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Wastelandgravel",
+      "type": "block",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandgravel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandgravel.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandgravelBlock.java",
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandgravel_biome_modifier.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandgravel.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandgravel.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandgravel.json",
+          "src/main/java/net/mcreator/falloutwastelands/world/features/ores/WastelandgravelFeature.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandgravel.json"
         ]
       },
       "path": "~/Blocks"
@@ -1233,12 +1271,10 @@
       "block.fallout_wastelands_.wasteland_brick": "Wasteland Stone",
       "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
       "block.fallout_wastelands_.molder_wood_trapdoor": "Molder TrapDoor",
-      "block.fallout_wastelands_.wastelandgravel": "Wasteland Gravel",
       "block.fallout_wastelands_.wasteland_cobblestone": "Wasteland Cobblestone",
       "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
       "block.fallout_wastelands_.molder_wood_fence": "Molder Fence",
       "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
-      "block.fallout_wastelands_.wastelandpebble": "Wastelandpebble",
       "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone",
       "block.fallout_wastelands_.stair_wasteland_cobblestone": "Wasteland Cobblestone Stairs",
       "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
