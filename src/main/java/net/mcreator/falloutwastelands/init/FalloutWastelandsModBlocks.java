@@ -16,7 +16,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.falloutwastelands.block.WastelandshortburntgrassBlock;
 import net.mcreator.falloutwastelands.block.WastelandsPortalBlock;
-import net.mcreator.falloutwastelands.block.WastelandrockydirtBlock;
+import net.mcreator.falloutwastelands.block.WastelandpebbleBlock;
 import net.mcreator.falloutwastelands.block.WastelandgravelBlock;
 import net.mcreator.falloutwastelands.block.WastelandgrassbushBlock;
 import net.mcreator.falloutwastelands.block.WastelandgrassblockBlock;
@@ -86,8 +86,8 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> WASTELANDGRASSBUSH = REGISTRY.register("wastelandgrassbush", () -> new WastelandgrassbushBlock());
 	public static final RegistryObject<Block> WASTELANDBURNTGRASS = REGISTRY.register("wastelandburntgrass", () -> new WastelandburntgrassBlock());
 	public static final RegistryObject<Block> WASTELANDSHORTBURNTGRASS = REGISTRY.register("wastelandshortburntgrass", () -> new WastelandshortburntgrassBlock());
-	public static final RegistryObject<Block> WASTELANDROCKYDIRT = REGISTRY.register("wastelandrockydirt", () -> new WastelandrockydirtBlock());
 	public static final RegistryObject<Block> WASTELANDGRAVEL = REGISTRY.register("wastelandgravel", () -> new WastelandgravelBlock());
+	public static final RegistryObject<Block> WASTELANDPEBBLE = REGISTRY.register("wastelandpebble", () -> new WastelandpebbleBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
