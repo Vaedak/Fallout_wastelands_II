@@ -76,9 +76,22 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:TheGlowDirt"
+      },
+      {
+        "value": "CUSTOM:Wastelandgrassblock"
+      },
+      {
+        "value": "CUSTOM:Utsol"
+      },
+      {
+        "value": "CUSTOM:WastelandDirt"
+      }
+    ],
     "isBonemealable": false,
-    "frequencyOnChunks": 5,
+    "frequencyOnChunks": 20,
     "spawnWorldTypes": [
       "CUSTOM:Wastelands"
     ],
@@ -92,6 +105,6 @@
     ],
     "generationType": "Flower",
     "patchSize": 35,
-    "generateAtAnyHeight": false
+    "generateAtAnyHeight": true
   }
 }

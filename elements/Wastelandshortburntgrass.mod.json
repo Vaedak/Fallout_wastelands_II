@@ -70,21 +70,41 @@
     "creativePickItem": {
       "value": "Items.SHEARS"
     },
-    "offsetType": "XZ",
+    "offsetType": "XYZ",
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:WastelandDirt"
+      },
+      {
+        "value": "CUSTOM:Utsol"
+      },
+      {
+        "value": "CUSTOM:Wastelandgrassblock"
+      },
+      {
+        "value": "CUSTOM:TheGlowDirt"
+      }
+    ],
     "isBonemealable": false,
-    "frequencyOnChunks": 5,
+    "frequencyOnChunks": 30,
     "spawnWorldTypes": [
       "CUSTOM:Wastelands"
     ],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:WastelandDryland"
+      },
+      {
+        "value": "CUSTOM:WastelandPlains"
+      }
+    ],
     "generationType": "Grass",
-    "patchSize": 30,
+    "patchSize": 64,
     "generateAtAnyHeight": true
   }
 }
