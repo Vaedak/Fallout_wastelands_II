@@ -1,9 +1,9 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
-    "bottom": "fallout_wastelands_:block/wasteland_cobblestone",
-    "top": "fallout_wastelands_:block/wasteland_cobblestone",
-    "side": "fallout_wastelands_:block/wasteland_cobblestone"
+    "bottom": "fallout_wastelands_:block/wastelandrock",
+    "top": "fallout_wastelands_:block/wastelandrock",
+    "side": "fallout_wastelands_:block/wastelandrock"
   },
   "render_type": "solid"
 }

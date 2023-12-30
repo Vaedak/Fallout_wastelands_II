@@ -2,10 +2,10 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "rottenwoodplank",
-    "textureTop": "rottenwoodplank",
+    "texture": "wastelandplanks",
+    "textureTop": "wastelandplanks",
     "textureLeft": "",
-    "textureFront": "rottenwoodplank",
+    "textureFront": "wastelandplanks",
     "textureRight": "",
     "textureBack": "",
     "renderType": 10,

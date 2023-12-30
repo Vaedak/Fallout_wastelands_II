@@ -4,7 +4,7 @@
   "category": "building",
   "ingredients": [
     {
-      "tag": "forge:molder_wood_log"
+      "item": "fallout_wastelands_:molder_wood_log"
     }
   ],
   "result": {

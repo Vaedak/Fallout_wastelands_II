@@ -2,7 +2,7 @@
   "_fv": 47,
   "_type": "biome",
   "definition": {
-    "name": "Wasteland Dryland",
+    "name": "Wasteland Plains",
     "groundBlock": {
       "value": "CUSTOM:Wastelandgrassblock"
     },
@@ -17,7 +17,7 @@
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -9082037,
+      "value": -8028070,
       "falpha": 0.0
     },
     "foliageColor": {
@@ -25,7 +25,7 @@
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -13942468,
+      "value": -14469069,
       "falpha": 0.0
     },
     "waterFogColor": {
@@ -53,27 +53,27 @@
     "rainingPossibility": 0.5,
     "temperature": 1.5,
     "spawnBiome": false,
-    "spawnInCaves": true,
+    "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
       "min": -0.5002,
-      "max": 0.9999
+      "max": 0.5999
     },
     "genHumidity": {
-      "min": -0.501,
+      "min": -1.501,
       "max": 1.0
     },
     "genContinentalness": {
-      "min": 0.30019999999999997,
-      "max": 1.0
+      "min": -0.2999,
+      "max": 1.0003
     },
     "genErosion": {
       "min": -0.5,
       "max": 1.0
     },
     "genWeirdness": {
-      "min": -0.0,
-      "max": 1.0
+      "min": -0.5,
+      "max": 0.5
     },
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",

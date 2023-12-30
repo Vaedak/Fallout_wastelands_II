@@ -4,10 +4,10 @@
   "downfall": 0.5,
   "effects": {
     "foliage_color": -11714259,
-    "grass_color": -9082037,
+    "grass_color": -8028070,
     "sky_color": -1511208,
     "fog_color": -1511208,
-    "water_color": -13942468,
+    "water_color": -14469069,
     "water_fog_color": -15718631
   },
   "spawners": {
