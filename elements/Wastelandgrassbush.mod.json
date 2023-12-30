@@ -91,7 +91,7 @@
       }
     ],
     "isBonemealable": false,
-    "frequencyOnChunks": 10,
+    "frequencyOnChunks": 40,
     "spawnWorldTypes": [
       "CUSTOM:Wastelands"
     ],
@@ -104,7 +104,7 @@
       }
     ],
     "generationType": "Grass",
-    "patchSize": 10,
+    "patchSize": 120,
     "generateAtAnyHeight": true
   }
 }

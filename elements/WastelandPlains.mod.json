@@ -17,7 +17,7 @@
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -6515614,
+      "value": -8028070,
       "falpha": 0.0
     },
     "foliageColor": {
@@ -25,7 +25,7 @@
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -13942468,
+      "value": -14469069,
       "falpha": 0.0
     },
     "waterFogColor": {
@@ -57,7 +57,7 @@
     "spawnBiomeNether": false,
     "genTemperature": {
       "min": -0.5002,
-      "max": 1.5999
+      "max": 0.5999
     },
     "genHumidity": {
       "min": -1.501,
@@ -65,10 +65,10 @@
     },
     "genContinentalness": {
       "min": -0.2999,
-      "max": 1.3003
+      "max": 1.0003
     },
     "genErosion": {
-      "min": -1.5,
+      "min": -0.5,
       "max": 1.0
     },
     "genWeirdness": {

@@ -1,7 +1,7 @@
 {
   "type": "fallout_wastelands_:wastelandgrassbush",
   "config": {
-    "tries": 10,
+    "tries": 120,
     "feature": {
       "feature": {
         "type": "minecraft:simple_block",

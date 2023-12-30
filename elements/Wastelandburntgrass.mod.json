@@ -91,7 +91,7 @@
       }
     ],
     "isBonemealable": false,
-    "frequencyOnChunks": 20,
+    "frequencyOnChunks": 30,
     "spawnWorldTypes": [
       "CUSTOM:Wastelands"
     ],
@@ -104,7 +104,7 @@
       }
     ],
     "generationType": "Flower",
-    "patchSize": 35,
+    "patchSize": 60,
     "generateAtAnyHeight": true
   }
 }
