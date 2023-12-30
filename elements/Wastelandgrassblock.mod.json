@@ -3,19 +3,19 @@
   "_type": "block",
   "definition": {
     "texture": "d",
-    "textureTop": "d",
-    "textureLeft": "d",
-    "textureFront": "d",
-    "textureRight": "d",
-    "textureBack": "d",
+    "textureTop": "wastelandgrasstop",
+    "textureLeft": "wastelandgrassside",
+    "textureFront": "wastelandgrassside",
+    "textureRight": "wastelandgrassside",
+    "textureBack": "wastelandgrassside",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "wastelandgrassside",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -33,10 +33,10 @@
         "subtract": false
       }
     ],
-    "name": "Wasteland Dirt",
+    "name": "Wasteland Grass Block",
     "specialInfo": [],
-    "hardness": 3.5,
-    "resistance": 5.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -54,7 +54,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "EARTH"
+      "value": "GRASS"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -117,34 +117,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:Wastelands"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:WastelandPlains"
-      }
-    ],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE#0"
-      },
-      {
-        "value": "Blocks.STONE#1"
-      },
-      {
-        "value": "Blocks.STONE#3"
-      },
-      {
-        "value": "Blocks.STONE#5"
-      },
-      {
-        "value": "CUSTOM:Wastelandgrassblock"
-      }
-    ],
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 2,
-    "frequencyOnChunk": 8,
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64
   }

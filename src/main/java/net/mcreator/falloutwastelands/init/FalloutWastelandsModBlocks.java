@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.falloutwastelands.block.WastelandsPortalBlock;
+import net.mcreator.falloutwastelands.block.WastelandgrassblockBlock;
 import net.mcreator.falloutwastelands.block.WastelandStoneBlock;
 import net.mcreator.falloutwastelands.block.WastelandDirtBlock;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
@@ -20,4 +21,5 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> WASTELAND_STONE = REGISTRY.register("wasteland_stone", () -> new WastelandStoneBlock());
 	public static final RegistryObject<Block> WASTELAND_DIRT = REGISTRY.register("wasteland_dirt", () -> new WastelandDirtBlock());
 	public static final RegistryObject<Block> WASTELANDS_PORTAL = REGISTRY.register("wastelands_portal", () -> new WastelandsPortalBlock());
+	public static final RegistryObject<Block> WASTELANDGRASSBLOCK = REGISTRY.register("wastelandgrassblock", () -> new WastelandgrassblockBlock());
 }

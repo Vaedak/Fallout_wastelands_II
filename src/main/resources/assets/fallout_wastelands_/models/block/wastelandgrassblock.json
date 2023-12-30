@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fallout_wastelands_:block/d",
+    "up": "fallout_wastelands_:block/wastelandgrasstop",
+    "north": "fallout_wastelands_:block/wastelandgrassside",
+    "east": "fallout_wastelands_:block/wastelandgrassside",
+    "south": "fallout_wastelands_:block/wastelandgrassside",
+    "west": "fallout_wastelands_:block/wastelandgrassside",
+    "particle": "fallout_wastelands_:block/wastelandgrassside"
+  },
+  "render_type": "solid"
+}

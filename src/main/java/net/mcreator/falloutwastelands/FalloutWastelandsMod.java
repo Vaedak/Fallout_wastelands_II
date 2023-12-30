@@ -31,6 +31,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModTabs;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModItems;
+import net.mcreator.falloutwastelands.init.FalloutWastelandsModFeatures;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModBlocks;
 
 import java.util.function.Supplier;
@@ -56,6 +57,7 @@ public class FalloutWastelandsMod {
 		FalloutWastelandsModItems.REGISTRY.register(bus);
 
 		FalloutWastelandsModTabs.REGISTRY.register(bus);
+		FalloutWastelandsModFeatures.REGISTRY.register(bus);
 
 	}
 
