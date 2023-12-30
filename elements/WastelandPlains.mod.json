@@ -75,7 +75,7 @@
       "min": -0.5,
       "max": 0.5
     },
-    "treesPerChunk": 1,
+    "treesPerChunk": 4,
     "vanillaTreeType": "Big trees",
     "treeType": 1,
     "minHeight": 7,

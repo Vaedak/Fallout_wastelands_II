@@ -51,7 +51,9 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> WASTELANDGRASSBUSH = block(FalloutWastelandsModBlocks.WASTELANDGRASSBUSH);
 	public static final RegistryObject<Item> WASTELANDBURNTGRASS = block(FalloutWastelandsModBlocks.WASTELANDBURNTGRASS);
 	public static final RegistryObject<Item> WASTELANDSHORTBURNTGRASS = block(FalloutWastelandsModBlocks.WASTELANDSHORTBURNTGRASS);
+	public static final RegistryObject<Item> WASTELAND_BRICK_STAIRS = block(FalloutWastelandsModBlocks.WASTELAND_BRICK_STAIRS);
 	public static final RegistryObject<Item> WASTELANDGRAVEL = block(FalloutWastelandsModBlocks.WASTELANDGRAVEL);
+	public static final RegistryObject<Item> WASTELAND_BRICKSLAB = block(FalloutWastelandsModBlocks.WASTELAND_BRICKSLAB);
 	public static final RegistryObject<Item> WASTELANDPEBBLE = block(FalloutWastelandsModBlocks.WASTELANDPEBBLE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
