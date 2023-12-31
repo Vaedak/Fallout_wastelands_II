@@ -14,6 +14,7 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.falloutwastelands.item.WastelandsItem;
+import net.mcreator.falloutwastelands.item.ClothItem;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
 public class FalloutWastelandsModItems {
@@ -51,6 +52,7 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> WASTELANDGRASSBUSH = block(FalloutWastelandsModBlocks.WASTELANDGRASSBUSH);
 	public static final RegistryObject<Item> WASTELANDBURNTGRASS = block(FalloutWastelandsModBlocks.WASTELANDBURNTGRASS);
 	public static final RegistryObject<Item> WASTELANDSHORTBURNTGRASS = block(FalloutWastelandsModBlocks.WASTELANDSHORTBURNTGRASS);
+	public static final RegistryObject<Item> CLOTH = REGISTRY.register("cloth", () -> new ClothItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
