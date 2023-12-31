@@ -18,6 +18,7 @@ import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.GrassColor;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -26,6 +27,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.BiomeColors;
 
+import net.mcreator.falloutwastelands.procedures.WastelandGrassTurnToDirtProcedure;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModBlocks;
 
 import java.util.List;
@@ -73,6 +75,12 @@ public class WastelandgrassblockBlock extends Block {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
+	}
+
+	@Override
+	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+		WastelandGrassTurnToDirtProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@OnlyIn(Dist.CLIENT)

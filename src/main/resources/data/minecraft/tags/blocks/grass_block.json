@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "fallout_wastelands_:wastelandshortburntgrass",
+    "fallout_wastelands_:wastelandgrassbush",
+    "fallout_wastelands_:wastelandburntgrass"
+  ]
+}

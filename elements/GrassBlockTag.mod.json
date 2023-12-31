@@ -1,0 +1,24 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Wastelandgrassbush"
+      },
+      {
+        "value": "CUSTOM:Wastelandburntgrass"
+      },
+      {
+        "value": "CUSTOM:Wastelandshortburntgrass"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "grass_block",
+    "namespace": "minecraft"
+  }
+}

@@ -1,19 +1,8 @@
 
 package net.mcreator.falloutwastelands.block;
 
-import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.FlowerBlock;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.falloutwastelands.init.FalloutWastelandsModBlocks;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class WastelandshortburntgrassBlock extends FlowerBlock {
 	public WastelandshortburntgrassBlock() {
@@ -47,5 +36,12 @@ public class WastelandshortburntgrassBlock extends FlowerBlock {
 		BlockPos blockpos = pos.below();
 		BlockState groundState = worldIn.getBlockState(blockpos);
 		return this.mayPlaceOn(groundState, worldIn, blockpos);
+	}
+
+	@Override
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		GrassDestroyedWithShearsProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+		return retval;
 	}
 }

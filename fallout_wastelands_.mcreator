@@ -9,13 +9,13 @@
       "registry_name": "wasteland_dirt",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/world/features/ores/WastelandDirtFeature.java",
           "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wasteland_dirt_biome_modifier.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandDirtBlock.java",
-          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wasteland_dirt.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_dirt.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_dirt.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wasteland_dirt.json",
+          "src/main/java/net/mcreator/falloutwastelands/world/features/ores/WastelandDirtFeature.java",
           "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wasteland_dirt.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_dirt.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandDirtBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_dirt.json"
         ]
       },
@@ -51,9 +51,9 @@
       "registry_name": "wasteland_dryland",
       "metadata": {
         "files": [
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wasteland_dryland_tree.json",
           "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wasteland_dryland_tree.json",
-          "src/main/resources/data/fallout_wastelands_/worldgen/biome/wasteland_dryland.json",
-          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wasteland_dryland_tree.json"
+          "src/main/resources/data/fallout_wastelands_/worldgen/biome/wasteland_dryland.json"
         ]
       },
       "path": "~/Biomes"
@@ -110,9 +110,9 @@
       "registry_name": "wastelandgrassblock",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandgrassblock.json",
           "src/main/java/net/mcreator/falloutwastelands/block/WastelandgrassblockBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/block/wastelandgrassblock.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandgrassblock.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/wastelandgrassblock.json"
         ]
       },
@@ -127,13 +127,13 @@
       "registry_name": "cracked_wasteland_concrete_wall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/item/cracked_wasteland_concrete_wall.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_wall_post.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_wall_inventory.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_wall_side_tall.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/cracked_wasteland_concrete_wall.json",
           "src/main/java/net/mcreator/falloutwastelands/block/CrackedWastelandConcreteWallBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_wall.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/cracked_wasteland_concrete_wall.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_wall.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_wall_side_tall.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_wall_inventory.json"
         ]
       },
       "path": "~/Blocks"
@@ -147,12 +147,12 @@
       "registry_name": "molder_wood_button",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_button_inventory.json",
           "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodButtonBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_button.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_button.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_button_inventory.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_button.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_button_pressed.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_button.json"
+          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_button.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_button.json"
         ]
       },
       "path": "~/Blocks/MolderWoodSet"
@@ -166,12 +166,12 @@
       "registry_name": "wasteland_concrete_stairs",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_stairs.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_concrete_stairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_stairs_outer.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_concrete_stairs.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_stairs_inner.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandConcreteStairsBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_concrete_stairs.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_stairs.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_stairs_outer.json"
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandConcreteStairsBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -185,11 +185,11 @@
       "registry_name": "molder_wood_pressure_plate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_pressure_plate.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_pressure_plate_down.json",
           "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodPressurePlateBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_pressure_plate_down.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_pressure_plate.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_pressure_plate.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_pressure_plate.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_pressure_plate.json"
         ]
       },
       "path": "~/Blocks/MolderWoodSet"
@@ -231,9 +231,9 @@
       "registry_name": "utsol",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/utsol.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/utsol.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/utsol.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/utsol.json",
           "src/main/java/net/mcreator/falloutwastelands/block/UtsolBlock.java"
         ]
       },
@@ -262,10 +262,10 @@
       "registry_name": "molder_wood_log",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_log.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_log.json",
           "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodLogBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_log.json"
+          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_log.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_log.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_log.json"
         ]
       },
       "path": "~/Blocks/MolderWoodSet"
@@ -372,17 +372,17 @@
       "registry_name": "molder_wood_door",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/block/MolderWoodDoorBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_door_top_right_open.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_door_bottom_left_open.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_door_bottom_right.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_door_top_right.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_door.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_door_top_left.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_door_top_right_open.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_door_bottom_right_open.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/MolderWoodDoorBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_door_bottom_left_open.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_door_top_left_open.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_door.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_door.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_door_bottom_left.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_door_bottom_right.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_door_bottom_right_open.json"
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_door_top_left.json"
         ]
       },
       "path": "~/Blocks/MolderWoodSet"
@@ -412,8 +412,8 @@
         "files": [
           "src/main/resources/assets/fallout_wastelands_/blockstates/the_glow_dirt.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/the_glow_dirt.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/TheGlowDirtBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/block/the_glow_dirt.json"
+          "src/main/resources/assets/fallout_wastelands_/models/block/the_glow_dirt.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/TheGlowDirtBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -427,12 +427,12 @@
       "registry_name": "molder_wood_trapdoor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_trapdoor.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_trapdoor.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/MolderWoodTrapdoorBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_trapdoor_top.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_trapdoor_open.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_trapdoor.json"
+          "src/main/java/net/mcreator/falloutwastelands/block/MolderWoodTrapdoorBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_trapdoor.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_trapdoor.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_trapdoor_top.json"
         ]
       },
       "path": "~/Blocks/MolderWoodSet"
@@ -531,10 +531,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fallout_wastelands_/models/item/slab_wasteland_cobblestone.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/slab_wasteland_cobblestone_top.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/slab_wasteland_cobblestone.json",
           "src/main/java/net/mcreator/falloutwastelands/block/SlabWastelandCobblestoneBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/block/slab_wasteland_cobblestone.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/slab_wasteland_cobblestone_top.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/slab_wasteland_cobblestone_full.json"
         ]
       },
@@ -571,10 +571,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/falloutwastelands/block/StairWastelandCobblestoneBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/stair_wasteland_cobblestone.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/stair_wasteland_cobblestone.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/stair_wasteland_cobblestone.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/stair_wasteland_cobblestone_outer.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/stair_wasteland_cobblestone.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/stair_wasteland_cobblestone.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/stair_wasteland_cobblestone.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/stair_wasteland_cobblestone_inner.json"
         ]
       },
@@ -634,11 +634,11 @@
       "registry_name": "molder_wood_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_stairs.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_stairs.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_stairs.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_stairs_inner.json",
           "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodStairsBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_stairs.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_stairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_stairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_stairs_inner.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_stairs_outer.json"
         ]
       },
@@ -670,9 +670,9 @@
           "src/main/resources/assets/fallout_wastelands_/blockstates/cracked_wasteland_concrete_stairs.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_stairs_outer.json",
           "src/main/java/net/mcreator/falloutwastelands/block/CrackedWastelandConcreteStairsBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_stairs.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/cracked_wasteland_concrete_stairs.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_stairs_inner.json"
+          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_stairs_inner.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_stairs.json"
         ]
       },
       "path": "~/Blocks"
@@ -748,10 +748,10 @@
       "registry_name": "molder_wood_planks",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodPlanksBlock.java",
           "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_planks.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_planks.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_planks.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodPlanksBlock.java"
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_planks.json"
         ]
       },
       "path": "~/Blocks/MolderWoodSet"
@@ -765,10 +765,10 @@
       "registry_name": "wasteland_brick",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick.json",
           "src/main/java/net/mcreator/falloutwastelands/block/WastelandBrickBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_brick.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_brick.json"
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_brick.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick.json"
         ]
       },
       "path": "~/Blocks"
@@ -782,12 +782,12 @@
       "registry_name": "molder_wood_fence",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_fence.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodFenceBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_fence.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_fence.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_fence_inventory.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_fence_post.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_fence.json"
+          "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodFenceBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_fence_inventory.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_fence.json"
         ]
       },
       "path": "~/Blocks/MolderWoodSet"
@@ -829,13 +829,13 @@
       "registry_name": "wasteland_concrete_wall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_wall_inventory.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandConcreteWallBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_wall_post.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_concrete_wall.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandConcreteWallBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_wall.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_concrete_wall.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_wall_side_tall.json"
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_wall_post.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_wall_inventory.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_wall_side_tall.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_concrete_wall.json"
         ]
       },
       "path": "~/Blocks"
@@ -849,10 +849,10 @@
       "registry_name": "molder_wood_wood",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodWoodBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_wood.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_wood.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_wood.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodWoodBlock.java"
+          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_wood.json"
         ]
       },
       "path": "~/Blocks/MolderWoodSet"
@@ -866,12 +866,12 @@
       "registry_name": "cracked_wasteland_concrete_slabs",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/block/CrackedWastelandConcreteSlabsBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_slabs_top.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_slabs_full.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_slabs.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/cracked_wasteland_concrete_slabs.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/cracked_wasteland_concrete_slabs.json"
+          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_slabs_top.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/cracked_wasteland_concrete_slabs.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/CrackedWastelandConcreteSlabsBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_slabs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/cracked_wasteland_concrete_slabs_full.json"
         ]
       },
       "path": "~/Blocks"
@@ -885,12 +885,12 @@
       "registry_name": "molder_wood_slab",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodSlabBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_slab.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_slab.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_slab_full.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_slab.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_slab_top.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_slab.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_slab_top.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodSlabBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_slab.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_slab.json"
         ]
       },
       "path": "~/Blocks/MolderWoodSet"
@@ -918,13 +918,13 @@
       "registry_name": "wall_wasteland_cobblestone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/block/WallWastelandCobblestoneBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wall_wasteland_cobblestone.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/wall_wasteland_cobblestone_inventory.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/wall_wasteland_cobblestone.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wall_wasteland_cobblestone.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/wall_wasteland_cobblestone_side_tall.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wall_wasteland_cobblestone_post.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wall_wasteland_cobblestone.json"
+          "src/main/resources/assets/fallout_wastelands_/models/block/wall_wasteland_cobblestone.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WallWastelandCobblestoneBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wall_wasteland_cobblestone_post.json"
         ]
       },
       "path": "~/Blocks"
@@ -999,12 +999,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_fence_gate.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_fence_gate_wall_open.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_fence_gate.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodFenceGateBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_fence_gate.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_fence_gate_wall.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_fence_gate_open.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodFenceGateBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_fence_gate.json"
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_fence_gate_wall_open.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_fence_gate.json"
         ]
       },
       "path": "~/Blocks/MolderWoodSet"
@@ -1046,10 +1046,10 @@
         "files": [
           "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_concrete_slab.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_slab_full.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_slab_top.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandConcreteSlabBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_slab.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_concrete_slab.json"
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_concrete_slab.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_concrete_slab_top.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandConcreteSlabBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -1105,13 +1105,13 @@
       "registry_name": "wastelandgrassbush",
       "metadata": {
         "files": [
-          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandgrassbush.json",
-          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandgrassbush_biome_modifier.json",
-          "src/main/java/net/mcreator/falloutwastelands/world/features/plants/WastelandgrassbushFeature.java",
           "src/main/resources/assets/fallout_wastelands_/models/block/wastelandgrassbush.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandgrassbushBlock.java",
-          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandgrassbush.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/wastelandgrassbush.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandgrassbush.json",
+          "src/main/java/net/mcreator/falloutwastelands/world/features/plants/WastelandgrassbushFeature.java",
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandgrassbush_biome_modifier.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandgrassbush.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandgrassbushBlock.java",
           "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandgrassbush.json"
         ]
       },
@@ -1456,6 +1456,115 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "GrassBlockTag",
+      "type": "tag",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_block_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/grass_block.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "WastelandGrassTurnToDirt",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasteland_grass_turn_to_dirt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/WastelandGrassTurnToDirtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "GrassDestroyedWithShears",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_destroyed_with_shears",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/GrassDestroyedWithShearsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "ClothAsFuel",
+      "type": "itemextension",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloth_as_fuel",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Others"
+    },
+    {
+      "name": "Cloth",
+      "type": "item",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloth",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/ClothItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/cloth.json"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -1465,7 +1574,6 @@
       "block.fallout_wastelands_.molder_wood_log": "Molder Wood Log",
       "block.fallout_wastelands_.wastelandcopperore": "Wasteland Copper Ore",
       "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",
-      "block.fallout_wastelands_.wasteland_brick_stairs": "Wasteland Brick Stairs",
       "block.fallout_wastelands_.cracked_wasteland_concrete_wall": "Cracked Concrete Slab",
       "block.fallout_wastelands_.wasteland_concrete_wall": "Concrete Wall",
       "block.fallout_wastelands_.cracked_wasteland_concrete_slabs": "Cracked Concrete Slab",
@@ -1477,12 +1585,9 @@
       "block.fallout_wastelands_.wasteland_brick": "Wasteland Stone",
       "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
       "block.fallout_wastelands_.molder_wood_trapdoor": "Molder TrapDoor",
-      "block.fallout_wastelands_.wastelandgravel": "Wasteland Gravel",
       "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
       "block.fallout_wastelands_.molder_wood_fence": "Molder Fence",
       "item.fallout_wastelands_.raiderduster_chestplate": "Raider Duster Chestpads",
-      "block.fallout_wastelands_.wastelandcoalore": "Wasteland Coal Ore",
-      "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
       "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
       "block.fallout_wastelands_.wasteland_goldore": "Wasteland Gold Ore",
       "key.fallout_wastelands_.switch_game_mode_utility": "Switch Game Mode Utility",
@@ -1508,7 +1613,6 @@
       "block.fallout_wastelands_.wasteland_cobblestone": "Wasteland Cobblestone",
       "block.fallout_wastelands_.wastelanddiamondore": "Wasteland Diamond Ore",
       "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
-      "block.fallout_wastelands_.wastelandpebble": "Wasteland Pebbles",
       "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone",
       "block.fallout_wastelands_.stair_wasteland_cobblestone": "Wasteland Cobblestone Stairs",
       "block.fallout_wastelands_.wastelandemeraldore": "Wasteland Emerald Ore",

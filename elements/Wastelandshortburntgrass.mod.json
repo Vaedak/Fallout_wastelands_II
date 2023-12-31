@@ -59,7 +59,7 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "dropAmount": 0,
     "forceTicking": false,
@@ -105,6 +105,9 @@
     ],
     "generationType": "Grass",
     "patchSize": 64,
-    "generateAtAnyHeight": true
+    "generateAtAnyHeight": true,
+    "onDestroyedByPlayer": {
+      "name": "GrassDestroyedWithShears"
+    }
   }
 }

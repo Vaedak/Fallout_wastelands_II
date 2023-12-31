@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.falloutwastelands.item.WastelandsItem;
 import net.mcreator.falloutwastelands.item.RaiderdusterItem;
+import net.mcreator.falloutwastelands.item.ClothItem;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
 public class FalloutWastelandsModItems {
@@ -56,6 +57,7 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> WASTELANDGRAVEL = block(FalloutWastelandsModBlocks.WASTELANDGRAVEL);
 	public static final RegistryObject<Item> WASTELAND_BRICKSLAB = block(FalloutWastelandsModBlocks.WASTELAND_BRICKSLAB);
 	public static final RegistryObject<Item> WASTELANDPEBBLE = block(FalloutWastelandsModBlocks.WASTELANDPEBBLE);
+	public static final RegistryObject<Item> CLOTH = REGISTRY.register("cloth", () -> new ClothItem());
 	public static final RegistryObject<Item> WASTELANDCOALORE = block(FalloutWastelandsModBlocks.WASTELANDCOALORE);
 	public static final RegistryObject<Item> WASTELANDIRONORE = block(FalloutWastelandsModBlocks.WASTELANDIRONORE);
 	public static final RegistryObject<Item> WASTELANDCOPPERORE = block(FalloutWastelandsModBlocks.WASTELANDCOPPERORE);
