@@ -14,6 +14,7 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.falloutwastelands.item.WastelandsItem;
+import net.mcreator.falloutwastelands.item.TatoItem;
 import net.mcreator.falloutwastelands.item.RaiderdusterItem;
 import net.mcreator.falloutwastelands.item.RaiderblastmasterItem;
 import net.mcreator.falloutwastelands.item.RaiderbasherItem;
@@ -72,6 +73,7 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> RAIDERDUSTER_CHESTPLATE = REGISTRY.register("raiderduster_chestplate", () -> new RaiderdusterItem.Chestplate());
 	public static final RegistryObject<Item> RAIDERDUSTER_LEGGINGS = REGISTRY.register("raiderduster_leggings", () -> new RaiderdusterItem.Leggings());
 	public static final RegistryObject<Item> RAIDERDUSTER_BOOTS = REGISTRY.register("raiderduster_boots", () -> new RaiderdusterItem.Boots());
+	public static final RegistryObject<Item> TATO = REGISTRY.register("tato", () -> new TatoItem());
 	public static final RegistryObject<Item> RAIDERBASHER_HELMET = REGISTRY.register("raiderbasher_helmet", () -> new RaiderbasherItem.Helmet());
 	public static final RegistryObject<Item> RAIDERBASHER_CHESTPLATE = REGISTRY.register("raiderbasher_chestplate", () -> new RaiderbasherItem.Chestplate());
 	public static final RegistryObject<Item> RAIDERBASHER_LEGGINGS = REGISTRY.register("raiderbasher_leggings", () -> new RaiderbasherItem.Leggings());
@@ -80,6 +82,10 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> RAIDERBLASTMASTER_CHESTPLATE = REGISTRY.register("raiderblastmaster_chestplate", () -> new RaiderblastmasterItem.Chestplate());
 	public static final RegistryObject<Item> RAIDERBLASTMASTER_LEGGINGS = REGISTRY.register("raiderblastmaster_leggings", () -> new RaiderblastmasterItem.Leggings());
 	public static final RegistryObject<Item> RAIDERBLASTMASTER_BOOTS = REGISTRY.register("raiderblastmaster_boots", () -> new RaiderblastmasterItem.Boots());
+	public static final RegistryObject<Item> WASTELAND_BRICK_WALL = block(FalloutWastelandsModBlocks.WASTELAND_BRICK_WALL);
+	public static final RegistryObject<Item> WASTELAND_BROKEN_GLASS = block(FalloutWastelandsModBlocks.WASTELAND_BROKEN_GLASS);
+	public static final RegistryObject<Item> LOCKER = block(FalloutWastelandsModBlocks.LOCKER);
+	public static final RegistryObject<Item> LANDMINE = block(FalloutWastelandsModBlocks.LANDMINE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

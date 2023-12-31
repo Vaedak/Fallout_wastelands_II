@@ -1,0 +1,9 @@
+{
+  "parent": "fallout_wastelands_:custom/landmine",
+  "textures": {
+    "all": "fallout_wastelands_:block/landmine",
+    "particle": "fallout_wastelands_:block/landmine",
+    "0": "fallout_wastelands_:block/landmine"
+  },
+  "render_type": "solid"
+}

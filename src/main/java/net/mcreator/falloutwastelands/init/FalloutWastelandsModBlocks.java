@@ -36,7 +36,9 @@ import net.mcreator.falloutwastelands.block.WastelandConcreteStairsBlock;
 import net.mcreator.falloutwastelands.block.WastelandConcreteSlabBlock;
 import net.mcreator.falloutwastelands.block.WastelandConcreteBlock;
 import net.mcreator.falloutwastelands.block.WastelandCobblestoneBlock;
+import net.mcreator.falloutwastelands.block.WastelandBrokenGlassBlock;
 import net.mcreator.falloutwastelands.block.WastelandBrickslabBlock;
+import net.mcreator.falloutwastelands.block.WastelandBrickWallBlock;
 import net.mcreator.falloutwastelands.block.WastelandBrickStairsBlock;
 import net.mcreator.falloutwastelands.block.WastelandBrickBlock;
 import net.mcreator.falloutwastelands.block.WallWastelandCobblestoneBlock;
@@ -55,6 +57,8 @@ import net.mcreator.falloutwastelands.block.Molder_WoodFenceBlock;
 import net.mcreator.falloutwastelands.block.Molder_WoodButtonBlock;
 import net.mcreator.falloutwastelands.block.MolderWoodTrapdoorBlock;
 import net.mcreator.falloutwastelands.block.MolderWoodDoorBlock;
+import net.mcreator.falloutwastelands.block.LockerBlock;
+import net.mcreator.falloutwastelands.block.LandmineBlock;
 import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteWallBlock;
 import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteStairsBlock;
 import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteSlabsBlock;
@@ -108,6 +112,10 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> WASTELANDDIAMONDORE = REGISTRY.register("wastelanddiamondore", () -> new WastelanddiamondoreBlock());
 	public static final RegistryObject<Block> WASTELAND_GOLDORE = REGISTRY.register("wasteland_goldore", () -> new WastelandGoldoreBlock());
 	public static final RegistryObject<Block> WASTELANDEMERALDORE = REGISTRY.register("wastelandemeraldore", () -> new WastelandemeraldoreBlock());
+	public static final RegistryObject<Block> WASTELAND_BRICK_WALL = REGISTRY.register("wasteland_brick_wall", () -> new WastelandBrickWallBlock());
+	public static final RegistryObject<Block> WASTELAND_BROKEN_GLASS = REGISTRY.register("wasteland_broken_glass", () -> new WastelandBrokenGlassBlock());
+	public static final RegistryObject<Block> LOCKER = REGISTRY.register("locker", () -> new LockerBlock());
+	public static final RegistryObject<Block> LANDMINE = REGISTRY.register("landmine", () -> new LandmineBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

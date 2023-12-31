@@ -1458,20 +1458,6 @@
       "path": "~/Procedures"
     },
     {
-      "name": "GrassBlockTag",
-      "type": "tag",
-      "sortid": 69,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_block_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/blocks/grass_block.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
       "name": "WastelandGrassTurnToDirt",
       "type": "procedure",
       "sortid": 70,
@@ -1601,6 +1587,246 @@
         ]
       },
       "path": "~/Armors"
+    },
+    {
+      "name": "WastelandBrokenGlass",
+      "type": "block",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasteland_broken_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_broken_glass.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_broken_glass.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_broken_glass.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandBrokenGlassBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Landmine",
+      "type": "block",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "landmine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/landmine.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/landmine.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/landmine.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/LandmineBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "WastelandBrickWall",
+      "type": "block",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasteland_brick_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick_wall_inventory.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick_wall_side_tall.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick_wall.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick_wall_post.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandBrickWallBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_brick_wall.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_brick_wall.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Locker",
+      "type": "block",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locker",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/locker.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/entity/LockerBlockEntity.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/locker.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/locker.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/LockerBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LockerGUIclose",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locker_gu_iclose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/LockerGUIcloseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "WastelandBrickStairRecipe",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasteland_brick_stair_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/wasteland_brick_stair_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "WastelandBrickSlabRecipe",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasteland_brick_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/wasteland_brick_slab_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "WastelandBrickWallRecipe",
+      "type": "recipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasteland_brick_wall_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/wasteland_brick_wall_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "LockerStorage",
+      "type": "gui",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locker_storage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/client/gui/LockerStorageScreen.java",
+          "src/main/java/net/mcreator/falloutwastelands/world/inventory/LockerStorageMenu.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "LockerGUIopened",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locker_gu_iopened",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/LockerGUIopenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Tato",
+      "type": "item",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tato",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/TatoItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/tato.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "LandmineExplode",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "landmine_explode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/LandmineExplodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
@@ -1630,8 +1856,6 @@
       "item.fallout_wastelands_.raiderbasher_boots": "Raider Basher Boots",
       "block.fallout_wastelands_.wastelandcoalore": "Wasteland Coal Ore",
       "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
-      "item.fallout_wastelands_.raiderblastmaster_helmet": "Raider Blastmaster Helmet",
-      "item.fallout_wastelands_.raiderblastmaster_leggings": "Raider Blastmaster Loincloth",
       "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
       "block.fallout_wastelands_.wasteland_goldore": "Wasteland Gold Ore",
       "key.fallout_wastelands_.switch_game_mode_utility": "Switch Game Mode Utility",
@@ -1658,14 +1882,12 @@
       "biome.fallout_wastelands_.wasteland_plains": "Wasteland Plains",
       "block.fallout_wastelands_.wasteland_cobblestone": "Wasteland Cobblestone",
       "block.fallout_wastelands_.wastelanddiamondore": "Wasteland Diamond Ore",
-      "item.fallout_wastelands_.raiderblastmaster_boots": "Raider Blastmaster Sandals",
       "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
       "block.fallout_wastelands_.wastelandpebble": "Wasteland Pebbles",
       "item.fallout_wastelands_.cloth": "Cloth",
       "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone",
       "block.fallout_wastelands_.stair_wasteland_cobblestone": "Wasteland Cobblestone Stairs",
       "block.fallout_wastelands_.wastelandemeraldore": "Wasteland Emerald Ore",
-      "item.fallout_wastelands_.raiderblastmaster_chestplate": "Raider Blastmaster Chestplate",
       "block.fallout_wastelands_.wall_wasteland_cobblestone": "Wasteland Cobblestone Wall",
       "block.fallout_wastelands_.wasteland_concrete_slab": "Concrete Slab",
       "item.fallout_wastelands_.raiderduster_helmet": "Raider Duster Hood"
