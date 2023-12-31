@@ -19,14 +19,15 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.falloutwastelands.client.model.Modeldusterraiderarmor;
+import net.mcreator.falloutwastelands.client.model.Modelbasherraiderarmor2;
+import net.mcreator.falloutwastelands.client.model.Modelbasherraiderarmor;
 
 import java.util.function.Consumer;
 import java.util.Map;
 import java.util.Collections;
 
-public abstract class RaiderdusterItem extends ArmorItem {
-	public RaiderdusterItem(ArmorItem.Type type, Item.Properties properties) {
+public abstract class RaiderbasherItem extends ArmorItem {
+	public RaiderbasherItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
@@ -55,7 +56,7 @@ public abstract class RaiderdusterItem extends ArmorItem {
 
 			@Override
 			public String getName() {
-				return "raiderduster";
+				return "raiderbasher";
 			}
 
 			@Override
@@ -70,7 +71,7 @@ public abstract class RaiderdusterItem extends ArmorItem {
 		}, type, properties);
 	}
 
-	public static class Helmet extends RaiderdusterItem {
+	public static class Helmet extends RaiderbasherItem {
 		public Helmet() {
 			super(ArmorItem.Type.HELMET, new Item.Properties());
 		}
@@ -81,7 +82,7 @@ public abstract class RaiderdusterItem extends ArmorItem {
 				@Override
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("head", new Modeldusterraiderarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modeldusterraiderarmor.LAYER_LOCATION)).head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
+							Map.of("head", new Modelbasherraiderarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelbasherraiderarmor.LAYER_LOCATION)).head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
@@ -95,11 +96,11 @@ public abstract class RaiderdusterItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fallout_wastelands_:textures/models/armor/raiderdusterlo__layer_1.png";
+			return "fallout_wastelands_:textures/models/armor/raiderbasher__layer_1.png";
 		}
 	}
 
-	public static class Chestplate extends RaiderdusterItem {
+	public static class Chestplate extends RaiderbasherItem {
 		public Chestplate() {
 			super(ArmorItem.Type.CHESTPLATE, new Item.Properties());
 		}
@@ -110,9 +111,9 @@ public abstract class RaiderdusterItem extends ArmorItem {
 				@Override
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new Modeldusterraiderarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modeldusterraiderarmor.LAYER_LOCATION)).body,
-							"left_arm", new Modeldusterraiderarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modeldusterraiderarmor.LAYER_LOCATION)).leftarm, "right_arm",
-							new Modeldusterraiderarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modeldusterraiderarmor.LAYER_LOCATION)).rightarm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new Modelbasherraiderarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelbasherraiderarmor.LAYER_LOCATION)).body,
+							"left_arm", new Modelbasherraiderarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelbasherraiderarmor.LAYER_LOCATION)).leftarm, "right_arm",
+							new Modelbasherraiderarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelbasherraiderarmor.LAYER_LOCATION)).rightarm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
@@ -124,24 +125,13 @@ public abstract class RaiderdusterItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fallout_wastelands_:textures/models/armor/raiderdusterlo__layer_1.png";
+			return "fallout_wastelands_:textures/models/armor/raiderbasher__layer_1.png";
 		}
 	}
 
-	public static class Leggings extends RaiderdusterItem {
+	public static class Leggings extends RaiderbasherItem {
 		public Leggings() {
 			super(ArmorItem.Type.LEGGINGS, new Item.Properties());
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fallout_wastelands_:textures/models/armor/raiderdusterlo__layer_2.png";
-		}
-	}
-
-	public static class Boots extends RaiderdusterItem {
-		public Boots() {
-			super(ArmorItem.Type.BOOTS, new Item.Properties());
 		}
 
 		@Override
@@ -151,8 +141,8 @@ public abstract class RaiderdusterItem extends ArmorItem {
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new Modeldusterraiderarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modeldusterraiderarmor.LAYER_LOCATION)).leftleg, "right_leg",
-									new Modeldusterraiderarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modeldusterraiderarmor.LAYER_LOCATION)).rightleg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							Map.of("left_leg", new Modelbasherraiderarmor2(Minecraft.getInstance().getEntityModels().bakeLayer(Modelbasherraiderarmor2.LAYER_LOCATION)).rightleg, "right_leg",
+									new Modelbasherraiderarmor2(Minecraft.getInstance().getEntityModels().bakeLayer(Modelbasherraiderarmor2.LAYER_LOCATION)).rightleg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
 									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
@@ -165,7 +155,37 @@ public abstract class RaiderdusterItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fallout_wastelands_:textures/models/armor/raiderdusterlo__layer_1.png";
+			return "fallout_wastelands_:textures/models/armor/raiderbasher__layer_2.png";
+		}
+	}
+
+	public static class Boots extends RaiderbasherItem {
+		public Boots() {
+			super(ArmorItem.Type.BOOTS, new Item.Properties());
+		}
+
+		@Override
+		public void initializeClient(Consumer<IClientItemExtensions> consumer) {
+			consumer.accept(new IClientItemExtensions() {
+				@Override
+				@OnlyIn(Dist.CLIENT)
+				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
+							Map.of("left_leg", new Modelbasherraiderarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelbasherraiderarmor.LAYER_LOCATION)).leftleg, "right_leg",
+									new Modelbasherraiderarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelbasherraiderarmor.LAYER_LOCATION)).rightleg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+					armorModel.crouching = living.isShiftKeyDown();
+					armorModel.riding = defaultModel.riding;
+					armorModel.young = living.isBaby();
+					return armorModel;
+				}
+			});
+		}
+
+		@Override
+		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+			return "fallout_wastelands_:textures/models/armor/raiderbasher__layer_1.png";
 		}
 	}
 }

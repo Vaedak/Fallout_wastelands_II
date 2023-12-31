@@ -30,14 +30,14 @@
       "registry_name": "wasteland_stone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/world/features/ores/WastelandStoneFeature.java",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_stone.json",
-          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wasteland_stone.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_stone.json",
           "src/main/java/net/mcreator/falloutwastelands/block/WastelandStoneBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_stone.json",
+          "src/main/java/net/mcreator/falloutwastelands/world/features/ores/WastelandStoneFeature.java",
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wasteland_stone_biome_modifier.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wasteland_stone.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_stone.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_stone.json",
           "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wasteland_stone.json",
-          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wasteland_stone_biome_modifier.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_stone.json"
         ]
       },
       "path": "~/Blocks"
@@ -67,17 +67,17 @@
       "registry_name": "wastelands",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/WastelandsItem.java",
           "src/main/resources/data/fallout_wastelands_/dimension_type/wastelands.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelands_portal.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wastelands_portal_ns.json",
-          "src/main/java/net/mcreator/falloutwastelands/world/dimension/WastelandsDimension.java",
-          "src/main/java/net/mcreator/falloutwastelands/world/teleporter/WastelandsTeleporter.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelands_portal_ew.json",
           "src/main/java/net/mcreator/falloutwastelands/world/teleporter/WastelandsPortalShape.java",
           "src/main/java/net/mcreator/falloutwastelands/block/WastelandsPortalBlock.java",
-          "src/main/java/net/mcreator/falloutwastelands/item/WastelandsItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelands_portal_ns.json",
+          "src/main/java/net/mcreator/falloutwastelands/world/dimension/WastelandsDimension.java",
           "src/main/resources/data/fallout_wastelands_/dimension/wastelands.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wastelands_portal_ew.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/wastelands.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelands.json",
+          "src/main/java/net/mcreator/falloutwastelands/world/teleporter/WastelandsTeleporter.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelands_portal.json"
         ]
       },
       "path": "~/Biomes"
@@ -91,12 +91,12 @@
       "registry_name": "wasteland_plains",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/world/features/treedecorators/WastelandPlainsTrunkDecorator.java",
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wasteland_plains_tree.json",
           "src/main/resources/data/fallout_wastelands_/worldgen/biome/wasteland_plains.json",
-          "src/main/java/net/mcreator/falloutwastelands/world/features/treedecorators/WastelandPlainsLeaveDecorator.java",
           "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wasteland_plains_tree.json",
+          "src/main/java/net/mcreator/falloutwastelands/world/features/treedecorators/WastelandPlainsTrunkDecorator.java",
           "src/main/java/net/mcreator/falloutwastelands/world/features/treedecorators/WastelandPlainsFruitDecorator.java",
-          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wasteland_plains_tree.json"
+          "src/main/java/net/mcreator/falloutwastelands/world/features/treedecorators/WastelandPlainsLeaveDecorator.java"
         ]
       },
       "path": "~/Biomes"
@@ -549,14 +549,14 @@
       "registry_name": "wasteland_cobblestone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_cobblestone.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_cobblestone.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_cobblestone.json",
-          "src/main/java/net/mcreator/falloutwastelands/world/features/ores/WastelandCobblestoneFeature.java",
-          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wasteland_cobblestone_biome_modifier.json",
-          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wasteland_cobblestone.json",
           "src/main/java/net/mcreator/falloutwastelands/block/WastelandCobblestoneBlock.java",
-          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wasteland_cobblestone.json"
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_cobblestone.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_cobblestone.json",
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wasteland_cobblestone_biome_modifier.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_cobblestone.json",
+          "src/main/java/net/mcreator/falloutwastelands/world/features/ores/WastelandCobblestoneFeature.java",
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wasteland_cobblestone.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wasteland_cobblestone.json"
         ]
       },
       "path": "~/Blocks"
@@ -1126,14 +1126,14 @@
       "registry_name": "wastelandburntgrass",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/world/features/plants/WastelandburntgrassFeature.java",
           "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandburntgrass.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandburntgrass.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandburntgrassBlock.java",
-          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandburntgrass_biome_modifier.json",
+          "src/main/java/net/mcreator/falloutwastelands/world/features/plants/WastelandburntgrassFeature.java",
           "src/main/resources/assets/fallout_wastelands_/models/item/wastelandburntgrass.json",
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandburntgrass_biome_modifier.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandburntgrassBlock.java",
           "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandburntgrass.json",
-          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandburntgrass.json"
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandburntgrass.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandburntgrass.json"
         ]
       },
       "path": "~/Blocks"
@@ -1147,14 +1147,14 @@
       "registry_name": "wastelandshortburntgrass",
       "metadata": {
         "files": [
-          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandshortburntgrass.json",
-          "src/main/java/net/mcreator/falloutwastelands/world/features/plants/WastelandshortburntgrassFeature.java",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandshortburntgrassBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/block/wastelandshortburntgrass.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandshortburntgrass.json",
-          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandshortburntgrass.json",
+          "src/main/java/net/mcreator/falloutwastelands/world/features/plants/WastelandshortburntgrassFeature.java",
           "src/main/resources/assets/fallout_wastelands_/models/item/wastelandshortburntgrass.json",
-          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandshortburntgrass_biome_modifier.json"
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandshortburntgrass.json",
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandshortburntgrass_biome_modifier.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandshortburntgrass.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandshortburntgrassBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandshortburntgrass.json"
         ]
       },
       "path": "~/Blocks"
@@ -1168,12 +1168,12 @@
       "registry_name": "wasteland_brick_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_brick_stairs.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick_stairs_inner.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick_stairs_outer.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_brick_stairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick_stairs_outer.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_brick_stairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick_stairs.json",
           "src/main/java/net/mcreator/falloutwastelands/block/WastelandBrickStairsBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick_stairs.json"
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick_stairs_inner.json"
         ]
       },
       "path": "~/Blocks"
@@ -1187,11 +1187,11 @@
       "registry_name": "wasteland_brickslab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brickslab.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandBrickslabBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brickslab_top.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_brickslab.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandBrickslabBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_brickslab.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brickslab.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brickslab_full.json"
         ]
       },
@@ -1207,13 +1207,13 @@
       "metadata": {
         "files": [
           "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandpebble.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandpebble.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/wastelandpebble.json",
           "src/main/java/net/mcreator/falloutwastelands/block/WastelandpebbleBlock.java",
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandpebble.json",
           "src/main/java/net/mcreator/falloutwastelands/world/features/plants/WastelandpebbleFeature.java",
           "src/main/resources/assets/fallout_wastelands_/models/item/wastelandpebble.json",
-          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandpebble_biome_modifier.json",
-          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandpebble.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandpebble.json"
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandpebble_biome_modifier.json"
         ]
       },
       "path": "~/Blocks"
@@ -1227,11 +1227,11 @@
       "registry_name": "wastelandgravel",
       "metadata": {
         "files": [
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandgravel.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/wastelandgravel.json",
           "src/main/java/net/mcreator/falloutwastelands/block/WastelandgravelBlock.java",
-          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandgravel_biome_modifier.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/wastelandgravel.json",
-          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandgravel.json",
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandgravel_biome_modifier.json",
           "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandgravel.json",
           "src/main/java/net/mcreator/falloutwastelands/world/features/ores/WastelandgravelFeature.java",
           "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandgravel.json"
@@ -1248,10 +1248,10 @@
       "registry_name": "wastelandcoalore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandcoalore.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandcoalore.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/wastelandcoalore.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandcoaloreBlock.java"
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandcoaloreBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandcoalore.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandcoalore.json"
         ]
       },
       "path": "~/Blocks"
@@ -1265,10 +1265,10 @@
       "registry_name": "wastelandcopperore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandcopperore.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandcopperore.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/wastelandcopperore.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandcopperoreBlock.java"
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandcopperore.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandcopperoreBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandcopperore.json"
         ]
       },
       "path": "~/Blocks"
@@ -1282,10 +1282,10 @@
       "registry_name": "wasteland_goldore",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_goldore.json",
           "src/main/java/net/mcreator/falloutwastelands/block/WastelandGoldoreBlock.java",
           "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_goldore.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_goldore.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_goldore.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_goldore.json"
         ]
       },
       "path": "~/Blocks"
@@ -1327,11 +1327,11 @@
       "registry_name": "raiderduster",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/raiderduster_helmet.json",
           "src/main/java/net/mcreator/falloutwastelands/item/RaiderdusterItem.java",
           "src/main/resources/assets/fallout_wastelands_/models/item/raiderduster_chestplate.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/raiderduster_helmet.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/raiderduster_leggings.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/raiderduster_boots.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/raiderduster_boots.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/raiderduster_leggings.json"
         ]
       },
       "path": "~/Blocks"
@@ -1345,9 +1345,9 @@
       "registry_name": "wastelandironore",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandironore.json",
           "src/main/java/net/mcreator/falloutwastelands/block/WastelandironoreBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/item/wastelandironore.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandironore.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandironore.json"
         ]
       },
@@ -1362,10 +1362,10 @@
       "registry_name": "wastelanddiamondore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/item/wastelanddiamondore.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/wastelanddiamondore.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wastelanddiamondore.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelanddiamondoreBlock.java"
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelanddiamondore.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelanddiamondoreBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelanddiamondore.json"
         ]
       },
       "path": "~/Blocks"
@@ -1379,10 +1379,10 @@
       "registry_name": "wastelandemeraldore",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandemeraldore.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandemeraldore.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandemeraldoreBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/block/wastelandemeraldore.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandemeraldore.json"
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandemeraldoreBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -1396,10 +1396,10 @@
       "registry_name": "wastelandlapisore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandlapisore.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandlapisore.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandlapisore.json",
           "src/main/java/net/mcreator/falloutwastelands/block/WastelandlapisoreBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandlapisore.json"
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandlapisore.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandlapisore.json"
         ]
       },
       "path": "~/Blocks"
@@ -1413,9 +1413,9 @@
       "registry_name": "wastelandredstoneore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandredstoneore.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandredstoneore.json",
           "src/main/java/net/mcreator/falloutwastelands/block/WastelandredstoneoreBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandredstoneore.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandredstoneore.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandredstoneore.json"
         ]
       },
@@ -1560,11 +1560,29 @@
       "registry_name": "cloth",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/item/ClothItem.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/cloth.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/cloth.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/ClothItem.java"
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "Raiderbasher",
+      "type": "armor",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raiderbasher",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/raiderbasher_helmet.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/raiderbasher_chestplate.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/raiderbasher_leggings.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/raiderbasher_boots.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/RaiderbasherItem.java"
+        ]
+      },
+      "path": "~/Armors"
     }
   ],
   "variable_elements": [],
@@ -1574,6 +1592,7 @@
       "block.fallout_wastelands_.molder_wood_log": "Molder Wood Log",
       "block.fallout_wastelands_.wastelandcopperore": "Wasteland Copper Ore",
       "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",
+      "block.fallout_wastelands_.wasteland_brick_stairs": "Wasteland Brick Stairs",
       "block.fallout_wastelands_.cracked_wasteland_concrete_wall": "Cracked Concrete Slab",
       "block.fallout_wastelands_.wasteland_concrete_wall": "Concrete Wall",
       "block.fallout_wastelands_.cracked_wasteland_concrete_slabs": "Cracked Concrete Slab",
@@ -1585,9 +1604,14 @@
       "block.fallout_wastelands_.wasteland_brick": "Wasteland Stone",
       "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
       "block.fallout_wastelands_.molder_wood_trapdoor": "Molder TrapDoor",
+      "block.fallout_wastelands_.wastelandgravel": "Wasteland Gravel",
       "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
       "block.fallout_wastelands_.molder_wood_fence": "Molder Fence",
       "item.fallout_wastelands_.raiderduster_chestplate": "Raider Duster Chestpads",
+      "item.fallout_wastelands_.raiderbasher_helmet": "Raider Basher Helmet",
+      "item.fallout_wastelands_.raiderbasher_boots": "Raider Basher Boots",
+      "block.fallout_wastelands_.wastelandcoalore": "Wasteland Coal Ore",
+      "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
       "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
       "block.fallout_wastelands_.wasteland_goldore": "Wasteland Gold Ore",
       "key.fallout_wastelands_.switch_game_mode_utility": "Switch Game Mode Utility",
@@ -1605,6 +1629,8 @@
       "block.fallout_wastelands_.molder_wood_fence_gate": "Molder Fence Gate",
       "block.fallout_wastelands_.cracked_wasteland_concrete_stairs": "Cracked Concrete Stairs",
       "block.fallout_wastelands_.molder_wood_button": "Molder Button",
+      "item.fallout_wastelands_.raiderbasher_chestplate": "Raider Basher Chestplate",
+      "item.fallout_wastelands_.raiderbasher_leggings": "Raider Basher Pants",
       "block.fallout_wastelands_.molder_wood_door": "Molder Door",
       "block.fallout_wastelands_.wastelandburntgrass": "Wasteland Burnt Grass",
       "item.fallout_wastelands_.raiderduster_leggings": "Raider Duster Loincloth",
@@ -1613,6 +1639,8 @@
       "block.fallout_wastelands_.wasteland_cobblestone": "Wasteland Cobblestone",
       "block.fallout_wastelands_.wastelanddiamondore": "Wasteland Diamond Ore",
       "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
+      "block.fallout_wastelands_.wastelandpebble": "Wasteland Pebbles",
+      "item.fallout_wastelands_.cloth": "Cloth",
       "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone",
       "block.fallout_wastelands_.stair_wasteland_cobblestone": "Wasteland Cobblestone Stairs",
       "block.fallout_wastelands_.wastelandemeraldore": "Wasteland Emerald Ore",
