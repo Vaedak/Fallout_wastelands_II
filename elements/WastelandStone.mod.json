@@ -2,14 +2,14 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "wastelandstonedde",
-    "textureTop": "wastelandstonedde",
-    "textureLeft": "wastelandstonedde",
-    "textureFront": "wastelandstonedde",
-    "textureRight": "wastelandstonedde",
-    "textureBack": "wastelandstonedde",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "wastelandstone4",
+    "textureTop": "wastelandstone3",
+    "textureLeft": "wastelandstone2",
+    "textureFront": "wastelandstone2",
+    "textureRight": "wastelandstone2",
+    "textureBack": "wastelandstone2",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -117,8 +117,14 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
+    "spawnWorldTypes": [
+      "CUSTOM:Wastelands"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:WastelandPlains"
+      }
+    ],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE#0"
@@ -131,6 +137,12 @@
       },
       {
         "value": "Blocks.STONE#5"
+      },
+      {
+        "value": "CUSTOM:Wastelandgrassblock"
+      },
+      {
+        "value": "CUSTOM:WastelandDirt"
       }
     ],
     "generationShape": "UNIFORM",

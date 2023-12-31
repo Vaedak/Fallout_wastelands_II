@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fallout_wastelands_:deleted_mod_element"
+    },
+    {
+      "item": "fallout_wastelands_:deleted_mod_element"
+    },
+    {
+      "item": "fallout_wastelands_:deleted_mod_element"
+    },
+    {
+      "item": "fallout_wastelands_:deleted_mod_element"
+    }
+  ],
+  "result": {
+    "item": "fallout_wastelands_:wasteland_cobblestone",
+    "count": 1
+  }
+}

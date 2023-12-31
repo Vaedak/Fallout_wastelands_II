@@ -16,16 +16,28 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.falloutwastelands.block.WastelandshortburntgrassBlock;
 import net.mcreator.falloutwastelands.block.WastelandsPortalBlock;
+import net.mcreator.falloutwastelands.block.WastelandredstoneoreBlock;
+import net.mcreator.falloutwastelands.block.WastelandpebbleBlock;
+import net.mcreator.falloutwastelands.block.WastelandlapisoreBlock;
+import net.mcreator.falloutwastelands.block.WastelandironoreBlock;
+import net.mcreator.falloutwastelands.block.WastelandgravelBlock;
 import net.mcreator.falloutwastelands.block.WastelandgrassbushBlock;
 import net.mcreator.falloutwastelands.block.WastelandgrassblockBlock;
+import net.mcreator.falloutwastelands.block.WastelandemeraldoreBlock;
+import net.mcreator.falloutwastelands.block.WastelanddiamondoreBlock;
+import net.mcreator.falloutwastelands.block.WastelandcopperoreBlock;
+import net.mcreator.falloutwastelands.block.WastelandcoaloreBlock;
 import net.mcreator.falloutwastelands.block.WastelandburntgrassBlock;
 import net.mcreator.falloutwastelands.block.WastelandStoneBlock;
+import net.mcreator.falloutwastelands.block.WastelandGoldoreBlock;
 import net.mcreator.falloutwastelands.block.WastelandDirtBlock;
 import net.mcreator.falloutwastelands.block.WastelandConcreteWallBlock;
 import net.mcreator.falloutwastelands.block.WastelandConcreteStairsBlock;
 import net.mcreator.falloutwastelands.block.WastelandConcreteSlabBlock;
 import net.mcreator.falloutwastelands.block.WastelandConcreteBlock;
 import net.mcreator.falloutwastelands.block.WastelandCobblestoneBlock;
+import net.mcreator.falloutwastelands.block.WastelandBrickslabBlock;
+import net.mcreator.falloutwastelands.block.WastelandBrickStairsBlock;
 import net.mcreator.falloutwastelands.block.WastelandBrickBlock;
 import net.mcreator.falloutwastelands.block.WallWastelandCobblestoneBlock;
 import net.mcreator.falloutwastelands.block.UtsolBlock;
@@ -84,6 +96,18 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> WASTELANDGRASSBUSH = REGISTRY.register("wastelandgrassbush", () -> new WastelandgrassbushBlock());
 	public static final RegistryObject<Block> WASTELANDBURNTGRASS = REGISTRY.register("wastelandburntgrass", () -> new WastelandburntgrassBlock());
 	public static final RegistryObject<Block> WASTELANDSHORTBURNTGRASS = REGISTRY.register("wastelandshortburntgrass", () -> new WastelandshortburntgrassBlock());
+	public static final RegistryObject<Block> WASTELAND_BRICK_STAIRS = REGISTRY.register("wasteland_brick_stairs", () -> new WastelandBrickStairsBlock());
+	public static final RegistryObject<Block> WASTELANDGRAVEL = REGISTRY.register("wastelandgravel", () -> new WastelandgravelBlock());
+	public static final RegistryObject<Block> WASTELAND_BRICKSLAB = REGISTRY.register("wasteland_brickslab", () -> new WastelandBrickslabBlock());
+	public static final RegistryObject<Block> WASTELANDPEBBLE = REGISTRY.register("wastelandpebble", () -> new WastelandpebbleBlock());
+	public static final RegistryObject<Block> WASTELANDCOALORE = REGISTRY.register("wastelandcoalore", () -> new WastelandcoaloreBlock());
+	public static final RegistryObject<Block> WASTELANDIRONORE = REGISTRY.register("wastelandironore", () -> new WastelandironoreBlock());
+	public static final RegistryObject<Block> WASTELANDCOPPERORE = REGISTRY.register("wastelandcopperore", () -> new WastelandcopperoreBlock());
+	public static final RegistryObject<Block> WASTELANDREDSTONEORE = REGISTRY.register("wastelandredstoneore", () -> new WastelandredstoneoreBlock());
+	public static final RegistryObject<Block> WASTELANDLAPISORE = REGISTRY.register("wastelandlapisore", () -> new WastelandlapisoreBlock());
+	public static final RegistryObject<Block> WASTELANDDIAMONDORE = REGISTRY.register("wastelanddiamondore", () -> new WastelanddiamondoreBlock());
+	public static final RegistryObject<Block> WASTELAND_GOLDORE = REGISTRY.register("wasteland_goldore", () -> new WastelandGoldoreBlock());
+	public static final RegistryObject<Block> WASTELANDEMERALDORE = REGISTRY.register("wastelandemeraldore", () -> new WastelandemeraldoreBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

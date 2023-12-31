@@ -55,13 +55,32 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDGRASSBUSH.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDBURNTGRASS.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDSHORTBURNTGRASS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BRICK_STAIRS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDGRAVEL.get().asItem());
 				tabData.accept(FalloutWastelandsModItems.CLOTH.get());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BRICKSLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDPEBBLE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDCOALORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDIRONORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDCOPPERORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDREDSTONEORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDLAPISORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDDIAMONDORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_GOLDORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDEMERALDORE.get().asItem());
 			})
 
 					.build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+
+		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_HELMET.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_CHESTPLATE.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_LEGGINGS.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_BOOTS.get());
+		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(FalloutWastelandsModItems.WASTELANDS.get());
