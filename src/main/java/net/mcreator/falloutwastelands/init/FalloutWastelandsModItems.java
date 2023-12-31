@@ -16,6 +16,7 @@ import net.minecraft.world.item.BlockItem;
 import net.mcreator.falloutwastelands.item.WastelandsItem;
 import net.mcreator.falloutwastelands.item.TatoItem;
 import net.mcreator.falloutwastelands.item.RaiderdusterItem;
+import net.mcreator.falloutwastelands.item.RaiderbasherItem;
 import net.mcreator.falloutwastelands.item.ClothItem;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
@@ -72,6 +73,10 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> RAIDERDUSTER_LEGGINGS = REGISTRY.register("raiderduster_leggings", () -> new RaiderdusterItem.Leggings());
 	public static final RegistryObject<Item> RAIDERDUSTER_BOOTS = REGISTRY.register("raiderduster_boots", () -> new RaiderdusterItem.Boots());
 	public static final RegistryObject<Item> TATO = REGISTRY.register("tato", () -> new TatoItem());
+	public static final RegistryObject<Item> RAIDERBASHER_HELMET = REGISTRY.register("raiderbasher_helmet", () -> new RaiderbasherItem.Helmet());
+	public static final RegistryObject<Item> RAIDERBASHER_CHESTPLATE = REGISTRY.register("raiderbasher_chestplate", () -> new RaiderbasherItem.Chestplate());
+	public static final RegistryObject<Item> RAIDERBASHER_LEGGINGS = REGISTRY.register("raiderbasher_leggings", () -> new RaiderbasherItem.Leggings());
+	public static final RegistryObject<Item> RAIDERBASHER_BOOTS = REGISTRY.register("raiderbasher_boots", () -> new RaiderbasherItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -81,6 +81,10 @@ public class FalloutWastelandsModTabs {
 			tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_CHESTPLATE.get());
 			tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_LEGGINGS.get());
 			tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_BOOTS.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERBASHER_HELMET.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERBASHER_CHESTPLATE.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERBASHER_LEGGINGS.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERBASHER_BOOTS.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
