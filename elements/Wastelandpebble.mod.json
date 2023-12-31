@@ -76,20 +76,7 @@
     "fireSpreadSpeed": 0,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [
-      {
-        "value": "CUSTOM:WastelandDirt"
-      },
-      {
-        "value": "CUSTOM:Wastelandgrassblock"
-      },
-      {
-        "value": "CUSTOM:Wastelandgravel"
-      },
-      {
-        "value": "CUSTOM:WastelandCobblestone"
-      }
-    ],
+    "canBePlacedOn": [],
     "isBonemealable": false,
     "frequencyOnChunks": 30,
     "spawnWorldTypes": [

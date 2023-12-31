@@ -20,7 +20,7 @@
     "isItemTinted": true,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "TRANSLUCENT",
+    "transparencyType": "CUTOUT_MIPPED",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -42,9 +42,9 @@
     "creativeTab": {
       "value": "CUSTOM:Wastelandblockstab"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "shovel",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:WastelandDirt"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,

@@ -2,7 +2,7 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "landmine",
+    "texture": "landmineblock",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": true,
-    "itemTexture": "",
+    "itemTexture": "landmineitem",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,

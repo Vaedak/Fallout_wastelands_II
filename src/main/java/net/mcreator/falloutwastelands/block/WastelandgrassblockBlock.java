@@ -74,7 +74,7 @@ public class WastelandgrassblockBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
+		return Collections.singletonList(new ItemStack(FalloutWastelandsModBlocks.WASTELAND_DIRT.get()));
 	}
 
 	@Override
