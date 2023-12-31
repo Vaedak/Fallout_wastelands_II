@@ -14,6 +14,7 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.falloutwastelands.item.WastelandsItem;
+import net.mcreator.falloutwastelands.item.TatoItem;
 import net.mcreator.falloutwastelands.item.RaiderdusterItem;
 import net.mcreator.falloutwastelands.item.ClothItem;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
@@ -70,6 +71,7 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> RAIDERDUSTER_CHESTPLATE = REGISTRY.register("raiderduster_chestplate", () -> new RaiderdusterItem.Chestplate());
 	public static final RegistryObject<Item> RAIDERDUSTER_LEGGINGS = REGISTRY.register("raiderduster_leggings", () -> new RaiderdusterItem.Leggings());
 	public static final RegistryObject<Item> RAIDERDUSTER_BOOTS = REGISTRY.register("raiderduster_boots", () -> new RaiderdusterItem.Boots());
+	public static final RegistryObject<Item> TATO = REGISTRY.register("tato", () -> new TatoItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

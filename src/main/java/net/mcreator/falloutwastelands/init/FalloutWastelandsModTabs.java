@@ -68,6 +68,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDDIAMONDORE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_GOLDORE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDEMERALDORE.get().asItem());
+				tabData.accept(FalloutWastelandsModItems.TATO.get());
 			})
 
 					.build());
