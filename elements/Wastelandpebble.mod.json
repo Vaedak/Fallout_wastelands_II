@@ -28,10 +28,10 @@
         "subtract": false
       }
     ],
-    "name": "Wastelandpebble",
+    "name": "Wasteland Pebbles",
     "specialInfo": [],
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:Wastelandblockstab"
     },
     "hardness": 0.0,
     "resistance": 0.0,
@@ -40,7 +40,7 @@
     "isSolid": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "DEEPSLATE"
     },
     "breakSound": {
       "value": ""
@@ -65,12 +65,12 @@
     "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,
-    "isReplaceable": false,
+    "isReplaceable": true,
     "colorOnMap": "STONE",
     "creativePickItem": {
       "value": ""
     },
-    "offsetType": "XYZ",
+    "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,
@@ -91,7 +91,7 @@
       }
     ],
     "isBonemealable": false,
-    "frequencyOnChunks": 10,
+    "frequencyOnChunks": 30,
     "spawnWorldTypes": [
       "CUSTOM:Wastelands"
     ],
