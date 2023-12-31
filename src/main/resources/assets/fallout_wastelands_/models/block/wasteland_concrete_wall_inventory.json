@@ -1,8 +1,8 @@
 {
   "parent": "block/wall_inventory",
   "textures": {
-    "wall": "fallout_wastelands_:block/concrete",
-    "particle": "fallout_wastelands_:block/concrete"
+    "wall": "fallout_wastelands_:block/concreteblock",
+    "particle": "fallout_wastelands_:block/concreteblock"
   },
   "render_type": "solid"
 }

@@ -69,6 +69,10 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_GOLDORE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDEMERALDORE.get().asItem());
 				tabData.accept(FalloutWastelandsModItems.TATO.get());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BRICK_WALL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BROKEN_GLASS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.LOCKER.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.LANDMINE.get().asItem());
 			})
 
 					.build());
