@@ -14,8 +14,13 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.falloutwastelands.block.WastelandshortburntgrassBlock;
 import net.mcreator.falloutwastelands.block.WastelandsPortalBlock;
+import net.mcreator.falloutwastelands.block.WastelandpebbleBlock;
+import net.mcreator.falloutwastelands.block.WastelandgravelBlock;
+import net.mcreator.falloutwastelands.block.WastelandgrassbushBlock;
 import net.mcreator.falloutwastelands.block.WastelandgrassblockBlock;
+import net.mcreator.falloutwastelands.block.WastelandburntgrassBlock;
 import net.mcreator.falloutwastelands.block.WastelandStoneBlock;
 import net.mcreator.falloutwastelands.block.WastelandDirtBlock;
 import net.mcreator.falloutwastelands.block.WastelandConcreteWallBlock;
@@ -23,6 +28,8 @@ import net.mcreator.falloutwastelands.block.WastelandConcreteStairsBlock;
 import net.mcreator.falloutwastelands.block.WastelandConcreteSlabBlock;
 import net.mcreator.falloutwastelands.block.WastelandConcreteBlock;
 import net.mcreator.falloutwastelands.block.WastelandCobblestoneBlock;
+import net.mcreator.falloutwastelands.block.WastelandBrickslabBlock;
+import net.mcreator.falloutwastelands.block.WastelandBrickStairsBlock;
 import net.mcreator.falloutwastelands.block.WastelandBrickBlock;
 import net.mcreator.falloutwastelands.block.WallWastelandCobblestoneBlock;
 import net.mcreator.falloutwastelands.block.UtsolBlock;
@@ -78,20 +85,26 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> MOLDER_WOOD_BUTTON = REGISTRY.register("molder_wood_button", () -> new Molder_WoodButtonBlock());
 	public static final RegistryObject<Block> MOLDER_WOOD_DOOR = REGISTRY.register("molder_wood_door", () -> new MolderWoodDoorBlock());
 	public static final RegistryObject<Block> MOLDER_WOOD_TRAPDOOR = REGISTRY.register("molder_wood_trapdoor", () -> new MolderWoodTrapdoorBlock());
-	public static final RegistryObject<Block> WASTELANDBUSH = REGISTRY.register("wastelandbush", () -> new WastelandbushBlock());
+	public static final RegistryObject<Block> WASTELANDGRASSBUSH = REGISTRY.register("wastelandgrassbush", () -> new WastelandgrassbushBlock());
+	public static final RegistryObject<Block> WASTELANDBURNTGRASS = REGISTRY.register("wastelandburntgrass", () -> new WastelandburntgrassBlock());
+	public static final RegistryObject<Block> WASTELANDSHORTBURNTGRASS = REGISTRY.register("wastelandshortburntgrass", () -> new WastelandshortburntgrassBlock());
+	public static final RegistryObject<Block> WASTELAND_BRICK_STAIRS = REGISTRY.register("wasteland_brick_stairs", () -> new WastelandBrickStairsBlock());
+	public static final RegistryObject<Block> WASTELANDGRAVEL = REGISTRY.register("wastelandgravel", () -> new WastelandgravelBlock());
+	public static final RegistryObject<Block> WASTELAND_BRICKSLAB = REGISTRY.register("wasteland_brickslab", () -> new WastelandBrickslabBlock());
+	public static final RegistryObject<Block> WASTELANDPEBBLE = REGISTRY.register("wastelandpebble", () -> new WastelandpebbleBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
 		@SubscribeEvent
 		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
 			WastelandgrassblockBlock.blockColorLoad(event);
-			WastelandbushBlock.blockColorLoad(event);
+			WastelandgrassbushBlock.blockColorLoad(event);
 		}
 
 		@SubscribeEvent
 		public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
 			WastelandgrassblockBlock.itemColorLoad(event);
-			WastelandbushBlock.itemColorLoad(event);
+			WastelandgrassbushBlock.itemColorLoad(event);
 		}
 	}
 }
