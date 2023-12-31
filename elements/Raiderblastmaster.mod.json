@@ -11,7 +11,7 @@
     "enableBoots": true,
     "textureBoots": "raiderblastmastersandals",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Wastelandcombat"
     },
     "armorTextureFile": "raiderblastmaster_",
     "helmetName": "Raider Blastmaster Helmet",
@@ -30,9 +30,9 @@
     "armsModelPartL": "leftarm",
     "armsModelPartR": "rightarm",
     "bodyModelTexture": "From armor",
-    "leggingsModelName": "Default",
-    "leggingsModelPartL": "Leggings L",
-    "leggingsModelPartR": "Leggings R",
+    "leggingsModelName": "Modelblastmasterraiderarmor",
+    "leggingsModelPartL": "leftleg",
+    "leggingsModelPartR": "rightleg",
     "leggingsModelTexture": "From armor",
     "bootsModelName": "Modelblastmasterraiderarmor",
     "bootsModelPartL": "leftleg",

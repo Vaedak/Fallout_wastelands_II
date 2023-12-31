@@ -11,7 +11,7 @@
     "enableBoots": true,
     "textureBoots": "raiderbasherboots",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Wastelandcombat"
     },
     "armorTextureFile": "raiderbasher_",
     "helmetName": "Raider Basher Helmet",
