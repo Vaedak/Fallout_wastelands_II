@@ -14,6 +14,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.falloutwastelands.block.WornMetalBlock;
 import net.mcreator.falloutwastelands.block.WastelandshortburntgrassBlock;
 import net.mcreator.falloutwastelands.block.WastelandsPortalBlock;
 import net.mcreator.falloutwastelands.block.WastelandredstoneoreBlock;
@@ -116,6 +117,7 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> WASTELAND_BROKEN_GLASS = REGISTRY.register("wasteland_broken_glass", () -> new WastelandBrokenGlassBlock());
 	public static final RegistryObject<Block> LOCKER = REGISTRY.register("locker", () -> new LockerBlock());
 	public static final RegistryObject<Block> LANDMINE = REGISTRY.register("landmine", () -> new LandmineBlock());
+	public static final RegistryObject<Block> WORN_METAL = REGISTRY.register("worn_metal", () -> new WornMetalBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

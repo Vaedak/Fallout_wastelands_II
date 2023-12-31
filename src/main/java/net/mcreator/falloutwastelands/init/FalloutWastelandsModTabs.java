@@ -73,6 +73,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BROKEN_GLASS.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.LOCKER.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.LANDMINE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WORN_METAL.get().asItem());
 			})
 
 					.build());

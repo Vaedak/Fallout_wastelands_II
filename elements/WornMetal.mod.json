@@ -2,7 +2,7 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "wastelandbrick",
+    "texture": "oldmetalblock",
     "textureTop": "wastelandstonedde",
     "textureLeft": "wastelandstonedde",
     "textureFront": "wastelandstonedde",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Wasteland Bricks",
+    "name": "Worn Metal Block",
     "specialInfo": [],
     "hardness": 0.55,
     "resistance": 12.5,
@@ -54,7 +54,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "DEEPSLATE_BRICKS"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""

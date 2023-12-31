@@ -86,6 +86,7 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> WASTELAND_BROKEN_GLASS = block(FalloutWastelandsModBlocks.WASTELAND_BROKEN_GLASS);
 	public static final RegistryObject<Item> LOCKER = block(FalloutWastelandsModBlocks.LOCKER);
 	public static final RegistryObject<Item> LANDMINE = block(FalloutWastelandsModBlocks.LANDMINE);
+	public static final RegistryObject<Item> WORN_METAL = block(FalloutWastelandsModBlocks.WORN_METAL);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
