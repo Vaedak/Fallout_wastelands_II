@@ -61,14 +61,14 @@
     "customDrop": {
       "value": ""
     },
-    "dropAmount": 1,
+    "dropAmount": 0,
     "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": true,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": "Items.SHEARS"
+      "value": ""
     },
     "offsetType": "XZ",
     "aiPathNodeType": "DEFAULT",

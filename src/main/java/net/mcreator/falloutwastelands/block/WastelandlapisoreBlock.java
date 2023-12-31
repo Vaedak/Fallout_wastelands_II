@@ -15,8 +15,8 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class WastelandcoaloreBlock extends Block {
-	public WastelandcoaloreBlock() {
+public class WastelandlapisoreBlock extends Block {
+	public WastelandlapisoreBlock() {
 		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1f, 10f));
 	}
 
@@ -30,6 +30,6 @@ public class WastelandcoaloreBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(Items.COAL));
+		return Collections.singletonList(new ItemStack(Items.LAPIS_LAZULI, 8));
 	}
 }

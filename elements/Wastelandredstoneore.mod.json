@@ -2,7 +2,7 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "wastelandcoalore",
+    "texture": "wastelandredstoneore",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Wasteland Coal Ore",
+    "name": "Wasteland Redstone Ore",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -42,11 +42,11 @@
     "creativeTab": {
       "value": "CUSTOM:Wastelandblockstab"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
-      "value": "Items.COAL#0"
+      "value": "Items.REDSTONE"
     },
-    "dropAmount": 1,
+    "dropAmount": 8,
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
