@@ -2,7 +2,7 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "concreteblock",
+    "texture": "concrete",
     "textureTop": "wastelandstonedde",
     "textureLeft": "wastelandstonedde",
     "textureFront": "concrete",
