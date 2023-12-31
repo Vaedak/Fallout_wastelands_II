@@ -1583,6 +1583,24 @@
         ]
       },
       "path": "~/Armors"
+    },
+    {
+      "name": "Raiderblastmaster",
+      "type": "armor",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raiderblastmaster",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/RaiderblastmasterItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/raiderblastmaster_leggings.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/raiderblastmaster_boots.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/raiderblastmaster_helmet.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/raiderblastmaster_chestplate.json"
+        ]
+      },
+      "path": "~/Armors"
     }
   ],
   "variable_elements": [],
@@ -1612,6 +1630,8 @@
       "item.fallout_wastelands_.raiderbasher_boots": "Raider Basher Boots",
       "block.fallout_wastelands_.wastelandcoalore": "Wasteland Coal Ore",
       "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
+      "item.fallout_wastelands_.raiderblastmaster_helmet": "Raider Blastmaster Helmet",
+      "item.fallout_wastelands_.raiderblastmaster_leggings": "Raider Blastmaster Loincloth",
       "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
       "block.fallout_wastelands_.wasteland_goldore": "Wasteland Gold Ore",
       "key.fallout_wastelands_.switch_game_mode_utility": "Switch Game Mode Utility",
@@ -1638,12 +1658,14 @@
       "biome.fallout_wastelands_.wasteland_plains": "Wasteland Plains",
       "block.fallout_wastelands_.wasteland_cobblestone": "Wasteland Cobblestone",
       "block.fallout_wastelands_.wastelanddiamondore": "Wasteland Diamond Ore",
+      "item.fallout_wastelands_.raiderblastmaster_boots": "Raider Blastmaster Sandals",
       "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
       "block.fallout_wastelands_.wastelandpebble": "Wasteland Pebbles",
       "item.fallout_wastelands_.cloth": "Cloth",
       "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone",
       "block.fallout_wastelands_.stair_wasteland_cobblestone": "Wasteland Cobblestone Stairs",
       "block.fallout_wastelands_.wastelandemeraldore": "Wasteland Emerald Ore",
+      "item.fallout_wastelands_.raiderblastmaster_chestplate": "Raider Blastmaster Chestplate",
       "block.fallout_wastelands_.wall_wasteland_cobblestone": "Wasteland Cobblestone Wall",
       "block.fallout_wastelands_.wasteland_concrete_slab": "Concrete Slab",
       "item.fallout_wastelands_.raiderduster_helmet": "Raider Duster Hood"
