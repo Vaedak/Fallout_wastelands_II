@@ -58,6 +58,21 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BRICK_STAIRS.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDGRAVEL.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BRICKSLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDPEBBLE.get().asItem());
+				tabData.accept(FalloutWastelandsModItems.CLOTH.get());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDCOALORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDIRONORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDCOPPERORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDREDSTONEORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDLAPISORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDDIAMONDORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_GOLDORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDEMERALDORE.get().asItem());
+				tabData.accept(FalloutWastelandsModItems.TATO.get());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BRICK_WALL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BROKEN_GLASS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.LOCKER.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.LANDMINE.get().asItem());
 			})
 
 					.build());
@@ -65,12 +80,23 @@ public class FalloutWastelandsModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
-		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-			tabData.accept(FalloutWastelandsModItems.WASTELANDS.get());
+		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_HELMET.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_CHESTPLATE.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_LEGGINGS.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_BOOTS.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERBASHER_HELMET.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERBASHER_CHESTPLATE.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERBASHER_LEGGINGS.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERBASHER_BOOTS.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERBLASTMASTER_HELMET.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERBLASTMASTER_CHESTPLATE.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERBLASTMASTER_LEGGINGS.get());
+			tabData.accept(FalloutWastelandsModItems.RAIDERBLASTMASTER_BOOTS.get());
 		}
 
-		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-			tabData.accept(FalloutWastelandsModBlocks.WASTELANDPEBBLE.get().asItem());
+		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(FalloutWastelandsModItems.WASTELANDS.get());
 		}
 	}
 }
