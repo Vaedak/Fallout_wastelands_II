@@ -78,11 +78,11 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> RAIDERBASHER_CHESTPLATE = REGISTRY.register("raiderbasher_chestplate", () -> new RaiderbasherItem.Chestplate());
 	public static final RegistryObject<Item> RAIDERBASHER_LEGGINGS = REGISTRY.register("raiderbasher_leggings", () -> new RaiderbasherItem.Leggings());
 	public static final RegistryObject<Item> RAIDERBASHER_BOOTS = REGISTRY.register("raiderbasher_boots", () -> new RaiderbasherItem.Boots());
+	public static final RegistryObject<Item> WASTELAND_BRICK_WALL = block(FalloutWastelandsModBlocks.WASTELAND_BRICK_WALL);
 	public static final RegistryObject<Item> RAIDERBLASTMASTER_HELMET = REGISTRY.register("raiderblastmaster_helmet", () -> new RaiderblastmasterItem.Helmet());
 	public static final RegistryObject<Item> RAIDERBLASTMASTER_CHESTPLATE = REGISTRY.register("raiderblastmaster_chestplate", () -> new RaiderblastmasterItem.Chestplate());
 	public static final RegistryObject<Item> RAIDERBLASTMASTER_LEGGINGS = REGISTRY.register("raiderblastmaster_leggings", () -> new RaiderblastmasterItem.Leggings());
 	public static final RegistryObject<Item> RAIDERBLASTMASTER_BOOTS = REGISTRY.register("raiderblastmaster_boots", () -> new RaiderblastmasterItem.Boots());
-	public static final RegistryObject<Item> WASTELAND_BRICK_WALL = block(FalloutWastelandsModBlocks.WASTELAND_BRICK_WALL);
 	public static final RegistryObject<Item> WASTELAND_BROKEN_GLASS = block(FalloutWastelandsModBlocks.WASTELAND_BROKEN_GLASS);
 	public static final RegistryObject<Item> LOCKER = block(FalloutWastelandsModBlocks.LOCKER);
 	public static final RegistryObject<Item> LANDMINE = block(FalloutWastelandsModBlocks.LANDMINE);
