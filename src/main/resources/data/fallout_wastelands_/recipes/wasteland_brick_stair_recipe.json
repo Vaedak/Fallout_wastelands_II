@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wasteland_blocks",
+  "category": "building",
+  "pattern": [
+    "  2",
+    " 45",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "fallout_wastelands_:wasteland_brick"
+    },
+    "4": {
+      "item": "fallout_wastelands_:wasteland_brick"
+    },
+    "5": {
+      "item": "fallout_wastelands_:wasteland_brick"
+    },
+    "6": {
+      "item": "fallout_wastelands_:wasteland_brick"
+    },
+    "7": {
+      "item": "fallout_wastelands_:wasteland_brick"
+    },
+    "8": {
+      "item": "fallout_wastelands_:wasteland_brick"
+    }
+  },
+  "result": {
+    "item": "fallout_wastelands_:wasteland_brick_stairs",
+    "count": 4
+  }
+}

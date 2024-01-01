@@ -68,19 +68,35 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDDIAMONDORE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_GOLDORE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDEMERALDORE.get().asItem());
+				tabData.accept(FalloutWastelandsModItems.TATO.get());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BRICK_WALL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BROKEN_GLASS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.LOCKER.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WORN_METAL.get().asItem());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> WASTELANDCOMBAT = REGISTRY.register("wastelandcombat",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fallout_wastelands_.wastelandcombat")).icon(() -> new ItemStack(FalloutWastelandsModItems.RAIDERBLASTMASTER_HELMET.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_HELMET.get());
+				tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_CHESTPLATE.get());
+				tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_LEGGINGS.get());
+				tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_BOOTS.get());
+				tabData.accept(FalloutWastelandsModItems.RAIDERBASHER_HELMET.get());
+				tabData.accept(FalloutWastelandsModItems.RAIDERBASHER_CHESTPLATE.get());
+				tabData.accept(FalloutWastelandsModItems.RAIDERBASHER_LEGGINGS.get());
+				tabData.accept(FalloutWastelandsModItems.RAIDERBASHER_BOOTS.get());
+				tabData.accept(FalloutWastelandsModItems.RAIDERBLASTMASTER_HELMET.get());
+				tabData.accept(FalloutWastelandsModItems.RAIDERBLASTMASTER_CHESTPLATE.get());
+				tabData.accept(FalloutWastelandsModItems.RAIDERBLASTMASTER_LEGGINGS.get());
+				tabData.accept(FalloutWastelandsModItems.RAIDERBLASTMASTER_BOOTS.get());
+				tabData.accept(FalloutWastelandsModBlocks.LANDMINE.get().asItem());
 			})
 
 					.build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-
-		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-			tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_HELMET.get());
-			tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_CHESTPLATE.get());
-			tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_LEGGINGS.get());
-			tabData.accept(FalloutWastelandsModItems.RAIDERDUSTER_BOOTS.get());
-		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(FalloutWastelandsModItems.WASTELANDS.get());

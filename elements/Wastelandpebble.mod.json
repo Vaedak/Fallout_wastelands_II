@@ -7,13 +7,13 @@
     "textureBottom": "",
     "customModelName": "wastelandpebbles:default",
     "itemTexture": "pebblesitem",
-    "particleTexture": "",
+    "particleTexture": "wastelandgravel",
     "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "normal",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 100,
-    "growapableSpawnType": "Plains",
+    "growapableSpawnType": "Desert",
     "growapableMaxHeight": 3,
     "customBoundingBox": false,
     "disableOffset": false,
@@ -76,20 +76,7 @@
     "fireSpreadSpeed": 0,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [
-      {
-        "value": "CUSTOM:WastelandDirt"
-      },
-      {
-        "value": "CUSTOM:Wastelandgrassblock"
-      },
-      {
-        "value": "CUSTOM:Wastelandgravel"
-      },
-      {
-        "value": "CUSTOM:WastelandCobblestone"
-      }
-    ],
+    "canBePlacedOn": [],
     "isBonemealable": false,
     "frequencyOnChunks": 30,
     "spawnWorldTypes": [

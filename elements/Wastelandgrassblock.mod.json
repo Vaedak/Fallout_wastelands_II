@@ -20,7 +20,7 @@
     "isItemTinted": true,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "TRANSLUCENT",
+    "transparencyType": "CUTOUT_MIPPED",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -36,15 +36,15 @@
     "name": "Wasteland Grass Block",
     "specialInfo": [],
     "hardness": 1.0,
-    "resistance": 10.0,
+    "resistance": 2.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Wastelandblockstab"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "shovel",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:WastelandDirt"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
