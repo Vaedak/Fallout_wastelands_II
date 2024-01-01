@@ -15,7 +15,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": true,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "oldmetalblock",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,

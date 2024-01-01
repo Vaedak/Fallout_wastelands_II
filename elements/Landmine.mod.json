@@ -15,7 +15,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": true,
     "itemTexture": "landmineitem",
-    "particleTexture": "",
+    "particleTexture": "landmineitem",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
