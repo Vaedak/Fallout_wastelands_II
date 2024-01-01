@@ -3,9 +3,9 @@
   "textures": {
     "bottom": "fallout_wastelands_:block/d",
     "top": "fallout_wastelands_:block/wastelandgrasstopoverlay",
-    "side": "fallout_wastelands_:block/wastelandgrassside",
+    "side": "fallout_wastelands_:block/d",
     "overlay": "fallout_wastelands_:block/wastelandgrasssideoverlay",
-    "particle": "fallout_wastelands_:block/wastelandgrassside"
+    "particle": "fallout_wastelands_:block/wastelandgrasstopoverlay"
   },
   "render_type": "cutout_mipped"
 }
