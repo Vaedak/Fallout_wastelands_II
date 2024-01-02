@@ -2083,6 +2083,23 @@
         ]
       },
       "path": "~/Blocks/MolderWoodSet"
+    },
+    {
+      "name": "Wastelandbricks",
+      "type": "block",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandbricks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandbricksBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandbricks.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandbricks.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandbricks.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -2141,6 +2158,7 @@
       "item.fallout_wastelands_.caps": "Caps",
       "block.fallout_wastelands_.wasteland_concrete": "Concrete",
       "block.fallout_wastelands_.utsol": "Wasteland Utsol",
+      "block.fallout_wastelands_.wastelandbricks": "Wasteland Bricks",
       "block.fallout_wastelands_.molder_wood_slab": "Molder Wood Slab",
       "block.fallout_wastelands_.wasteland_broken_glass": "Broken Glass",
       "block.fallout_wastelands_.wasteland_dirt": "Wasteland Dirt",
