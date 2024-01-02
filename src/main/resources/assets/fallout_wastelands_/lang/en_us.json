@@ -1,4 +1,5 @@
 {
+  "item.fallout_wastelands_.asbestos": "Asbestos",
   "block.fallout_wastelands_.molder_wood_log": "Molder Wood Log",
   "block.fallout_wastelands_.wastelandcopperore": "Wasteland Copper Ore",
   "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",
@@ -7,6 +8,7 @@
   "block.fallout_wastelands_.wasteland_concrete_wall": "Concrete Wall",
   "block.fallout_wastelands_.cracked_wasteland_concrete_slabs": "Cracked Concrete Slab",
   "block.fallout_wastelands_.wasteland_concrete_stairs": "Concrete Stairs",
+  "item.fallout_wastelands_.copperwires": "Copper Wires",
   "item_group.fallout_wastelands_.wastelandcombat": "Wastelands Combat",
   "item.fallout_wastelands_.raiderduster_boots": "Raider Duster Boots",
   "block.fallout_wastelands_.molder_wood_stairs": "Molder Wood Stairs",
@@ -25,6 +27,7 @@
   "item.fallout_wastelands_.raiderduster_chestplate": "Raider Duster Chestpads",
   "item.fallout_wastelands_.raiderbasher_helmet": "Raider Basher Helmet",
   "item.fallout_wastelands_.raiderbasher_boots": "Raider Basher Boots",
+  "item_group.fallout_wastelands_.wastelanditems": "Wasteland Items",
   "block.fallout_wastelands_.wastelandcoalore": "Wasteland Coal Ore",
   "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
   "item.fallout_wastelands_.raiderblastmaster_helmet": "Raider Blastmaster Helmet",
@@ -43,6 +46,7 @@
   "block.fallout_wastelands_.wasteland_brick_wall": "Wasteland Stone",
   "block.fallout_wastelands_.wirefence": "Wire Fence",
   "item_group.fallout_wastelands_.wastelandblockstab": "Wasteland Blocks",
+  "item.fallout_wastelands_.caps": "Caps",
   "block.fallout_wastelands_.wasteland_concrete": "Concrete",
   "block.fallout_wastelands_.utsol": "Wasteland Utsol",
   "block.fallout_wastelands_.molder_wood_slab": "Molder Wood Slab",
@@ -50,6 +54,7 @@
   "block.fallout_wastelands_.wasteland_dirt": "Wasteland Dirt",
   "block.fallout_wastelands_.wastelandgrassblock": "Wasteland Grass Block",
   "block.fallout_wastelands_.molder_wood_fence_gate": "Molder Fence Gate",
+  "item.fallout_wastelands_.jerrican": "Jerrican",
   "block.fallout_wastelands_.cracked_wasteland_concrete_stairs": "Cracked Concrete Stairs",
   "block.fallout_wastelands_.molder_wood_button": "Molder Button",
   "item.fallout_wastelands_.raiderbasher_chestplate": "Raider Basher Chestplate",
@@ -74,5 +79,6 @@
   "item.fallout_wastelands_.raiderblastmaster_chestplate": "Raider Blastmaster Chestplate",
   "block.fallout_wastelands_.wall_wasteland_cobblestone": "Wasteland Cobblestone Wall",
   "block.fallout_wastelands_.wasteland_concrete_slab": "Concrete Slab",
-  "item.fallout_wastelands_.raiderduster_helmet": "Raider Duster Hood"
+  "item.fallout_wastelands_.raiderduster_helmet": "Raider Duster Hood",
+  "item.fallout_wastelands_.antiradclothing": "Anti-rad Clothing"
 }

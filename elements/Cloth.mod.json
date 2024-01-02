@@ -10,7 +10,7 @@
     "name": "Cloth",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:Wastelandblockstab"
+      "value": "CUSTOM:Wastelanditems"
     },
     "stackSize": 64,
     "enchantability": 0,

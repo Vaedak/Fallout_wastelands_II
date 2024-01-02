@@ -59,7 +59,6 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDGRAVEL.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BRICKSLAB.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDPEBBLE.get().asItem());
-				tabData.accept(FalloutWastelandsModItems.CLOTH.get());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDCOALORE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDIRONORE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDCOPPERORE.get().asItem());
@@ -68,7 +67,6 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDDIAMONDORE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_GOLDORE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDEMERALDORE.get().asItem());
-				tabData.accept(FalloutWastelandsModItems.TATO.get());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BRICK_WALL.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BROKEN_GLASS.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.LOCKER.get().asItem());
@@ -97,6 +95,18 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_CHESTPLATE.get());
 				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_LEGGINGS.get());
 				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_BOOTS.get());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> WASTELANDITEMS = REGISTRY.register("wastelanditems",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fallout_wastelands_.wastelanditems")).icon(() -> new ItemStack(FalloutWastelandsModItems.JERRICAN.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(FalloutWastelandsModItems.CLOTH.get());
+				tabData.accept(FalloutWastelandsModItems.TATO.get());
+				tabData.accept(FalloutWastelandsModItems.ASBESTOS.get());
+				tabData.accept(FalloutWastelandsModItems.ANTIRADCLOTHING.get());
+				tabData.accept(FalloutWastelandsModItems.JERRICAN.get());
+				tabData.accept(FalloutWastelandsModItems.CAPS.get());
+				tabData.accept(FalloutWastelandsModItems.COPPERWIRES.get());
 			})
 
 					.build());

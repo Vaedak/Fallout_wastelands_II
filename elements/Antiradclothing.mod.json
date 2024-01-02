@@ -3,18 +3,18 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "tato",
+    "texture": "antirad_clothing",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Tato",
+    "name": "Anti-rad Clothing",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Wastelanditems"
     },
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 32,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -31,14 +31,14 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "isFood": true,
-    "nutritionalValue": 3,
-    "saturation": 0.5,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "eat"
+    "animation": "none"
   }
 }
