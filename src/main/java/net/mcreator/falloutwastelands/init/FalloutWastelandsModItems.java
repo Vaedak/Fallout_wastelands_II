@@ -18,6 +18,7 @@ import net.mcreator.falloutwastelands.item.TatoItem;
 import net.mcreator.falloutwastelands.item.RaiderdusterItem;
 import net.mcreator.falloutwastelands.item.RaiderblastmasterItem;
 import net.mcreator.falloutwastelands.item.RaiderbasherItem;
+import net.mcreator.falloutwastelands.item.CombatarmorItem;
 import net.mcreator.falloutwastelands.item.ClothItem;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
@@ -87,6 +88,12 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> LOCKER = block(FalloutWastelandsModBlocks.LOCKER);
 	public static final RegistryObject<Item> LANDMINE = block(FalloutWastelandsModBlocks.LANDMINE);
 	public static final RegistryObject<Item> WORN_METAL = block(FalloutWastelandsModBlocks.WORN_METAL);
+	public static final RegistryObject<Item> COMBATARMOR_HELMET = REGISTRY.register("combatarmor_helmet", () -> new CombatarmorItem.Helmet());
+	public static final RegistryObject<Item> COMBATARMOR_CHESTPLATE = REGISTRY.register("combatarmor_chestplate", () -> new CombatarmorItem.Chestplate());
+	public static final RegistryObject<Item> COMBATARMOR_LEGGINGS = REGISTRY.register("combatarmor_leggings", () -> new CombatarmorItem.Leggings());
+	public static final RegistryObject<Item> COMBATARMOR_BOOTS = REGISTRY.register("combatarmor_boots", () -> new CombatarmorItem.Boots());
+	public static final RegistryObject<Item> WASTELAND_CRACKED_BRICK = block(FalloutWastelandsModBlocks.WASTELAND_CRACKED_BRICK);
+	public static final RegistryObject<Item> WIREFENCE = block(FalloutWastelandsModBlocks.WIREFENCE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

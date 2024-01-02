@@ -73,6 +73,8 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BROKEN_GLASS.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.LOCKER.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WORN_METAL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_CRACKED_BRICK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WIREFENCE.get().asItem());
 			})
 
 					.build());
@@ -91,6 +93,10 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.RAIDERBLASTMASTER_LEGGINGS.get());
 				tabData.accept(FalloutWastelandsModItems.RAIDERBLASTMASTER_BOOTS.get());
 				tabData.accept(FalloutWastelandsModBlocks.LANDMINE.get().asItem());
+				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_HELMET.get());
+				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_CHESTPLATE.get());
+				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_LEGGINGS.get());
+				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_BOOTS.get());
 			})
 
 					.build());

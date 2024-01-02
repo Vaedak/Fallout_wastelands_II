@@ -1884,6 +1884,62 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "Combatarmor",
+      "type": "armor",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combatarmor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/CombatarmorItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/combatarmor_boots.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/combatarmor_chestplate.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/combatarmor_helmet.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/combatarmor_leggings.json"
+        ]
+      },
+      "path": "~/Armors"
+    },
+    {
+      "name": "WastelandCrackedBrick",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasteland_cracked_brick",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_cracked_brick.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandCrackedBrickBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_cracked_brick.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_cracked_brick.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Wirefence",
+      "type": "block",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wirefence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/wirefence_noside.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wirefence_side.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wirefence_side_alt.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wirefence_noside_alt.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WirefenceBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wirefence_post.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wirefence.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wirefence.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -1898,13 +1954,15 @@
       "block.fallout_wastelands_.wasteland_concrete_wall": "Concrete Wall",
       "block.fallout_wastelands_.cracked_wasteland_concrete_slabs": "Cracked Concrete Slab",
       "block.fallout_wastelands_.wasteland_concrete_stairs": "Concrete Stairs",
-      "item.fallout_wastelands_.raiderduster_boots": "Raider Duster Boots",
       "item_group.fallout_wastelands_.wastelandcombat": "Wastelands Combat",
+      "item.fallout_wastelands_.raiderduster_boots": "Raider Duster Boots",
       "block.fallout_wastelands_.molder_wood_stairs": "Molder Wood Stairs",
       "item.fallout_wastelands_.tato": "Tato",
       "block.fallout_wastelands_.molder_wood_pressure_plate": "Molder Pressure Plate",
       "gui.fallout_wastelands_.locker_storage.label_locker": "Locker",
       "block.fallout_wastelands_.wastelandlapisore": "Wasteland Lapis Ore",
+      "item.fallout_wastelands_.combatarmor_helmet": "Combat Armor Helmet",
+      "item.fallout_wastelands_.combatarmor_boots": "Combat Armor Boots",
       "block.fallout_wastelands_.wasteland_brick": "Wasteland Bricks",
       "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
       "block.fallout_wastelands_.molder_wood_trapdoor": "Molder TrapDoor",
@@ -1918,9 +1976,11 @@
       "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
       "item.fallout_wastelands_.raiderblastmaster_helmet": "Raider Blastmaster Helmet",
       "item.fallout_wastelands_.raiderblastmaster_leggings": "Raider Blastmaster Loincloth",
+      "item.fallout_wastelands_.combatarmor_leggings": "Combat Armor Leggings",
       "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
       "block.fallout_wastelands_.worn_metal": "Worn Metal Block",
       "block.fallout_wastelands_.wasteland_goldore": "Wasteland Gold Ore",
+      "block.fallout_wastelands_.wasteland_cracked_brick": "Wasteland Cracked Bricks",
       "key.fallout_wastelands_.switch_game_mode_utility": "Switch Game Mode Utility",
       "block.fallout_wastelands_.wastelandironore": "Wasteland Iron Ore",
       "block.fallout_wastelands_.the_glow_dirt": "Glow Dirt",
@@ -1928,6 +1988,7 @@
       "block.fallout_wastelands_.wastelandredstoneore": "Wasteland Redstone Ore",
       "block.fallout_wastelands_.slab_wasteland_cobblestone": "Wasteland Cobblestone Slab",
       "block.fallout_wastelands_.wasteland_brick_wall": "Wasteland Stone",
+      "block.fallout_wastelands_.wirefence": "Wire Fence",
       "item_group.fallout_wastelands_.wastelandblockstab": "Wasteland Blocks",
       "block.fallout_wastelands_.wasteland_concrete": "Concrete",
       "block.fallout_wastelands_.utsol": "Wasteland Utsol",
@@ -1949,6 +2010,7 @@
       "block.fallout_wastelands_.wasteland_cobblestone": "Wasteland Cobblestone",
       "block.fallout_wastelands_.wastelanddiamondore": "Wasteland Diamond Ore",
       "item.fallout_wastelands_.raiderblastmaster_boots": "Raider Blastmaster Sandals",
+      "item.fallout_wastelands_.combatarmor_chestplate": "Combat Armor Chestplate",
       "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
       "block.fallout_wastelands_.wastelandpebble": "Wasteland Pebbles",
       "item.fallout_wastelands_.cloth": "Cloth",
