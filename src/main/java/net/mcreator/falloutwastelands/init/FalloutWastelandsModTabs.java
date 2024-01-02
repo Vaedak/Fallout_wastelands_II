@@ -75,6 +75,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_CRACKED_BRICK.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WIREFENCE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.STRIPPEDMOLDERWOODLOG.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDBRICKS.get().asItem());
 			})
 
 					.build());

@@ -2098,6 +2098,23 @@
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "Wastelandbricks",
+      "type": "block",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandbricks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandbricksBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandbricks.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandbricks.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandbricks.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -2105,7 +2122,6 @@
   "language_map": {
     "en_us": {
       "item.fallout_wastelands_.asbestos": "Asbestos",
-      "item.fallout_wastelands_.wastelandbrickitem": "Wasteland Brick",
       "block.fallout_wastelands_.molder_wood_log": "Molder Wood Log",
       "block.fallout_wastelands_.wastelandcopperore": "Wasteland Copper Ore",
       "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",
