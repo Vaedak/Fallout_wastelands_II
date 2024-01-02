@@ -110,6 +110,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.JERRICAN.get());
 				tabData.accept(FalloutWastelandsModItems.CAPS.get());
 				tabData.accept(FalloutWastelandsModItems.COPPERWIRES.get());
+				tabData.accept(FalloutWastelandsModItems.WASTELANDBRICKITEM.get());
 			})
 
 					.build());

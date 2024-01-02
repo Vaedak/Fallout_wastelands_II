@@ -2083,6 +2083,21 @@
         ]
       },
       "path": "~/Blocks/MolderWoodSet"
+    },
+    {
+      "name": "Wastelandbrickitem",
+      "type": "item",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandbrickitem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/WastelandbrickitemItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandbrickitem.json"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -2090,6 +2105,7 @@
   "language_map": {
     "en_us": {
       "item.fallout_wastelands_.asbestos": "Asbestos",
+      "item.fallout_wastelands_.wastelandbrickitem": "Wasteland Brick",
       "block.fallout_wastelands_.molder_wood_log": "Molder Wood Log",
       "block.fallout_wastelands_.wastelandcopperore": "Wasteland Copper Ore",
       "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",

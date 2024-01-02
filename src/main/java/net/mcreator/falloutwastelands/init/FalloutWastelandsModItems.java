@@ -14,6 +14,7 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.falloutwastelands.item.WastelandsItem;
+import net.mcreator.falloutwastelands.item.WastelandbrickitemItem;
 import net.mcreator.falloutwastelands.item.TatoItem;
 import net.mcreator.falloutwastelands.item.Revolver32Item;
 import net.mcreator.falloutwastelands.item.RaiderdusterItem;
@@ -108,6 +109,7 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> COPPERWIRES = REGISTRY.register("copperwires", () -> new CopperwiresItem());
 	public static final RegistryObject<Item> REVOLVER_32 = REGISTRY.register("revolver_32", () -> new Revolver32Item());
 	public static final RegistryObject<Item> STRIPPEDMOLDERWOODLOG = block(FalloutWastelandsModBlocks.STRIPPEDMOLDERWOODLOG);
+	public static final RegistryObject<Item> WASTELANDBRICKITEM = REGISTRY.register("wastelandbrickitem", () -> new WastelandbrickitemItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
