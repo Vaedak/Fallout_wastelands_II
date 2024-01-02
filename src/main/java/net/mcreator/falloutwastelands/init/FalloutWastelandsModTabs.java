@@ -107,6 +107,8 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.JERRICAN.get());
 				tabData.accept(FalloutWastelandsModItems.CAPS.get());
 				tabData.accept(FalloutWastelandsModItems.COPPERWIRES.get());
+				tabData.accept(FalloutWastelandsModItems.TEST_WEAPON.get());
+				tabData.accept(FalloutWastelandsModItems.BASE_GUN_ITEM.get());
 			})
 
 					.build());
