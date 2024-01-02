@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "fallout_wastelands_:wastelandbricks"
+    },
+    "1": {
+      "item": "fallout_wastelands_:wastelandbricks"
+    },
+    "2": {
+      "item": "fallout_wastelands_:wastelandbricks"
+    },
+    "3": {
+      "item": "fallout_wastelands_:wastelandbricks"
+    }
+  },
+  "result": {
+    "item": "fallout_wastelands_:subwaybricks",
+    "count": 4
+  }
+}

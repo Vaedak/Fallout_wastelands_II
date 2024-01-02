@@ -2,15 +2,15 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "wastelandstonebrick",
-    "textureTop": "wastelandstonebrick",
-    "textureLeft": "wastelandstonebrick",
-    "textureFront": "wastelandstonebrick",
-    "textureRight": "wastelandstonebrick",
-    "textureBack": "wastelandstonebrick",
+    "texture": "walkwaysidedown",
+    "textureTop": "walkwaytop",
+    "textureLeft": "walkwaysideone",
+    "textureFront": "walkwaysidetwo",
+    "textureRight": "walkwaysideone",
+    "textureBack": "walkwaysidetwo",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -18,9 +18,9 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "TRANSLUCENT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -33,10 +33,10 @@
         "subtract": false
       }
     ],
-    "name": "Wasteland Bricks",
+    "name": "Scaffolding Walkway Block",
     "specialInfo": [],
-    "hardness": 3.0,
-    "resistance": 6.0,
+    "hardness": 1.5,
+    "resistance": 3.5,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -52,9 +52,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 5,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -72,14 +72,14 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.6,
-    "speedFactor": 1.0,
+    "slipperiness": 0.7,
+    "speedFactor": 1.2000000000000002,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""

@@ -2,12 +2,12 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "wastelandstonebrick",
-    "textureTop": "wastelandstonebrick",
-    "textureLeft": "wastelandstonebrick",
-    "textureFront": "wastelandstonebrick",
-    "textureRight": "wastelandstonebrick",
-    "textureBack": "wastelandstonebrick",
+    "texture": "cage",
+    "textureTop": "cage",
+    "textureLeft": "cage",
+    "textureFront": "cage",
+    "textureRight": "cage",
+    "textureBack": "cage",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -18,9 +18,9 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
-    "connectedSides": false,
-    "transparencyType": "SOLID",
+    "hasTransparency": true,
+    "connectedSides": true,
+    "transparencyType": "TRANSLUCENT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -33,10 +33,10 @@
         "subtract": false
       }
     ],
-    "name": "Wasteland Bricks",
+    "name": "Cage Block",
     "specialInfo": [],
-    "hardness": 3.0,
-    "resistance": 6.0,
+    "hardness": 2.0,
+    "resistance": 8.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -54,7 +54,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""

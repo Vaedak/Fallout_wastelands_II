@@ -2,12 +2,12 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "wastelandstonebrick",
-    "textureTop": "wastelandstonebrick",
-    "textureLeft": "wastelandstonebrick",
-    "textureFront": "wastelandstonebrick",
-    "textureRight": "wastelandstonebrick",
-    "textureBack": "wastelandstonebrick",
+    "texture": "undergroundbricks",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "undergroundbricks",
+    "textureRight": "",
+    "textureBack": "",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Wasteland Bricks",
+    "name": "Subway Bricks",
     "specialInfo": [],
     "hardness": 3.0,
     "resistance": 6.0,

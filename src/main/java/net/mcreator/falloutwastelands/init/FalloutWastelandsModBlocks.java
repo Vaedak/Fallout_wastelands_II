@@ -48,9 +48,11 @@ import net.mcreator.falloutwastelands.block.WastelandBrickBlock;
 import net.mcreator.falloutwastelands.block.WallWastelandCobblestoneBlock;
 import net.mcreator.falloutwastelands.block.UtsolBlock;
 import net.mcreator.falloutwastelands.block.TheGlowDirtBlock;
+import net.mcreator.falloutwastelands.block.SubwaybricksBlock;
 import net.mcreator.falloutwastelands.block.StrippedmolderwoodlogBlock;
 import net.mcreator.falloutwastelands.block.StairWastelandCobblestoneBlock;
 import net.mcreator.falloutwastelands.block.SlabWastelandCobblestoneBlock;
+import net.mcreator.falloutwastelands.block.ScaffoldingWalkwaysBlockBlock;
 import net.mcreator.falloutwastelands.block.Molder_WoodWoodBlock;
 import net.mcreator.falloutwastelands.block.Molder_WoodStairsBlock;
 import net.mcreator.falloutwastelands.block.Molder_WoodSlabBlock;
@@ -65,10 +67,12 @@ import net.mcreator.falloutwastelands.block.MolderWoodDoorBlock;
 import net.mcreator.falloutwastelands.block.LockerBlock;
 import net.mcreator.falloutwastelands.block.LandmineBlock;
 import net.mcreator.falloutwastelands.block.HangardoorBlock;
+import net.mcreator.falloutwastelands.block.DoubleScaffoldBlockBlock;
 import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteWallBlock;
 import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteStairsBlock;
 import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteSlabsBlock;
 import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteBlock;
+import net.mcreator.falloutwastelands.block.CageBlock;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
 public class FalloutWastelandsModBlocks {
@@ -128,6 +132,10 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> WIREFENCE = REGISTRY.register("wirefence", () -> new WirefenceBlock());
 	public static final RegistryObject<Block> STRIPPEDMOLDERWOODLOG = REGISTRY.register("strippedmolderwoodlog", () -> new StrippedmolderwoodlogBlock());
 	public static final RegistryObject<Block> WASTELANDBRICKS = REGISTRY.register("wastelandbricks", () -> new WastelandbricksBlock());
+	public static final RegistryObject<Block> SUBWAYBRICKS = REGISTRY.register("subwaybricks", () -> new SubwaybricksBlock());
+	public static final RegistryObject<Block> CAGE = REGISTRY.register("cage", () -> new CageBlock());
+	public static final RegistryObject<Block> DOUBLE_SCAFFOLD_BLOCK = REGISTRY.register("double_scaffold_block", () -> new DoubleScaffoldBlockBlock());
+	public static final RegistryObject<Block> SCAFFOLDING_WALKWAYS_BLOCK = REGISTRY.register("scaffolding_walkways_block", () -> new ScaffoldingWalkwaysBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

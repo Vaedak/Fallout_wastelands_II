@@ -76,6 +76,10 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WIREFENCE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.STRIPPEDMOLDERWOODLOG.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDBRICKS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.SUBWAYBRICKS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.CAGE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.DOUBLE_SCAFFOLD_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAYS_BLOCK.get().asItem());
 			})
 
 					.build());

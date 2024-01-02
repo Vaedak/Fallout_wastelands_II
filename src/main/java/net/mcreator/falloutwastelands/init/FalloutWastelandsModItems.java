@@ -109,6 +109,10 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> REVOLVER_32 = REGISTRY.register("revolver_32", () -> new Revolver32Item());
 	public static final RegistryObject<Item> STRIPPEDMOLDERWOODLOG = block(FalloutWastelandsModBlocks.STRIPPEDMOLDERWOODLOG);
 	public static final RegistryObject<Item> WASTELANDBRICKS = block(FalloutWastelandsModBlocks.WASTELANDBRICKS);
+	public static final RegistryObject<Item> SUBWAYBRICKS = block(FalloutWastelandsModBlocks.SUBWAYBRICKS);
+	public static final RegistryObject<Item> CAGE = block(FalloutWastelandsModBlocks.CAGE);
+	public static final RegistryObject<Item> DOUBLE_SCAFFOLD_BLOCK = block(FalloutWastelandsModBlocks.DOUBLE_SCAFFOLD_BLOCK);
+	public static final RegistryObject<Item> SCAFFOLDING_WALKWAYS_BLOCK = block(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAYS_BLOCK);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
