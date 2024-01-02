@@ -62,7 +62,7 @@
       "name": "Wastelands",
       "type": "dimension",
       "sortid": 4,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "wastelands",
       "metadata": {
@@ -86,7 +86,7 @@
       "name": "WastelandPlains",
       "type": "biome",
       "sortid": 6,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "wasteland_plains",
       "metadata": {
