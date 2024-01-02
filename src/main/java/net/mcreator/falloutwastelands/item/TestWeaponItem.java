@@ -1,25 +1,13 @@
 
 package net.mcreator.falloutwastelands.item;
 
-import software.bernie.geckolib.util.GeckoLibUtil;
-import software.bernie.geckolib.core.object.PlayState;
-import software.bernie.geckolib.core.animation.RawAnimation;
-import software.bernie.geckolib.core.animation.AnimationState;
-import software.bernie.geckolib.core.animation.AnimationController;
+import net.minecraft.client.renderer.block.model.ItemTransforms;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+
+import javax.annotation.Nullable;
+
 import software.bernie.geckolib.core.animation.AnimatableManager;
-import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.animatable.GeoItem;
-
-import net.minecraftforge.client.extensions.common.IClientItemExtensions;
-
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemDisplayContext;
-import net.minecraft.world.item.Item;
-import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
-
-import net.mcreator.falloutwastelands.item.renderer.TestWeaponItemRenderer;
-
-import java.util.function.Consumer;
+import software.bernie.geckolib.core.animation.AnimationState;
 
 public class TestWeaponItem extends Item implements GeoItem {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
@@ -82,4 +70,5 @@ public class TestWeaponItem extends Item implements GeoItem {
 	public AnimatableInstanceCache getAnimatableInstanceCache() {
 		return this.cache;
 	}
+
 }

@@ -71,8 +71,11 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BROKEN_GLASS.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.LOCKER.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WORN_METAL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.HANGARDOOR.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_CRACKED_BRICK.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WIREFENCE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.STRIPPEDMOLDERWOODLOG.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDBRICKS.get().asItem());
 			})
 
 					.build());
@@ -95,6 +98,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_CHESTPLATE.get());
 				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_LEGGINGS.get());
 				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_BOOTS.get());
+				tabData.accept(FalloutWastelandsModItems.REVOLVER_32.get());
 			})
 
 					.build());
@@ -109,6 +113,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.COPPERWIRES.get());
 				tabData.accept(FalloutWastelandsModItems.TEST_WEAPON.get());
 				tabData.accept(FalloutWastelandsModItems.BASE_GUN_ITEM.get());
+				tabData.accept(FalloutWastelandsModItems.WASTELANDBRICKITEM.get());
 			})
 
 					.build());

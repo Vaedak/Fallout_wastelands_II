@@ -1,11 +1,5 @@
 package net.mcreator.falloutwastelands.item.model;
 
-import software.bernie.geckolib.model.GeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-
-import net.mcreator.falloutwastelands.item.TestWeaponItem;
-
 public class TestWeaponItemModel extends GeoModel<TestWeaponItem> {
 	@Override
 	public ResourceLocation getAnimationResource(TestWeaponItem animatable) {

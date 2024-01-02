@@ -1,30 +1,6 @@
 
 package net.mcreator.falloutwastelands.entity;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.projectile.ItemSupplier;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.util.RandomSource;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
-
-import net.mcreator.falloutwastelands.procedures.WhileProjectileFlyingTickProcedure;
-import net.mcreator.falloutwastelands.procedures.GunProjectileHitsBlockProcedure;
-import net.mcreator.falloutwastelands.init.FalloutWastelandsModEntities;
-
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class BaseGunItemEntity extends AbstractArrow implements ItemSupplier {
 	public BaseGunItemEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -68,13 +44,13 @@ public class BaseGunItemEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		GunProjectileHitsBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this);
+		GunProjectileHitsBlockProcedure.execute();
 	}
 
 	@Override
 	public void tick() {
 		super.tick();
-		WhileProjectileFlyingTickProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		WhileProjectileFlyingTickProcedure.execute();
 		if (this.inGround)
 			this.discard();
 	}
