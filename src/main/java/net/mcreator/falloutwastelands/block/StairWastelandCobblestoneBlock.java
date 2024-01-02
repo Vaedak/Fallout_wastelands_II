@@ -19,12 +19,12 @@ import java.util.Collections;
 
 public class StairWastelandCobblestoneBlock extends StairBlock {
 	public StairWastelandCobblestoneBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(0.3f, 12f).requiresCorrectToolForDrops().dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(0.3f, 7f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override
 	public float getExplosionResistance() {
-		return 12f;
+		return 7f;
 	}
 
 	@Override

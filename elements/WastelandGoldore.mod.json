@@ -35,14 +35,14 @@
     ],
     "name": "Wasteland Gold Ore",
     "specialInfo": [],
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 3.0,
+    "resistance": 7.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Wastelandblockstab"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": "Items.RAW_GOLD"
     },
@@ -98,7 +98,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 2,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -129,7 +129,7 @@
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 2,
     "frequencyOnChunk": 16,
-    "minGenerateHeight": -64,
-    "maxGenerateHeight": 32
+    "minGenerateHeight": -50,
+    "maxGenerateHeight": -17
   }
 }

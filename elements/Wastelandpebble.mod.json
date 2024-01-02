@@ -78,13 +78,13 @@
     "speedFactor": 1.0,
     "canBePlacedOn": [],
     "isBonemealable": false,
-    "frequencyOnChunks": 30,
+    "frequencyOnChunks": 15,
     "spawnWorldTypes": [
       "CUSTOM:Wastelands"
     ],
     "restrictionBiomes": [],
     "generationType": "Grass",
-    "patchSize": 90,
+    "patchSize": 83,
     "generateAtAnyHeight": true
   }
 }

@@ -19,12 +19,12 @@ import java.util.Collections;
 
 public class WastelandConcreteStairsBlock extends StairBlock {
 	public WastelandConcreteStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(0.7f, 15f).requiresCorrectToolForDrops().dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(0.7f, 5.5f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override
 	public float getExplosionResistance() {
-		return 15f;
+		return 5.5f;
 	}
 
 	@Override

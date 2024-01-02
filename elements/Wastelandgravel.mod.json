@@ -140,12 +140,18 @@
       },
       {
         "value": "CUSTOM:Wastelandgrassblock"
+      },
+      {
+        "value": "CUSTOM:WastelandStone"
+      },
+      {
+        "value": "TAG:tag/stone"
       }
     ],
     "generationShape": "TRIANGLE",
     "frequencyPerChunks": 24,
     "frequencyOnChunk": 32,
-    "minGenerateHeight": 0,
+    "minGenerateHeight": -200,
     "maxGenerateHeight": 128
   }
 }
