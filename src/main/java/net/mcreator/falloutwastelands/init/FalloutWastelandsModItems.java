@@ -14,6 +14,8 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.falloutwastelands.item.WastelandsItem;
+import net.mcreator.falloutwastelands.item.WastelandbrickitemItem;
+import net.mcreator.falloutwastelands.item.TestWeaponItem;
 import net.mcreator.falloutwastelands.item.TatoItem;
 import net.mcreator.falloutwastelands.item.Revolver32Item;
 import net.mcreator.falloutwastelands.item.RaiderdusterItem;
@@ -24,6 +26,7 @@ import net.mcreator.falloutwastelands.item.CopperwiresItem;
 import net.mcreator.falloutwastelands.item.CombatarmorItem;
 import net.mcreator.falloutwastelands.item.ClothItem;
 import net.mcreator.falloutwastelands.item.CapsItem;
+import net.mcreator.falloutwastelands.item.BaseGunItemItem;
 import net.mcreator.falloutwastelands.item.AsbestosItem;
 import net.mcreator.falloutwastelands.item.AntiradclothingItem;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
@@ -107,8 +110,11 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> CAPS = REGISTRY.register("caps", () -> new CapsItem());
 	public static final RegistryObject<Item> COPPERWIRES = REGISTRY.register("copperwires", () -> new CopperwiresItem());
 	public static final RegistryObject<Item> REVOLVER_32 = REGISTRY.register("revolver_32", () -> new Revolver32Item());
+	public static final RegistryObject<Item> TEST_WEAPON = REGISTRY.register("test_weapon", () -> new TestWeaponItem());
 	public static final RegistryObject<Item> STRIPPEDMOLDERWOODLOG = block(FalloutWastelandsModBlocks.STRIPPEDMOLDERWOODLOG);
 	public static final RegistryObject<Item> WASTELANDBRICKS = block(FalloutWastelandsModBlocks.WASTELANDBRICKS);
+	public static final RegistryObject<Item> BASE_GUN_ITEM = REGISTRY.register("base_gun_item", () -> new BaseGunItemItem());
+	public static final RegistryObject<Item> WASTELANDBRICKITEM = REGISTRY.register("wastelandbrickitem", () -> new WastelandbrickitemItem());
 	public static final RegistryObject<Item> SUBWAYBRICKS = block(FalloutWastelandsModBlocks.SUBWAYBRICKS);
 	public static final RegistryObject<Item> CAGE = block(FalloutWastelandsModBlocks.CAGE);
 	public static final RegistryObject<Item> DOUBLE_SCAFFOLD_BLOCK = block(FalloutWastelandsModBlocks.DOUBLE_SCAFFOLD_BLOCK);

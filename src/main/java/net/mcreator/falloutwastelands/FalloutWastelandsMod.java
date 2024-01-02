@@ -33,6 +33,7 @@ import net.mcreator.falloutwastelands.init.FalloutWastelandsModTabs;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModMenus;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModItems;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModFeatures;
+import net.mcreator.falloutwastelands.init.FalloutWastelandsModEntities;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModBlocks;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModBlockEntities;
 
@@ -57,6 +58,7 @@ public class FalloutWastelandsMod {
 		FalloutWastelandsModBlocks.REGISTRY.register(bus);
 		FalloutWastelandsModBlockEntities.REGISTRY.register(bus);
 		FalloutWastelandsModItems.REGISTRY.register(bus);
+		FalloutWastelandsModEntities.REGISTRY.register(bus);
 
 		FalloutWastelandsModTabs.REGISTRY.register(bus);
 		FalloutWastelandsModFeatures.REGISTRY.register(bus);

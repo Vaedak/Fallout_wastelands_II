@@ -748,10 +748,10 @@
       "registry_name": "molder_wood_planks",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodPlanksBlock.java",
           "src/main/resources/assets/fallout_wastelands_/blockstates/molder_wood_planks.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_planks.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/molder_wood_planks.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/Molder_WoodPlanksBlock.java"
+          "src/main/resources/assets/fallout_wastelands_/models/block/molder_wood_planks.json"
         ]
       },
       "path": "~/Blocks/MolderWoodSet"
@@ -765,10 +765,10 @@
       "registry_name": "wasteland_brick",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick.json",
           "src/main/java/net/mcreator/falloutwastelands/block/WastelandBrickBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_brick.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_brick.json"
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_brick.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_brick.json"
         ]
       },
       "path": "~/Blocks"
@@ -1830,8 +1830,8 @@
       "registry_name": "locker_storage",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/world/inventory/LockerStorageMenu.java",
-          "src/main/java/net/mcreator/falloutwastelands/client/gui/LockerStorageScreen.java"
+          "src/main/java/net/mcreator/falloutwastelands/client/gui/LockerStorageScreen.java",
+          "src/main/java/net/mcreator/falloutwastelands/world/inventory/LockerStorageMenu.java"
         ]
       },
       "path": "~/GUI"
@@ -1879,8 +1879,8 @@
         "files": [
           "src/main/resources/assets/fallout_wastelands_/models/item/worn_metal.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/worn_metal.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WornMetalBlock.java"
+          "src/main/java/net/mcreator/falloutwastelands/block/WornMetalBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/worn_metal.json"
         ]
       },
       "path": "~/Blocks"
@@ -2061,8 +2061,8 @@
       "registry_name": "revolver_32",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/item/Revolver32Item.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/revolver_32.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/revolver_32.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/Revolver32Item.java"
         ]
       },
       "path": "~/Weapons"
@@ -2119,6 +2119,23 @@
       "path": "~/Blocks"
     },
     {
+      "name": "DoubleScaffoldBlock",
+      "type": "block",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_scaffold_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/double_scaffold_block.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/double_scaffold_block.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/double_scaffold_block.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/DoubleScaffoldBlockBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
       "name": "WastelandStoneBrickcraft",
       "type": "recipe",
       "sortid": 111,
@@ -2128,20 +2145,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/fallout_wastelands_/recipes/wasteland_stone_brickcraft.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "Subwaystonebrickcraft",
-      "type": "recipe",
-      "sortid": 112,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "subwaystonebrickcraft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/fallout_wastelands_/recipes/subwaystonebrickcraft.json"
         ]
       },
       "path": "~/Recipes"
@@ -2164,21 +2167,18 @@
       "path": "~/Blocks"
     },
     {
-      "name": "DoubleScaffoldBlock",
-      "type": "block",
-      "sortid": 114,
+      "name": "Subwaystonebrickcraft",
+      "type": "recipe",
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "double_scaffold_block",
+      "registry_name": "subwaystonebrickcraft",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/blockstates/double_scaffold_block.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/double_scaffold_block.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/double_scaffold_block.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/DoubleScaffoldBlockBlock.java"
+          "src/main/resources/data/fallout_wastelands_/recipes/subwaystonebrickcraft.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Recipes"
     },
     {
       "name": "ScaffoldingWalkwaysBlock",
@@ -2196,6 +2196,261 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "GunReloadKeybind",
+      "type": "keybind",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gun_reload_keybind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/network/GunReloadKeybindMessage.java"
+        ]
+      },
+      "path": "~/Others"
+    },
+    {
+      "name": "BaseGunItem",
+      "type": "rangeditem",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "base_gun_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/BaseGunItemItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/base_gun_item.json",
+          "src/main/java/net/mcreator/falloutwastelands/entity/BaseGunItemEntity.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "OnRkeyPressed",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_rkey_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/OnRkeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Wastelandbrickitem",
+      "type": "item",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandbrickitem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandbrickitem.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/WastelandbrickitemItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "GunProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gun_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/GunProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "IMPORTANTReloadGunProcedure",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "important_reload_gun_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/IMPORTANTReloadGunProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "TestWeapon",
+      "type": "animateditem",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_weapon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/TestWeaponItem.java",
+          "src/main/java/net/mcreator/falloutwastelands/item/renderer/TestWeaponItemRenderer.java",
+          "src/main/java/net/mcreator/falloutwastelands/item/model/TestWeaponItemModel.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/test_weapon.json"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "WhenRangedItemIsUsed",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_ranged_item_is_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/WhenRangedItemIsUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CanUseRangedItem",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "can_use_ranged_item",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/CanUseRangedItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "WhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/WhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
@@ -2218,7 +2473,6 @@
       "item.fallout_wastelands_.tato": "Tato",
       "block.fallout_wastelands_.molder_wood_pressure_plate": "Molder Pressure Plate",
       "gui.fallout_wastelands_.locker_storage.label_locker": "Locker",
-      "block.fallout_wastelands_.double_scaffold_block": "Double Scaffold Block",
       "block.fallout_wastelands_.wastelandlapisore": "Wasteland Lapis Ore",
       "block.fallout_wastelands_.strippedmolderwoodlog": "Stripped Molder Wood Log",
       "item.fallout_wastelands_.combatarmor_helmet": "Combat Armor Helmet",
@@ -2234,7 +2488,6 @@
       "item.fallout_wastelands_.raiderbasher_boots": "Raider Basher Boots",
       "item_group.fallout_wastelands_.wastelanditems": "Wasteland Items",
       "block.fallout_wastelands_.wastelandcoalore": "Wasteland Coal Ore",
-      "block.fallout_wastelands_.subwaybricks": "Subway Bricks",
       "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
       "item.fallout_wastelands_.raiderblastmaster_helmet": "Raider Blastmaster Helmet",
       "item.fallout_wastelands_.raiderblastmaster_leggings": "Raider Blastmaster Loincloth",
@@ -2255,9 +2508,7 @@
       "item_group.fallout_wastelands_.wastelandblockstab": "Wasteland Blocks",
       "item.fallout_wastelands_.caps": "Caps",
       "block.fallout_wastelands_.wasteland_concrete": "Concrete",
-      "block.fallout_wastelands_.cage": "Cage Block",
       "block.fallout_wastelands_.utsol": "Wasteland Utsol",
-      "block.fallout_wastelands_.wastelandbricks": "Wasteland Bricks",
       "block.fallout_wastelands_.molder_wood_slab": "Molder Wood Slab",
       "block.fallout_wastelands_.wasteland_broken_glass": "Broken Glass",
       "block.fallout_wastelands_.wasteland_dirt": "Wasteland Dirt",
@@ -2273,7 +2524,6 @@
       "block.fallout_wastelands_.wastelandburntgrass": "Wasteland Burnt Grass",
       "item.fallout_wastelands_.raiderduster_leggings": "Raider Duster Loincloth",
       "block.fallout_wastelands_.cracked_wasteland_concrete": "Cracked Concrete",
-      "item.fallout_wastelands_.revolver_32": "Revolver 3 2",
       "biome.fallout_wastelands_.wasteland_plains": "Wasteland Plains",
       "block.fallout_wastelands_.wasteland_cobblestone": "Wasteland Cobblestone",
       "block.fallout_wastelands_.wastelanddiamondore": "Wasteland Diamond Ore",
@@ -2283,7 +2533,6 @@
       "block.fallout_wastelands_.wastelandpebble": "Wasteland Pebbles",
       "item.fallout_wastelands_.cloth": "Cloth",
       "block.fallout_wastelands_.landmine": "Landmine",
-      "block.fallout_wastelands_.scaffolding_walkways_block": "Scaffolding Walkway Block",
       "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone",
       "block.fallout_wastelands_.stair_wasteland_cobblestone": "Wasteland Cobblestone Stairs",
       "block.fallout_wastelands_.wastelandemeraldore": "Wasteland Emerald Ore",

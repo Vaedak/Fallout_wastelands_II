@@ -1,9 +1,8 @@
 
 package net.mcreator.falloutwastelands.item;
 
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import javax.annotation.Nullable;
 
 public class TatoItem extends Item {
 	public TatoItem() {
