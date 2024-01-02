@@ -35,8 +35,8 @@
     ],
     "name": "Wasteland Lapis Ore",
     "specialInfo": [],
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 3.0,
+    "resistance": 7.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -129,7 +129,7 @@
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 1,
     "frequencyOnChunk": 7,
-    "minGenerateHeight": -64,
-    "maxGenerateHeight": 64
+    "minGenerateHeight": -62,
+    "maxGenerateHeight": -52
   }
 }

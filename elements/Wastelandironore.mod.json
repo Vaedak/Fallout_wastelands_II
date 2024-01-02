@@ -35,8 +35,8 @@
     ],
     "name": "Wasteland Iron Ore",
     "specialInfo": [],
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 3.0,
+    "resistance": 7.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -129,7 +129,7 @@
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 20,
     "frequencyOnChunk": 16,
-    "minGenerateHeight": -32,
-    "maxGenerateHeight": 256
+    "minGenerateHeight": 5,
+    "maxGenerateHeight": 20
   }
 }

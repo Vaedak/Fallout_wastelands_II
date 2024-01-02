@@ -36,7 +36,7 @@
     "name": "Glow Dirt",
     "specialInfo": [],
     "hardness": 1.0,
-    "resistance": 0.5,
+    "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {

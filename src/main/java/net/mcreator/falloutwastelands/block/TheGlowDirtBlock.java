@@ -15,7 +15,7 @@ import java.util.Collections;
 
 public class TheGlowDirtBlock extends Block {
 	public TheGlowDirtBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 0.5f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f));
 	}
 
 	@Override

@@ -19,7 +19,7 @@ import java.util.Collections;
 
 public class SlabWastelandCobblestoneBlock extends SlabBlock {
 	public SlabWastelandCobblestoneBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(0.3f, 12f).requiresCorrectToolForDrops().dynamicShape());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(0.3f, 7f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

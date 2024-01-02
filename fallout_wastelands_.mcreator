@@ -1880,6 +1880,149 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "WastelandCrackedBrick",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasteland_cracked_brick",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_cracked_brick.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandCrackedBrickBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_cracked_brick.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_cracked_brick.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Asbestos",
+      "type": "item",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "asbestos",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/asbestos.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/AsbestosItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Antiradclothing",
+      "type": "item",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antiradclothing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/antiradclothing.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/AntiradclothingItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Wirefence",
+      "type": "block",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wirefence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/wirefence_noside_alt.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wirefence.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wirefence_noside.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wirefence_side_alt.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wirefence_side.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wirefence.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WirefenceBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wirefence_post.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Wastelanditems",
+      "type": "tab",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelanditems",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Others"
+    },
+    {
+      "name": "Copperwires",
+      "type": "item",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperwires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/CopperwiresItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/copperwires.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Jerrican",
+      "type": "item",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jerrican",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/JerricanItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/jerrican.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Caps",
+      "type": "item",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caps",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/CapsItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/caps.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Combatarmor",
+      "type": "armor",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combatarmor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/combatarmor_helmet.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/combatarmor_boots.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/combatarmor_chestplate.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/combatarmor_leggings.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/CombatarmorItem.java"
+        ]
+      },
+      "path": "~/Armors"
     }
   ],
   "variable_elements": [],
@@ -1919,7 +2062,6 @@
       "block.fallout_wastelands_.wasteland_goldore": "Wasteland Gold Ore",
       "key.fallout_wastelands_.switch_game_mode_utility": "Switch Game Mode Utility",
       "block.fallout_wastelands_.wastelandironore": "Wasteland Iron Ore",
-      "block.fallout_wastelands_.hangardoor": "Hangardoor",
       "block.fallout_wastelands_.the_glow_dirt": "Glow Dirt",
       "block.fallout_wastelands_.molder_wood_wood": "Molder Log Wood",
       "block.fallout_wastelands_.wastelandredstoneore": "Wasteland Redstone Ore",

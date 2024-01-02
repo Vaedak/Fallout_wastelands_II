@@ -37,7 +37,7 @@
     "name": "Concrete Stairs",
     "specialInfo": [],
     "hardness": 0.7,
-    "resistance": 15.0,
+    "resistance": 5.5,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
