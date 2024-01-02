@@ -74,6 +74,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.HANGARDOOR.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_CRACKED_BRICK.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WIREFENCE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.STRIPPEDMOLDERWOODLOG.get().asItem());
 			})
 
 					.build());
@@ -96,6 +97,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_CHESTPLATE.get());
 				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_LEGGINGS.get());
 				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_BOOTS.get());
+				tabData.accept(FalloutWastelandsModItems.REVOLVER_32.get());
 			})
 
 					.build());

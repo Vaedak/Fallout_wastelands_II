@@ -47,6 +47,7 @@ import net.mcreator.falloutwastelands.block.WastelandBrickBlock;
 import net.mcreator.falloutwastelands.block.WallWastelandCobblestoneBlock;
 import net.mcreator.falloutwastelands.block.UtsolBlock;
 import net.mcreator.falloutwastelands.block.TheGlowDirtBlock;
+import net.mcreator.falloutwastelands.block.StrippedmolderwoodlogBlock;
 import net.mcreator.falloutwastelands.block.StairWastelandCobblestoneBlock;
 import net.mcreator.falloutwastelands.block.SlabWastelandCobblestoneBlock;
 import net.mcreator.falloutwastelands.block.Molder_WoodWoodBlock;
@@ -124,6 +125,7 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> HANGARDOOR = REGISTRY.register("hangardoor", () -> new HangardoorBlock());
 	public static final RegistryObject<Block> WASTELAND_CRACKED_BRICK = REGISTRY.register("wasteland_cracked_brick", () -> new WastelandCrackedBrickBlock());
 	public static final RegistryObject<Block> WIREFENCE = REGISTRY.register("wirefence", () -> new WirefenceBlock());
+	public static final RegistryObject<Block> STRIPPEDMOLDERWOODLOG = REGISTRY.register("strippedmolderwoodlog", () -> new StrippedmolderwoodlogBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
