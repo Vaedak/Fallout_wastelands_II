@@ -60,6 +60,7 @@ import net.mcreator.falloutwastelands.block.MolderWoodTrapdoorBlock;
 import net.mcreator.falloutwastelands.block.MolderWoodDoorBlock;
 import net.mcreator.falloutwastelands.block.LockerBlock;
 import net.mcreator.falloutwastelands.block.LandmineBlock;
+import net.mcreator.falloutwastelands.block.HangardoorBlock;
 import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteWallBlock;
 import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteStairsBlock;
 import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteSlabsBlock;
@@ -118,6 +119,7 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> LOCKER = REGISTRY.register("locker", () -> new LockerBlock());
 	public static final RegistryObject<Block> LANDMINE = REGISTRY.register("landmine", () -> new LandmineBlock());
 	public static final RegistryObject<Block> WORN_METAL = REGISTRY.register("worn_metal", () -> new WornMetalBlock());
+	public static final RegistryObject<Block> HANGARDOOR = REGISTRY.register("hangardoor", () -> new HangardoorBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
