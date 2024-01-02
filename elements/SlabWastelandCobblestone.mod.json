@@ -37,7 +37,7 @@
     "name": "Wasteland Cobblestone Slab",
     "specialInfo": [],
     "hardness": 0.3,
-    "resistance": 12.0,
+    "resistance": 7.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {

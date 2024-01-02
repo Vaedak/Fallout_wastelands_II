@@ -15,6 +15,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.falloutwastelands.block.WornMetalBlock;
+import net.mcreator.falloutwastelands.block.WirefenceBlock;
 import net.mcreator.falloutwastelands.block.WastelandshortburntgrassBlock;
 import net.mcreator.falloutwastelands.block.WastelandsPortalBlock;
 import net.mcreator.falloutwastelands.block.WastelandredstoneoreBlock;
@@ -32,6 +33,7 @@ import net.mcreator.falloutwastelands.block.WastelandburntgrassBlock;
 import net.mcreator.falloutwastelands.block.WastelandStoneBlock;
 import net.mcreator.falloutwastelands.block.WastelandGoldoreBlock;
 import net.mcreator.falloutwastelands.block.WastelandDirtBlock;
+import net.mcreator.falloutwastelands.block.WastelandCrackedBrickBlock;
 import net.mcreator.falloutwastelands.block.WastelandConcreteWallBlock;
 import net.mcreator.falloutwastelands.block.WastelandConcreteStairsBlock;
 import net.mcreator.falloutwastelands.block.WastelandConcreteSlabBlock;
@@ -118,6 +120,8 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> LOCKER = REGISTRY.register("locker", () -> new LockerBlock());
 	public static final RegistryObject<Block> LANDMINE = REGISTRY.register("landmine", () -> new LandmineBlock());
 	public static final RegistryObject<Block> WORN_METAL = REGISTRY.register("worn_metal", () -> new WornMetalBlock());
+	public static final RegistryObject<Block> WASTELAND_CRACKED_BRICK = REGISTRY.register("wasteland_cracked_brick", () -> new WastelandCrackedBrickBlock());
+	public static final RegistryObject<Block> WIREFENCE = REGISTRY.register("wirefence", () -> new WirefenceBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

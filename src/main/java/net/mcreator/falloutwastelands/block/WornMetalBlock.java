@@ -17,7 +17,7 @@ import java.util.Collections;
 
 public class WornMetalBlock extends Block {
 	public WornMetalBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(0.55f, 12.5f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(0.55f, 8f).requiresCorrectToolForDrops());
 	}
 
 	@Override

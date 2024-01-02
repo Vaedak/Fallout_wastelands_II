@@ -61,6 +61,26 @@
         "state": {
           "Name": "fallout_wastelands_:wastelandgravel"
         }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "fallout_wastelands_:wasteland_stone"
+          }
+        },
+        "state": {
+          "Name": "fallout_wastelands_:wastelandgravel"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "tag_match",
+          "tag": "tag/stone"
+        },
+        "state": {
+          "Name": "fallout_wastelands_:wastelandgravel"
+        }
       }
     ]
   }
