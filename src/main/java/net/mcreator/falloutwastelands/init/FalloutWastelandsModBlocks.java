@@ -50,9 +50,14 @@ import net.mcreator.falloutwastelands.block.UtsolBlock;
 import net.mcreator.falloutwastelands.block.TheGlowDirtBlock;
 import net.mcreator.falloutwastelands.block.SubwaybricksBlock;
 import net.mcreator.falloutwastelands.block.StrippedmolderwoodlogBlock;
+import net.mcreator.falloutwastelands.block.SteelPoleBlock;
 import net.mcreator.falloutwastelands.block.StairWastelandCobblestoneBlock;
 import net.mcreator.falloutwastelands.block.SlabWastelandCobblestoneBlock;
+import net.mcreator.falloutwastelands.block.SheetmetalblockBlock;
 import net.mcreator.falloutwastelands.block.ScaffoldingWalkwaysBlockBlock;
+import net.mcreator.falloutwastelands.block.RustySheetmetalblockBlock;
+import net.mcreator.falloutwastelands.block.RoofMetalBlock;
+import net.mcreator.falloutwastelands.block.ReinforcedPlanksBlock;
 import net.mcreator.falloutwastelands.block.Molder_WoodWoodBlock;
 import net.mcreator.falloutwastelands.block.Molder_WoodStairsBlock;
 import net.mcreator.falloutwastelands.block.Molder_WoodSlabBlock;
@@ -73,6 +78,12 @@ import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteStairsBlock;
 import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteSlabsBlock;
 import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteBlock;
 import net.mcreator.falloutwastelands.block.CageBlock;
+import net.mcreator.falloutwastelands.block.BurnishedGlassPaneBlock;
+import net.mcreator.falloutwastelands.block.BurnishedGlassBlock;
+import net.mcreator.falloutwastelands.block.BlastedGlassPaneBlock;
+import net.mcreator.falloutwastelands.block.BlastedGlassBlock;
+import net.mcreator.falloutwastelands.block.BarricadesheetmetalblockBlock;
+import net.mcreator.falloutwastelands.block.BarricadeplanksBlock;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
 public class FalloutWastelandsModBlocks {
@@ -136,6 +147,17 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> CAGE = REGISTRY.register("cage", () -> new CageBlock());
 	public static final RegistryObject<Block> DOUBLE_SCAFFOLD_BLOCK = REGISTRY.register("double_scaffold_block", () -> new DoubleScaffoldBlockBlock());
 	public static final RegistryObject<Block> SCAFFOLDING_WALKWAYS_BLOCK = REGISTRY.register("scaffolding_walkways_block", () -> new ScaffoldingWalkwaysBlockBlock());
+	public static final RegistryObject<Block> STEEL_POLE = REGISTRY.register("steel_pole", () -> new SteelPoleBlock());
+	public static final RegistryObject<Block> ROOF_METAL = REGISTRY.register("roof_metal", () -> new RoofMetalBlock());
+	public static final RegistryObject<Block> BARRICADEPLANKS = REGISTRY.register("barricadeplanks", () -> new BarricadeplanksBlock());
+	public static final RegistryObject<Block> REINFORCED_PLANKS = REGISTRY.register("reinforced_planks", () -> new ReinforcedPlanksBlock());
+	public static final RegistryObject<Block> SHEETMETALBLOCK = REGISTRY.register("sheetmetalblock", () -> new SheetmetalblockBlock());
+	public static final RegistryObject<Block> RUSTY_SHEETMETALBLOCK = REGISTRY.register("rusty_sheetmetalblock", () -> new RustySheetmetalblockBlock());
+	public static final RegistryObject<Block> BARRICADESHEETMETALBLOCK = REGISTRY.register("barricadesheetmetalblock", () -> new BarricadesheetmetalblockBlock());
+	public static final RegistryObject<Block> BURNISHED_GLASS = REGISTRY.register("burnished_glass", () -> new BurnishedGlassBlock());
+	public static final RegistryObject<Block> BLASTED_GLASS = REGISTRY.register("blasted_glass", () -> new BlastedGlassBlock());
+	public static final RegistryObject<Block> BLASTED_GLASS_PANE = REGISTRY.register("blasted_glass_pane", () -> new BlastedGlassPaneBlock());
+	public static final RegistryObject<Block> BURNISHED_GLASS_PANE = REGISTRY.register("burnished_glass_pane", () -> new BurnishedGlassPaneBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
