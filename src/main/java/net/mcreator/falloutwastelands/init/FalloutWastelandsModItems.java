@@ -24,12 +24,16 @@ import net.mcreator.falloutwastelands.item.Revolver32Item;
 import net.mcreator.falloutwastelands.item.RaiderdusterItem;
 import net.mcreator.falloutwastelands.item.RaiderblastmasterItem;
 import net.mcreator.falloutwastelands.item.RaiderbasherItem;
+import net.mcreator.falloutwastelands.item.NukaColaQuantumItem;
+import net.mcreator.falloutwastelands.item.NukaColaItem;
 import net.mcreator.falloutwastelands.item.LeadIngotItem;
 import net.mcreator.falloutwastelands.item.JerricanItem;
+import net.mcreator.falloutwastelands.item.EmptyNukaColaBottleItem;
 import net.mcreator.falloutwastelands.item.CopperwiresItem;
 import net.mcreator.falloutwastelands.item.CombatarmorItem;
 import net.mcreator.falloutwastelands.item.ClothItem;
 import net.mcreator.falloutwastelands.item.CapsItem;
+import net.mcreator.falloutwastelands.item.BottleCapItem;
 import net.mcreator.falloutwastelands.item.BaseGunItemItem;
 import net.mcreator.falloutwastelands.item.AsbestosItem;
 import net.mcreator.falloutwastelands.item.AntiradclothingItem;
@@ -140,6 +144,10 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> STEEL_INGOT = REGISTRY.register("steel_ingot", () -> new SteelIngotItem());
 	public static final RegistryObject<Item> LEAD_INGOT = REGISTRY.register("lead_ingot", () -> new LeadIngotItem());
 	public static final RegistryObject<Item> URANIUM_INGOT = REGISTRY.register("uranium_ingot", () -> new UraniumIngotItem());
+	public static final RegistryObject<Item> NUKA_COLA = REGISTRY.register("nuka_cola", () -> new NukaColaItem());
+	public static final RegistryObject<Item> EMPTY_NUKA_COLA_BOTTLE = REGISTRY.register("empty_nuka_cola_bottle", () -> new EmptyNukaColaBottleItem());
+	public static final RegistryObject<Item> NUKA_COLA_QUANTUM = REGISTRY.register("nuka_cola_quantum", () -> new NukaColaQuantumItem());
+	public static final RegistryObject<Item> BOTTLE_CAP = REGISTRY.register("bottle_cap", () -> new BottleCapItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

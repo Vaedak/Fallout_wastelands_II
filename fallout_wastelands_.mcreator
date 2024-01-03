@@ -2784,6 +2784,66 @@
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "NukaCola",
+      "type": "item",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuka_cola",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/nuka_cola.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/NukaColaItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "EmptyNukaColaBottle",
+      "type": "item",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_nuka_cola_bottle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/empty_nuka_cola_bottle.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/EmptyNukaColaBottleItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "NukaColaQuantum",
+      "type": "item",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuka_cola_quantum",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/nuka_cola_quantum.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/NukaColaQuantumItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "BottleCap",
+      "type": "item",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottle_cap",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/bottle_cap.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/BottleCapItem.java"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -2798,11 +2858,11 @@
       "item.fallout_wastelands_.copperwires": "Copper Wires",
       "item.fallout_wastelands_.raiderduster_boots": "Raider Duster Boots",
       "block.fallout_wastelands_.rusty_sheetmetalblock": "Rusted Sheet Metal Block",
-      "block.fallout_wastelands_.double_scaffold_block": "Double Scaffold Block",
       "gui.fallout_wastelands_.locker_storage.label_locker": "Locker",
+      "block.fallout_wastelands_.double_scaffold_block": "Double Scaffold Block",
       "block.fallout_wastelands_.wastelandlapisore": "Wasteland Lapis Ore",
-      "item.fallout_wastelands_.combatarmor_helmet": "Combat Armor Helmet",
       "item.fallout_wastelands_.combatarmor_boots": "Combat Armor Boots",
+      "item.fallout_wastelands_.combatarmor_helmet": "Combat Armor Helmet",
       "block.fallout_wastelands_.wasteland_brick": "Wasteland Bricks",
       "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
       "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
@@ -2820,9 +2880,10 @@
       "item_group.fallout_wastelands_.wastelandblockstab": "Wasteland Blocks",
       "block.fallout_wastelands_.wasteland_concrete": "Concrete",
       "block.fallout_wastelands_.cage": "Cage Block",
+      "item.fallout_wastelands_.empty_nuka_cola_bottle": "Empty Nuka Cola Bottle",
       "block.fallout_wastelands_.molder_wood_slab": "Molder Wood Slab",
-      "block.fallout_wastelands_.burnished_glass_pane": "Burnished Glass Pane",
       "block.fallout_wastelands_.wasteland_dirt": "Wasteland Dirt",
+      "block.fallout_wastelands_.burnished_glass_pane": "Burnished Glass Pane",
       "item.fallout_wastelands_.jerrican": "Jerrican",
       "block.fallout_wastelands_.molder_wood_button": "Molder Button",
       "block.fallout_wastelands_.wastelandburntgrass": "Wasteland Burnt Grass",
@@ -2870,6 +2931,7 @@
       "block.fallout_wastelands_.wastelandredstoneore": "Wasteland Redstone Ore",
       "block.fallout_wastelands_.slab_wasteland_cobblestone": "Wasteland Cobblestone Slab",
       "block.fallout_wastelands_.wasteland_brick_wall": "Wasteland Stone",
+      "item.fallout_wastelands_.nuka_cola": "Nuka Cola",
       "block.fallout_wastelands_.wirefence": "Wire Fence",
       "item.fallout_wastelands_.caps": "Caps",
       "block.fallout_wastelands_.utsol": "Wasteland Utsol",
@@ -2885,6 +2947,7 @@
       "block.fallout_wastelands_.molder_wood_door": "Molder Door",
       "item.fallout_wastelands_.lead_ingot": "Lead Ingot",
       "item.fallout_wastelands_.aluminum_ingot": "Aluminium Ingot",
+      "item.fallout_wastelands_.nuka_cola_quantum": "Nuka Cola",
       "item.fallout_wastelands_.raiderblastmaster_boots": "Raider Blastmaster Sandals",
       "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
       "key.fallout_wastelands_.gun_reload_keybind": "Fallout Wastelands: Gun Reload",
@@ -2899,7 +2962,8 @@
       "item.fallout_wastelands_.raiderblastmaster_chestplate": "Raider Blastmaster Chestplate",
       "block.fallout_wastelands_.burnished_glass": "Burnished Glass Block",
       "block.fallout_wastelands_.wall_wasteland_cobblestone": "Wasteland Cobblestone Wall",
-      "item.fallout_wastelands_.raiderduster_helmet": "Raider Duster Hood"
+      "item.fallout_wastelands_.raiderduster_helmet": "Raider Duster Hood",
+      "item.fallout_wastelands_.bottle_cap": "Bottle Cap"
     }
   },
   "foldersRoot": {
