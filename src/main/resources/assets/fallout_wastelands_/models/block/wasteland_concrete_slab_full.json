@@ -1,9 +1,9 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
-    "bottom": "fallout_wastelands_:block/concreteblock",
-    "top": "fallout_wastelands_:block/concreteblock",
-    "side": "fallout_wastelands_:block/concreteblock"
+    "bottom": "fallout_wastelands_:block/vconcrete",
+    "top": "fallout_wastelands_:block/vconcrete",
+    "side": "fallout_wastelands_:block/vconcrete"
   },
   "render_type": "solid"
 }

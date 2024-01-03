@@ -26,7 +26,7 @@ public class DoubleScaffoldBlockBlock extends Block {
 	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 
 	public DoubleScaffoldBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1.5f, 3.5f).friction(0.7f).speedFactor(1.2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1.5f, 3.5f).speedFactor(1.2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
 	}
 

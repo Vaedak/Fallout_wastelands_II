@@ -80,6 +80,17 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.CAGE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.DOUBLE_SCAFFOLD_BLOCK.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAYS_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.STEEL_POLE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.ROOF_METAL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BARRICADEPLANKS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.REINFORCED_PLANKS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.SHEETMETALBLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.RUSTY_SHEETMETALBLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BARRICADESHEETMETALBLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BURNISHED_GLASS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BLASTED_GLASS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BLASTED_GLASS_PANE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BURNISHED_GLASS_PANE.get().asItem());
 			})
 
 					.build());

@@ -119,6 +119,17 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> CAGE = block(FalloutWastelandsModBlocks.CAGE);
 	public static final RegistryObject<Item> DOUBLE_SCAFFOLD_BLOCK = block(FalloutWastelandsModBlocks.DOUBLE_SCAFFOLD_BLOCK);
 	public static final RegistryObject<Item> SCAFFOLDING_WALKWAYS_BLOCK = block(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAYS_BLOCK);
+	public static final RegistryObject<Item> STEEL_POLE = block(FalloutWastelandsModBlocks.STEEL_POLE);
+	public static final RegistryObject<Item> ROOF_METAL = block(FalloutWastelandsModBlocks.ROOF_METAL);
+	public static final RegistryObject<Item> BARRICADEPLANKS = block(FalloutWastelandsModBlocks.BARRICADEPLANKS);
+	public static final RegistryObject<Item> REINFORCED_PLANKS = block(FalloutWastelandsModBlocks.REINFORCED_PLANKS);
+	public static final RegistryObject<Item> SHEETMETALBLOCK = block(FalloutWastelandsModBlocks.SHEETMETALBLOCK);
+	public static final RegistryObject<Item> RUSTY_SHEETMETALBLOCK = block(FalloutWastelandsModBlocks.RUSTY_SHEETMETALBLOCK);
+	public static final RegistryObject<Item> BARRICADESHEETMETALBLOCK = block(FalloutWastelandsModBlocks.BARRICADESHEETMETALBLOCK);
+	public static final RegistryObject<Item> BURNISHED_GLASS = block(FalloutWastelandsModBlocks.BURNISHED_GLASS);
+	public static final RegistryObject<Item> BLASTED_GLASS = block(FalloutWastelandsModBlocks.BLASTED_GLASS);
+	public static final RegistryObject<Item> BLASTED_GLASS_PANE = block(FalloutWastelandsModBlocks.BLASTED_GLASS_PANE);
+	public static final RegistryObject<Item> BURNISHED_GLASS_PANE = block(FalloutWastelandsModBlocks.BURNISHED_GLASS_PANE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

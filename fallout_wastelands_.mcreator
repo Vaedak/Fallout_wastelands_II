@@ -2511,82 +2511,239 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "Barricadeplanks",
+      "type": "block",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barricadeplanks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/barricadeplanks.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/BarricadeplanksBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/barricadeplanks.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/barricadeplanks.json"
+        ]
+      },
+      "path": "~/Blocks/MolderWoodSet"
+    },
+    {
+      "name": "BurnishedGlass",
+      "type": "block",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burnished_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/burnished_glass.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/burnished_glass.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/burnished_glass.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/BurnishedGlassBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BlastedGlass",
+      "type": "block",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blasted_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/blasted_glass.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/blasted_glass.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/BlastedGlassBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/blasted_glass.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Barricadesheetmetalblock",
+      "type": "block",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barricadesheetmetalblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/barricadesheetmetalblock.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/barricadesheetmetalblock.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/BarricadesheetmetalblockBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/barricadesheetmetalblock.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/barricadesheetmetalblock_inventory.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/barricadesheetmetalblock_post.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/barricadesheetmetalblock_side_tall.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BurnishedGlassPane",
+      "type": "block",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burnished_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/burnished_glass_pane_side.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/burnished_glass_pane_noside_alt.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/burnished_glass_pane_post.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/burnished_glass_pane.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/burnished_glass_pane.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/burnished_glass_pane_noside.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/burnished_glass_pane_side_alt.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/BurnishedGlassPaneBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BlastedGlassPane",
+      "type": "block",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blasted_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/blasted_glass_pane.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/blasted_glass_pane_post.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/blasted_glass_pane_noside.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/blasted_glass_pane_side_alt.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/blasted_glass_pane.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/BlastedGlassPaneBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/blasted_glass_pane_noside_alt.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/blasted_glass_pane_side.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ReinforcedPlanks",
+      "type": "block",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/reinforced_planks.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/reinforced_planks.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/reinforced_planks.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/ReinforcedPlanksBlock.java"
+        ]
+      },
+      "path": "~/Blocks/MolderWoodSet"
+    },
+    {
+      "name": "Sheetmetalblock",
+      "type": "block",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheetmetalblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/sheetmetalblock.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/SheetmetalblockBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/sheetmetalblock.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/sheetmetalblock.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "RustySheetmetalblock",
+      "type": "block",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rusty_sheetmetalblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/rusty_sheetmetalblock.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/rusty_sheetmetalblock.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/rusty_sheetmetalblock.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/RustySheetmetalblockBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SteelPole",
+      "type": "block",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_pole",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/steel_pole.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/steel_pole.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/steel_pole.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/SteelPoleBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "RoofMetal",
+      "type": "block",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roof_metal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/roof_metal.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/roof_metal.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/RoofMetalBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/roof_metal.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.fallout_wastelands_.asbestos": "Asbestos",
-      "item.fallout_wastelands_.wastelandbrickitem": "Wasteland Brick",
-      "block.fallout_wastelands_.molder_wood_log": "Molder Wood Log",
-      "block.fallout_wastelands_.wastelandcopperore": "Wasteland Copper Ore",
-      "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",
-      "block.fallout_wastelands_.wasteland_brick_stairs": "Wasteland Brick Stairs",
       "block.fallout_wastelands_.cracked_wasteland_concrete_wall": "Cracked Concrete Slab",
       "block.fallout_wastelands_.wasteland_concrete_wall": "Concrete Wall",
       "block.fallout_wastelands_.cracked_wasteland_concrete_slabs": "Cracked Concrete Slab",
       "block.fallout_wastelands_.wasteland_concrete_stairs": "Concrete Stairs",
       "item.fallout_wastelands_.copperwires": "Copper Wires",
       "item.fallout_wastelands_.raiderduster_boots": "Raider Duster Boots",
-      "item_group.fallout_wastelands_.wastelandcombat": "Wastelands Combat",
-      "block.fallout_wastelands_.molder_wood_stairs": "Molder Wood Stairs",
-      "item.fallout_wastelands_.tato": "Tato",
-      "block.fallout_wastelands_.molder_wood_pressure_plate": "Molder Pressure Plate",
       "gui.fallout_wastelands_.locker_storage.label_locker": "Locker",
       "block.fallout_wastelands_.double_scaffold_block": "Double Scaffold Block",
       "block.fallout_wastelands_.wastelandlapisore": "Wasteland Lapis Ore",
-      "block.fallout_wastelands_.strippedmolderwoodlog": "Stripped Molder Wood Log",
       "item.fallout_wastelands_.combatarmor_helmet": "Combat Armor Helmet",
       "item.fallout_wastelands_.combatarmor_boots": "Combat Armor Boots",
       "block.fallout_wastelands_.wasteland_brick": "Wasteland Bricks",
       "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
-      "block.fallout_wastelands_.molder_wood_trapdoor": "Molder TrapDoor",
-      "block.fallout_wastelands_.wastelandgravel": "Wasteland Gravel",
       "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
-      "block.fallout_wastelands_.molder_wood_fence": "Molder Fence",
-      "item.fallout_wastelands_.raiderduster_chestplate": "Raider Duster Chestpads",
-      "item.fallout_wastelands_.raiderbasher_helmet": "Raider Basher Helmet",
-      "item.fallout_wastelands_.raiderbasher_boots": "Raider Basher Boots",
-      "item_group.fallout_wastelands_.wastelanditems": "Wasteland Items",
-      "block.fallout_wastelands_.wastelandcoalore": "Wasteland Coal Ore",
-      "block.fallout_wastelands_.subwaybricks": "Subway Bricks",
       "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
-      "item.fallout_wastelands_.test_weapon": "Test Weapon",
-      "item.fallout_wastelands_.raiderblastmaster_helmet": "Raider Blastmaster Helmet",
-      "item.fallout_wastelands_.raiderblastmaster_leggings": "Raider Blastmaster Loincloth",
-      "item.fallout_wastelands_.combatarmor_leggings": "Combat Armor Leggings",
       "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
       "block.fallout_wastelands_.worn_metal": "Worn Metal Block",
       "block.fallout_wastelands_.wasteland_goldore": "Wasteland Gold Ore",
       "block.fallout_wastelands_.wasteland_cracked_brick": "Wasteland Cracked Bricks",
       "key.fallout_wastelands_.switch_game_mode_utility": "Switch Game Mode Utility",
       "block.fallout_wastelands_.wastelandironore": "Wasteland Iron Ore",
-      "block.fallout_wastelands_.hangardoor": "Hangardoor",
       "block.fallout_wastelands_.the_glow_dirt": "Glow Dirt",
-      "block.fallout_wastelands_.molder_wood_wood": "Molder Log Wood",
-      "block.fallout_wastelands_.wastelandredstoneore": "Wasteland Redstone Ore",
-      "block.fallout_wastelands_.slab_wasteland_cobblestone": "Wasteland Cobblestone Slab",
-      "block.fallout_wastelands_.wasteland_brick_wall": "Wasteland Stone",
-      "block.fallout_wastelands_.wirefence": "Wire Fence",
       "item_group.fallout_wastelands_.wastelandblockstab": "Wasteland Blocks",
-      "item.fallout_wastelands_.caps": "Caps",
       "block.fallout_wastelands_.wasteland_concrete": "Concrete",
       "block.fallout_wastelands_.cage": "Cage Block",
-      "block.fallout_wastelands_.utsol": "Wasteland Utsol",
-      "block.fallout_wastelands_.wastelandbricks": "Wasteland Bricks",
       "block.fallout_wastelands_.molder_wood_slab": "Molder Wood Slab",
-      "block.fallout_wastelands_.wasteland_broken_glass": "Broken Glass",
       "block.fallout_wastelands_.wasteland_dirt": "Wasteland Dirt",
-      "block.fallout_wastelands_.wastelandgrassblock": "Wasteland Grass Block",
-      "block.fallout_wastelands_.molder_wood_fence_gate": "Molder Fence Gate",
       "item.fallout_wastelands_.jerrican": "Jerrican",
-      "block.fallout_wastelands_.cracked_wasteland_concrete_stairs": "Cracked Concrete Stairs",
       "block.fallout_wastelands_.molder_wood_button": "Molder Button",
-      "item.fallout_wastelands_.raiderbasher_chestplate": "Raider Basher Chestplate",
-      "item.fallout_wastelands_.raiderbasher_leggings": "Raider Basher Pants",
-      "block.fallout_wastelands_.locker": "Locker",
-      "block.fallout_wastelands_.molder_wood_door": "Molder Door",
       "block.fallout_wastelands_.wastelandburntgrass": "Wasteland Burnt Grass",
       "item.fallout_wastelands_.raiderduster_leggings": "Raider Duster Loincloth",
       "block.fallout_wastelands_.cracked_wasteland_concrete": "Cracked Concrete",
@@ -2594,23 +2751,64 @@
       "biome.fallout_wastelands_.wasteland_plains": "Wasteland Plains",
       "block.fallout_wastelands_.wasteland_cobblestone": "Wasteland Cobblestone",
       "block.fallout_wastelands_.wastelanddiamondore": "Wasteland Diamond Ore",
-      "item.fallout_wastelands_.raiderblastmaster_boots": "Raider Blastmaster Sandals",
       "item.fallout_wastelands_.combatarmor_chestplate": "Combat Armor Chestplate",
-      "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
+      "block.fallout_wastelands_.stair_wasteland_cobblestone": "Wasteland Cobblestone Stairs",
+      "block.fallout_wastelands_.wasteland_concrete_slab": "Concrete Slab",
+      "item.fallout_wastelands_.antiradclothing": "Anti-rad Clothing",
+      "item.fallout_wastelands_.asbestos": "Asbestos",
+      "item.fallout_wastelands_.wastelandbrickitem": "Wasteland Brick",
+      "block.fallout_wastelands_.molder_wood_log": "Molder Wood Log",
+      "block.fallout_wastelands_.wastelandcopperore": "Wasteland Copper Ore",
+      "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",
+      "block.fallout_wastelands_.wasteland_brick_stairs": "Wasteland Brick Stairs",
+      "item_group.fallout_wastelands_.wastelandcombat": "Wastelands Combat",
+      "block.fallout_wastelands_.molder_wood_stairs": "Molder Wood Stairs",
+      "item.fallout_wastelands_.tato": "Tato",
+      "block.fallout_wastelands_.molder_wood_pressure_plate": "Molder Pressure Plate",
+      "block.fallout_wastelands_.strippedmolderwoodlog": "Stripped Molder Wood Log",
+      "block.fallout_wastelands_.molder_wood_trapdoor": "Molder TrapDoor",
+      "block.fallout_wastelands_.wastelandgravel": "Wasteland Gravel",
+      "block.fallout_wastelands_.molder_wood_fence": "Molder Fence",
+      "item.fallout_wastelands_.raiderduster_chestplate": "Raider Duster Chestpads",
+      "item.fallout_wastelands_.raiderbasher_helmet": "Raider Basher Helmet",
+      "item.fallout_wastelands_.raiderbasher_boots": "Raider Basher Boots",
+      "item_group.fallout_wastelands_.wastelanditems": "Wasteland Items",
+      "block.fallout_wastelands_.wastelandcoalore": "Wasteland Coal Ore",
+      "block.fallout_wastelands_.subwaybricks": "Subway Bricks",
+      "item.fallout_wastelands_.test_weapon": "Test Weapon",
+      "item.fallout_wastelands_.raiderblastmaster_helmet": "Raider Blastmaster Helmet",
+      "item.fallout_wastelands_.raiderblastmaster_leggings": "Raider Blastmaster Loincloth",
+      "item.fallout_wastelands_.combatarmor_leggings": "Combat Armor Leggings",
+      "block.fallout_wastelands_.hangardoor": "Hangardoor",
+      "block.fallout_wastelands_.molder_wood_wood": "Molder Log Wood",
+      "block.fallout_wastelands_.wastelandredstoneore": "Wasteland Redstone Ore",
+      "block.fallout_wastelands_.slab_wasteland_cobblestone": "Wasteland Cobblestone Slab",
+      "block.fallout_wastelands_.wasteland_brick_wall": "Wasteland Stone",
+      "block.fallout_wastelands_.wirefence": "Wire Fence",
+      "item.fallout_wastelands_.caps": "Caps",
+      "block.fallout_wastelands_.utsol": "Wasteland Utsol",
+      "block.fallout_wastelands_.wastelandbricks": "Wasteland Bricks",
+      "block.fallout_wastelands_.wasteland_broken_glass": "Broken Glass",
+      "block.fallout_wastelands_.molder_wood_fence_gate": "Molder Fence Gate",
+      "block.fallout_wastelands_.wastelandgrassblock": "Wasteland Grass Block",
+      "block.fallout_wastelands_.cracked_wasteland_concrete_stairs": "Cracked Concrete Stairs",
+      "item.fallout_wastelands_.raiderbasher_chestplate": "Raider Basher Chestplate",
+      "item.fallout_wastelands_.raiderbasher_leggings": "Raider Basher Pants",
+      "block.fallout_wastelands_.locker": "Locker",
+      "block.fallout_wastelands_.molder_wood_door": "Molder Door",
+      "item.fallout_wastelands_.raiderblastmaster_boots": "Raider Blastmaster Sandals",
       "key.fallout_wastelands_.gun_reload_keybind": "Fallout Wastelands: Gun Reload",
+      "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
       "block.fallout_wastelands_.wastelandpebble": "Wasteland Pebbles",
       "item.fallout_wastelands_.cloth": "Cloth",
       "block.fallout_wastelands_.landmine": "Landmine",
       "block.fallout_wastelands_.scaffolding_walkways_block": "Scaffolding Walkway Block",
       "item.fallout_wastelands_.base_gun_item": "Base Gun Item",
       "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone",
-      "block.fallout_wastelands_.stair_wasteland_cobblestone": "Wasteland Cobblestone Stairs",
       "block.fallout_wastelands_.wastelandemeraldore": "Wasteland Emerald Ore",
       "item.fallout_wastelands_.raiderblastmaster_chestplate": "Raider Blastmaster Chestplate",
       "block.fallout_wastelands_.wall_wasteland_cobblestone": "Wasteland Cobblestone Wall",
-      "block.fallout_wastelands_.wasteland_concrete_slab": "Concrete Slab",
-      "item.fallout_wastelands_.raiderduster_helmet": "Raider Duster Hood",
-      "item.fallout_wastelands_.antiradclothing": "Anti-rad Clothing"
+      "item.fallout_wastelands_.raiderduster_helmet": "Raider Duster Hood"
     }
   },
   "foldersRoot": {

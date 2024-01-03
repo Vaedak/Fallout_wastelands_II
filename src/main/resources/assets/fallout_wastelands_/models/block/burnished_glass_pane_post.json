@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_glass_pane_post",
+  "textures": {
+    "edge": "fallout_wastelands_:block/wastelandglass1",
+    "pane": "fallout_wastelands_:block/wastelandglass1"
+  },
+  "render_type": "translucent"
+}

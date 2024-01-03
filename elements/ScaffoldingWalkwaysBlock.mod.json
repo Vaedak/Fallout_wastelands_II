@@ -72,7 +72,7 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.7,
+    "slipperiness": 0.6,
     "speedFactor": 1.2000000000000002,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
