@@ -2,15 +2,15 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "scaffoldtop",
-    "textureTop": "scaffoldtop",
-    "textureLeft": "scaffoldside2",
-    "textureFront": "scaffoldside2",
-    "textureRight": "scaffoldside2",
-    "textureBack": "scaffoldside2",
+    "texture": "wastelandglass1",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 5,
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -19,8 +19,8 @@
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
-    "connectedSides": false,
-    "transparencyType": "CUTOUT",
+    "connectedSides": true,
+    "transparencyType": "TRANSLUCENT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -33,10 +33,10 @@
         "subtract": false
       }
     ],
-    "name": "Double Scaffold Block",
+    "name": "Burnished Glass Block",
     "specialInfo": [],
-    "hardness": 1.5,
-    "resistance": 3.5,
+    "hardness": 1.0,
+    "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -46,15 +46,15 @@
     "customDrop": {
       "value": ""
     },
-    "dropAmount": 1,
+    "dropAmount": 0,
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 5,
+    "lightOpacity": 1,
     "material": {
-      "value": "IRON"
+      "value": "GLASS"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -73,13 +73,13 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
-    "speedFactor": 1.2000000000000002,
+    "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "GLASS"
     },
     "breakSound": {
       "value": ""
