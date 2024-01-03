@@ -10,7 +10,7 @@
       "REMEMBER: Edit the \"IMPORTANTRELOADGUNPROCEDURE\" to make different weapons have reloads"
     ],
     "creativeTab": {
-      "value": "CUSTOM:Wastelanditems"
+      "value": "CUSTOM:Wastelandcombat"
     },
     "stackSize": 1,
     "ammoItem": {
