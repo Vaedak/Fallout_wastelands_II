@@ -1,13 +1,8 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "fallout_wastelands_:block/rottenwoodplate",
-    "up": "fallout_wastelands_:block/rottenwoodplate",
-    "north": "fallout_wastelands_:block/spacedplanks",
-    "east": "fallout_wastelands_:block/spacedplanks",
-    "south": "fallout_wastelands_:block/spacedplanks",
-    "west": "fallout_wastelands_:block/spacedplanks",
-    "particle": "fallout_wastelands_:block/rottenwoodplate"
+    "all": "fallout_wastelands_:block/spacedplanks",
+    "particle": "fallout_wastelands_:block/spacedplanks"
   },
-  "render_type": "cutout_mipped"
+  "render_type": "translucent"
 }

@@ -10,6 +10,7 @@ import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
@@ -57,6 +58,19 @@ public class IMPORTANTplayerShootingGunProcedure {
 					if (_ist.hurt(1, RandomSource.create(), null)) {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
+					}
+				}
+				{
+					Entity _ent = entity;
+					_ent.setYRot(entity.getYRot());
+					_ent.setXRot((float) (entity.getXRot() - Mth.nextInt(RandomSource.create(), 5, 7)));
+					_ent.setYBodyRot(_ent.getYRot());
+					_ent.setYHeadRot(_ent.getYRot());
+					_ent.yRotO = _ent.getYRot();
+					_ent.xRotO = _ent.getXRot();
+					if (_ent instanceof LivingEntity _entity) {
+						_entity.yBodyRotO = _entity.getYRot();
+						_entity.yHeadRotO = _entity.getYRot();
 					}
 				}
 			} else {
