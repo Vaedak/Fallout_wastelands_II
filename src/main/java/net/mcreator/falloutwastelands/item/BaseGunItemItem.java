@@ -1,8 +1,27 @@
 
 package net.mcreator.falloutwastelands.item;
 
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.ProjectileWeaponItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.falloutwastelands.procedures.WhenRangedItemIsUsedProcedure;
+import net.mcreator.falloutwastelands.procedures.CanUseRangedItemProcedure;
+import net.mcreator.falloutwastelands.entity.BaseGunItemEntity;
+
+import java.util.List;
 
 public class BaseGunItemItem extends Item {
 	public BaseGunItemItem() {
@@ -37,7 +56,7 @@ public class BaseGunItemItem extends Item {
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			if (CanUseRangedItemProcedure.execute()) {
+			if (CanUseRangedItemProcedure.execute(world, x, y, z, entity, itemstack)) {
 				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == Blocks.AIR.asItem());
 				if (stack == ItemStack.EMPTY) {
 					for (int i = 0; i < entity.getInventory().items.size(); i++) {
@@ -67,7 +86,7 @@ public class BaseGunItemItem extends Item {
 								entity.getInventory().removeItem(stack);
 						}
 					}
-					WhenRangedItemIsUsedProcedure.execute();
+					WhenRangedItemIsUsedProcedure.execute(entity, itemstack);
 				}
 			}
 		}
