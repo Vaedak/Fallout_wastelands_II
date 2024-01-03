@@ -15,12 +15,16 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.falloutwastelands.item.WastelandsItem;
 import net.mcreator.falloutwastelands.item.WastelandbrickitemItem;
+import net.mcreator.falloutwastelands.item.UraniumIngotItem;
+import net.mcreator.falloutwastelands.item.TiningotItem;
 import net.mcreator.falloutwastelands.item.TestWeaponItem;
 import net.mcreator.falloutwastelands.item.TatoItem;
+import net.mcreator.falloutwastelands.item.SteelIngotItem;
 import net.mcreator.falloutwastelands.item.Revolver32Item;
 import net.mcreator.falloutwastelands.item.RaiderdusterItem;
 import net.mcreator.falloutwastelands.item.RaiderblastmasterItem;
 import net.mcreator.falloutwastelands.item.RaiderbasherItem;
+import net.mcreator.falloutwastelands.item.LeadIngotItem;
 import net.mcreator.falloutwastelands.item.JerricanItem;
 import net.mcreator.falloutwastelands.item.CopperwiresItem;
 import net.mcreator.falloutwastelands.item.CombatarmorItem;
@@ -29,6 +33,7 @@ import net.mcreator.falloutwastelands.item.CapsItem;
 import net.mcreator.falloutwastelands.item.BaseGunItemItem;
 import net.mcreator.falloutwastelands.item.AsbestosItem;
 import net.mcreator.falloutwastelands.item.AntiradclothingItem;
+import net.mcreator.falloutwastelands.item.AluminumIngotItem;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
 public class FalloutWastelandsModItems {
@@ -130,6 +135,11 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> BLASTED_GLASS = block(FalloutWastelandsModBlocks.BLASTED_GLASS);
 	public static final RegistryObject<Item> BLASTED_GLASS_PANE = block(FalloutWastelandsModBlocks.BLASTED_GLASS_PANE);
 	public static final RegistryObject<Item> BURNISHED_GLASS_PANE = block(FalloutWastelandsModBlocks.BURNISHED_GLASS_PANE);
+	public static final RegistryObject<Item> TININGOT = REGISTRY.register("tiningot", () -> new TiningotItem());
+	public static final RegistryObject<Item> ALUMINUM_INGOT = REGISTRY.register("aluminum_ingot", () -> new AluminumIngotItem());
+	public static final RegistryObject<Item> STEEL_INGOT = REGISTRY.register("steel_ingot", () -> new SteelIngotItem());
+	public static final RegistryObject<Item> LEAD_INGOT = REGISTRY.register("lead_ingot", () -> new LeadIngotItem());
+	public static final RegistryObject<Item> URANIUM_INGOT = REGISTRY.register("uranium_ingot", () -> new UraniumIngotItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

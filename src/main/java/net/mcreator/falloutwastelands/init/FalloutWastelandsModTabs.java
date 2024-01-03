@@ -129,6 +129,11 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.CAPS.get());
 				tabData.accept(FalloutWastelandsModItems.COPPERWIRES.get());
 				tabData.accept(FalloutWastelandsModItems.WASTELANDBRICKITEM.get());
+				tabData.accept(FalloutWastelandsModItems.TININGOT.get());
+				tabData.accept(FalloutWastelandsModItems.ALUMINUM_INGOT.get());
+				tabData.accept(FalloutWastelandsModItems.STEEL_INGOT.get());
+				tabData.accept(FalloutWastelandsModItems.LEAD_INGOT.get());
+				tabData.accept(FalloutWastelandsModItems.URANIUM_INGOT.get());
 			})
 
 					.build());

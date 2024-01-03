@@ -2709,6 +2709,81 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "Tiningot",
+      "type": "item",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiningot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/tiningot.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/TiningotItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "AluminumIngot",
+      "type": "item",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminum_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/AluminumIngotItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/aluminum_ingot.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SteelIngot",
+      "type": "item",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/SteelIngotItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/steel_ingot.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "LeadIngot",
+      "type": "item",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/LeadIngotItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/lead_ingot.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "UraniumIngot",
+      "type": "item",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/UraniumIngotItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/uranium_ingot.json"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -2723,8 +2798,8 @@
       "item.fallout_wastelands_.copperwires": "Copper Wires",
       "item.fallout_wastelands_.raiderduster_boots": "Raider Duster Boots",
       "block.fallout_wastelands_.rusty_sheetmetalblock": "Rusted Sheet Metal Block",
-      "gui.fallout_wastelands_.locker_storage.label_locker": "Locker",
       "block.fallout_wastelands_.double_scaffold_block": "Double Scaffold Block",
+      "gui.fallout_wastelands_.locker_storage.label_locker": "Locker",
       "block.fallout_wastelands_.wastelandlapisore": "Wasteland Lapis Ore",
       "item.fallout_wastelands_.combatarmor_helmet": "Combat Armor Helmet",
       "item.fallout_wastelands_.combatarmor_boots": "Combat Armor Boots",
@@ -2734,6 +2809,7 @@
       "block.fallout_wastelands_.roof_metal": "Roof Sheet Metal Block",
       "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
       "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
+      "item.fallout_wastelands_.tiningot": "Tin Ingot",
       "block.fallout_wastelands_.worn_metal": "Worn Metal Block",
       "block.fallout_wastelands_.wasteland_goldore": "Wasteland Gold Ore",
       "block.fallout_wastelands_.wasteland_cracked_brick": "Wasteland Cracked Bricks",
@@ -2745,8 +2821,8 @@
       "block.fallout_wastelands_.wasteland_concrete": "Concrete",
       "block.fallout_wastelands_.cage": "Cage Block",
       "block.fallout_wastelands_.molder_wood_slab": "Molder Wood Slab",
-      "block.fallout_wastelands_.wasteland_dirt": "Wasteland Dirt",
       "block.fallout_wastelands_.burnished_glass_pane": "Burnished Glass Pane",
+      "block.fallout_wastelands_.wasteland_dirt": "Wasteland Dirt",
       "item.fallout_wastelands_.jerrican": "Jerrican",
       "block.fallout_wastelands_.molder_wood_button": "Molder Button",
       "block.fallout_wastelands_.wastelandburntgrass": "Wasteland Burnt Grass",
@@ -2769,6 +2845,7 @@
       "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",
       "block.fallout_wastelands_.wasteland_brick_stairs": "Wasteland Brick Stairs",
       "block.fallout_wastelands_.sheetmetalblock": "Sheet Metal Block",
+      "item.fallout_wastelands_.uranium_ingot": "Uranium Ingot",
       "item_group.fallout_wastelands_.wastelandcombat": "Wastelands Combat",
       "block.fallout_wastelands_.molder_wood_stairs": "Molder Wood Stairs",
       "item.fallout_wastelands_.tato": "Tato",
@@ -2806,6 +2883,8 @@
       "item.fallout_wastelands_.raiderbasher_leggings": "Raider Basher Pants",
       "block.fallout_wastelands_.locker": "Locker",
       "block.fallout_wastelands_.molder_wood_door": "Molder Door",
+      "item.fallout_wastelands_.lead_ingot": "Lead Ingot",
+      "item.fallout_wastelands_.aluminum_ingot": "Aluminium Ingot",
       "item.fallout_wastelands_.raiderblastmaster_boots": "Raider Blastmaster Sandals",
       "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
       "key.fallout_wastelands_.gun_reload_keybind": "Fallout Wastelands: Gun Reload",
@@ -2814,6 +2893,7 @@
       "block.fallout_wastelands_.landmine": "Landmine",
       "block.fallout_wastelands_.scaffolding_walkways_block": "Scaffolding Walkway Block",
       "item.fallout_wastelands_.base_gun_item": "Base Gun Item",
+      "item.fallout_wastelands_.steel_ingot": "Steel Ingot",
       "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone",
       "block.fallout_wastelands_.wastelandemeraldore": "Wasteland Emerald Ore",
       "item.fallout_wastelands_.raiderblastmaster_chestplate": "Raider Blastmaster Chestplate",
