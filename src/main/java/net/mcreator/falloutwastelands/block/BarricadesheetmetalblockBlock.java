@@ -4,8 +4,8 @@ package net.mcreator.falloutwastelands.block;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
@@ -15,14 +15,9 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class BarricadesheetmetalblockBlock extends Block {
+public class BarricadesheetmetalblockBlock extends WallBlock {
 	public BarricadesheetmetalblockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(0.8f, 6f).requiresCorrectToolForDrops());
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 15;
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(0.8f, 6f).requiresCorrectToolForDrops().dynamicShape().forceSolidOn());
 	}
 
 	@Override

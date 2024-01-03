@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "fallout_wastelands_:block/wastelandstonebrick",
-    "up": "fallout_wastelands_:block/wastelandstonebrick",
-    "north": "fallout_wastelands_:block/wastelandstonebrick",
-    "east": "fallout_wastelands_:block/wastelandstonebrick",
-    "south": "fallout_wastelands_:block/wastelandstonebrick",
-    "west": "fallout_wastelands_:block/wastelandstonebrick",
+    "all": "fallout_wastelands_:block/wastelandstonebrick",
     "particle": "fallout_wastelands_:block/wastelandstonebrick"
   },
   "render_type": "solid"

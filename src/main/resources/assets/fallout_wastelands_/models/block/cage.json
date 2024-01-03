@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "fallout_wastelands_:block/cage",
-    "up": "fallout_wastelands_:block/cage",
-    "north": "fallout_wastelands_:block/cage",
-    "east": "fallout_wastelands_:block/cage",
-    "south": "fallout_wastelands_:block/cage",
-    "west": "fallout_wastelands_:block/cage",
+    "all": "fallout_wastelands_:block/cage",
     "particle": "fallout_wastelands_:block/cage"
   },
   "render_type": "translucent"
