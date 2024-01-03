@@ -12,7 +12,7 @@
     "rightArm": "RightArm",
     "perspective": "All Perspectives",
     "creativeTab": {
-      "value": "CUSTOM:Wastelanditems"
+      "value": "CUSTOM:Wastelandcombat"
     },
     "firstPersonArms": true,
     "stackSize": 64,

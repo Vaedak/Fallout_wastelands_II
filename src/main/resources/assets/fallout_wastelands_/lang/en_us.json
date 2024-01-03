@@ -1,6 +1,6 @@
 {
-  "item.fallout_wastelands_.asbestos": "Asbestos",
   "item.fallout_wastelands_.wastelandbrickitem": "Wasteland Brick",
+  "item.fallout_wastelands_.asbestos": "Asbestos",
   "block.fallout_wastelands_.molder_wood_log": "Molder Wood Log",
   "block.fallout_wastelands_.wastelandcopperore": "Wasteland Copper Ore",
   "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",
@@ -72,7 +72,7 @@
   "block.fallout_wastelands_.wastelandburntgrass": "Wasteland Burnt Grass",
   "item.fallout_wastelands_.raiderduster_leggings": "Raider Duster Loincloth",
   "block.fallout_wastelands_.cracked_wasteland_concrete": "Cracked Concrete",
-  "item.fallout_wastelands_.revolver_32": "Revolver 3 2",
+  "item.fallout_wastelands_.revolver_32": "Revolver 32",
   "biome.fallout_wastelands_.wasteland_plains": "Wasteland Plains",
   "block.fallout_wastelands_.wasteland_cobblestone": "Wasteland Cobblestone",
   "block.fallout_wastelands_.wastelanddiamondore": "Wasteland Diamond Ore",
