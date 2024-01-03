@@ -4,5 +4,5 @@
     "bottom": "fallout_wastelands_:block/depotdoordown",
     "top": "fallout_wastelands_:block/depotdooroup"
   },
-  "render_type": "solid"
+  "render_type": "cutout_mipped"
 }

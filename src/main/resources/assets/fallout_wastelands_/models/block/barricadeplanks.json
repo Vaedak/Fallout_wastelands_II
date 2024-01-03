@@ -9,5 +9,5 @@
     "west": "fallout_wastelands_:block/spacedplanks",
     "particle": "fallout_wastelands_:block/rottenwoodplate"
   },
-  "render_type": "cutout"
+  "render_type": "cutout_mipped"
 }
