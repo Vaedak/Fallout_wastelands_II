@@ -56,7 +56,7 @@ public class BaseGunItemEntity extends AbstractArrow implements ItemSupplier {
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return new ItemStack(Blocks.AIR);
+		return ItemStack.EMPTY;
 	}
 
 	@Override
