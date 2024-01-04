@@ -38,9 +38,56 @@ public class IMPORTANTplayerShootingGunProcedure {
 								entityToSpawn.setPierceLevel(piercing);
 								return entityToSpawn;
 							}
-						}.getArrow(projectileLevel, entity, 5, 0, (byte) 5);
+						}.getArrow(projectileLevel, entity, 8, 0, (byte) 5);
 						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 8, (float) 0.01);
+						projectileLevel.addFreshEntity(_entityToSpawn);
+					}
+				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.explode")), SoundSource.NEUTRAL, (float) 0.2, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.explode")), SoundSource.NEUTRAL, (float) 0.2, 1, false);
+					}
+				}
+				itemstack.getOrCreateTag().putDouble("cooldown", 0);
+				{
+					ItemStack _ist = itemstack;
+					if (_ist.hurt(1, RandomSource.create(), null)) {
+						_ist.shrink(1);
+						_ist.setDamageValue(0);
+					}
+				}
+			} else {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.goat.hurt")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.goat.hurt")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.NINEMMPISTOL.get()) {
+			if (itemstack.getDamageValue() < itemstack.getMaxDamage() - 1 == true && entity.getPersistentData().getBoolean("ReloadGun") == false) {
+				{
+					Entity _shootFrom = entity;
+					Level projectileLevel = _shootFrom.level();
+					if (!projectileLevel.isClientSide()) {
+						Projectile _entityToSpawn = new Object() {
+							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
+								AbstractArrow entityToSpawn = new BaseGunItemEntity(FalloutWastelandsModEntities.BASE_GUN_ITEM.get(), level);
+								entityToSpawn.setOwner(shooter);
+								entityToSpawn.setBaseDamage(damage);
+								entityToSpawn.setKnockback(knockback);
+								entityToSpawn.setSilent(true);
+								entityToSpawn.setPierceLevel(piercing);
+								return entityToSpawn;
+							}
+						}.getArrow(projectileLevel, entity, 5, 0, (byte) 5);
+						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 9, (float) 0.03);
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
 				}

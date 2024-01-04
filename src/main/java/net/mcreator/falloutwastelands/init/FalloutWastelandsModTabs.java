@@ -116,6 +116,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.REVOLVER_32.get());
 				tabData.accept(FalloutWastelandsModItems.TEST_WEAPON.get());
 				tabData.accept(FalloutWastelandsModItems.BASE_GUN_ITEM.get());
+				tabData.accept(FalloutWastelandsModItems.NINEMMPISTOL.get());
 			})
 
 					.build());
@@ -129,6 +130,15 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.CAPS.get());
 				tabData.accept(FalloutWastelandsModItems.COPPERWIRES.get());
 				tabData.accept(FalloutWastelandsModItems.WASTELANDBRICKITEM.get());
+				tabData.accept(FalloutWastelandsModItems.TININGOT.get());
+				tabData.accept(FalloutWastelandsModItems.ALUMINUM_INGOT.get());
+				tabData.accept(FalloutWastelandsModItems.STEEL_INGOT.get());
+				tabData.accept(FalloutWastelandsModItems.LEAD_INGOT.get());
+				tabData.accept(FalloutWastelandsModItems.URANIUM_INGOT.get());
+				tabData.accept(FalloutWastelandsModItems.NUKA_COLA.get());
+				tabData.accept(FalloutWastelandsModItems.EMPTY_NUKA_COLA_BOTTLE.get());
+				tabData.accept(FalloutWastelandsModItems.NUKA_COLA_QUANTUM.get());
+				tabData.accept(FalloutWastelandsModItems.BOTTLE_CAP.get());
 			})
 
 					.build());
