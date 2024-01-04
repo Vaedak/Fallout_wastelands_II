@@ -2020,21 +2020,6 @@
       "path": "~/Items"
     },
     {
-      "name": "Caps",
-      "type": "item",
-      "sortid": 105,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "caps",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/falloutwastelands/item/CapsItem.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/caps.json"
-        ]
-      },
-      "path": "~/Items"
-    },
-    {
       "name": "Combatarmor",
       "type": "armor",
       "sortid": 98,
@@ -2719,8 +2704,8 @@
       "registry_name": "tiningot",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/item/TiningotItem.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/tiningot.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/tiningot.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/TiningotItem.java"
         ]
       },
       "path": "~/Items"
@@ -2749,8 +2734,8 @@
       "registry_name": "steel_ingot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/item/steel_ingot.json",
-          "src/main/java/net/mcreator/falloutwastelands/item/SteelIngotItem.java"
+          "src/main/java/net/mcreator/falloutwastelands/item/SteelIngotItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/steel_ingot.json"
         ]
       },
       "path": "~/Items"
@@ -2809,8 +2794,8 @@
       "registry_name": "empty_nuka_cola_bottle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/item/EmptyNukaColaBottleItem.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/empty_nuka_cola_bottle.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/empty_nuka_cola_bottle.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/EmptyNukaColaBottleItem.java"
         ]
       },
       "path": "~/Items"
@@ -2859,6 +2844,51 @@
         ]
       },
       "path": "~/Weapons"
+    },
+    {
+      "name": "Neutronade",
+      "type": "item",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neutronade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/NeutronadeItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/neutronade.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "NeutronadeCap",
+      "type": "item",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neutronade_cap",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/neutronade_cap.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/NeutronadeCapItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "EmptyNeutronadeBottle",
+      "type": "item",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_neutronade_bottle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/empty_neutronade_bottle.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/EmptyNeutronadeBottleItem.java"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -2926,7 +2956,6 @@
       "block.fallout_wastelands_.molder_wood_stairs": "Molder Wood Stairs",
       "item.fallout_wastelands_.tato": "Tato",
       "block.fallout_wastelands_.molder_wood_pressure_plate": "Molder Pressure Plate",
-      "item.fallout_wastelands_.ninemmpistol": "9mm Pistol",
       "block.fallout_wastelands_.strippedmolderwoodlog": "Stripped Molder Wood Log",
       "block.fallout_wastelands_.steel_pole": "Steel Pole ",
       "block.fallout_wastelands_.molder_wood_trapdoor": "Molder TrapDoor",
@@ -2949,7 +2978,6 @@
       "block.fallout_wastelands_.wasteland_brick_wall": "Wasteland Stone",
       "item.fallout_wastelands_.nuka_cola": "Nuka Cola",
       "block.fallout_wastelands_.wirefence": "Wire Fence",
-      "item.fallout_wastelands_.caps": "Caps",
       "block.fallout_wastelands_.utsol": "Wasteland Utsol",
       "block.fallout_wastelands_.wastelandbricks": "Wasteland Bricks",
       "block.fallout_wastelands_.wasteland_broken_glass": "Broken Glass",

@@ -127,7 +127,6 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.ASBESTOS.get());
 				tabData.accept(FalloutWastelandsModItems.ANTIRADCLOTHING.get());
 				tabData.accept(FalloutWastelandsModItems.JERRICAN.get());
-				tabData.accept(FalloutWastelandsModItems.CAPS.get());
 				tabData.accept(FalloutWastelandsModItems.COPPERWIRES.get());
 				tabData.accept(FalloutWastelandsModItems.WASTELANDBRICKITEM.get());
 				tabData.accept(FalloutWastelandsModItems.TININGOT.get());
@@ -139,6 +138,9 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.EMPTY_NUKA_COLA_BOTTLE.get());
 				tabData.accept(FalloutWastelandsModItems.NUKA_COLA_QUANTUM.get());
 				tabData.accept(FalloutWastelandsModItems.BOTTLE_CAP.get());
+				tabData.accept(FalloutWastelandsModItems.NEUTRONADE.get());
+				tabData.accept(FalloutWastelandsModItems.NEUTRONADE_CAP.get());
+				tabData.accept(FalloutWastelandsModItems.EMPTY_NEUTRONADE_BOTTLE.get());
 			})
 
 					.build());
