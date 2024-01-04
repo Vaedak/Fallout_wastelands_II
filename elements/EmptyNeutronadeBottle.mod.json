@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "bottlecaps",
+    "texture": "empty_neutronade_bottle",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Caps",
+    "name": "Empty Nuka Cola Bottle",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Wastelanditems"
