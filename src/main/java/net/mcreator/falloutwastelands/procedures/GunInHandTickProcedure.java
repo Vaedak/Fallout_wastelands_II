@@ -11,5 +11,8 @@ public class GunInHandTickProcedure {
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 10, 100, false, false));
+		if (entity.getPersistentData().getDouble("cooldown") > 0) {
+			entity.getPersistentData().putDouble("cooldown", (entity.getPersistentData().getDouble("cooldown") - 1));
+		}
 	}
 }
