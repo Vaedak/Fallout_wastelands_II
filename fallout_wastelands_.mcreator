@@ -2704,8 +2704,8 @@
       "registry_name": "tiningot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/item/tiningot.json",
-          "src/main/java/net/mcreator/falloutwastelands/item/TiningotItem.java"
+          "src/main/java/net/mcreator/falloutwastelands/item/TiningotItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/tiningot.json"
         ]
       },
       "path": "~/Items"
@@ -2734,8 +2734,8 @@
       "registry_name": "steel_ingot",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/item/SteelIngotItem.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/steel_ingot.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/steel_ingot.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/SteelIngotItem.java"
         ]
       },
       "path": "~/Items"
@@ -2794,8 +2794,8 @@
       "registry_name": "empty_nuka_cola_bottle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/item/empty_nuka_cola_bottle.json",
-          "src/main/java/net/mcreator/falloutwastelands/item/EmptyNukaColaBottleItem.java"
+          "src/main/java/net/mcreator/falloutwastelands/item/EmptyNukaColaBottleItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/empty_nuka_cola_bottle.json"
         ]
       },
       "path": "~/Items"
@@ -2903,8 +2903,9 @@
       "item.fallout_wastelands_.copperwires": "Copper Wires",
       "item.fallout_wastelands_.raiderduster_boots": "Raider Duster Boots",
       "block.fallout_wastelands_.rusty_sheetmetalblock": "Rusted Sheet Metal Block",
-      "block.fallout_wastelands_.double_scaffold_block": "Double Scaffold Block",
+      "item.fallout_wastelands_.neutronade_cap": "Bottle Cap",
       "gui.fallout_wastelands_.locker_storage.label_locker": "Locker",
+      "block.fallout_wastelands_.double_scaffold_block": "Double Scaffold Block",
       "block.fallout_wastelands_.wastelandlapisore": "Wasteland Lapis Ore",
       "item.fallout_wastelands_.combatarmor_helmet": "Combat Armor Helmet",
       "item.fallout_wastelands_.combatarmor_boots": "Combat Armor Boots",
@@ -2956,6 +2957,7 @@
       "block.fallout_wastelands_.molder_wood_stairs": "Molder Wood Stairs",
       "item.fallout_wastelands_.tato": "Tato",
       "block.fallout_wastelands_.molder_wood_pressure_plate": "Molder Pressure Plate",
+      "item.fallout_wastelands_.ninemmpistol": "9mm Pistol",
       "block.fallout_wastelands_.strippedmolderwoodlog": "Stripped Molder Wood Log",
       "block.fallout_wastelands_.steel_pole": "Steel Pole ",
       "block.fallout_wastelands_.molder_wood_trapdoor": "Molder TrapDoor",
@@ -2971,6 +2973,7 @@
       "item.fallout_wastelands_.raiderblastmaster_helmet": "Raider Blastmaster Helmet",
       "item.fallout_wastelands_.raiderblastmaster_leggings": "Raider Blastmaster Loincloth",
       "item.fallout_wastelands_.combatarmor_leggings": "Combat Armor Leggings",
+      "item.fallout_wastelands_.empty_neutronade_bottle": "Empty Nuka Cola Bottle",
       "block.fallout_wastelands_.hangardoor": "Hangardoor",
       "block.fallout_wastelands_.molder_wood_wood": "Molder Log Wood",
       "block.fallout_wastelands_.wastelandredstoneore": "Wasteland Redstone Ore",
@@ -2989,6 +2992,7 @@
       "item.fallout_wastelands_.raiderbasher_leggings": "Raider Basher Pants",
       "block.fallout_wastelands_.locker": "Locker",
       "block.fallout_wastelands_.molder_wood_door": "Molder Door",
+      "item.fallout_wastelands_.neutronade": "Neutronade",
       "item.fallout_wastelands_.lead_ingot": "Lead Ingot",
       "item.fallout_wastelands_.aluminum_ingot": "Aluminium Ingot",
       "item.fallout_wastelands_.nuka_cola_quantum": "Nuka Cola Quantum",
