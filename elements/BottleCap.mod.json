@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "bottlecaps",
+    "texture": "nukacap",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Caps",
+    "name": "Bottle Cap",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Wastelanditems"
@@ -26,7 +26,9 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "Currency from the wastelands"
+    ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,

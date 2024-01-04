@@ -1,0 +1,10 @@
+{
+  "pistol32firing": {
+    "sounds": [
+      {
+        "name": "fallout_wastelands_:wpn_pistol32_fire_2d",
+        "stream": false
+      }
+    ]
+  }
+}

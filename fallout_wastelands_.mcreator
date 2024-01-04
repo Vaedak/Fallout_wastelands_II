@@ -2020,21 +2020,6 @@
       "path": "~/Items"
     },
     {
-      "name": "Caps",
-      "type": "item",
-      "sortid": 105,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "caps",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/falloutwastelands/item/CapsItem.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/caps.json"
-        ]
-      },
-      "path": "~/Items"
-    },
-    {
       "name": "Combatarmor",
       "type": "armor",
       "sortid": 98,
@@ -2709,10 +2694,214 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "BottleCap",
+      "type": "item",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottle_cap",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/bottle_cap.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/BottleCapItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "AluminumIngot",
+      "type": "item",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminum_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/AluminumIngotItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/aluminum_ingot.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "NukaColaQuantum",
+      "type": "item",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuka_cola_quantum",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/NukaColaQuantumItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/nuka_cola_quantum.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "NeutronadeCap",
+      "type": "item",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neutronade_cap",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/NeutronadeCapItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/neutronade_cap.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "EmptyNukaColaBottle",
+      "type": "item",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_nuka_cola_bottle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/empty_nuka_cola_bottle.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/EmptyNukaColaBottleItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "LeadIngot",
+      "type": "item",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/lead_ingot.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/LeadIngotItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "UraniumIngot",
+      "type": "item",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/uranium_ingot.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/UraniumIngotItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Tiningot",
+      "type": "item",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiningot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/tiningot.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/TiningotItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Neutronade",
+      "type": "item",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neutronade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/NeutronadeItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/neutronade.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "EmptyNeutronadeBottle",
+      "type": "item",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_neutronade_bottle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/EmptyNeutronadeBottleItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/empty_neutronade_bottle.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Ninemmpistol",
+      "type": "item",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ninemmpistol",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/ninemmpistol.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/NinemmpistolItem.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "NukaCola",
+      "type": "item",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuka_cola",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/nuka_cola.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/NukaColaItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SteelIngot",
+      "type": "item",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/steel_ingot.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/SteelIngotItem.java"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "pistol32firing",
+      "files": [
+        "wpn_pistol32_fire_2d"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
       "block.fallout_wastelands_.barricadesheetmetalblock": "Barricade Sheet Metal Block",

@@ -10,7 +10,6 @@ import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
@@ -41,15 +40,15 @@ public class IMPORTANTplayerShootingGunProcedure {
 							}
 						}.getArrow(projectileLevel, entity, 5, 0, (byte) 5);
 						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, (float) 0.01);
+						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 8, (float) 0.01);
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.explode")), SoundSource.NEUTRAL, (float) 0.2, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistol32firing")), SoundSource.NEUTRAL, (float) 0.2, 1);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.explode")), SoundSource.NEUTRAL, (float) 0.2, 1, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistol32firing")), SoundSource.NEUTRAL, (float) 0.2, 1, false);
 					}
 				}
 				itemstack.getOrCreateTag().putDouble("cooldown", 0);
@@ -60,25 +59,12 @@ public class IMPORTANTplayerShootingGunProcedure {
 						_ist.setDamageValue(0);
 					}
 				}
-				{
-					Entity _ent = entity;
-					_ent.setYRot(entity.getYRot());
-					_ent.setXRot((float) (entity.getXRot() - Mth.nextInt(RandomSource.create(), 5, 7)));
-					_ent.setYBodyRot(_ent.getYRot());
-					_ent.setYHeadRot(_ent.getYRot());
-					_ent.yRotO = _ent.getYRot();
-					_ent.xRotO = _ent.getXRot();
-					if (_ent instanceof LivingEntity _entity) {
-						_entity.yBodyRotO = _entity.getYRot();
-						_entity.yHeadRotO = _entity.getYRot();
-					}
-				}
 			} else {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.goat.hurt")), SoundSource.NEUTRAL, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.metal_pressure_plate.click_off")), SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.goat.hurt")), SoundSource.NEUTRAL, 1, 1, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.metal_pressure_plate.click_off")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 			}
