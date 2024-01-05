@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "fallout_wastelands_:block/chemical_scrap_pile_texture",
-    "particle": "fallout_wastelands_:block/chemical_scrap_pile_texture"
+    "all": "fallout_wastelands_:block/brokenglass",
+    "particle": "fallout_wastelands_:block/brokenglass"
   },
   "render_type": "translucent"
 }
