@@ -30,6 +30,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModTabs;
+import net.mcreator.falloutwastelands.init.FalloutWastelandsModSounds;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModMenus;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModItems;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModFeatures;
@@ -54,7 +55,7 @@ public class FalloutWastelandsMod {
 	public FalloutWastelandsMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		FalloutWastelandsModSounds.REGISTRY.register(bus);
 		FalloutWastelandsModBlocks.REGISTRY.register(bus);
 		FalloutWastelandsModBlockEntities.REGISTRY.register(bus);
 		FalloutWastelandsModItems.REGISTRY.register(bus);
