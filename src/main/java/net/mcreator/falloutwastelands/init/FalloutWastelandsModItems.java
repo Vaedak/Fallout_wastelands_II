@@ -26,6 +26,7 @@ import net.mcreator.falloutwastelands.item.RaiderblastmasterItem;
 import net.mcreator.falloutwastelands.item.RaiderbasherItem;
 import net.mcreator.falloutwastelands.item.NukaColaQuantumItem;
 import net.mcreator.falloutwastelands.item.NukaColaItem;
+import net.mcreator.falloutwastelands.item.NinemmpistolItem;
 import net.mcreator.falloutwastelands.item.NeutronadeItem;
 import net.mcreator.falloutwastelands.item.NeutronadeCapItem;
 import net.mcreator.falloutwastelands.item.LeadIngotItem;
@@ -149,6 +150,7 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> EMPTY_NUKA_COLA_BOTTLE = REGISTRY.register("empty_nuka_cola_bottle", () -> new EmptyNukaColaBottleItem());
 	public static final RegistryObject<Item> NUKA_COLA_QUANTUM = REGISTRY.register("nuka_cola_quantum", () -> new NukaColaQuantumItem());
 	public static final RegistryObject<Item> BOTTLE_CAP = REGISTRY.register("bottle_cap", () -> new BottleCapItem());
+	public static final RegistryObject<Item> NINEMMPISTOL = REGISTRY.register("ninemmpistol", () -> new NinemmpistolItem());
 	public static final RegistryObject<Item> NEUTRONADE = REGISTRY.register("neutronade", () -> new NeutronadeItem());
 	public static final RegistryObject<Item> NEUTRONADE_CAP = REGISTRY.register("neutronade_cap", () -> new NeutronadeCapItem());
 	public static final RegistryObject<Item> EMPTY_NEUTRONADE_BOTTLE = REGISTRY.register("empty_neutronade_bottle", () -> new EmptyNeutronadeBottleItem());
