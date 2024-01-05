@@ -1,31 +1,5 @@
 package net.mcreator.falloutwastelands.item.renderer;
 
-import software.bernie.geckolib.util.RenderUtils;
-import software.bernie.geckolib.renderer.GeoItemRenderer;
-import software.bernie.geckolib.cache.object.GeoBone;
-import software.bernie.geckolib.cache.object.BakedGeoModel;
-
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.ItemDisplayContext;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.client.renderer.entity.player.PlayerRenderer;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.player.AbstractClientPlayer;
-import net.minecraft.client.model.PlayerModel;
-import net.minecraft.client.Minecraft;
-
-import net.mcreator.falloutwastelands.utils.AnimUtils;
-import net.mcreator.falloutwastelands.item.model.TestWeaponItemModel;
-import net.mcreator.falloutwastelands.item.TestWeaponItem;
-
-import java.util.Set;
-import java.util.HashSet;
-
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
 public class TestWeaponItemRenderer extends GeoItemRenderer<TestWeaponItem> {
 	public TestWeaponItemRenderer() {
 		super(new TestWeaponItemModel());
@@ -110,4 +84,5 @@ public class TestWeaponItemRenderer extends GeoItemRenderer<TestWeaponItem> {
 	public ResourceLocation getTextureLocation(TestWeaponItem instance) {
 		return super.getTextureLocation(instance);
 	}
+
 }

@@ -1574,8 +1574,8 @@
       "registry_name": "cloth",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/item/cloth.json",
-          "src/main/java/net/mcreator/falloutwastelands/item/ClothItem.java"
+          "src/main/java/net/mcreator/falloutwastelands/item/ClothItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/cloth.json"
         ]
       },
       "path": "~/Items"
@@ -1689,8 +1689,8 @@
       "registry_name": "tato",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/item/TatoItem.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/tato.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/tato.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/TatoItem.java"
         ]
       },
       "path": "~/Items"
