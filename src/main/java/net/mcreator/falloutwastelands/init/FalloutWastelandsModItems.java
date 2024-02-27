@@ -7,6 +7,7 @@ package net.mcreator.falloutwastelands.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -154,6 +155,7 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> NEUTRONADE = REGISTRY.register("neutronade", () -> new NeutronadeItem());
 	public static final RegistryObject<Item> NEUTRONADE_CAP = REGISTRY.register("neutronade_cap", () -> new NeutronadeCapItem());
 	public static final RegistryObject<Item> EMPTY_NEUTRONADE_BOTTLE = REGISTRY.register("empty_neutronade_bottle", () -> new EmptyNeutronadeBottleItem());
+	public static final RegistryObject<Item> CANNIBAL_00_SPAWN_EGG = REGISTRY.register("cannibal_00_spawn_egg", () -> new ForgeSpawnEggItem(FalloutWastelandsModEntities.CANNIBAL_00, -11382217, -9939410, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

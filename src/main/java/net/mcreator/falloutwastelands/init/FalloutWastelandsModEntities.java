@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.falloutwastelands.entity.Cannibal00Entity;
 import net.mcreator.falloutwastelands.entity.BaseGunItemEntity;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
@@ -24,6 +25,10 @@ public class FalloutWastelandsModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, FalloutWastelandsMod.MODID);
 	public static final RegistryObject<EntityType<BaseGunItemEntity>> BASE_GUN_ITEM = register("projectile_base_gun_item",
 			EntityType.Builder.<BaseGunItemEntity>of(BaseGunItemEntity::new, MobCategory.MISC).setCustomClientFactory(BaseGunItemEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<Cannibal00Entity>> CANNIBAL_00 = register("cannibal_00",
+			EntityType.Builder.<Cannibal00Entity>of(Cannibal00Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(Cannibal00Entity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -32,10 +37,12 @@ public class FalloutWastelandsModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
+			Cannibal00Entity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
+		event.put(CANNIBAL_00.get(), Cannibal00Entity.createAttributes().build());
 	}
 }
