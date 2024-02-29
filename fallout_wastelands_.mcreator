@@ -2906,6 +2906,27 @@
         ]
       },
       "path": "~/Mobs"
+    },
+    {
+      "name": "Wastelandtiles",
+      "type": "block",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandtiles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandtiles.json",
+          "src/main/resources/data/fallout_wastelands_/forge/biome_modifier/wastelandtiles_biome_modifier.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandtilesBlock.java",
+          "src/main/resources/data/fallout_wastelands_/worldgen/configured_feature/wastelandtiles.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandtiles.json",
+          "src/main/resources/data/fallout_wastelands_/worldgen/placed_feature/wastelandtiles.json",
+          "src/main/java/net/mcreator/falloutwastelands/world/features/ores/WastelandtilesFeature.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandtiles.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -2938,6 +2959,7 @@
       "block.fallout_wastelands_.wasteland_brick": "Wasteland Bricks",
       "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
       "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
+      "block.fallout_wastelands_.wastelandtiles": "Wasteland Tiles",
       "block.fallout_wastelands_.roof_metal": "Roof Sheet Metal Block",
       "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
       "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",

@@ -156,6 +156,7 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> NEUTRONADE_CAP = REGISTRY.register("neutronade_cap", () -> new NeutronadeCapItem());
 	public static final RegistryObject<Item> EMPTY_NEUTRONADE_BOTTLE = REGISTRY.register("empty_neutronade_bottle", () -> new EmptyNeutronadeBottleItem());
 	public static final RegistryObject<Item> CANNIBAL_00_SPAWN_EGG = REGISTRY.register("cannibal_00_spawn_egg", () -> new ForgeSpawnEggItem(FalloutWastelandsModEntities.CANNIBAL_00, -11382217, -9939410, new Item.Properties()));
+	public static final RegistryObject<Item> WASTELANDTILES = block(FalloutWastelandsModBlocks.WASTELANDTILES);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

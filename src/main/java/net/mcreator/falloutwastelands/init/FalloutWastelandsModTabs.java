@@ -91,6 +91,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.BLASTED_GLASS.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.BLASTED_GLASS_PANE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.BURNISHED_GLASS_PANE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDTILES.get().asItem());
 			})
 
 					.build());

@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.falloutwastelands.block.WornMetalBlock;
 import net.mcreator.falloutwastelands.block.WirefenceBlock;
+import net.mcreator.falloutwastelands.block.WastelandtilesBlock;
 import net.mcreator.falloutwastelands.block.WastelandshortburntgrassBlock;
 import net.mcreator.falloutwastelands.block.WastelandsPortalBlock;
 import net.mcreator.falloutwastelands.block.WastelandredstoneoreBlock;
@@ -158,6 +159,7 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> BLASTED_GLASS = REGISTRY.register("blasted_glass", () -> new BlastedGlassBlock());
 	public static final RegistryObject<Block> BLASTED_GLASS_PANE = REGISTRY.register("blasted_glass_pane", () -> new BlastedGlassPaneBlock());
 	public static final RegistryObject<Block> BURNISHED_GLASS_PANE = REGISTRY.register("burnished_glass_pane", () -> new BurnishedGlassPaneBlock());
+	public static final RegistryObject<Block> WASTELANDTILES = REGISTRY.register("wastelandtiles", () -> new WastelandtilesBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
