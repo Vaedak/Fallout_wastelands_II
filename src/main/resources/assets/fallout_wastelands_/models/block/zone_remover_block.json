@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fallout_wastelands_:block/wire_fence",
+    "up": "fallout_wastelands_:block/wire_fence",
+    "north": "fallout_wastelands_:block/wire_fence",
+    "east": "fallout_wastelands_:block/wire_fence",
+    "south": "fallout_wastelands_:block/wire_fence",
+    "west": "fallout_wastelands_:block/wire_fence",
+    "particle": "fallout_wastelands_:block/wire_fence"
+  },
+  "render_type": "solid"
+}

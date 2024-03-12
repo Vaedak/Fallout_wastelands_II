@@ -2927,9 +2927,546 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "BASEMenuUI",
+      "type": "gui",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "base_menu_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/world/inventory/BASEMenuUIMenu.java",
+          "src/main/java/net/mcreator/falloutwastelands/client/gui/BASEMenuUIScreen.java",
+          "src/main/java/net/mcreator/falloutwastelands/network/BASEMenuUIButtonMessage.java"
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "InputCapsBASEUI",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "input_caps_baseui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/InputCapsBASEUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "ZoneMob",
+      "type": "animatedentity",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zone_mob",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/entity/ZoneMobEntity.java",
+          "src/main/java/net/mcreator/falloutwastelands/client/renderer/ZoneMobRenderer.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/zone_mob_spawn_egg.json",
+          "src/main/java/net/mcreator/falloutwastelands/entity/model/ZoneMobModel.java"
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "ExitMenuUI",
+      "type": "procedure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exit_menu_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/ExitMenuUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "SpawnBASEfield",
+      "type": "procedure",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_bas_efield",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/SpawnBASEfieldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "ZoneMobEntityVisualScale",
+      "type": "procedure",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zone_mob_entity_visual_scale",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/ZoneMobEntityVisualScaleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "SetBASEName",
+      "type": "procedure",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_base_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/SetBASENameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "BASEMenuUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "base_menu_ui_while_this_gui_is_open_tick",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/BASEMenuUIWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "IncreaseZoneSize",
+      "type": "procedure",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increase_zone_size",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/IncreaseZoneSizeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "BASEcoreOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bas_ecore_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/BASEcoreOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "BASEcore",
+      "type": "animatedblock",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bas_ecore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/model/BASEcoreDisplayModel.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/bas_ecore.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/renderer/BASEcoreDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/falloutwastelands/block/BASEcoreBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/bas_ecore.json",
+          "src/main/resources/assets/fallout_wastelands_/models/custom/bas_ecore_particle.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/display/BASEcoreDisplayItem.java",
+          "src/main/java/net/mcreator/falloutwastelands/block/entity/BASEcoreTileEntity.java",
+          "src/main/java/net/mcreator/falloutwastelands/block/renderer/BASEcoreTileRenderer.java",
+          "src/main/java/net/mcreator/falloutwastelands/block/model/BASEcoreBlockModel.java"
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "OpenBASEInventory",
+      "type": "procedure",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_base_inventory",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/OpenBASEInventoryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "RemoveBASEblock",
+      "type": "procedure",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_bas_eblock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/RemoveBASEblockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "ZoneRemoverBlock",
+      "type": "block",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zone_remover_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/zone_remover_block.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/ZoneRemoverBlockBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/zone_remover_block.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/zone_remover_block.json"
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "BASEcoreUpdateTick",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bas_ecore_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/BASEcoreUpdateTickProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "ZoneMobOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zone_mob_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/ZoneMobOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "BASEMenuUIThisGUIIsOpened",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "base_menu_ui_this_gui_is_opened",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/BASEMenuUIThisGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "BASEInventory",
+      "type": "gui",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "base_inventory",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/client/gui/BASEInventoryScreen.java",
+          "src/main/java/net/mcreator/falloutwastelands/world/inventory/BASEInventoryMenu.java"
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "ZoneRemoverBlockUpdateTick",
+      "type": "procedure",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zone_remover_block_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/ZoneRemoverBlockUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "localVar",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    }
+  ],
   "sound_elements": [
     {
       "name": "pistol32firing",
@@ -2984,6 +3521,7 @@
       "block.fallout_wastelands_.wastelandburntgrass": "Wasteland Burnt Grass",
       "item.fallout_wastelands_.raiderduster_leggings": "Raider Duster Loincloth",
       "block.fallout_wastelands_.cracked_wasteland_concrete": "Cracked Concrete",
+      "gui.fallout_wastelands_.base_menu_ui.BASEName": "Name",
       "item.fallout_wastelands_.revolver_32": "Revolver 32",
       "item.fallout_wastelands_.cannibal_00_spawn_egg": "Cannibal Spawn Egg",
       "biome.fallout_wastelands_.wasteland_plains": "Wasteland Plains",
@@ -2994,6 +3532,7 @@
       "block.fallout_wastelands_.barricadeplanks": "Barricade Planks",
       "block.fallout_wastelands_.blasted_glass_pane": "Blasted Glass Pane",
       "block.fallout_wastelands_.stair_wasteland_cobblestone": "Wasteland Cobblestone Stairs",
+      "gui.fallout_wastelands_.base_menu_ui.label_varlocalvar": "DisplaysInputName",
       "block.fallout_wastelands_.wasteland_concrete_slab": "Concrete Slab",
       "item.fallout_wastelands_.antiradclothing": "Anti-rad Clothing",
       "item.fallout_wastelands_.wastelandbrickitem": "Wasteland Brick",
@@ -3083,6 +3622,10 @@
       },
       {
         "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "B.A.S.E",
         "children": []
       },
       {

@@ -1,0 +1,239 @@
+{
+  "_fv": 47,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_locker_storage",
+          "image": "buttonplaceholdertexture.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "OpenBASEInventory"
+          },
+          "x": 235,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_inventory",
+          "text": {
+            "fixedValue": "Inventory"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 191,
+          "y": 93
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "Note: it may be better instead of using text boxes to instead"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 4,
+          "y": 11
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_d",
+          "text": {
+            "fixedValue": " use an image with the texts and use button images"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 36,
+          "y": 21
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_done",
+          "text": {
+            "fixedValue": "Done"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 193,
+          "y": 110
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_buttonplaceholdertexture",
+          "image": "buttonplaceholdertexture.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ExitMenuUI"
+          },
+          "x": 220,
+          "y": 107
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Name",
+          "name": "NameInput",
+          "width": 120,
+          "height": 20,
+          "x": 24,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_done1",
+          "text": {
+            "fixedValue": "Done"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 41,
+          "y": 80
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_buttonplaceholdertexture1",
+          "image": "buttonplaceholdertexture.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SetBASEName"
+          },
+          "x": 66,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_done2",
+          "text": {
+            "fixedValue": "Done"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 42,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_caps",
+          "text": {
+            "fixedValue": "Caps"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 42,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_input_caps",
+          "text": {
+            "fixedValue": "Input Caps"
+          },
+          "color": {
+            "value": -3368704,
+            "falpha": 0.0
+          },
+          "x": 33,
+          "y": 125
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_buttonplaceholdertexture2",
+          "image": "buttonplaceholdertexture.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "InputCapsBASEUI"
+          },
+          "x": 69,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_caps_expense",
+          "text": {
+            "fixedValue": "Caps Expense"
+          },
+          "color": {
+            "value": -6750208,
+            "falpha": 0.0
+          },
+          "x": 33,
+          "y": 170
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_varlocalvar",
+          "text": {
+            "fixedValue": "DisplaysInputName",
+            "name": "BASEMenuUIWhileThisGUIIsOpenTick"
+          },
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "x": 33,
+          "y": 35
+        }
+      }
+    ],
+    "onTick": {
+      "name": "BASEMenuUIWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

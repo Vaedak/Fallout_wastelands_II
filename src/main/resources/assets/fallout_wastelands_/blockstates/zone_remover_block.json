@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "fallout_wastelands_:block/zone_remover_block"
+    }
+  }
+}
