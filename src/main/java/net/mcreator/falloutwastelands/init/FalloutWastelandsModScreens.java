@@ -12,6 +12,8 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.falloutwastelands.client.gui.LockerStorageScreen;
+import net.mcreator.falloutwastelands.client.gui.BASEMenuUIScreen;
+import net.mcreator.falloutwastelands.client.gui.BASEInventoryScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class FalloutWastelandsModScreens {
@@ -19,6 +21,8 @@ public class FalloutWastelandsModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(FalloutWastelandsModMenus.LOCKER_STORAGE.get(), LockerStorageScreen::new);
+			MenuScreens.register(FalloutWastelandsModMenus.BASE_MENU_UI.get(), BASEMenuUIScreen::new);
+			MenuScreens.register(FalloutWastelandsModMenus.BASE_INVENTORY.get(), BASEInventoryScreen::new);
 		});
 	}
 }
