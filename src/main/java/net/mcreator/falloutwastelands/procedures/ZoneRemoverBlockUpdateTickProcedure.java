@@ -1,8 +1,11 @@
 package net.mcreator.falloutwastelands.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.core.BlockPos;
 
-import javax.annotation.Nullable;
+import net.mcreator.falloutwastelands.init.FalloutWastelandsModBlocks;
+import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
 public class ZoneRemoverBlockUpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {

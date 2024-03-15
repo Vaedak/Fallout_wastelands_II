@@ -1,8 +1,23 @@
 
 package net.mcreator.falloutwastelands.block;
 
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.falloutwastelands.procedures.ZoneRemoverBlockUpdateTickProcedure;
+
+import java.util.List;
+import java.util.Collections;
 
 public class ZoneRemoverBlockBlock extends Block {
 	public ZoneRemoverBlockBlock() {
@@ -34,7 +49,7 @@ public class ZoneRemoverBlockBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		ZoneRemoverBlockUpdateTickProcedure.execute();
+		ZoneRemoverBlockUpdateTickProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 5);
 	}
 }

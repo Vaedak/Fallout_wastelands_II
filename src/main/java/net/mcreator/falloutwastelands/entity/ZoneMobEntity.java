@@ -1,18 +1,47 @@
 
 package net.mcreator.falloutwastelands.entity;
 
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.nbt.Tag;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.network.syncher.EntityDataSerializers;
-import net.minecraft.network.syncher.SynchedEntityData;
-
-import javax.annotation.Nullable;
-
-import software.bernie.geckolib.core.animation.AnimatableManager;
+import software.bernie.geckolib.util.GeckoLibUtil;
+import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.core.animation.RawAnimation;
 import software.bernie.geckolib.core.animation.AnimationState;
+import software.bernie.geckolib.core.animation.AnimationController;
+import software.bernie.geckolib.core.animation.AnimatableManager;
+import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animatable.GeoEntity;
+
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
+
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.navigation.PathNavigation;
+import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
+import net.minecraft.world.entity.ai.control.FlyingMoveControl;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.Pose;
+import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntityDimensions;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerBossEvent;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.Packet;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.falloutwastelands.procedures.ZoneMobOnEntityTickUpdateProcedure;
+import net.mcreator.falloutwastelands.init.FalloutWastelandsModEntities;
 
 public class ZoneMobEntity extends Monster implements GeoEntity {
 	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(ZoneMobEntity.class, EntityDataSerializers.BOOLEAN);
@@ -33,9 +62,7 @@ public class ZoneMobEntity extends Monster implements GeoEntity {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-
 		setPersistenceRequired();
-
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
@@ -93,16 +120,13 @@ public class ZoneMobEntity extends Monster implements GeoEntity {
 
 	@Override
 	public boolean causeFallDamage(float l, float d, DamageSource source) {
-
 		return false;
 	}
 
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		ZoneMobOnEntityTickUpdateProcedure.execute(
-
-		);
+		ZoneMobOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 		this.refreshDimensions();
 	}
 
@@ -162,7 +186,6 @@ public class ZoneMobEntity extends Monster implements GeoEntity {
 	}
 
 	public static void init() {
-
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -172,9 +195,7 @@ public class ZoneMobEntity extends Monster implements GeoEntity {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-
 		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
-
 		return builder;
 	}
 
@@ -196,7 +217,6 @@ public class ZoneMobEntity extends Monster implements GeoEntity {
 			this.lastloop = false;
 			event.getController().setAnimation(RawAnimation.begin().thenPlay(this.animationprocedure));
 			event.getController().forceAnimationReset();
-
 			return PlayState.STOP;
 		}
 		if (!this.animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
@@ -220,7 +240,6 @@ public class ZoneMobEntity extends Monster implements GeoEntity {
 		if (this.deathTime == 20) {
 			this.remove(ZoneMobEntity.RemovalReason.KILLED);
 			this.dropExperience();
-
 		}
 	}
 
@@ -242,5 +261,4 @@ public class ZoneMobEntity extends Monster implements GeoEntity {
 	public AnimatableInstanceCache getAnimatableInstanceCache() {
 		return this.cache;
 	}
-
 }
