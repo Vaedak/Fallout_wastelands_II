@@ -3051,10 +3051,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "guistate",
             "type": "map"
           },
@@ -3091,10 +3087,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -3125,24 +3117,7 @@
         "files": [
           "src/main/java/net/mcreator/falloutwastelands/procedures/BASEcoreUpdateTickProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/B.A.S.E"
     },
@@ -3193,7 +3168,24 @@
         "files": [
           "src/main/java/net/mcreator/falloutwastelands/procedures/SpawnBASEfieldProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/B.A.S.E"
     },
@@ -3230,22 +3222,17 @@
       "path": "~/B.A.S.E"
     },
     {
-      "name": "DisplayCapsStored",
+      "name": "DropBaseCaps",
       "type": "procedure",
-      "sortid": 164,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "display_caps_stored",
+      "registry_name": "drop_base_caps",
       "metadata": {
-        "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/procedures/DisplayCapsStoredProcedure.java"
+          "src/main/java/net/mcreator/falloutwastelands/procedures/DropBaseCapsProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -3304,17 +3291,22 @@
       "path": "~/B.A.S.E"
     },
     {
-      "name": "DropBaseCaps",
+      "name": "DisplayCapsStored",
       "type": "procedure",
-      "sortid": 166,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "drop_base_caps",
+      "registry_name": "display_caps_stored",
       "metadata": {
+        "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/procedures/DropBaseCapsProcedure.java"
+          "src/main/java/net/mcreator/falloutwastelands/procedures/DisplayCapsStoredProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -3350,8 +3342,8 @@
   "language_map": {
     "en_us": {
       "block.fallout_wastelands_.barricadesheetmetalblock": "Barricade Sheet Metal Block",
-      "gui.fallout_wastelands_.base_menu_ui.NameInput": "Name",
       "block.fallout_wastelands_.cracked_wasteland_concrete_wall": "Cracked Concrete Slab",
+      "gui.fallout_wastelands_.base_menu_ui.NameInput": "Name",
       "block.fallout_wastelands_.wasteland_concrete_wall": "Concrete Wall",
       "block.fallout_wastelands_.cracked_wasteland_concrete_slabs": "Cracked Concrete Slab",
       "block.fallout_wastelands_.wasteland_concrete_stairs": "Concrete Stairs",
@@ -3367,8 +3359,8 @@
       "block.fallout_wastelands_.wasteland_brick": "Wasteland Bricks",
       "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
       "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
-      "block.fallout_wastelands_.wastelandtiles": "Wasteland Tiles",
       "block.fallout_wastelands_.roof_metal": "Roof Sheet Metal Block",
+      "block.fallout_wastelands_.wastelandtiles": "Wasteland Tiles",
       "gui.fallout_wastelands_.base_menu_ui.label_inventory": "Inventory",
       "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
       "gui.fallout_wastelands_.base_menu_ui.label_done1": "Done",
@@ -3509,6 +3501,10 @@
         "children": []
       },
       {
+        "name": "B.A.S.E",
+        "children": []
+      },
+      {
         "name": "GUI",
         "children": []
       },
@@ -3542,10 +3538,6 @@
       },
       {
         "name": "Mobs",
-        "children": []
-      },
-      {
-        "name": "B.A.S.E",
         "children": []
       }
     ]
