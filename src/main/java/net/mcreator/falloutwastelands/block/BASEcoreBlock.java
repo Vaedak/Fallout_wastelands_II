@@ -43,7 +43,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.falloutwastelands.procedures.SpawnBASEfieldProcedure;
-import net.mcreator.falloutwastelands.procedures.RemoveBASEblockProcedure;
+import net.mcreator.falloutwastelands.procedures.DropBaseCapsProcedure;
 import net.mcreator.falloutwastelands.procedures.BASEcoreUpdateTickProcedure;
 import net.mcreator.falloutwastelands.procedures.BASEcoreOnBlockRightClickedProcedure;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModBlockEntities;
@@ -62,7 +62,7 @@ public class BASEcoreBlock extends BaseEntityBlock implements SimpleWaterloggedB
 	public BASEcoreBlock() {
 		super(BlockBehaviour.Properties.of()
 
-				.sound(SoundType.METAL).strength(3f, 10f).noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
+				.sound(SoundType.METAL).strength(3f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 
@@ -146,7 +146,10 @@ public class BASEcoreBlock extends BaseEntityBlock implements SimpleWaterloggedB
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		SpawnBASEfieldProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		world.scheduleTick(pos, this, 20);
+		SpawnBASEfieldProcedure.execute(
+
+		);
 	}
 
 	@Override
@@ -156,20 +159,21 @@ public class BASEcoreBlock extends BaseEntityBlock implements SimpleWaterloggedB
 		int y = pos.getY();
 		int z = pos.getZ();
 
-		BASEcoreUpdateTickProcedure.execute();
+		BASEcoreUpdateTickProcedure.execute(world, x, y, z);
+		world.scheduleTick(pos, this, 20);
 	}
 
 	@Override
 	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-		RemoveBASEblockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		DropBaseCapsProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		return retval;
 	}
 
 	@Override
 	public void wasExploded(Level world, BlockPos pos, Explosion e) {
 		super.wasExploded(world, pos, e);
-		RemoveBASEblockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		DropBaseCapsProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

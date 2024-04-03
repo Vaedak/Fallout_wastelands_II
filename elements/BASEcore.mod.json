@@ -55,8 +55,8 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 0,
-    "tickRandomly": true,
+    "tickRate": 20,
+    "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -109,7 +109,7 @@
     "hasInventory": true,
     "guiBoundTo": "BASEMenuUI",
     "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "inventorySize": 202,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -133,10 +133,10 @@
       "name": "BASEcoreUpdateTick"
     },
     "onDestroyedByPlayer": {
-      "name": "RemoveBASEblock"
+      "name": "DropBaseCaps"
     },
     "onDestroyedByExplosion": {
-      "name": "RemoveBASEblock"
+      "name": "DropBaseCaps"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

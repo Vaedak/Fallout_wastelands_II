@@ -11,7 +11,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
-import net.mcreator.falloutwastelands.client.renderer.ZoneMobRenderer;
 import net.mcreator.falloutwastelands.client.renderer.Cannibal00Renderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -20,6 +19,5 @@ public class FalloutWastelandsModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(FalloutWastelandsModEntities.BASE_GUN_ITEM.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(FalloutWastelandsModEntities.CANNIBAL_00.get(), Cannibal00Renderer::new);
-		event.registerEntityRenderer(FalloutWastelandsModEntities.ZONE_MOB.get(), ZoneMobRenderer::new);
 	}
 }

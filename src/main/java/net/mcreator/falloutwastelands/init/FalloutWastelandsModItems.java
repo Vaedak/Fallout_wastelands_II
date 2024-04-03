@@ -159,8 +159,6 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> CANNIBAL_00_SPAWN_EGG = REGISTRY.register("cannibal_00_spawn_egg", () -> new ForgeSpawnEggItem(FalloutWastelandsModEntities.CANNIBAL_00, -11382217, -9939410, new Item.Properties()));
 	public static final RegistryObject<Item> WASTELANDTILES = block(FalloutWastelandsModBlocks.WASTELANDTILES);
 	public static final RegistryObject<Item> BAS_ECORE = REGISTRY.register(FalloutWastelandsModBlocks.BAS_ECORE.getId().getPath(), () -> new BASEcoreDisplayItem(FalloutWastelandsModBlocks.BAS_ECORE.get(), new Item.Properties()));
-	public static final RegistryObject<Item> ZONE_REMOVER_BLOCK = block(FalloutWastelandsModBlocks.ZONE_REMOVER_BLOCK);
-	public static final RegistryObject<Item> ZONE_MOB_SPAWN_EGG = REGISTRY.register("zone_mob_spawn_egg", () -> new ForgeSpawnEggItem(FalloutWastelandsModEntities.ZONE_MOB, -16724992, -16724992, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
