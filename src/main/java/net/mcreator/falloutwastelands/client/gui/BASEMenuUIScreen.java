@@ -11,7 +11,8 @@ import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.falloutwastelands.world.inventory.BASEMenuUIMenu;
-import net.mcreator.falloutwastelands.procedures.BASEMenuUIWhileThisGUIIsOpenTickProcedure;
+import net.mcreator.falloutwastelands.procedures.DisplayCapsStoredProcedure;
+import net.mcreator.falloutwastelands.procedures.DisplayBaseNameStoredProcedure;
 import net.mcreator.falloutwastelands.network.BASEMenuUIButtonMessage;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
@@ -87,7 +88,10 @@ public class BASEMenuUIScreen extends AbstractContainerScreen<BASEMenuUIMenu> {
 		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_caps_expense"), -92, 133, -6750208, false);
 		guiGraphics.drawString(this.font,
 
-				BASEMenuUIWhileThisGUIIsOpenTickProcedure.execute(world, x, y, z), -92, -2, -16724992, false);
+				DisplayBaseNameStoredProcedure.execute(world, x, y, z, entity), -92, -2, -16724992, false);
+		guiGraphics.drawString(this.font,
+
+				DisplayCapsStoredProcedure.execute(world, x, y, z, entity), -146, 88, -16711936, false);
 	}
 
 	@Override

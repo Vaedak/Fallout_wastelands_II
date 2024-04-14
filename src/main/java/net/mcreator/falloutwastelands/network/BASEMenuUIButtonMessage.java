@@ -75,11 +75,11 @@ public class BASEMenuUIButtonMessage {
 		}
 		if (buttonID == 2) {
 
-			SetBASENameProcedure.execute(world, x, y, z, guistate);
+			SetBASENameProcedure.execute(world, x, y, z, entity, guistate);
 		}
 		if (buttonID == 3) {
 
-			InputCapsBASEUIProcedure.execute(world, x, y, z);
+			InputCapsBASEUIProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

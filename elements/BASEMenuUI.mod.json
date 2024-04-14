@@ -2,7 +2,7 @@
   "_fv": 47,
   "_type": "gui",
   "definition": {
-    "type": 0,
+    "type": 1,
     "width": 176,
     "height": 166,
     "inventoryOffsetX": 0,
@@ -214,7 +214,7 @@
           "name": "label_varlocalvar",
           "text": {
             "fixedValue": "DisplaysInputName",
-            "name": "BASEMenuUIWhileThisGUIIsOpenTick"
+            "name": "DisplayBaseNameStored"
           },
           "color": {
             "value": -16724992,
@@ -223,11 +223,60 @@
           "x": 33,
           "y": 35
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_base_menu_ui_while_this_gui",
+          "text": {
+            "fixedValue": "capsStored",
+            "name": "DisplayCapsStored"
+          },
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "x": -21,
+          "y": 125
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 200,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 402,
+          "y": 8
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 201,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 402,
+          "y": 35
+        }
       }
     ],
-    "onTick": {
-      "name": "BASEMenuUIWhileThisGUIIsOpenTick"
-    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,
