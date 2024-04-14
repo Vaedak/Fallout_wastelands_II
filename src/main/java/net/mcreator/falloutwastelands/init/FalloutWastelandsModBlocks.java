@@ -162,6 +162,7 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> BURNISHED_GLASS_PANE = REGISTRY.register("burnished_glass_pane", () -> new BurnishedGlassPaneBlock());
 	public static final RegistryObject<Block> WASTELANDTILES = REGISTRY.register("wastelandtiles", () -> new WastelandtilesBlock());
 	public static final RegistryObject<Block> BAS_ECORE = REGISTRY.register("bas_ecore", () -> new BASEcoreBlock());
+	public static final RegistryObject<Block> ZONE_REMOVER_BLOCK = REGISTRY.register("zone_remover_block", () -> new ZoneRemoverBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

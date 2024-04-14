@@ -93,6 +93,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.BURNISHED_GLASS_PANE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDTILES.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.BAS_ECORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.ZONE_REMOVER_BLOCK.get().asItem());
 			})
 
 					.build());
@@ -119,6 +120,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.TEST_WEAPON.get());
 				tabData.accept(FalloutWastelandsModItems.BASE_GUN_ITEM.get());
 				tabData.accept(FalloutWastelandsModItems.NINEMMPISTOL.get());
+				tabData.accept(FalloutWastelandsModItems.ZONE_MOB_SPAWN_EGG.get());
 			})
 
 					.build());

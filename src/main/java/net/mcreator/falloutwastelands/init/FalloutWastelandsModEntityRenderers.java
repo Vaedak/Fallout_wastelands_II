@@ -19,5 +19,6 @@ public class FalloutWastelandsModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(FalloutWastelandsModEntities.BASE_GUN_ITEM.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(FalloutWastelandsModEntities.CANNIBAL_00.get(), Cannibal00Renderer::new);
+		event.registerEntityRenderer(FalloutWastelandsModEntities.ZONE_MOB.get(), ZoneMobRenderer::new);
 	}
 }
