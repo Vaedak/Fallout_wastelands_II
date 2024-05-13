@@ -3445,6 +3445,21 @@
         ]
       },
       "path": "~/B.A.S.E"
+    },
+    {
+      "name": "ZoneParticle",
+      "type": "particle",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zone_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/client/particle/ZoneParticleParticle.java",
+          "src/main/resources/assets/fallout_wastelands_/particles/zone_particle.json"
+        ]
+      },
+      "path": "~/B.A.S.E"
     }
   ],
   "variable_elements": [],
