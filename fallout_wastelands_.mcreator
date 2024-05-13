@@ -3193,21 +3193,6 @@
         "files": [
           "src/main/java/net/mcreator/falloutwastelands/procedures/SpawnBASEfieldProcedure.java"
         ],
-        "dependencies": []
-      },
-      "path": "~/B.A.S.E"
-    },
-    {
-      "name": "IncreaseZoneSize",
-      "type": "procedure",
-      "sortid": 163,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "increase_zone_size",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/falloutwastelands/procedures/IncreaseZoneSizeProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "x",
@@ -3230,15 +3215,15 @@
       "path": "~/B.A.S.E"
     },
     {
-      "name": "DropBaseCaps",
+      "name": "IncreaseZoneSize",
       "type": "procedure",
-      "sortid": 166,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "drop_base_caps",
+      "registry_name": "increase_zone_size",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/procedures/DropBaseCapsProcedure.java"
+          "src/main/java/net/mcreator/falloutwastelands/procedures/IncreaseZoneSizeProcedure.java"
         ],
         "dependencies": [
           {
@@ -3334,6 +3319,132 @@
         ]
       },
       "path": "~/B.A.S.E"
+    },
+    {
+      "name": "DropCaps",
+      "type": "procedure",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drop_caps",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/DropCapsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "BASECapBundle",
+      "type": "item",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "base_cap_bundle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/BASECapBundleItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/base_cap_bundle.json"
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "BASENameItemRemove",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "base_name_item_remove",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/BASENameItemRemoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "BASENameItem",
+      "type": "item",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "base_name_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/BASENameItemItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/base_name_item.json"
+        ]
+      },
+      "path": "~/B.A.S.E"
+    },
+    {
+      "name": "ParticleSquare",
+      "type": "procedure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "particle_square",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/ParticleSquareProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/B.A.S.E"
     }
   ],
   "variable_elements": [],
@@ -3350,8 +3461,8 @@
   "language_map": {
     "en_us": {
       "block.fallout_wastelands_.barricadesheetmetalblock": "Barricade Sheet Metal Block",
-      "gui.fallout_wastelands_.base_menu_ui.NameInput": "Name",
       "block.fallout_wastelands_.cracked_wasteland_concrete_wall": "Cracked Concrete Slab",
+      "gui.fallout_wastelands_.base_menu_ui.NameInput": "Name",
       "block.fallout_wastelands_.wasteland_concrete_wall": "Concrete Wall",
       "block.fallout_wastelands_.cracked_wasteland_concrete_slabs": "Cracked Concrete Slab",
       "block.fallout_wastelands_.wasteland_concrete_stairs": "Concrete Stairs",
@@ -3367,8 +3478,8 @@
       "block.fallout_wastelands_.wasteland_brick": "Wasteland Bricks",
       "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
       "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
-      "block.fallout_wastelands_.wastelandtiles": "Wasteland Tiles",
       "block.fallout_wastelands_.roof_metal": "Roof Sheet Metal Block",
+      "block.fallout_wastelands_.wastelandtiles": "Wasteland Tiles",
       "gui.fallout_wastelands_.base_menu_ui.label_inventory": "Inventory",
       "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
       "gui.fallout_wastelands_.base_menu_ui.label_done1": "Done",
@@ -3454,6 +3565,7 @@
       "block.fallout_wastelands_.wirefence": "Wire Fence",
       "gui.fallout_wastelands_.base_inventory.label_inventory": "Inventory",
       "block.fallout_wastelands_.utsol": "Wasteland Utsol",
+      "item.fallout_wastelands_.base_name_item": "BASE Name Item",
       "block.fallout_wastelands_.wastelandbricks": "Wasteland Bricks",
       "block.fallout_wastelands_.wasteland_broken_glass": "Broken Glass",
       "block.fallout_wastelands_.reinforced_planks": "Reinforced Wood Planks",
@@ -3483,6 +3595,7 @@
       "block.fallout_wastelands_.wastelandemeraldore": "Wasteland Emerald Ore",
       "item.fallout_wastelands_.raiderblastmaster_chestplate": "Raider Blastmaster Chestplate",
       "block.fallout_wastelands_.burnished_glass": "Burnished Glass Block",
+      "item.fallout_wastelands_.base_cap_bundle": "Cap Bundle",
       "block.fallout_wastelands_.wall_wasteland_cobblestone": "Wasteland Cobblestone Wall",
       "item.fallout_wastelands_.raiderduster_helmet": "Raider Duster Hood",
       "item.fallout_wastelands_.bottle_cap": "Bottle Cap"

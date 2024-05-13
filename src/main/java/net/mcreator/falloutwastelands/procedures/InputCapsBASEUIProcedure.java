@@ -8,7 +8,6 @@ import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
@@ -40,7 +39,8 @@ public class InputCapsBASEUIProcedure {
 				}
 			}
 		}
-		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(200)).getItem() : ItemStack.EMPTY).getItem() == Items.PAPER) {
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(200)).getItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.BASE_CAP_BUNDLE
+				.get()) {
 			newCapCount = new Object() {
 				double convert(String s) {
 					try {
@@ -57,7 +57,7 @@ public class InputCapsBASEUIProcedure {
 				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 				if (_ent != null) {
 					final int _slotid = 200;
-					final ItemStack _setstack = new ItemStack(Items.PAPER);
+					final ItemStack _setstack = new ItemStack(FalloutWastelandsModItems.BASE_CAP_BUNDLE.get());
 					_setstack.setCount(1);
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						if (capability instanceof IItemHandlerModifiable)
@@ -71,7 +71,7 @@ public class InputCapsBASEUIProcedure {
 				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 				if (_ent != null) {
 					final int _slotid = 200;
-					final ItemStack _setstack = new ItemStack(Items.PAPER);
+					final ItemStack _setstack = new ItemStack(FalloutWastelandsModItems.BASE_CAP_BUNDLE.get());
 					_setstack.setCount(1);
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						if (capability instanceof IItemHandlerModifiable)
