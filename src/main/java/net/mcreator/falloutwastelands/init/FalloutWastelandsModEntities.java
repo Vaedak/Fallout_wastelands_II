@@ -29,10 +29,6 @@ public class FalloutWastelandsModEntities {
 			EntityType.Builder.<Cannibal00Entity>of(Cannibal00Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(Cannibal00Entity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<ZoneMobEntity>> ZONE_MOB = register("zone_mob",
-			EntityType.Builder.<ZoneMobEntity>of(ZoneMobEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ZoneMobEntity::new)
-
-					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -42,13 +38,11 @@ public class FalloutWastelandsModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			Cannibal00Entity.init();
-			ZoneMobEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(CANNIBAL_00.get(), Cannibal00Entity.createAttributes().build());
-		event.put(ZONE_MOB.get(), ZoneMobEntity.createAttributes().build());
 	}
 }
