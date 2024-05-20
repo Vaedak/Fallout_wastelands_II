@@ -31,6 +31,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModTabs;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModSounds;
+import net.mcreator.falloutwastelands.init.FalloutWastelandsModParticleTypes;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModMenus;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModItems;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModFeatures;
@@ -63,6 +64,8 @@ public class FalloutWastelandsMod {
 
 		FalloutWastelandsModTabs.REGISTRY.register(bus);
 		FalloutWastelandsModFeatures.REGISTRY.register(bus);
+
+		FalloutWastelandsModParticleTypes.REGISTRY.register(bus);
 
 		FalloutWastelandsModMenus.REGISTRY.register(bus);
 	}

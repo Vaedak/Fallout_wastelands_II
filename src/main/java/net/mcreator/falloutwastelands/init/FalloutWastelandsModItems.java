@@ -39,6 +39,8 @@ import net.mcreator.falloutwastelands.item.CombatarmorItem;
 import net.mcreator.falloutwastelands.item.ClothItem;
 import net.mcreator.falloutwastelands.item.BottleCapItem;
 import net.mcreator.falloutwastelands.item.BaseGunItemItem;
+import net.mcreator.falloutwastelands.item.BASENameItemItem;
+import net.mcreator.falloutwastelands.item.BASECapBundleItem;
 import net.mcreator.falloutwastelands.item.AsbestosItem;
 import net.mcreator.falloutwastelands.item.AntiradclothingItem;
 import net.mcreator.falloutwastelands.item.AluminumIngotItem;
@@ -159,6 +161,8 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> CANNIBAL_00_SPAWN_EGG = REGISTRY.register("cannibal_00_spawn_egg", () -> new ForgeSpawnEggItem(FalloutWastelandsModEntities.CANNIBAL_00, -11382217, -9939410, new Item.Properties()));
 	public static final RegistryObject<Item> WASTELANDTILES = block(FalloutWastelandsModBlocks.WASTELANDTILES);
 	public static final RegistryObject<Item> BAS_ECORE = REGISTRY.register(FalloutWastelandsModBlocks.BAS_ECORE.getId().getPath(), () -> new BASEcoreDisplayItem(FalloutWastelandsModBlocks.BAS_ECORE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> BASE_CAP_BUNDLE = REGISTRY.register("base_cap_bundle", () -> new BASECapBundleItem());
+	public static final RegistryObject<Item> BASE_NAME_ITEM = REGISTRY.register("base_name_item", () -> new BASENameItemItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
