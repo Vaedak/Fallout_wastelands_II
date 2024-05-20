@@ -1,6 +1,7 @@
+
 {
   "parent": "fallout_wastelands_:displaysettings/brf.item",
   "textures": {
-    "particle": "fallout_wastelands_:block/walkwaytop"
+    "particle": "fallout_wastelands_:block/base"
   }
 }
