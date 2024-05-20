@@ -55,7 +55,7 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 20,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -131,12 +131,6 @@
     },
     "onTickUpdate": {
       "name": "BASEcoreUpdateTick"
-    },
-    "onDestroyedByPlayer": {
-      "name": "DropBaseCaps"
-    },
-    "onDestroyedByExplosion": {
-      "name": "DropBaseCaps"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
