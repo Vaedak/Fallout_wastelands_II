@@ -77,13 +77,13 @@ public class BASEInventoryMenu extends AbstractContainerMenu implements Supplier
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, -87, -38) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, -24, -2) {
 			private final int slot = 0;
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, -69, -38) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, -42, -2) {
 			private final int slot = 1;
 		}));
-		this.customSlots.put(200, this.addSlot(new SlotItemHandler(internal, 200, 236, -56) {
+		this.customSlots.put(200, this.addSlot(new SlotItemHandler(internal, 200, 191, -29) {
 			private final int slot = 200;
 
 			@Override
@@ -96,7 +96,7 @@ public class BASEInventoryMenu extends AbstractContainerMenu implements Supplier
 				return false;
 			}
 		}));
-		this.customSlots.put(201, this.addSlot(new SlotItemHandler(internal, 201, 236, -20) {
+		this.customSlots.put(201, this.addSlot(new SlotItemHandler(internal, 201, 191, 7) {
 			private final int slot = 201;
 
 			@Override

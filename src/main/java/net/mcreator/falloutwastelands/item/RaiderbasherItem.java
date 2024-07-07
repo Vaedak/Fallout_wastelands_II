@@ -41,7 +41,7 @@ public abstract class RaiderbasherItem extends ArmorItem {
 
 			@Override
 			public int getEnchantmentValue() {
-				return 4;
+				return 0;
 			}
 
 			@Override

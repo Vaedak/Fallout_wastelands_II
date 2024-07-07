@@ -15,7 +15,6 @@ import net.mcreator.falloutwastelands.world.features.plants.Wastelandshortburntg
 import net.mcreator.falloutwastelands.world.features.plants.WastelandpebbleFeature;
 import net.mcreator.falloutwastelands.world.features.plants.WastelandgrassbushFeature;
 import net.mcreator.falloutwastelands.world.features.plants.WastelandburntgrassFeature;
-import net.mcreator.falloutwastelands.world.features.ores.WastelandtilesFeature;
 import net.mcreator.falloutwastelands.world.features.ores.WastelandlapisoreFeature;
 import net.mcreator.falloutwastelands.world.features.ores.WastelandironoreFeature;
 import net.mcreator.falloutwastelands.world.features.ores.WastelandgravelFeature;
@@ -47,5 +46,4 @@ public class FalloutWastelandsModFeatures {
 	public static final RegistryObject<Feature<?>> WASTELANDDIAMONDORE = REGISTRY.register("wastelanddiamondore", WastelanddiamondoreFeature::new);
 	public static final RegistryObject<Feature<?>> WASTELAND_GOLDORE = REGISTRY.register("wasteland_goldore", WastelandGoldoreFeature::new);
 	public static final RegistryObject<Feature<?>> WASTELANDEMERALDORE = REGISTRY.register("wastelandemeraldore", WastelandemeraldoreFeature::new);
-	public static final RegistryObject<Feature<?>> WASTELANDTILES = REGISTRY.register("wastelandtiles", WastelandtilesFeature::new);
 }

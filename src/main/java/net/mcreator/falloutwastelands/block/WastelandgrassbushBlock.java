@@ -69,8 +69,7 @@ public class WastelandgrassbushBlock extends FlowerBlock {
 
 	@Override
 	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
-		return groundState.is(FalloutWastelandsModBlocks.WASTELAND_DIRT.get()) || groundState.is(FalloutWastelandsModBlocks.UTSOL.get()) || groundState.is(FalloutWastelandsModBlocks.THE_GLOW_DIRT.get())
-				|| groundState.is(FalloutWastelandsModBlocks.WASTELANDGRASSBLOCK.get());
+		return groundState.is(FalloutWastelandsModBlocks.WASTELAND_DIRT.get()) || groundState.is(FalloutWastelandsModBlocks.THE_GLOW_DIRT.get()) || groundState.is(FalloutWastelandsModBlocks.WASTELANDGRASSBLOCK.get());
 	}
 
 	@Override

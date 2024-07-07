@@ -1,7 +1,7 @@
 {
   "type": "fallout_wastelands_:wastelandpebble",
   "config": {
-    "tries": 83,
+    "tries": 92,
     "feature": {
       "feature": {
         "type": "minecraft:simple_block",

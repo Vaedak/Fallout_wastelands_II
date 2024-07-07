@@ -77,7 +77,7 @@ public class BASEMenuUIMenu extends AbstractContainerMenu implements Supplier<Ma
 					});
 			}
 		}
-		this.customSlots.put(200, this.addSlot(new SlotItemHandler(internal, 200, 277, -28) {
+		this.customSlots.put(200, this.addSlot(new SlotItemHandler(internal, 200, -69, 22) {
 			private final int slot = 200;
 
 			@Override
@@ -90,7 +90,7 @@ public class BASEMenuUIMenu extends AbstractContainerMenu implements Supplier<Ma
 				return false;
 			}
 		}));
-		this.customSlots.put(201, this.addSlot(new SlotItemHandler(internal, 201, 277, -1) {
+		this.customSlots.put(201, this.addSlot(new SlotItemHandler(internal, 201, -70, 99) {
 			private final int slot = 201;
 
 			@Override

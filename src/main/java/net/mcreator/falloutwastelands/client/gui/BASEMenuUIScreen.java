@@ -55,6 +55,9 @@ public class BASEMenuUIScreen extends AbstractContainerScreen<BASEMenuUIMenu> {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
+
+		guiGraphics.blit(new ResourceLocation("fallout_wastelands_:textures/screens/base_main_menu.png"), this.leftPos + -83, this.topPos + -37, 0, 0, 340, 240, 340, 240);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -77,21 +80,21 @@ public class BASEMenuUIScreen extends AbstractContainerScreen<BASEMenuUIMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_inventory"), 65, 56, -16777216, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_empty"), -121, -26, -16777216, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_d"), -89, -16, -16777216, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_done"), 67, 73, -16777216, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_done1"), -84, 43, -16777216, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_done2"), -83, 106, -16777216, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_caps"), -83, 70, -16777216, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_input_caps"), -92, 88, -3368704, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_caps_expense"), -92, 133, -6750208, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_inventory"), 6, 34, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_empty"), 295, 109, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_d"), 284, 121, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_done"), -67, 184, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_done1"), 169, -29, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_done2"), 286, 92, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_caps"), 291, 20, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_input_caps"), 290, 77, -3368704, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_menu_ui.label_caps_expense"), 268, 55, -6750208, false);
 		guiGraphics.drawString(this.font,
 
-				DisplayBaseNameStoredProcedure.execute(world, x, y, z, entity), -92, -2, -16724992, false);
+				DisplayBaseNameStoredProcedure.execute(world, x, y, z, entity), -74, -26, -16724992, false);
 		guiGraphics.drawString(this.font,
 
-				DisplayCapsStoredProcedure.execute(world, x, y, z, entity), -146, 88, -16711936, false);
+				DisplayCapsStoredProcedure.execute(world, x, y, z, entity), 272, 43, -16711936, false);
 	}
 
 	@Override
@@ -102,7 +105,7 @@ public class BASEMenuUIScreen extends AbstractContainerScreen<BASEMenuUIMenu> {
 	@Override
 	public void init() {
 		super.init();
-		NameInput = new EditBox(this.font, this.leftPos + -101, this.topPos + 16, 120, 20, Component.translatable("gui.fallout_wastelands_.base_menu_ui.NameInput")) {
+		NameInput = new EditBox(this.font, this.leftPos + 46, this.topPos + -34, 120, 20, Component.translatable("gui.fallout_wastelands_.base_menu_ui.NameInput")) {
 			{
 				setSuggestion(Component.translatable("gui.fallout_wastelands_.base_menu_ui.NameInput").getString());
 			}
@@ -128,7 +131,7 @@ public class BASEMenuUIScreen extends AbstractContainerScreen<BASEMenuUIMenu> {
 		NameInput.setMaxLength(32767);
 		guistate.put("text:NameInput", NameInput);
 		this.addWidget(this.NameInput);
-		imagebutton_locker_storage = new ImageButton(this.leftPos + 109, this.topPos + 52, 16, 16, 0, 0, 16, new ResourceLocation("fallout_wastelands_:textures/screens/atlas/imagebutton_locker_storage.png"), 16, 32, e -> {
+		imagebutton_locker_storage = new ImageButton(this.leftPos + -12, this.topPos + 33, 16, 16, 0, 0, 16, new ResourceLocation("fallout_wastelands_:textures/screens/atlas/imagebutton_locker_storage.png"), 16, 32, e -> {
 			if (true) {
 				FalloutWastelandsMod.PACKET_HANDLER.sendToServer(new BASEMenuUIButtonMessage(0, x, y, z));
 				BASEMenuUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -136,7 +139,7 @@ public class BASEMenuUIScreen extends AbstractContainerScreen<BASEMenuUIMenu> {
 		});
 		guistate.put("button:imagebutton_locker_storage", imagebutton_locker_storage);
 		this.addRenderableWidget(imagebutton_locker_storage);
-		imagebutton_buttonplaceholdertexture = new ImageButton(this.leftPos + 94, this.topPos + 70, 16, 16, 0, 0, 16, new ResourceLocation("fallout_wastelands_:textures/screens/atlas/imagebutton_buttonplaceholdertexture.png"), 16, 32, e -> {
+		imagebutton_buttonplaceholdertexture = new ImageButton(this.leftPos + -82, this.topPos + 181, 16, 16, 0, 0, 16, new ResourceLocation("fallout_wastelands_:textures/screens/atlas/imagebutton_buttonplaceholdertexture.png"), 16, 32, e -> {
 			if (true) {
 				FalloutWastelandsMod.PACKET_HANDLER.sendToServer(new BASEMenuUIButtonMessage(1, x, y, z));
 				BASEMenuUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -144,7 +147,7 @@ public class BASEMenuUIScreen extends AbstractContainerScreen<BASEMenuUIMenu> {
 		});
 		guistate.put("button:imagebutton_buttonplaceholdertexture", imagebutton_buttonplaceholdertexture);
 		this.addRenderableWidget(imagebutton_buttonplaceholdertexture);
-		imagebutton_buttonplaceholdertexture1 = new ImageButton(this.leftPos + -59, this.topPos + 40, 16, 16, 0, 0, 16, new ResourceLocation("fallout_wastelands_:textures/screens/atlas/imagebutton_buttonplaceholdertexture1.png"), 16, 32, e -> {
+		imagebutton_buttonplaceholdertexture1 = new ImageButton(this.leftPos + 190, this.topPos + -32, 16, 16, 0, 0, 16, new ResourceLocation("fallout_wastelands_:textures/screens/atlas/imagebutton_buttonplaceholdertexture1.png"), 16, 32, e -> {
 			if (true) {
 				FalloutWastelandsMod.PACKET_HANDLER.sendToServer(new BASEMenuUIButtonMessage(2, x, y, z));
 				BASEMenuUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
@@ -152,7 +155,7 @@ public class BASEMenuUIScreen extends AbstractContainerScreen<BASEMenuUIMenu> {
 		});
 		guistate.put("button:imagebutton_buttonplaceholdertexture1", imagebutton_buttonplaceholdertexture1);
 		this.addRenderableWidget(imagebutton_buttonplaceholdertexture1);
-		imagebutton_buttonplaceholdertexture2 = new ImageButton(this.leftPos + -56, this.topPos + 106, 16, 16, 0, 0, 16, new ResourceLocation("fallout_wastelands_:textures/screens/atlas/imagebutton_buttonplaceholdertexture2.png"), 16, 32, e -> {
+		imagebutton_buttonplaceholdertexture2 = new ImageButton(this.leftPos + -86, this.topPos + 68, 16, 16, 0, 0, 16, new ResourceLocation("fallout_wastelands_:textures/screens/atlas/imagebutton_buttonplaceholdertexture2.png"), 16, 32, e -> {
 			if (true) {
 				FalloutWastelandsMod.PACKET_HANDLER.sendToServer(new BASEMenuUIButtonMessage(3, x, y, z));
 				BASEMenuUIButtonMessage.handleButtonAction(entity, 3, x, y, z);

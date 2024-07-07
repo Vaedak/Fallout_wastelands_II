@@ -18,10 +18,10 @@
             "fixedValue": "Inventory"
           },
           "color": {
-            "value": -16777216,
+            "value": -16711936,
             "falpha": 0.0
           },
-          "x": 69,
+          "x": 78,
           "y": 8
         }
       },
@@ -69,8 +69,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 69,
-          "y": 26
+          "x": 132,
+          "y": 62
         }
       },
       {
@@ -87,8 +87,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 87,
-          "y": 26
+          "x": 114,
+          "y": 62
         }
       },
       {
@@ -105,8 +105,8 @@
             "fixedValue": true
           },
           "dropItemsWhenNotBound": false,
-          "x": 393,
-          "y": 8
+          "x": 348,
+          "y": 35
         }
       },
       {
@@ -123,8 +123,30 @@
             "fixedValue": true
           },
           "dropItemsWhenNotBound": false,
-          "x": 393,
-          "y": 44
+          "x": 348,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "t_base_inventory.png",
+          "use1Xscale": false,
+          "x": 42,
+          "y": -1
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_buttonplaceholdertexture",
+          "image": "buttonplaceholdertexture.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ExitMenuUI"
+          },
+          "x": 352,
+          "y": 10
         }
       }
     ],
@@ -133,7 +155,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

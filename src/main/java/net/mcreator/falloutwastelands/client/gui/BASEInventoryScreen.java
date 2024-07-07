@@ -6,9 +6,12 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.falloutwastelands.world.inventory.BASEInventoryMenu;
+import net.mcreator.falloutwastelands.network.BASEInventoryButtonMessage;
+import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
 import java.util.HashMap;
 
@@ -19,6 +22,7 @@ public class BASEInventoryScreen extends AbstractContainerScreen<BASEInventoryMe
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	ImageButton imagebutton_buttonplaceholdertexture;
 
 	public BASEInventoryScreen(BASEInventoryMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -46,6 +50,9 @@ public class BASEInventoryScreen extends AbstractContainerScreen<BASEInventoryMe
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("fallout_wastelands_:textures/screens/t_base_inventory.png"), this.leftPos + -115, this.topPos + -66, 0, 0, 340, 240, 340, 240);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -65,7 +72,7 @@ public class BASEInventoryScreen extends AbstractContainerScreen<BASEInventoryMe
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_inventory.label_inventory"), -88, -57, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_inventory.label_inventory"), -79, -57, -16711936, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_inventory.label_note_to_make_the_white_ui_disap"), -153, 105, -16777216, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.fallout_wastelands_.base_inventory.label_a"), -153, 121, -16777216, false);
 	}
@@ -78,5 +85,13 @@ public class BASEInventoryScreen extends AbstractContainerScreen<BASEInventoryMe
 	@Override
 	public void init() {
 		super.init();
+		imagebutton_buttonplaceholdertexture = new ImageButton(this.leftPos + 194, this.topPos + -55, 16, 16, 0, 0, 16, new ResourceLocation("fallout_wastelands_:textures/screens/atlas/imagebutton_buttonplaceholdertexture.png"), 16, 32, e -> {
+			if (true) {
+				FalloutWastelandsMod.PACKET_HANDLER.sendToServer(new BASEInventoryButtonMessage(0, x, y, z));
+				BASEInventoryButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		});
+		guistate.put("button:imagebutton_buttonplaceholdertexture", imagebutton_buttonplaceholdertexture);
+		this.addRenderableWidget(imagebutton_buttonplaceholdertexture);
 	}
 }

@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Wasteland Utsol",
+    "name": "Wasteland Rooty Dirt",
     "specialInfo": [],
     "hardness": 1.2,
     "resistance": 1.0,
@@ -118,7 +118,11 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "spawnWorldTypes": [],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:WastelandPlains"
+      }
+    ],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE#0"
@@ -131,11 +135,17 @@
       },
       {
         "value": "Blocks.STONE#5"
+      },
+      {
+        "value": "CUSTOM:WastelandDirt"
+      },
+      {
+        "value": "CUSTOM:Wastelandgrassblock"
       }
     ],
-    "generationShape": "UNIFORM",
+    "generationShape": "TRIANGLE",
     "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "frequencyOnChunk": 24,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64
   }

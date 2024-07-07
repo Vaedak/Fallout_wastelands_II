@@ -28,7 +28,7 @@ public abstract class CombatarmorItem extends ArmorItem {
 
 			@Override
 			public int getEnchantmentValue() {
-				return 9;
+				return 0;
 			}
 
 			@Override

@@ -117,40 +117,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:Wastelands"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:WastelandDryland"
-      },
-      {
-        "value": "CUSTOM:WastelandPlains"
-      }
-    ],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE#0"
-      },
-      {
-        "value": "Blocks.STONE#1"
-      },
-      {
-        "value": "Blocks.STONE#3"
-      },
-      {
-        "value": "Blocks.STONE#5"
-      },
-      {
-        "value": "CUSTOM:WastelandDirt"
-      },
-      {
-        "value": "CUSTOM:Wastelandgrassblock"
-      },
-      {
-        "value": "CUSTOM:Wastelandgravel"
-      }
-    ],
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 30,

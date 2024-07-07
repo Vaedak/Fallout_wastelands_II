@@ -13,7 +13,7 @@
     "plantType": "normal",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 100,
-    "growapableSpawnType": "Desert",
+    "growapableSpawnType": "Cave",
     "growapableMaxHeight": 3,
     "customBoundingBox": false,
     "disableOffset": false,
@@ -70,21 +70,44 @@
     "creativePickItem": {
       "value": ""
     },
-    "offsetType": "NONE",
+    "offsetType": "XZ",
     "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:WastelandDirt"
+      },
+      {
+        "value": "CUSTOM:Wastelandgravel"
+      },
+      {
+        "value": "CUSTOM:WastelandCobblestone"
+      },
+      {
+        "value": "CUSTOM:Wastelandgrassblock"
+      },
+      {
+        "value": "CUSTOM:Utsol"
+      }
+    ],
     "isBonemealable": false,
-    "frequencyOnChunks": 15,
+    "frequencyOnChunks": 32,
     "spawnWorldTypes": [
       "CUSTOM:Wastelands"
     ],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:WastelandPlains"
+      },
+      {
+        "value": "CUSTOM:WastelandDryland"
+      }
+    ],
     "generationType": "Grass",
-    "patchSize": 83,
+    "patchSize": 92,
     "generateAtAnyHeight": true
   }
 }

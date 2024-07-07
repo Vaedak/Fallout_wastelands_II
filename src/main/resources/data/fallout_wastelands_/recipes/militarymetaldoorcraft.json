@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "fallout_wastelands_:military_metal_plate"
+    },
+    "1": {
+      "item": "fallout_wastelands_:military_metal_plate"
+    },
+    "2": {
+      "item": "fallout_wastelands_:military_metal_plate"
+    },
+    "3": {
+      "item": "fallout_wastelands_:military_metal_plate"
+    },
+    "4": {
+      "item": "fallout_wastelands_:military_metal_plate"
+    },
+    "5": {
+      "item": "fallout_wastelands_:military_metal_plate"
+    }
+  },
+  "result": {
+    "item": "fallout_wastelands_:military_metal_door",
+    "count": 3
+  }
+}

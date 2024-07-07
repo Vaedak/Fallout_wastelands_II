@@ -1,5 +1,5 @@
 {
-  "parent": "fallout_wastelands_:block/utsol",
+  "parent": "fallout_wastelands_:block/military_metal_plate",
   "display": {
     "thirdperson": {
       "rotation": [

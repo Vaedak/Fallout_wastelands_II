@@ -39,7 +39,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.SLAB_WASTELAND_COBBLESTONE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WALL_WASTELAND_COBBLESTONE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.THE_GLOW_DIRT.get().asItem());
-				tabData.accept(FalloutWastelandsModBlocks.UTSOL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_ROOTY_DIRT.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BRICK.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.MOLDER_WOOD_WOOD.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.MOLDER_WOOD_LOG.get().asItem());
@@ -93,6 +93,9 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.BURNISHED_GLASS_PANE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDTILES.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.BAS_ECORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MILITARY_METAL_PLATE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MILITARY_METAL_DOOR.get().asItem());
+				tabData.accept(FalloutWastelandsModItems.STIMPACK.get());
 			})
 
 					.build());
@@ -119,6 +122,14 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.TEST_WEAPON.get());
 				tabData.accept(FalloutWastelandsModItems.BASE_GUN_ITEM.get());
 				tabData.accept(FalloutWastelandsModItems.NINEMMPISTOL.get());
+				tabData.accept(FalloutWastelandsModItems.ANTIRADSUIT_HELMET.get());
+				tabData.accept(FalloutWastelandsModItems.ANTIRADSUIT_CHESTPLATE.get());
+				tabData.accept(FalloutWastelandsModItems.ANTIRADSUIT_LEGGINGS.get());
+				tabData.accept(FalloutWastelandsModItems.ANTIRADSUIT_BOOTS.get());
+				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_HELMET.get());
+				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_CHESTPLATE.get());
+				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_LEGGINGS.get());
+				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_BOOTS.get());
 			})
 
 					.build());
@@ -143,6 +154,8 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.NEUTRONADE.get());
 				tabData.accept(FalloutWastelandsModItems.NEUTRONADE_CAP.get());
 				tabData.accept(FalloutWastelandsModItems.EMPTY_NEUTRONADE_BOTTLE.get());
+				tabData.accept(FalloutWastelandsModItems.SCRAPMETAL.get());
+				tabData.accept(FalloutWastelandsModItems.PSYCHO.get());
 			})
 
 					.build());

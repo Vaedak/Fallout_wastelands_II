@@ -40,7 +40,7 @@ public abstract class RaiderblastmasterItem extends ArmorItem {
 
 			@Override
 			public int getEnchantmentValue() {
-				return 2;
+				return 0;
 			}
 
 			@Override

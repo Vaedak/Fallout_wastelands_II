@@ -70,6 +70,8 @@ import net.mcreator.falloutwastelands.block.Molder_WoodFenceBlock;
 import net.mcreator.falloutwastelands.block.Molder_WoodButtonBlock;
 import net.mcreator.falloutwastelands.block.MolderWoodTrapdoorBlock;
 import net.mcreator.falloutwastelands.block.MolderWoodDoorBlock;
+import net.mcreator.falloutwastelands.block.MilitaryMetalPlateBlock;
+import net.mcreator.falloutwastelands.block.MilitaryMetalDoorBlock;
 import net.mcreator.falloutwastelands.block.LockerBlock;
 import net.mcreator.falloutwastelands.block.LandmineBlock;
 import net.mcreator.falloutwastelands.block.HangardoorBlock;
@@ -107,7 +109,7 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> SLAB_WASTELAND_COBBLESTONE = REGISTRY.register("slab_wasteland_cobblestone", () -> new SlabWastelandCobblestoneBlock());
 	public static final RegistryObject<Block> WALL_WASTELAND_COBBLESTONE = REGISTRY.register("wall_wasteland_cobblestone", () -> new WallWastelandCobblestoneBlock());
 	public static final RegistryObject<Block> THE_GLOW_DIRT = REGISTRY.register("the_glow_dirt", () -> new TheGlowDirtBlock());
-	public static final RegistryObject<Block> UTSOL = REGISTRY.register("utsol", () -> new UtsolBlock());
+	public static final RegistryObject<Block> WASTELAND_ROOTY_DIRT = REGISTRY.register("wasteland_rooty_dirt", () -> new UtsolBlock());
 	public static final RegistryObject<Block> WASTELAND_BRICK = REGISTRY.register("wasteland_brick", () -> new WastelandBrickBlock());
 	public static final RegistryObject<Block> MOLDER_WOOD_WOOD = REGISTRY.register("molder_wood_wood", () -> new Molder_WoodWoodBlock());
 	public static final RegistryObject<Block> MOLDER_WOOD_LOG = REGISTRY.register("molder_wood_log", () -> new Molder_WoodLogBlock());
@@ -162,6 +164,8 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> BURNISHED_GLASS_PANE = REGISTRY.register("burnished_glass_pane", () -> new BurnishedGlassPaneBlock());
 	public static final RegistryObject<Block> WASTELANDTILES = REGISTRY.register("wastelandtiles", () -> new WastelandtilesBlock());
 	public static final RegistryObject<Block> BAS_ECORE = REGISTRY.register("bas_ecore", () -> new BASEcoreBlock());
+	public static final RegistryObject<Block> MILITARY_METAL_PLATE = REGISTRY.register("military_metal_plate", () -> new MilitaryMetalPlateBlock());
+	public static final RegistryObject<Block> MILITARY_METAL_DOOR = REGISTRY.register("military_metal_door", () -> new MilitaryMetalDoorBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
