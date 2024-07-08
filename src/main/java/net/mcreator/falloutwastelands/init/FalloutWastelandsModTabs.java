@@ -70,6 +70,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BRICK_WALL.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_BROKEN_GLASS.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.LOCKER.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.LANDMINE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WORN_METAL.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.HANGARDOOR.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_CRACKED_BRICK.get().asItem());
@@ -108,6 +109,10 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.HARDCONCRETESTAIRS.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.RUSTYSHEETMETALSTAIRS.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.SHEETMETALSTAIRS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDTILESSTAIRS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDTILESSLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDHARDSTONE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.RUST_BLOCK.get().asItem());
 			})
 
 					.build());
@@ -125,7 +130,6 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.RAIDERBLASTMASTER_CHESTPLATE.get());
 				tabData.accept(FalloutWastelandsModItems.RAIDERBLASTMASTER_LEGGINGS.get());
 				tabData.accept(FalloutWastelandsModItems.RAIDERBLASTMASTER_BOOTS.get());
-				tabData.accept(FalloutWastelandsModBlocks.LANDMINE.get().asItem());
 				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_HELMET.get());
 				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_CHESTPLATE.get());
 				tabData.accept(FalloutWastelandsModItems.COMBATARMOR_LEGGINGS.get());
@@ -142,6 +146,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_CHESTPLATE.get());
 				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_LEGGINGS.get());
 				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_BOOTS.get());
+				tabData.accept(FalloutWastelandsModItems.RIPPER.get());
 			})
 
 					.build());

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "ripper_fixed_01"
+      },
+      "name": "default"
+    }
+  }
+}

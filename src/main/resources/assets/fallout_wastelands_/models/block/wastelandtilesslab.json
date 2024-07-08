@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "fallout_wastelands_:block/tile2",
+    "top": "fallout_wastelands_:block/tile2",
+    "side": "fallout_wastelands_:block/tile2"
+  },
+  "render_type": "solid"
+}

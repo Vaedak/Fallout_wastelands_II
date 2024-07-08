@@ -24,6 +24,7 @@ import net.mcreator.falloutwastelands.item.TaloncombatarmorItem;
 import net.mcreator.falloutwastelands.item.StimpackItem;
 import net.mcreator.falloutwastelands.item.SteelIngotItem;
 import net.mcreator.falloutwastelands.item.ScrapmetalItem;
+import net.mcreator.falloutwastelands.item.RipperItem;
 import net.mcreator.falloutwastelands.item.Revolver32Item;
 import net.mcreator.falloutwastelands.item.RaiderdusterItem;
 import net.mcreator.falloutwastelands.item.RaiderblastmasterItem;
@@ -196,6 +197,11 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> HARDCONCRETESTAIRS = block(FalloutWastelandsModBlocks.HARDCONCRETESTAIRS);
 	public static final RegistryObject<Item> RUSTYSHEETMETALSTAIRS = block(FalloutWastelandsModBlocks.RUSTYSHEETMETALSTAIRS);
 	public static final RegistryObject<Item> SHEETMETALSTAIRS = block(FalloutWastelandsModBlocks.SHEETMETALSTAIRS);
+	public static final RegistryObject<Item> WASTELANDTILESSTAIRS = block(FalloutWastelandsModBlocks.WASTELANDTILESSTAIRS);
+	public static final RegistryObject<Item> WASTELANDTILESSLAB = block(FalloutWastelandsModBlocks.WASTELANDTILESSLAB);
+	public static final RegistryObject<Item> WASTELANDHARDSTONE = block(FalloutWastelandsModBlocks.WASTELANDHARDSTONE);
+	public static final RegistryObject<Item> RUST_BLOCK = block(FalloutWastelandsModBlocks.RUST_BLOCK);
+	public static final RegistryObject<Item> RIPPER = REGISTRY.register("ripper", () -> new RipperItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
