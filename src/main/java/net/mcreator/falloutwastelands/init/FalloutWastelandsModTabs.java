@@ -95,7 +95,19 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.BAS_ECORE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.MILITARY_METAL_PLATE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.MILITARY_METAL_DOOR.get().asItem());
-				tabData.accept(FalloutWastelandsModItems.STIMPACK.get());
+				tabData.accept(FalloutWastelandsModBlocks.MILITARY_METALWINDOW.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.CENTRALUNIT.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELANDVENTCONCRETE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.LINEDCONCRETE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WOODEDCONCRETE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.HORIZONTALLINEDCONCRETE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.GREY_TILES.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BLACK_TILES.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.CONCRETE_TILE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.HARDCONCRETE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.HARDCONCRETESTAIRS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.RUSTYSHEETMETALSTAIRS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.SHEETMETALSTAIRS.get().asItem());
 			})
 
 					.build());
@@ -155,7 +167,9 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.NEUTRONADE_CAP.get());
 				tabData.accept(FalloutWastelandsModItems.EMPTY_NEUTRONADE_BOTTLE.get());
 				tabData.accept(FalloutWastelandsModItems.SCRAPMETAL.get());
+				tabData.accept(FalloutWastelandsModItems.STIMPACK.get());
 				tabData.accept(FalloutWastelandsModItems.PSYCHO.get());
+				tabData.accept(FalloutWastelandsModItems.PIPBOY.get());
 			})
 
 					.build());

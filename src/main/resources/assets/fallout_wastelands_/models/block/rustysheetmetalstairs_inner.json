@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "fallout_wastelands_:block/test_tole_2",
+    "top": "fallout_wastelands_:block/test_tole_2",
+    "side": "fallout_wastelands_:block/test_tole_2"
+  },
+  "render_type": "solid"
+}

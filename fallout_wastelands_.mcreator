@@ -3613,6 +3613,282 @@
         ]
       },
       "path": "~/Armors"
+    },
+    {
+      "name": "Pipboy",
+      "type": "item",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipboy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/PipboyItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/pipboy.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "MilitaryMetalwindow",
+      "type": "block",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "military_metalwindow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/MilitaryMetalwindowBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/military_metalwindow.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/military_metalwindow.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/military_metalwindow.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Centralunit",
+      "type": "block",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "centralunit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/centralunit.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/centralunit.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/centralunit.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/CentralunitBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Wastelandventconcrete",
+      "type": "block",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandventconcrete",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandventconcreteBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wastelandventconcrete.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wastelandventconcrete.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wastelandventconcrete.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Linedconcrete",
+      "type": "block",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "linedconcrete",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/LinedconcreteBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/linedconcrete.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/linedconcrete.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/linedconcrete.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Woodedconcrete",
+      "type": "block",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "woodedconcrete",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/woodedconcrete.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/woodedconcrete.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/woodedconcrete.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WoodedconcreteBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Horizontallinedconcrete",
+      "type": "block",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "horizontallinedconcrete",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/horizontallinedconcrete.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/HorizontallinedconcreteBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/horizontallinedconcrete.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/horizontallinedconcrete.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Wastelandbrickcraft",
+      "type": "recipe",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandbrickcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/wastelandbrickcraft.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "StimpackUse",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stimpack_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/StimpackUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "GreyTiles",
+      "type": "block",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grey_tiles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/GreyTilesBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/grey_tiles.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/grey_tiles.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/grey_tiles.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BlackTiles",
+      "type": "block",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_tiles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/black_tiles.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/BlackTilesBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/black_tiles.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/black_tiles.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ConcreteTile",
+      "type": "block",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "concrete_tile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/ConcreteTileBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/concrete_tile.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/concrete_tile.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/concrete_tile.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Hardconcrete",
+      "type": "block",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hardconcrete",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/hardconcrete.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/hardconcrete.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/hardconcrete.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/HardconcreteBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Hardconcretestairs",
+      "type": "block",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hardconcretestairs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/HardconcretestairsBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/hardconcretestairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/hardconcretestairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/hardconcretestairs_outer.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/hardconcretestairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/hardconcretestairs_inner.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Rustysheetmetalstairs",
+      "type": "block",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rustysheetmetalstairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/rustysheetmetalstairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/rustysheetmetalstairs_inner.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/RustysheetmetalstairsBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/rustysheetmetalstairs_outer.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/rustysheetmetalstairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/rustysheetmetalstairs.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Sheetmetalstairs",
+      "type": "block",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheetmetalstairs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/SheetmetalstairsBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/sheetmetalstairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/sheetmetalstairs_outer.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/sheetmetalstairs_inner.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/sheetmetalstairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/sheetmetalstairs.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -3629,7 +3905,9 @@
   "language_map": {
     "en_us": {
       "block.fallout_wastelands_.barricadesheetmetalblock": "Barricade Sheet Metal Block",
+      "block.fallout_wastelands_.linedconcrete": "Concrete",
       "item.fallout_wastelands_.antiradsuit_leggings": "Anti-Rad Suit Leggings",
+      "block.fallout_wastelands_.grey_tiles": "Grey Tile",
       "block.fallout_wastelands_.cracked_wasteland_concrete_wall": "Cracked Concrete Slab",
       "gui.fallout_wastelands_.base_menu_ui.NameInput": "Name",
       "block.fallout_wastelands_.wasteland_concrete_wall": "Concrete Wall",
@@ -3640,10 +3918,10 @@
       "block.fallout_wastelands_.military_metal_door": "Military Metal Door",
       "block.fallout_wastelands_.rusty_sheetmetalblock": "Rusted Sheet Metal Block",
       "item.fallout_wastelands_.neutronade_cap": "Bottle Cap",
-      "item.fallout_wastelands_.antiradsuit_boots": "Anti-Rad Suit Boots",
       "item.fallout_wastelands_.taloncombatarmor_leggings": "Talon Combat Armor Leggings",
-      "gui.fallout_wastelands_.locker_storage.label_locker": "Locker",
+      "item.fallout_wastelands_.antiradsuit_boots": "Anti-Rad Suit Boots",
       "block.fallout_wastelands_.double_scaffold_block": "Double Scaffold Block",
+      "gui.fallout_wastelands_.locker_storage.label_locker": "Locker",
       "block.fallout_wastelands_.wastelandlapisore": "Wasteland Lapis Ore",
       "item.fallout_wastelands_.combatarmor_helmet": "Combat Armor Helmet",
       "item.fallout_wastelands_.combatarmor_boots": "Combat Armor Boots",
@@ -3689,7 +3967,9 @@
       "item.fallout_wastelands_.revolver_32": "Revolver 32",
       "item.fallout_wastelands_.cannibal_00_spawn_egg": "Cannibal Spawn Egg",
       "biome.fallout_wastelands_.wasteland_plains": "Wasteland Plains",
+      "block.fallout_wastelands_.woodedconcrete": "Wooded Concrete",
       "block.fallout_wastelands_.wasteland_cobblestone": "Wasteland Cobblestone",
+      "block.fallout_wastelands_.wastelandventconcrete": "Concrete",
       "block.fallout_wastelands_.wastelanddiamondore": "Wasteland Diamond Ore",
       "item.fallout_wastelands_.combatarmor_chestplate": "Combat Armor Chestplate",
       "entity.fallout_wastelands_.cannibal_00": "Cannibal",
@@ -3698,6 +3978,8 @@
       "block.fallout_wastelands_.stair_wasteland_cobblestone": "Wasteland Cobblestone Stairs",
       "gui.fallout_wastelands_.base_inventory.label_note_to_make_the_white_ui_disap": "Note: to make the white ui disappear you must set it",
       "gui.fallout_wastelands_.base_menu_ui.label_caps": "Caps",
+      "item.fallout_wastelands_.pipboy": "Pip-Boy 2500",
+      "block.fallout_wastelands_.military_metalwindow": "Military Metal Window",
       "block.fallout_wastelands_.bas_ecore": "B.A.S.E Core",
       "gui.fallout_wastelands_.base_menu_ui.label_caps_expense": "Caps Expense",
       "gui.fallout_wastelands_.base_menu_ui.label_varlocalvar": "DisplaysInputName",
@@ -3728,7 +4010,10 @@
       "item_group.fallout_wastelands_.wastelanditems": "Wasteland Items",
       "block.fallout_wastelands_.subwaybricks": "Subway Bricks",
       "block.fallout_wastelands_.wastelandcoalore": "Wasteland Coal Ore",
+      "block.fallout_wastelands_.horizontallinedconcrete": "Concrete",
+      "block.fallout_wastelands_.hardconcretestairs": "Concrete Stairs",
       "item.fallout_wastelands_.test_weapon": "Test Weapon",
+      "block.fallout_wastelands_.hardconcrete": "Hard Concrete Block",
       "item.fallout_wastelands_.raiderblastmaster_helmet": "Raider Blastmaster Helmet",
       "item.fallout_wastelands_.raiderblastmaster_leggings": "Raider Blastmaster Loincloth",
       "item.fallout_wastelands_.combatarmor_leggings": "Combat Armor Leggings",
@@ -3740,8 +4025,11 @@
       "block.fallout_wastelands_.wasteland_brick_wall": "Wasteland Stone",
       "item.fallout_wastelands_.nuka_cola": "Nuka Cola",
       "block.fallout_wastelands_.wirefence": "Wire Fence",
+      "block.fallout_wastelands_.rustysheetmetalstairs": "Rusted Sheet MetalStairs",
       "gui.fallout_wastelands_.base_inventory.label_inventory": "Inventory",
+      "block.fallout_wastelands_.black_tiles": "Black Tile",
       "item.fallout_wastelands_.base_name_item": "BASE Name Item",
+      "block.fallout_wastelands_.concrete_tile": "Concrete Tile",
       "block.fallout_wastelands_.wastelandbricks": "Wasteland Bricks",
       "block.fallout_wastelands_.wasteland_broken_glass": "Broken Glass",
       "block.fallout_wastelands_.reinforced_planks": "Reinforced Wood Planks",
@@ -3758,6 +4046,8 @@
       "block.fallout_wastelands_.military_metal_plate": "Military Metal Plate",
       "item.fallout_wastelands_.scrapmetal": "Scrap Metal",
       "item.fallout_wastelands_.lead_ingot": "Lead Ingot",
+      "block.fallout_wastelands_.centralunit": "Central Unit Block",
+      "block.fallout_wastelands_.sheetmetalstairs": "Sheet Metal Stairs",
       "item.fallout_wastelands_.aluminum_ingot": "Aluminium Ingot",
       "gui.fallout_wastelands_.base_menu_ui.label_d": " use an image with the texts and use button images",
       "item.fallout_wastelands_.nuka_cola_quantum": "Nuka Cola Quantum",

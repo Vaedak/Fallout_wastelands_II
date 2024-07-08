@@ -2,8 +2,8 @@
   "parent": "block/inner_stairs",
   "textures": {
     "bottom": "fallout_wastelands_:block/vconcrete",
-    "top": "fallout_wastelands_:block/concreteblock",
-    "side": "fallout_wastelands_:block/concreteblock"
+    "top": "fallout_wastelands_:block/vconcrete",
+    "side": "fallout_wastelands_:block/vconcrete"
   },
   "render_type": "solid"
 }

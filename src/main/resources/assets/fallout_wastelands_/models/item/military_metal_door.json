@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fallout_wastelands_:block/greenmetalplatingdoordown"
+    "layer0": "fallout_wastelands_:item/reinforceddoor"
   },
-  "render_type": "cutout_mipped"
+  "render_type": "translucent"
 }

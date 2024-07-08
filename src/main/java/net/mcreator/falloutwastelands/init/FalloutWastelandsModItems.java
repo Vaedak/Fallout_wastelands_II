@@ -29,6 +29,7 @@ import net.mcreator.falloutwastelands.item.RaiderdusterItem;
 import net.mcreator.falloutwastelands.item.RaiderblastmasterItem;
 import net.mcreator.falloutwastelands.item.RaiderbasherItem;
 import net.mcreator.falloutwastelands.item.PsychoItem;
+import net.mcreator.falloutwastelands.item.PipboyItem;
 import net.mcreator.falloutwastelands.item.NukaColaQuantumItem;
 import net.mcreator.falloutwastelands.item.NukaColaItem;
 import net.mcreator.falloutwastelands.item.NinemmpistolItem;
@@ -181,6 +182,20 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> TALONCOMBATARMOR_CHESTPLATE = REGISTRY.register("taloncombatarmor_chestplate", () -> new TaloncombatarmorItem.Chestplate());
 	public static final RegistryObject<Item> TALONCOMBATARMOR_LEGGINGS = REGISTRY.register("taloncombatarmor_leggings", () -> new TaloncombatarmorItem.Leggings());
 	public static final RegistryObject<Item> TALONCOMBATARMOR_BOOTS = REGISTRY.register("taloncombatarmor_boots", () -> new TaloncombatarmorItem.Boots());
+	public static final RegistryObject<Item> PIPBOY = REGISTRY.register("pipboy", () -> new PipboyItem());
+	public static final RegistryObject<Item> MILITARY_METALWINDOW = block(FalloutWastelandsModBlocks.MILITARY_METALWINDOW);
+	public static final RegistryObject<Item> CENTRALUNIT = block(FalloutWastelandsModBlocks.CENTRALUNIT);
+	public static final RegistryObject<Item> WASTELANDVENTCONCRETE = block(FalloutWastelandsModBlocks.WASTELANDVENTCONCRETE);
+	public static final RegistryObject<Item> LINEDCONCRETE = block(FalloutWastelandsModBlocks.LINEDCONCRETE);
+	public static final RegistryObject<Item> WOODEDCONCRETE = block(FalloutWastelandsModBlocks.WOODEDCONCRETE);
+	public static final RegistryObject<Item> HORIZONTALLINEDCONCRETE = block(FalloutWastelandsModBlocks.HORIZONTALLINEDCONCRETE);
+	public static final RegistryObject<Item> GREY_TILES = block(FalloutWastelandsModBlocks.GREY_TILES);
+	public static final RegistryObject<Item> BLACK_TILES = block(FalloutWastelandsModBlocks.BLACK_TILES);
+	public static final RegistryObject<Item> CONCRETE_TILE = block(FalloutWastelandsModBlocks.CONCRETE_TILE);
+	public static final RegistryObject<Item> HARDCONCRETE = block(FalloutWastelandsModBlocks.HARDCONCRETE);
+	public static final RegistryObject<Item> HARDCONCRETESTAIRS = block(FalloutWastelandsModBlocks.HARDCONCRETESTAIRS);
+	public static final RegistryObject<Item> RUSTYSHEETMETALSTAIRS = block(FalloutWastelandsModBlocks.RUSTYSHEETMETALSTAIRS);
+	public static final RegistryObject<Item> SHEETMETALSTAIRS = block(FalloutWastelandsModBlocks.SHEETMETALSTAIRS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

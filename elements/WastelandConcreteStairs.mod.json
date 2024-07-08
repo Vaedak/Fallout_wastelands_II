@@ -3,9 +3,9 @@
   "_type": "block",
   "definition": {
     "texture": "vconcrete",
-    "textureTop": "concreteblock",
+    "textureTop": "vconcrete",
     "textureLeft": "wastelandstonedde",
-    "textureFront": "concreteblock",
+    "textureFront": "vconcrete",
     "textureRight": "wastelandstonedde",
     "textureBack": "wastelandstonedde",
     "renderType": 11,

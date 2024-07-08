@@ -10,7 +10,7 @@
     "name": "Stimpack",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:Wastelandblockstab"
+      "value": "CUSTOM:Wastelanditems"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -31,7 +31,7 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "isFood": true,
+    "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.0,
     "eatResultItem": {

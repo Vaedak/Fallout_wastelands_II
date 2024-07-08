@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "fallout_wastelands_:wastelandbrickitem"
+    },
+    "1": {
+      "item": "fallout_wastelands_:wastelandbrickitem"
+    },
+    "2": {
+      "item": "fallout_wastelands_:wastelandbrickitem"
+    },
+    "3": {
+      "item": "fallout_wastelands_:wastelandbrickitem"
+    }
+  },
+  "result": {
+    "item": "fallout_wastelands_:wasteland_brick",
+    "count": 4
+  }
+}
