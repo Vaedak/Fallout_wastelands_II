@@ -2,12 +2,12 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "centralunito",
-    "textureTop": "centralunito",
-    "textureLeft": "centralunito",
-    "textureFront": "animatedcentralunit",
-    "textureRight": "centralunito",
-    "textureBack": "centralunito",
+    "texture": "barbed_wire_top-export",
+    "textureTop": "barbed_wire_top-export",
+    "textureLeft": "barbed_wire_side",
+    "textureFront": "barber_wire_front",
+    "textureRight": "barbed_wire_side",
+    "textureBack": "barber_wire_front",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 1,
@@ -18,9 +18,9 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "TRANSLUCENT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -33,26 +33,26 @@
         "subtract": false
       }
     ],
-    "name": "Central Unit Block",
+    "name": "Barbed Wires",
     "specialInfo": [],
-    "hardness": 0.55,
-    "resistance": 8.0,
+    "hardness": 1.5,
+    "resistance": 2.5,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Wastelandblockstab"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": true,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 0,
+    "lightOpacity": 5,
     "material": {
       "value": "IRON"
     },
@@ -72,11 +72,11 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.6,
-    "speedFactor": 1.0,
+    "slipperiness": 0.7,
+    "speedFactor": 0.30000000000000004,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "METAL"
@@ -96,7 +96,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 5,
+    "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "isBonemealable": false,
@@ -117,6 +117,15 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onStartToDestroy": {
+      "name": "Walkinginbarbedwire"
+    },
+    "onEntityCollides": {
+      "name": "Walkinginbarbedwire"
+    },
+    "onEntityWalksOn": {
+      "name": "Walkinginbarbedwire"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

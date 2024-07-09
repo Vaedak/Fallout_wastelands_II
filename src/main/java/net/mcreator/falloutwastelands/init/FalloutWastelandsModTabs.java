@@ -126,6 +126,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.MELTED_STEEL_BLOCK.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.MELTED_IRON_BLOCK.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.URANIUM_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BARBED_WIRES.get().asItem());
 			})
 
 					.build());

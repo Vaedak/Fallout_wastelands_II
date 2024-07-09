@@ -117,6 +117,7 @@ import net.mcreator.falloutwastelands.block.BlastedGlassBlock;
 import net.mcreator.falloutwastelands.block.BlackTilesBlock;
 import net.mcreator.falloutwastelands.block.BarricadesheetmetalblockBlock;
 import net.mcreator.falloutwastelands.block.BarricadeplanksBlock;
+import net.mcreator.falloutwastelands.block.BarbedWiresBlock;
 import net.mcreator.falloutwastelands.block.BASEcoreBlock;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
@@ -226,6 +227,7 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> MELTED_STEEL_BLOCK = REGISTRY.register("melted_steel_block", () -> new MeltedSteelBlockBlock());
 	public static final RegistryObject<Block> MELTED_IRON_BLOCK = REGISTRY.register("melted_iron_block", () -> new MeltedIronBlockBlock());
 	public static final RegistryObject<Block> URANIUM_BLOCK = REGISTRY.register("uranium_block", () -> new UraniumBlockBlock());
+	public static final RegistryObject<Block> BARBED_WIRES = REGISTRY.register("barbed_wires", () -> new BarbedWiresBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

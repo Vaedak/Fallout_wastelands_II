@@ -215,6 +215,7 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> MELTED_STEEL_BLOCK = block(FalloutWastelandsModBlocks.MELTED_STEEL_BLOCK);
 	public static final RegistryObject<Item> MELTED_IRON_BLOCK = block(FalloutWastelandsModBlocks.MELTED_IRON_BLOCK);
 	public static final RegistryObject<Item> URANIUM_BLOCK = block(FalloutWastelandsModBlocks.URANIUM_BLOCK);
+	public static final RegistryObject<Item> BARBED_WIRES = block(FalloutWastelandsModBlocks.BARBED_WIRES);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
