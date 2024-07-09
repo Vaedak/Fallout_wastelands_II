@@ -14,6 +14,8 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.falloutwastelands.block.WornMetalStairsBlock;
+import net.mcreator.falloutwastelands.block.WornMetalSlabBlock;
 import net.mcreator.falloutwastelands.block.WornMetalBlock;
 import net.mcreator.falloutwastelands.block.WoodedconcreteBlock;
 import net.mcreator.falloutwastelands.block.WirefenceBlock;
@@ -38,6 +40,8 @@ import net.mcreator.falloutwastelands.block.WastelandcoaloreBlock;
 import net.mcreator.falloutwastelands.block.WastelandburntgrassBlock;
 import net.mcreator.falloutwastelands.block.WastelandbricksBlock;
 import net.mcreator.falloutwastelands.block.WastelandStoneBlock;
+import net.mcreator.falloutwastelands.block.WastelandRoadSlabBlock;
+import net.mcreator.falloutwastelands.block.WastelandRoadBlockBlock;
 import net.mcreator.falloutwastelands.block.WastelandGoldoreBlock;
 import net.mcreator.falloutwastelands.block.WastelandDirtBlock;
 import net.mcreator.falloutwastelands.block.WastelandCrackedBrickBlock;
@@ -61,7 +65,9 @@ import net.mcreator.falloutwastelands.block.StairWastelandCobblestoneBlock;
 import net.mcreator.falloutwastelands.block.SlabWastelandCobblestoneBlock;
 import net.mcreator.falloutwastelands.block.SheetmetalstairsBlock;
 import net.mcreator.falloutwastelands.block.SheetmetalblockBlock;
+import net.mcreator.falloutwastelands.block.ScaffoldingWalkwayslabBlock;
 import net.mcreator.falloutwastelands.block.ScaffoldingWalkwaysBlockBlock;
+import net.mcreator.falloutwastelands.block.ScaffoldingWalkwayStairsBlock;
 import net.mcreator.falloutwastelands.block.RustysheetmetalstairsBlock;
 import net.mcreator.falloutwastelands.block.RustySheetmetalblockBlock;
 import net.mcreator.falloutwastelands.block.RustBlockBlock;
@@ -200,6 +206,12 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> WASTELANDTILESSLAB = REGISTRY.register("wastelandtilesslab", () -> new WastelandtilesslabBlock());
 	public static final RegistryObject<Block> WASTELANDHARDSTONE = REGISTRY.register("wastelandhardstone", () -> new WastelandhardstoneBlock());
 	public static final RegistryObject<Block> RUST_BLOCK = REGISTRY.register("rust_block", () -> new RustBlockBlock());
+	public static final RegistryObject<Block> WASTELAND_ROAD_BLOCK = REGISTRY.register("wasteland_road_block", () -> new WastelandRoadBlockBlock());
+	public static final RegistryObject<Block> WASTELAND_ROAD_SLAB = REGISTRY.register("wasteland_road_slab", () -> new WastelandRoadSlabBlock());
+	public static final RegistryObject<Block> WORN_METAL_STAIRS = REGISTRY.register("worn_metal_stairs", () -> new WornMetalStairsBlock());
+	public static final RegistryObject<Block> WORN_METAL_SLAB = REGISTRY.register("worn_metal_slab", () -> new WornMetalSlabBlock());
+	public static final RegistryObject<Block> SCAFFOLDING_WALKWAYSLAB = REGISTRY.register("scaffolding_walkwayslab", () -> new ScaffoldingWalkwayslabBlock());
+	public static final RegistryObject<Block> SCAFFOLDING_WALKWAY_STAIRS = REGISTRY.register("scaffolding_walkway_stairs", () -> new ScaffoldingWalkwayStairsBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

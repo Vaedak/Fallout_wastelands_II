@@ -113,6 +113,12 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDTILESSLAB.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDHARDSTONE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.RUST_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_ROAD_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_ROAD_SLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WORN_METAL_STAIRS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WORN_METAL_SLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAYSLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAY_STAIRS.get().asItem());
 			})
 
 					.build());

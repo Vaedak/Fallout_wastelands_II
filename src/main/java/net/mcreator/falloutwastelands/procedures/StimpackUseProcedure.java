@@ -14,7 +14,7 @@ public class StimpackUseProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 32, 3));
+			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 48, 3));
 		if (entity instanceof Player _player) {
 			ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.STIMPACK.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());

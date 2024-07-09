@@ -2,6 +2,7 @@
   "block.fallout_wastelands_.barricadesheetmetalblock": "Barricade Sheet Metal Block",
   "block.fallout_wastelands_.linedconcrete": "Concrete",
   "item.fallout_wastelands_.antiradsuit_leggings": "Anti-Rad Suit Leggings",
+  "block.fallout_wastelands_.scaffolding_walkway_stairs": "Scaffolding Walkway Stairs",
   "block.fallout_wastelands_.grey_tiles": "Grey Tile",
   "block.fallout_wastelands_.cracked_wasteland_concrete_wall": "Cracked Concrete Slab",
   "gui.fallout_wastelands_.base_menu_ui.NameInput": "Name",
@@ -21,6 +22,7 @@
   "block.fallout_wastelands_.wastelandtilesslab": "Wasteland Tiles",
   "item.fallout_wastelands_.combatarmor_helmet": "Combat Armor Helmet",
   "item.fallout_wastelands_.combatarmor_boots": "Combat Armor Boots",
+  "block.fallout_wastelands_.worn_metal_slab": "Worn Metal Slab",
   "block.fallout_wastelands_.wasteland_brick": "Wasteland Bricks",
   "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
   "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
@@ -30,6 +32,7 @@
   "gui.fallout_wastelands_.base_menu_ui.label_inventory": "Inventory",
   "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
   "gui.fallout_wastelands_.base_menu_ui.label_done1": "Done",
+  "block.fallout_wastelands_.wasteland_road_block": "Wasteland Asphalt",
   "gui.fallout_wastelands_.base_menu_ui.label_done2": "Done",
   "gui.fallout_wastelands_.base_menu_ui.label_empty": "Note: it may be better instead of using text boxes to instead",
   "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
@@ -51,6 +54,7 @@
   "block.fallout_wastelands_.wasteland_concrete": "Concrete",
   "block.fallout_wastelands_.cage": "Cage Block",
   "item.fallout_wastelands_.empty_nuka_cola_bottle": "Empty Nuka Cola Bottle",
+  "block.fallout_wastelands_.worn_metal_stairs": "Worn Metal Stairs",
   "block.fallout_wastelands_.molder_wood_slab": "Molder Wood Slab",
   "block.fallout_wastelands_.burnished_glass_pane": "Burnished Glass Pane",
   "block.fallout_wastelands_.wasteland_dirt": "Wasteland Dirt",
@@ -113,6 +117,7 @@
   "block.fallout_wastelands_.hardconcretestairs": "Concrete Stairs",
   "item.fallout_wastelands_.test_weapon": "Test Weapon",
   "block.fallout_wastelands_.hardconcrete": "Hard Concrete Block",
+  "block.fallout_wastelands_.wasteland_road_slab": "Wasteland Asphalt Slab",
   "item.fallout_wastelands_.raiderblastmaster_helmet": "Raider Blastmaster Helmet",
   "item.fallout_wastelands_.raiderblastmaster_leggings": "Raider Blastmaster Loincloth",
   "item.fallout_wastelands_.combatarmor_leggings": "Combat Armor Leggings",
@@ -169,5 +174,6 @@
   "item.fallout_wastelands_.base_cap_bundle": "Cap Bundle",
   "block.fallout_wastelands_.wall_wasteland_cobblestone": "Wasteland Cobblestone Wall",
   "item.fallout_wastelands_.raiderduster_helmet": "Raider Duster Hood",
-  "item.fallout_wastelands_.bottle_cap": "Bottle Cap"
+  "item.fallout_wastelands_.bottle_cap": "Bottle Cap",
+  "block.fallout_wastelands_.scaffolding_walkwayslab": "Scaffolding Walkway Slab"
 }

@@ -202,6 +202,12 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> WASTELANDHARDSTONE = block(FalloutWastelandsModBlocks.WASTELANDHARDSTONE);
 	public static final RegistryObject<Item> RUST_BLOCK = block(FalloutWastelandsModBlocks.RUST_BLOCK);
 	public static final RegistryObject<Item> RIPPER = REGISTRY.register("ripper", () -> new RipperItem());
+	public static final RegistryObject<Item> WASTELAND_ROAD_BLOCK = block(FalloutWastelandsModBlocks.WASTELAND_ROAD_BLOCK);
+	public static final RegistryObject<Item> WASTELAND_ROAD_SLAB = block(FalloutWastelandsModBlocks.WASTELAND_ROAD_SLAB);
+	public static final RegistryObject<Item> WORN_METAL_STAIRS = block(FalloutWastelandsModBlocks.WORN_METAL_STAIRS);
+	public static final RegistryObject<Item> WORN_METAL_SLAB = block(FalloutWastelandsModBlocks.WORN_METAL_SLAB);
+	public static final RegistryObject<Item> SCAFFOLDING_WALKWAYSLAB = block(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAYSLAB);
+	public static final RegistryObject<Item> SCAFFOLDING_WALKWAY_STAIRS = block(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAY_STAIRS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
