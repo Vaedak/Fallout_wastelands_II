@@ -161,6 +161,11 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_LEGGINGS.get());
 				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_BOOTS.get());
 				tabData.accept(FalloutWastelandsModItems.RIPPER.get());
+				tabData.accept(FalloutWastelandsModItems.TENMMPISTOL.get());
+				tabData.accept(FalloutWastelandsModItems.TENMMAMMO.get());
+				tabData.accept(FalloutWastelandsModItems.NINEMMAMMO.get());
+				tabData.accept(FalloutWastelandsModItems.TENMMHOMEMADEASSAULTRIFLE.get());
+				tabData.accept(FalloutWastelandsModItems.FIVEMM_AMMO.get());
 			})
 
 					.build());

@@ -19,6 +19,9 @@ import net.mcreator.falloutwastelands.item.WastelandbrickitemItem;
 import net.mcreator.falloutwastelands.item.UraniumIngotItem;
 import net.mcreator.falloutwastelands.item.TiningotItem;
 import net.mcreator.falloutwastelands.item.TestWeaponItem;
+import net.mcreator.falloutwastelands.item.TenmmpistolItem;
+import net.mcreator.falloutwastelands.item.TenmmhomemadeassaultrifleItem;
+import net.mcreator.falloutwastelands.item.TenmmammoItem;
 import net.mcreator.falloutwastelands.item.TatoItem;
 import net.mcreator.falloutwastelands.item.TaloncombatarmorItem;
 import net.mcreator.falloutwastelands.item.StimpackItem;
@@ -34,10 +37,12 @@ import net.mcreator.falloutwastelands.item.PipboyItem;
 import net.mcreator.falloutwastelands.item.NukaColaQuantumItem;
 import net.mcreator.falloutwastelands.item.NukaColaItem;
 import net.mcreator.falloutwastelands.item.NinemmpistolItem;
+import net.mcreator.falloutwastelands.item.NinemmammoItem;
 import net.mcreator.falloutwastelands.item.NeutronadeItem;
 import net.mcreator.falloutwastelands.item.NeutronadeCapItem;
 import net.mcreator.falloutwastelands.item.LeadIngotItem;
 import net.mcreator.falloutwastelands.item.JerricanItem;
+import net.mcreator.falloutwastelands.item.FivemmAmmoItem;
 import net.mcreator.falloutwastelands.item.EmptyNukaColaBottleItem;
 import net.mcreator.falloutwastelands.item.EmptyNeutronadeBottleItem;
 import net.mcreator.falloutwastelands.item.CopperwiresItem;
@@ -216,6 +221,11 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> MELTED_IRON_BLOCK = block(FalloutWastelandsModBlocks.MELTED_IRON_BLOCK);
 	public static final RegistryObject<Item> URANIUM_BLOCK = block(FalloutWastelandsModBlocks.URANIUM_BLOCK);
 	public static final RegistryObject<Item> BARBED_WIRES = block(FalloutWastelandsModBlocks.BARBED_WIRES);
+	public static final RegistryObject<Item> TENMMPISTOL = REGISTRY.register("tenmmpistol", () -> new TenmmpistolItem());
+	public static final RegistryObject<Item> TENMMAMMO = REGISTRY.register("tenmmammo", () -> new TenmmammoItem());
+	public static final RegistryObject<Item> NINEMMAMMO = REGISTRY.register("ninemmammo", () -> new NinemmammoItem());
+	public static final RegistryObject<Item> TENMMHOMEMADEASSAULTRIFLE = REGISTRY.register("tenmmhomemadeassaultrifle", () -> new TenmmhomemadeassaultrifleItem());
+	public static final RegistryObject<Item> FIVEMM_AMMO = REGISTRY.register("fivemm_ammo", () -> new FivemmAmmoItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

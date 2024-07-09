@@ -4283,6 +4283,81 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "Tenmmpistol",
+      "type": "item",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tenmmpistol",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/TenmmpistolItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/tenmmpistol.json"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "Tenmmammo",
+      "type": "item",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tenmmammo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/tenmmammo.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/TenmmammoItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Ninemmammo",
+      "type": "item",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ninemmammo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/NinemmammoItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/ninemmammo.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Tenmmhomemadeassaultrifle",
+      "type": "item",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tenmmhomemadeassaultrifle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/TenmmhomemadeassaultrifleItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/tenmmhomemadeassaultrifle.json"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "FivemmAmmo",
+      "type": "item",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fivemm_ammo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/FivemmAmmoItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/fivemm_ammo.json"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -4299,6 +4374,7 @@
   "language_map": {
     "en_us": {
       "block.fallout_wastelands_.barricadesheetmetalblock": "Barricade Sheet Metal Block",
+      "item.fallout_wastelands_.tenmmpistol": "10mm Pistol",
       "block.fallout_wastelands_.linedconcrete": "Concrete",
       "item.fallout_wastelands_.antiradsuit_leggings": "Anti-Rad Suit Leggings",
       "block.fallout_wastelands_.scaffolding_walkway_stairs": "Scaffolding Walkway Stairs",
@@ -4332,6 +4408,7 @@
       "gui.fallout_wastelands_.base_menu_ui.label_inventory": "Inventory",
       "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
       "block.fallout_wastelands_.gore": "Gore",
+      "item.fallout_wastelands_.fivemm_ammo": "5mm Ammo",
       "gui.fallout_wastelands_.base_menu_ui.label_done1": "Done",
       "block.fallout_wastelands_.wasteland_road_block": "Wasteland Asphalt",
       "gui.fallout_wastelands_.base_menu_ui.label_done2": "Done",
@@ -4461,6 +4538,7 @@
       "item.fallout_wastelands_.aluminum_ingot": "Aluminium Ingot",
       "gui.fallout_wastelands_.base_menu_ui.label_d": " use an image with the texts and use button images",
       "item.fallout_wastelands_.nuka_cola_quantum": "Nuka Cola Quantum",
+      "item.fallout_wastelands_.tenmmhomemadeassaultrifle": "10mm Homemade Assault Rifle",
       "item.fallout_wastelands_.raiderblastmaster_boots": "Raider Blastmaster Sandals",
       "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
       "key.fallout_wastelands_.gun_reload_keybind": "Fallout Wastelands: Gun Reload",
@@ -4476,12 +4554,14 @@
       "block.fallout_wastelands_.wasteland_rooty_dirt": "Wasteland Rooty Dirt",
       "block.fallout_wastelands_.wastelandemeraldore": "Wasteland Emerald Ore",
       "item.fallout_wastelands_.raiderblastmaster_chestplate": "Raider Blastmaster Chestplate",
+      "item.fallout_wastelands_.tenmmammo": "10mm Ammo",
       "block.fallout_wastelands_.burnished_glass": "Burnished Glass Block",
       "item.fallout_wastelands_.stimpack": "Stimpack",
       "item.fallout_wastelands_.base_cap_bundle": "Cap Bundle",
       "block.fallout_wastelands_.wall_wasteland_cobblestone": "Wasteland Cobblestone Wall",
       "item.fallout_wastelands_.raiderduster_helmet": "Raider Duster Hood",
       "item.fallout_wastelands_.bottle_cap": "Bottle Cap",
+      "item.fallout_wastelands_.ninemmammo": "9mm Ammo",
       "block.fallout_wastelands_.scaffolding_walkwayslab": "Scaffolding Walkway Slab"
     }
   },

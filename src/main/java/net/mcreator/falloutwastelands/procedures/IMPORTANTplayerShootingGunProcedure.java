@@ -127,5 +127,113 @@ public class IMPORTANTplayerShootingGunProcedure {
 				}
 			}
 		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.TENMMPISTOL.get()) {
+			if (entity.getPersistentData().getDouble("cooldown") == 0) {
+				if (itemstack.getDamageValue() < itemstack.getMaxDamage() - 1 == true && entity.getPersistentData().getBoolean("ReloadGun") == false) {
+					{
+						Entity _shootFrom = entity;
+						Level projectileLevel = _shootFrom.level();
+						if (!projectileLevel.isClientSide()) {
+							Projectile _entityToSpawn = new Object() {
+								public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
+									AbstractArrow entityToSpawn = new BaseGunItemEntity(FalloutWastelandsModEntities.BASE_GUN_ITEM.get(), level);
+									entityToSpawn.setOwner(shooter);
+									entityToSpawn.setBaseDamage(damage);
+									entityToSpawn.setKnockback(knockback);
+									entityToSpawn.setSilent(true);
+									entityToSpawn.setPierceLevel(piercing);
+									return entityToSpawn;
+								}
+							}.getArrow(projectileLevel, entity, 5, 0, (byte) 5);
+							_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+							_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 8, (float) 0.01);
+							projectileLevel.addFreshEntity(_entityToSpawn);
+						}
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistol32firing")), SoundSource.NEUTRAL, (float) 0.2, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistol32firing")), SoundSource.NEUTRAL, (float) 0.2, 1, false);
+						}
+					}
+					{
+						ItemStack _ist = itemstack;
+						if (_ist.hurt(1, RandomSource.create(), null)) {
+							_ist.shrink(1);
+							_ist.setDamageValue(0);
+						}
+					}
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(itemstack.getItem(), 12);
+					entity.getPersistentData().putDouble("cooldown", 12);
+				} else {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.metal_pressure_plate.click_off")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.metal_pressure_plate.click_off")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
+					entity.getPersistentData().putDouble("cooldown", 12);
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(itemstack.getItem(), 12);
+				}
+			}
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.TENMMHOMEMADEASSAULTRIFLE.get()) {
+			if (entity.getPersistentData().getDouble("cooldown") == 0) {
+				if (itemstack.getDamageValue() < itemstack.getMaxDamage() - 1 == true && entity.getPersistentData().getBoolean("ReloadGun") == false) {
+					{
+						Entity _shootFrom = entity;
+						Level projectileLevel = _shootFrom.level();
+						if (!projectileLevel.isClientSide()) {
+							Projectile _entityToSpawn = new Object() {
+								public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
+									AbstractArrow entityToSpawn = new BaseGunItemEntity(FalloutWastelandsModEntities.BASE_GUN_ITEM.get(), level);
+									entityToSpawn.setOwner(shooter);
+									entityToSpawn.setBaseDamage(damage);
+									entityToSpawn.setKnockback(knockback);
+									entityToSpawn.setSilent(true);
+									entityToSpawn.setPierceLevel(piercing);
+									return entityToSpawn;
+								}
+							}.getArrow(projectileLevel, entity, 8, 0, (byte) 5);
+							_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+							_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 8, (float) 0.04);
+							projectileLevel.addFreshEntity(_entityToSpawn);
+						}
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistol32firing")), SoundSource.NEUTRAL, (float) 0.2, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistol32firing")), SoundSource.NEUTRAL, (float) 0.2, 1, false);
+						}
+					}
+					{
+						ItemStack _ist = itemstack;
+						if (_ist.hurt(1, RandomSource.create(), null)) {
+							_ist.shrink(1);
+							_ist.setDamageValue(0);
+						}
+					}
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(itemstack.getItem(), 2);
+					entity.getPersistentData().putDouble("cooldown", 2);
+				} else {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.metal_pressure_plate.click_off")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.metal_pressure_plate.click_off")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
+					entity.getPersistentData().putDouble("cooldown", 2);
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(itemstack.getItem(), 2);
+				}
+			}
+		}
 	}
 }
