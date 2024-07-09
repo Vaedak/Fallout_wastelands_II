@@ -119,6 +119,13 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WORN_METAL_SLAB.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAYSLAB.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAY_STAIRS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.GORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.SUPERMUTANTGORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.DOUBLE_SCAFFOLD_WALL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.EXPOSED_RUST_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MELTED_STEEL_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MELTED_IRON_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.URANIUM_BLOCK.get().asItem());
 			})
 
 					.build());

@@ -208,6 +208,13 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> WORN_METAL_SLAB = block(FalloutWastelandsModBlocks.WORN_METAL_SLAB);
 	public static final RegistryObject<Item> SCAFFOLDING_WALKWAYSLAB = block(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAYSLAB);
 	public static final RegistryObject<Item> SCAFFOLDING_WALKWAY_STAIRS = block(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAY_STAIRS);
+	public static final RegistryObject<Item> GORE = block(FalloutWastelandsModBlocks.GORE);
+	public static final RegistryObject<Item> SUPERMUTANTGORE = block(FalloutWastelandsModBlocks.SUPERMUTANTGORE);
+	public static final RegistryObject<Item> DOUBLE_SCAFFOLD_WALL = block(FalloutWastelandsModBlocks.DOUBLE_SCAFFOLD_WALL);
+	public static final RegistryObject<Item> EXPOSED_RUST_BLOCK = block(FalloutWastelandsModBlocks.EXPOSED_RUST_BLOCK);
+	public static final RegistryObject<Item> MELTED_STEEL_BLOCK = block(FalloutWastelandsModBlocks.MELTED_STEEL_BLOCK);
+	public static final RegistryObject<Item> MELTED_IRON_BLOCK = block(FalloutWastelandsModBlocks.MELTED_IRON_BLOCK);
+	public static final RegistryObject<Item> URANIUM_BLOCK = block(FalloutWastelandsModBlocks.URANIUM_BLOCK);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

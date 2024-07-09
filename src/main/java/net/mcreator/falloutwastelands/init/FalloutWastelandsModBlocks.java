@@ -57,7 +57,9 @@ import net.mcreator.falloutwastelands.block.WastelandBrickStairsBlock;
 import net.mcreator.falloutwastelands.block.WastelandBrickBlock;
 import net.mcreator.falloutwastelands.block.WallWastelandCobblestoneBlock;
 import net.mcreator.falloutwastelands.block.UtsolBlock;
+import net.mcreator.falloutwastelands.block.UraniumBlockBlock;
 import net.mcreator.falloutwastelands.block.TheGlowDirtBlock;
+import net.mcreator.falloutwastelands.block.SupermutantgoreBlock;
 import net.mcreator.falloutwastelands.block.SubwaybricksBlock;
 import net.mcreator.falloutwastelands.block.StrippedmolderwoodlogBlock;
 import net.mcreator.falloutwastelands.block.SteelPoleBlock;
@@ -87,6 +89,8 @@ import net.mcreator.falloutwastelands.block.MolderWoodDoorBlock;
 import net.mcreator.falloutwastelands.block.MilitaryMetalwindowBlock;
 import net.mcreator.falloutwastelands.block.MilitaryMetalPlateBlock;
 import net.mcreator.falloutwastelands.block.MilitaryMetalDoorBlock;
+import net.mcreator.falloutwastelands.block.MeltedSteelBlockBlock;
+import net.mcreator.falloutwastelands.block.MeltedIronBlockBlock;
 import net.mcreator.falloutwastelands.block.LockerBlock;
 import net.mcreator.falloutwastelands.block.LinedconcreteBlock;
 import net.mcreator.falloutwastelands.block.LandmineBlock;
@@ -95,6 +99,9 @@ import net.mcreator.falloutwastelands.block.HardconcretestairsBlock;
 import net.mcreator.falloutwastelands.block.HardconcreteBlock;
 import net.mcreator.falloutwastelands.block.HangardoorBlock;
 import net.mcreator.falloutwastelands.block.GreyTilesBlock;
+import net.mcreator.falloutwastelands.block.GoreBlock;
+import net.mcreator.falloutwastelands.block.ExposedRustBlockBlock;
+import net.mcreator.falloutwastelands.block.DoubleScaffoldWallBlock;
 import net.mcreator.falloutwastelands.block.DoubleScaffoldBlockBlock;
 import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteWallBlock;
 import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteStairsBlock;
@@ -212,6 +219,13 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> WORN_METAL_SLAB = REGISTRY.register("worn_metal_slab", () -> new WornMetalSlabBlock());
 	public static final RegistryObject<Block> SCAFFOLDING_WALKWAYSLAB = REGISTRY.register("scaffolding_walkwayslab", () -> new ScaffoldingWalkwayslabBlock());
 	public static final RegistryObject<Block> SCAFFOLDING_WALKWAY_STAIRS = REGISTRY.register("scaffolding_walkway_stairs", () -> new ScaffoldingWalkwayStairsBlock());
+	public static final RegistryObject<Block> GORE = REGISTRY.register("gore", () -> new GoreBlock());
+	public static final RegistryObject<Block> SUPERMUTANTGORE = REGISTRY.register("supermutantgore", () -> new SupermutantgoreBlock());
+	public static final RegistryObject<Block> DOUBLE_SCAFFOLD_WALL = REGISTRY.register("double_scaffold_wall", () -> new DoubleScaffoldWallBlock());
+	public static final RegistryObject<Block> EXPOSED_RUST_BLOCK = REGISTRY.register("exposed_rust_block", () -> new ExposedRustBlockBlock());
+	public static final RegistryObject<Block> MELTED_STEEL_BLOCK = REGISTRY.register("melted_steel_block", () -> new MeltedSteelBlockBlock());
+	public static final RegistryObject<Block> MELTED_IRON_BLOCK = REGISTRY.register("melted_iron_block", () -> new MeltedIronBlockBlock());
+	public static final RegistryObject<Block> URANIUM_BLOCK = REGISTRY.register("uranium_block", () -> new UraniumBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

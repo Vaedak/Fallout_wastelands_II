@@ -15,9 +15,9 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class RustBlockBlock extends Block {
-	public RustBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.CALCITE).strength(0.25f, 4f).requiresCorrectToolForDrops());
+public class MeltedIronBlockBlock extends Block {
+	public MeltedIronBlockBlock() {
+		super(BlockBehaviour.Properties.of().sound(SoundType.COPPER).strength(0.5f, 5f).requiresCorrectToolForDrops());
 	}
 
 	@Override

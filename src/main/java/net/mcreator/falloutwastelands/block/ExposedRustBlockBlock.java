@@ -15,8 +15,8 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class RustBlockBlock extends Block {
-	public RustBlockBlock() {
+public class ExposedRustBlockBlock extends Block {
+	public ExposedRustBlockBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.CALCITE).strength(0.25f, 4f).requiresCorrectToolForDrops());
 	}
 

@@ -2,7 +2,7 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "test_tole_2",
+    "texture": "rust",
     "textureTop": "wastelandstonedde",
     "textureLeft": "wastelandstonedde",
     "textureFront": "wastelandstonedde",
@@ -33,10 +33,10 @@
         "subtract": false
       }
     ],
-    "name": "Rusted Sheet Metal Block",
+    "name": "Worn Rust Block",
     "specialInfo": [],
-    "hardness": 0.55,
-    "resistance": 6.0,
+    "hardness": 0.25,
+    "resistance": 4.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "CALCITE"
     },
     "breakSound": {
       "value": ""
