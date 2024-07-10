@@ -16,12 +16,12 @@ public class GunProjectileHitsBlockProcedure {
 		if (immediatesourceentity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.FLAME, (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), 5, 0.01, 0.01, 0.01, 0.5);
+			_level.sendParticles(ParticleTypes.WHITE_ASH, (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), 5, 0.01, 0.01, 0.01, 0.05);
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.gravel.break")), SoundSource.NEUTRAL, (float) 0.5, (float) 0.7);
+				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.calcite.hit")), SoundSource.NEUTRAL, (float) 0.5, (float) 0.7);
 			} else {
-				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.gravel.break")), SoundSource.NEUTRAL, (float) 0.5, (float) 0.7, false);
+				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.calcite.hit")), SoundSource.NEUTRAL, (float) 0.5, (float) 0.7, false);
 			}
 		}
 	}

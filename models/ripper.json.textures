@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "ripper_fixed_01"
+        "0": "ripper"
       },
       "name": "default"
     }

@@ -4,8 +4,8 @@
   "definition": {
     "toolType": "Special",
     "renderType": 1,
-    "texture": "ripper_fixed_01",
-    "customModelName": "ripper_fixed_01:default",
+    "texture": "reaper",
+    "customModelName": "ripper:default",
     "name": "Ripper",
     "specialInfo": [],
     "creativeTab": {

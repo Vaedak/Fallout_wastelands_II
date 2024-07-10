@@ -1,6 +1,6 @@
 {
   "credit": "Made with Blockbench",
-  "parent": "ripper",
+  "parent": "ripper_fix",
   "texture_size": [
     48,
     48
