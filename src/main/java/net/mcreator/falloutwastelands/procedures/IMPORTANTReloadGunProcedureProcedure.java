@@ -46,23 +46,29 @@ public class IMPORTANTReloadGunProcedureProcedure {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.BASE_GUN_ITEM.get()
 					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.REVOLVER_32.get()
 					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.TENMMPISTOL.get()
-					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.NINEMMPISTOL.get()) {
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.NINEMMPISTOL.get()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.PLASMARIFLE.get()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.FIVEMMMINIGUN.get()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.TENMMHOMEMADEASSAULTRIFLE.get()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.LASERRIFLE.get()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.NAILGUN.get()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.CHINESEPISTOL.get()) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.REVOLVER_32.get()) {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() > 0) {
-						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(FalloutWastelandsModItems.BOTTLE_CAP.get())) : false) {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(FalloutWastelandsModItems.THIRTYTWOAMMO.get())) : false) {
 							if (entity.getPersistentData().getDouble("timer") == 10) {
 								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 										.setDamageValue((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() + -1));
 								if (world instanceof Level _level) {
 									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_break")), SoundSource.NEUTRAL, 1, 1);
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:revolverreloading")), SoundSource.PLAYERS, (float) 0.8, (float) 0.7);
 									} else {
-										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_break")), SoundSource.NEUTRAL, 1, 1, false);
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:revolverreloading")), SoundSource.PLAYERS, (float) 0.8, (float) 0.7, false);
 									}
 								}
 								entity.getPersistentData().putDouble("timer", 0);
 								if (entity instanceof Player _player) {
-									ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.BOTTLE_CAP.get());
+									ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.THIRTYTWOAMMO.get());
 									_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 								}
 							}
@@ -82,8 +88,7 @@ public class IMPORTANTReloadGunProcedureProcedure {
 						entity.getPersistentData().putBoolean("ReloadGun", false);
 						entity.getPersistentData().putDouble("timer", 0);
 					}
-				}
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.NINEMMPISTOL.get()) {
+				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.NINEMMPISTOL.get()) {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() > 0) {
 						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(FalloutWastelandsModItems.NINEMMAMMO.get())) : false) {
 							if (ammoChecked == false) {
@@ -110,9 +115,9 @@ public class IMPORTANTReloadGunProcedureProcedure {
 								entity.getPersistentData().putBoolean("ReloadGun", false);
 								if (world instanceof Level _level) {
 									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_break")), SoundSource.NEUTRAL, 1, 1);
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistolreloading")), SoundSource.PLAYERS, (float) 0.5, 1);
 									} else {
-										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_break")), SoundSource.NEUTRAL, 1, 1, false);
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistolreloading")), SoundSource.PLAYERS, (float) 0.5, 1, false);
 									}
 								}
 								if (entity instanceof Player _player)
@@ -153,9 +158,9 @@ public class IMPORTANTReloadGunProcedureProcedure {
 								entity.getPersistentData().putBoolean("ReloadGun", false);
 								if (world instanceof Level _level) {
 									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_break")), SoundSource.NEUTRAL, 1, 1);
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistolreloading")), SoundSource.PLAYERS, (float) 0.5, (float) 0.7);
 									} else {
-										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_break")), SoundSource.NEUTRAL, 1, 1, false);
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistolreloading")), SoundSource.PLAYERS, (float) 0.5, (float) 0.7, false);
 									}
 								}
 								if (entity instanceof Player _player)
@@ -168,8 +173,7 @@ public class IMPORTANTReloadGunProcedureProcedure {
 					} else {
 						entity.getPersistentData().putBoolean("ReloadGun", false);
 					}
-				}
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.TENMMHOMEMADEASSAULTRIFLE.get()) {
+				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.TENMMHOMEMADEASSAULTRIFLE.get()) {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() > 0) {
 						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(FalloutWastelandsModItems.TENMMAMMO.get())) : false) {
 							if (ammoChecked == false) {
@@ -196,9 +200,222 @@ public class IMPORTANTReloadGunProcedureProcedure {
 								entity.getPersistentData().putBoolean("ReloadGun", false);
 								if (world instanceof Level _level) {
 									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_break")), SoundSource.NEUTRAL, 1, 1);
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:lmgreloading")), SoundSource.PLAYERS, 1, (float) 0.7);
 									} else {
-										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_break")), SoundSource.NEUTRAL, 1, 1, false);
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:lmgreloading")), SoundSource.PLAYERS, 1, (float) 0.7, false);
+									}
+								}
+								if (entity instanceof Player _player)
+									_player.getCooldowns().addCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem(), 40);
+								entity.getPersistentData().putDouble("cooldown", 40);
+							}
+						} else {
+							entity.getPersistentData().putBoolean("ReloadGun", false);
+						}
+					} else {
+						entity.getPersistentData().putBoolean("ReloadGun", false);
+					}
+				}
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.FIVEMMMINIGUN.get()) {
+					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() > 0) {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(FalloutWastelandsModItems.FIVEMM_AMMO.get())) : false) {
+							if (ammoChecked == false) {
+								{
+									AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
+									entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
+									if (_iitemhandlerref.get() != null) {
+										for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
+											ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
+											if (itemstackiterator.getItem() == FalloutWastelandsModItems.FIVEMM_AMMO.get()) {
+												ammoCount = ammoCount + itemstackiterator.getCount();
+											}
+											ammoChecked = true;
+										}
+									}
+								}
+								if (entity instanceof Player _player) {
+									ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.FIVEMM_AMMO.get());
+									_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue(),
+											_player.inventoryMenu.getCraftSlots());
+								}
+								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+										.setDamageValue((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() - ammoCount));
+								entity.getPersistentData().putBoolean("ReloadGun", false);
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:lmgreloading")), SoundSource.PLAYERS, 1, (float) 0.8);
+									} else {
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:lmgreloading")), SoundSource.PLAYERS, 1, (float) 0.8, false);
+									}
+								}
+								if (entity instanceof Player _player)
+									_player.getCooldowns().addCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem(), 40);
+								entity.getPersistentData().putDouble("cooldown", 40);
+							}
+						} else {
+							entity.getPersistentData().putBoolean("ReloadGun", false);
+						}
+					} else {
+						entity.getPersistentData().putBoolean("ReloadGun", false);
+					}
+				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.PLASMARIFLE.get()) {
+					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() > 0) {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(FalloutWastelandsModItems.ENERGY_CELL.get())) : false) {
+							if (ammoChecked == false) {
+								{
+									AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
+									entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
+									if (_iitemhandlerref.get() != null) {
+										for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
+											ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
+											if (itemstackiterator.getItem() == FalloutWastelandsModItems.ENERGY_CELL.get()) {
+												ammoCount = ammoCount + itemstackiterator.getCount();
+											}
+											ammoChecked = true;
+										}
+									}
+								}
+								if (entity instanceof Player _player) {
+									ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.ENERGY_CELL.get());
+									_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue(),
+											_player.inventoryMenu.getCraftSlots());
+								}
+								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+										.setDamageValue((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() - ammoCount));
+								entity.getPersistentData().putBoolean("ReloadGun", false);
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.step")), SoundSource.PLAYERS, 1, 1);
+									} else {
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.step")), SoundSource.PLAYERS, 1, 1, false);
+									}
+								}
+								if (entity instanceof Player _player)
+									_player.getCooldowns().addCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem(), 40);
+								entity.getPersistentData().putDouble("cooldown", 40);
+							}
+						} else {
+							entity.getPersistentData().putBoolean("ReloadGun", false);
+						}
+					} else {
+						entity.getPersistentData().putBoolean("ReloadGun", false);
+					}
+				}
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.LASERRIFLE.get()) {
+					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() > 0) {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(FalloutWastelandsModItems.ENERGY_CELL.get())) : false) {
+							if (ammoChecked == false) {
+								{
+									AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
+									entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
+									if (_iitemhandlerref.get() != null) {
+										for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
+											ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
+											if (itemstackiterator.getItem() == FalloutWastelandsModItems.ENERGY_CELL.get()) {
+												ammoCount = ammoCount + itemstackiterator.getCount();
+											}
+											ammoChecked = true;
+										}
+									}
+								}
+								if (entity instanceof Player _player) {
+									ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.ENERGY_CELL.get());
+									_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue(),
+											_player.inventoryMenu.getCraftSlots());
+								}
+								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+										.setDamageValue((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() - ammoCount));
+								entity.getPersistentData().putBoolean("ReloadGun", false);
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.chest.open")), SoundSource.PLAYERS, 1, 1);
+									} else {
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.chest.open")), SoundSource.PLAYERS, 1, 1, false);
+									}
+								}
+								if (entity instanceof Player _player)
+									_player.getCooldowns().addCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem(), 40);
+								entity.getPersistentData().putDouble("cooldown", 40);
+							}
+						} else {
+							entity.getPersistentData().putBoolean("ReloadGun", false);
+						}
+					} else {
+						entity.getPersistentData().putBoolean("ReloadGun", false);
+					}
+				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.NAILGUN.get()) {
+					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() > 0) {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(FalloutWastelandsModItems.NAIL.get())) : false) {
+							if (ammoChecked == false) {
+								{
+									AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
+									entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
+									if (_iitemhandlerref.get() != null) {
+										for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
+											ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
+											if (itemstackiterator.getItem() == FalloutWastelandsModItems.NAIL.get()) {
+												ammoCount = ammoCount + itemstackiterator.getCount();
+											}
+											ammoChecked = true;
+										}
+									}
+								}
+								if (entity instanceof Player _player) {
+									ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.NAIL.get());
+									_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue(),
+											_player.inventoryMenu.getCraftSlots());
+								}
+								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+										.setDamageValue((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() - ammoCount));
+								entity.getPersistentData().putBoolean("ReloadGun", false);
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistolreloading")), SoundSource.PLAYERS, (float) 0.5, (float) 0.7);
+									} else {
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistolreloading")), SoundSource.PLAYERS, (float) 0.5, (float) 0.7, false);
+									}
+								}
+								if (entity instanceof Player _player)
+									_player.getCooldowns().addCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem(), 40);
+								entity.getPersistentData().putDouble("cooldown", 40);
+							}
+						} else {
+							entity.getPersistentData().putBoolean("ReloadGun", false);
+						}
+					} else {
+						entity.getPersistentData().putBoolean("ReloadGun", false);
+					}
+				}
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.CHINESEPISTOL.get()) {
+					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() > 0) {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(FalloutWastelandsModItems.TENMMAMMO.get())) : false) {
+							if (ammoChecked == false) {
+								{
+									AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
+									entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
+									if (_iitemhandlerref.get() != null) {
+										for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
+											ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
+											if (itemstackiterator.getItem() == FalloutWastelandsModItems.TENMMAMMO.get()) {
+												ammoCount = ammoCount + itemstackiterator.getCount();
+											}
+											ammoChecked = true;
+										}
+									}
+								}
+								if (entity instanceof Player _player) {
+									ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.TENMMAMMO.get());
+									_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue(),
+											_player.inventoryMenu.getCraftSlots());
+								}
+								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+										.setDamageValue((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() - ammoCount));
+								entity.getPersistentData().putBoolean("ReloadGun", false);
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistolreloading")), SoundSource.PLAYERS, (float) 0.5, (float) 0.7);
+									} else {
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistolreloading")), SoundSource.PLAYERS, (float) 0.5, (float) 0.7, false);
 									}
 								}
 								if (entity instanceof Player _player)

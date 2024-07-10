@@ -113,6 +113,20 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDTILESSLAB.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDHARDSTONE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.RUST_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_ROAD_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_ROAD_SLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WORN_METAL_STAIRS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WORN_METAL_SLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAYSLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAY_STAIRS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.GORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.SUPERMUTANTGORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.DOUBLE_SCAFFOLD_WALL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.EXPOSED_RUST_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MELTED_STEEL_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MELTED_IRON_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.URANIUM_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BARBED_WIRES.get().asItem());
 			})
 
 					.build());
@@ -147,6 +161,22 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_LEGGINGS.get());
 				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_BOOTS.get());
 				tabData.accept(FalloutWastelandsModItems.RIPPER.get());
+				tabData.accept(FalloutWastelandsModItems.TENMMPISTOL.get());
+				tabData.accept(FalloutWastelandsModItems.TENMMAMMO.get());
+				tabData.accept(FalloutWastelandsModItems.NINEMMAMMO.get());
+				tabData.accept(FalloutWastelandsModItems.TENMMHOMEMADEASSAULTRIFLE.get());
+				tabData.accept(FalloutWastelandsModItems.FIVEMM_AMMO.get());
+				tabData.accept(FalloutWastelandsModItems.FIVEMMMINIGUN.get());
+				tabData.accept(FalloutWastelandsModItems.ENERGY_CELL.get());
+				tabData.accept(FalloutWastelandsModItems.PLASMARIFLE.get());
+				tabData.accept(FalloutWastelandsModItems.LASERRIFLE.get());
+				tabData.accept(FalloutWastelandsModItems.NAILGUN.get());
+				tabData.accept(FalloutWastelandsModItems.THIRTYTWOAMMO.get());
+				tabData.accept(FalloutWastelandsModItems.CHINESEPISTOL.get());
+				tabData.accept(FalloutWastelandsModItems.TIRE_IRON.get());
+				tabData.accept(FalloutWastelandsModItems.ROLLINGPIN.get());
+				tabData.accept(FalloutWastelandsModItems.WRENCH.get());
+				tabData.accept(FalloutWastelandsModItems.NAILED_WRENCH.get());
 			})
 
 					.build());
@@ -175,6 +205,11 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.STIMPACK.get());
 				tabData.accept(FalloutWastelandsModItems.PSYCHO.get());
 				tabData.accept(FalloutWastelandsModItems.PIPBOY.get());
+				tabData.accept(FalloutWastelandsModItems.NAIL.get());
+				tabData.accept(FalloutWastelandsModItems.CORN.get());
+				tabData.accept(FalloutWastelandsModItems.HACHET.get());
+				tabData.accept(FalloutWastelandsModItems.INDUSTRIALHAMMER.get());
+				tabData.accept(FalloutWastelandsModItems.INDUSTRIALSHOVEL.get());
 			})
 
 					.build());
