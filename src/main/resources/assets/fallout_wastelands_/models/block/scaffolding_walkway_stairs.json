@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "fallout_wastelands_:block/walkwaysidedown",
+    "top": "fallout_wastelands_:block/walkwaytop",
+    "side": "fallout_wastelands_:block/walkwaysideone"
+  },
+  "render_type": "translucent"
+}

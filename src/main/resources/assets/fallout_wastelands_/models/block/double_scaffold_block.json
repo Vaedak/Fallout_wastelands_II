@@ -9,5 +9,5 @@
     "west": "fallout_wastelands_:block/scaffoldside2",
     "particle": "fallout_wastelands_:block/scaffoldtop"
   },
-  "render_type": "cutout"
+  "render_type": "translucent"
 }

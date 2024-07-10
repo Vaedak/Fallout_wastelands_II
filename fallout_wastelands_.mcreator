@@ -3980,6 +3980,384 @@
         ]
       },
       "path": "~/Weapons"
+    },
+    {
+      "name": "WastelandRoadBlock",
+      "type": "block",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasteland_road_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_road_block.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_road_block.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_road_block.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandRoadBlockBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "WastelandRoadSlab",
+      "type": "block",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasteland_road_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_road_slab.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandRoadSlabBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_road_slab_full.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_road_slab.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_road_slab.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_road_slab_top.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "WornMetalStairs",
+      "type": "block",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worn_metal_stairs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/WornMetalStairsBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_stairs_inner.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/worn_metal_stairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/worn_metal_stairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_stairs_outer.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_stairs.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "WornMetalSlab",
+      "type": "block",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worn_metal_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/worn_metal_slab.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_slab.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_slab_full.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WornMetalSlabBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_slab_top.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/worn_metal_slab.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ScaffoldingWalkwayslab",
+      "type": "block",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scaffolding_walkwayslab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/ScaffoldingWalkwayslabBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkwayslab_full.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkwayslab.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/scaffolding_walkwayslab.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/scaffolding_walkwayslab.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkwayslab_top.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ScaffoldingWalkwayStairs",
+      "type": "block",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scaffolding_walkway_stairs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/ScaffoldingWalkwayStairsBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkway_stairs_outer.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkway_stairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkway_stairs_inner.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/scaffolding_walkway_stairs.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/scaffolding_walkway_stairs.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Gore",
+      "type": "block",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/gore.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/gore.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/gore.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/GoreBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Supermutantgore",
+      "type": "block",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supermutantgore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/supermutantgore.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/SupermutantgoreBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/supermutantgore.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/supermutantgore.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "DoubleScaffoldWall",
+      "type": "block",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_scaffold_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/double_scaffold_wall.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/DoubleScaffoldWallBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/double_scaffold_wall_side_tall.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/double_scaffold_wall_post.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/double_scaffold_wall.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/double_scaffold_wall_inventory.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/double_scaffold_wall.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ExposedRustBlock",
+      "type": "block",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exposed_rust_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/exposed_rust_block.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/exposed_rust_block.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/exposed_rust_block.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/ExposedRustBlockBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MeltedSteelBlock",
+      "type": "block",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melted_steel_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/melted_steel_block.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/melted_steel_block.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/melted_steel_block.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/MeltedSteelBlockBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MeltedIronBlock",
+      "type": "block",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melted_iron_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/melted_iron_block.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/melted_iron_block.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/melted_iron_block.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/MeltedIronBlockBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "UraniumBlock",
+      "type": "block",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/uranium_block.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/uranium_block.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/UraniumBlockBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/uranium_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Meltedsteeltoingot",
+      "type": "recipe",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meltedsteeltoingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/meltedsteeltoingot.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Meltedirontoingot",
+      "type": "recipe",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meltedirontoingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/meltedirontoingot.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BarbedWires",
+      "type": "block",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barbed_wires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/BarbedWiresBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/barbed_wires.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/barbed_wires.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/barbed_wires.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Walkinginbarbedwire",
+      "type": "procedure",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "walkinginbarbedwire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/WalkinginbarbedwireProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Tenmmpistol",
+      "type": "item",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tenmmpistol",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/TenmmpistolItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/tenmmpistol.json"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "Tenmmammo",
+      "type": "item",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tenmmammo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/tenmmammo.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/TenmmammoItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Ninemmammo",
+      "type": "item",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ninemmammo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/NinemmammoItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/ninemmammo.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Tenmmhomemadeassaultrifle",
+      "type": "item",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tenmmhomemadeassaultrifle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/TenmmhomemadeassaultrifleItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/tenmmhomemadeassaultrifle.json"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "FivemmAmmo",
+      "type": "item",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fivemm_ammo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/FivemmAmmoItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/fivemm_ammo.json"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -3996,8 +4374,10 @@
   "language_map": {
     "en_us": {
       "block.fallout_wastelands_.barricadesheetmetalblock": "Barricade Sheet Metal Block",
+      "item.fallout_wastelands_.tenmmpistol": "10mm Pistol",
       "block.fallout_wastelands_.linedconcrete": "Concrete",
       "item.fallout_wastelands_.antiradsuit_leggings": "Anti-Rad Suit Leggings",
+      "block.fallout_wastelands_.scaffolding_walkway_stairs": "Scaffolding Walkway Stairs",
       "block.fallout_wastelands_.grey_tiles": "Grey Tile",
       "block.fallout_wastelands_.cracked_wasteland_concrete_wall": "Cracked Concrete Slab",
       "gui.fallout_wastelands_.base_menu_ui.NameInput": "Name",
@@ -4017,6 +4397,8 @@
       "block.fallout_wastelands_.wastelandtilesslab": "Wasteland Tiles",
       "item.fallout_wastelands_.combatarmor_helmet": "Combat Armor Helmet",
       "item.fallout_wastelands_.combatarmor_boots": "Combat Armor Boots",
+      "block.fallout_wastelands_.worn_metal_slab": "Worn Metal Slab",
+      "block.fallout_wastelands_.double_scaffold_wall": "Double Scaffold Wall",
       "block.fallout_wastelands_.wasteland_brick": "Wasteland Bricks",
       "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
       "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
@@ -4025,7 +4407,10 @@
       "block.fallout_wastelands_.wastelandtiles": "Wasteland Tiles",
       "gui.fallout_wastelands_.base_menu_ui.label_inventory": "Inventory",
       "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
+      "block.fallout_wastelands_.gore": "Gore",
+      "item.fallout_wastelands_.fivemm_ammo": "5mm Ammo",
       "gui.fallout_wastelands_.base_menu_ui.label_done1": "Done",
+      "block.fallout_wastelands_.wasteland_road_block": "Wasteland Asphalt",
       "gui.fallout_wastelands_.base_menu_ui.label_done2": "Done",
       "gui.fallout_wastelands_.base_menu_ui.label_empty": "Note: it may be better instead of using text boxes to instead",
       "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
@@ -4047,15 +4432,18 @@
       "block.fallout_wastelands_.wasteland_concrete": "Concrete",
       "block.fallout_wastelands_.cage": "Cage Block",
       "item.fallout_wastelands_.empty_nuka_cola_bottle": "Empty Nuka Cola Bottle",
+      "block.fallout_wastelands_.worn_metal_stairs": "Worn Metal Stairs",
       "block.fallout_wastelands_.molder_wood_slab": "Molder Wood Slab",
       "block.fallout_wastelands_.burnished_glass_pane": "Burnished Glass Pane",
       "block.fallout_wastelands_.wasteland_dirt": "Wasteland Dirt",
       "item.fallout_wastelands_.jerrican": "Jerrican",
       "block.fallout_wastelands_.molder_wood_button": "Molder Button",
+      "block.fallout_wastelands_.barbed_wires": "Barbed Wires",
       "block.fallout_wastelands_.wastelandburntgrass": "Wasteland Burnt Grass",
       "item.fallout_wastelands_.raiderduster_leggings": "Raider Duster Loincloth",
       "block.fallout_wastelands_.cracked_wasteland_concrete": "Cracked Concrete",
       "gui.fallout_wastelands_.base_menu_ui.BASEName": "Name",
+      "block.fallout_wastelands_.supermutantgore": "Gore Bag",
       "item.fallout_wastelands_.revolver_32": "Revolver 32",
       "item.fallout_wastelands_.cannibal_00_spawn_egg": "Cannibal Spawn Egg",
       "biome.fallout_wastelands_.wasteland_plains": "Wasteland Plains",
@@ -4087,7 +4475,7 @@
       "item.fallout_wastelands_.antiradsuit_helmet": "Anti-Rad Suit Helmet",
       "block.fallout_wastelands_.sheetmetalblock": "Sheet Metal Block",
       "item.fallout_wastelands_.uranium_ingot": "Uranium Ingot",
-      "block.fallout_wastelands_.rust_block": "Rusted Sheet Metal Block",
+      "block.fallout_wastelands_.rust_block": "Worn Rust Block",
       "item_group.fallout_wastelands_.wastelandcombat": "Wastelands Combat",
       "block.fallout_wastelands_.wastelandhardstone": "Wasteland Hard Stone",
       "block.fallout_wastelands_.molder_wood_stairs": "Molder Wood Stairs",
@@ -4109,10 +4497,12 @@
       "block.fallout_wastelands_.hardconcretestairs": "Concrete Stairs",
       "item.fallout_wastelands_.test_weapon": "Test Weapon",
       "block.fallout_wastelands_.hardconcrete": "Hard Concrete Block",
+      "block.fallout_wastelands_.wasteland_road_slab": "Wasteland Asphalt Slab",
       "item.fallout_wastelands_.raiderblastmaster_helmet": "Raider Blastmaster Helmet",
       "item.fallout_wastelands_.raiderblastmaster_leggings": "Raider Blastmaster Loincloth",
       "item.fallout_wastelands_.combatarmor_leggings": "Combat Armor Leggings",
       "item.fallout_wastelands_.empty_neutronade_bottle": "Empty Nuka Cola Bottle",
+      "block.fallout_wastelands_.exposed_rust_block": "Exposed Rust Block",
       "block.fallout_wastelands_.hangardoor": "Hangardoor",
       "block.fallout_wastelands_.molder_wood_wood": "Molder Log Wood",
       "block.fallout_wastelands_.wastelandredstoneore": "Wasteland Redstone Ore",
@@ -4123,6 +4513,7 @@
       "block.fallout_wastelands_.rustysheetmetalstairs": "Rusted Sheet MetalStairs",
       "gui.fallout_wastelands_.base_inventory.label_inventory": "Inventory",
       "block.fallout_wastelands_.black_tiles": "Black Tile",
+      "block.fallout_wastelands_.uranium_block": "Uranium Block",
       "item.fallout_wastelands_.base_name_item": "BASE Name Item",
       "block.fallout_wastelands_.concrete_tile": "Concrete Tile",
       "block.fallout_wastelands_.wastelandbricks": "Wasteland Bricks",
@@ -4141,17 +4532,20 @@
       "block.fallout_wastelands_.military_metal_plate": "Military Metal Plate",
       "item.fallout_wastelands_.scrapmetal": "Scrap Metal",
       "item.fallout_wastelands_.lead_ingot": "Lead Ingot",
+      "block.fallout_wastelands_.melted_iron_block": "Melted Iron Block",
       "block.fallout_wastelands_.centralunit": "Central Unit Block",
       "block.fallout_wastelands_.sheetmetalstairs": "Sheet Metal Stairs",
       "item.fallout_wastelands_.aluminum_ingot": "Aluminium Ingot",
       "gui.fallout_wastelands_.base_menu_ui.label_d": " use an image with the texts and use button images",
       "item.fallout_wastelands_.nuka_cola_quantum": "Nuka Cola Quantum",
+      "item.fallout_wastelands_.tenmmhomemadeassaultrifle": "10mm Homemade Assault Rifle",
       "item.fallout_wastelands_.raiderblastmaster_boots": "Raider Blastmaster Sandals",
       "item.fallout_wastelands_.wastelands": "Wastelands Portal Igniter",
       "key.fallout_wastelands_.gun_reload_keybind": "Fallout Wastelands: Gun Reload",
       "block.fallout_wastelands_.wastelandtilesstairs": "Wasteland Tiles",
       "block.fallout_wastelands_.wastelandpebble": "Wasteland Pebbles",
       "item.fallout_wastelands_.cloth": "Cloth",
+      "block.fallout_wastelands_.melted_steel_block": "Melted Steel Block",
       "block.fallout_wastelands_.landmine": "Landmine",
       "block.fallout_wastelands_.scaffolding_walkways_block": "Scaffolding Walkway Block",
       "item.fallout_wastelands_.base_gun_item": "Base Gun Item",
@@ -4160,12 +4554,15 @@
       "block.fallout_wastelands_.wasteland_rooty_dirt": "Wasteland Rooty Dirt",
       "block.fallout_wastelands_.wastelandemeraldore": "Wasteland Emerald Ore",
       "item.fallout_wastelands_.raiderblastmaster_chestplate": "Raider Blastmaster Chestplate",
+      "item.fallout_wastelands_.tenmmammo": "10mm Ammo",
       "block.fallout_wastelands_.burnished_glass": "Burnished Glass Block",
       "item.fallout_wastelands_.stimpack": "Stimpack",
       "item.fallout_wastelands_.base_cap_bundle": "Cap Bundle",
       "block.fallout_wastelands_.wall_wasteland_cobblestone": "Wasteland Cobblestone Wall",
       "item.fallout_wastelands_.raiderduster_helmet": "Raider Duster Hood",
-      "item.fallout_wastelands_.bottle_cap": "Bottle Cap"
+      "item.fallout_wastelands_.bottle_cap": "Bottle Cap",
+      "item.fallout_wastelands_.ninemmammo": "9mm Ammo",
+      "block.fallout_wastelands_.scaffolding_walkwayslab": "Scaffolding Walkway Slab"
     }
   },
   "foldersRoot": {

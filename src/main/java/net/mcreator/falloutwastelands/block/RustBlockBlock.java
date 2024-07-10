@@ -17,7 +17,7 @@ import java.util.Collections;
 
 public class RustBlockBlock extends Block {
 	public RustBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(0.55f, 6f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().sound(SoundType.CALCITE).strength(0.25f, 4f).requiresCorrectToolForDrops());
 	}
 
 	@Override

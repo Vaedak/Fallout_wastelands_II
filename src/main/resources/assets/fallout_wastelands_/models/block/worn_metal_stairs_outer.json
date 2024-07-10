@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "fallout_wastelands_:block/oldmetalblock",
+    "top": "fallout_wastelands_:block/oldmetalblock",
+    "side": "fallout_wastelands_:block/oldmetalblock"
+  },
+  "render_type": "solid"
+}
