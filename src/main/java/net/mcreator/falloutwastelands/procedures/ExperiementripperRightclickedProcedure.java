@@ -1,15 +1,8 @@
 package net.mcreator.falloutwastelands.procedures;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.projectile.Projectile;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.falloutwastelands.init.FalloutWastelandsModEntities;
-import net.mcreator.falloutwastelands.entity.BaseGunItemEntity;
+import javax.annotation.Nullable;
 
 public class ExperiementripperRightclickedProcedure {
 	public static void execute(Entity entity) {

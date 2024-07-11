@@ -1,6 +1,8 @@
 package net.mcreator.falloutwastelands.procedures;
 
-import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.eventbus.api.Event;
+
+import javax.annotation.Nullable;
 
 public class FullAutoStopUsingProcedure {
 	public static void execute(ItemStack itemstack) {

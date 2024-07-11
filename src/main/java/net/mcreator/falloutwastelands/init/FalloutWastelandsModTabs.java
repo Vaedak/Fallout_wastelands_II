@@ -167,6 +167,17 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.NINEMMAMMO.get());
 				tabData.accept(FalloutWastelandsModItems.TENMMHOMEMADEASSAULTRIFLE.get());
 				tabData.accept(FalloutWastelandsModItems.FIVEMM_AMMO.get());
+				tabData.accept(FalloutWastelandsModItems.FIVEMMMINIGUN.get());
+				tabData.accept(FalloutWastelandsModItems.ENERGY_CELL.get());
+				tabData.accept(FalloutWastelandsModItems.PLASMARIFLE.get());
+				tabData.accept(FalloutWastelandsModItems.LASERRIFLE.get());
+				tabData.accept(FalloutWastelandsModItems.NAILGUN.get());
+				tabData.accept(FalloutWastelandsModItems.THIRTYTWOAMMO.get());
+				tabData.accept(FalloutWastelandsModItems.CHINESEPISTOL.get());
+				tabData.accept(FalloutWastelandsModItems.TIRE_IRON.get());
+				tabData.accept(FalloutWastelandsModItems.ROLLINGPIN.get());
+				tabData.accept(FalloutWastelandsModItems.WRENCH.get());
+				tabData.accept(FalloutWastelandsModItems.NAILED_WRENCH.get());
 			})
 
 					.build());
@@ -195,6 +206,11 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.STIMPACK.get());
 				tabData.accept(FalloutWastelandsModItems.PSYCHO.get());
 				tabData.accept(FalloutWastelandsModItems.PIPBOY.get());
+				tabData.accept(FalloutWastelandsModItems.NAIL.get());
+				tabData.accept(FalloutWastelandsModItems.CORN.get());
+				tabData.accept(FalloutWastelandsModItems.HACHET.get());
+				tabData.accept(FalloutWastelandsModItems.INDUSTRIALHAMMER.get());
+				tabData.accept(FalloutWastelandsModItems.INDUSTRIALSHOVEL.get());
 			})
 
 					.build());
