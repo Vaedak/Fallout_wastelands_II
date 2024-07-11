@@ -15,6 +15,21 @@
       },
       {
         "value": "CUSTOM:Tenmmhomemadeassaultrifle"
+      },
+      {
+        "value": "CUSTOM:Laserrifle"
+      },
+      {
+        "value": "CUSTOM:Plasmarifle"
+      },
+      {
+        "value": "CUSTOM:Nailgun"
+      },
+      {
+        "value": "CUSTOM:Chinesepistol"
+      },
+      {
+        "value": "CUSTOM:Fivemmminigun"
       }
     ],
     "blocks": [],

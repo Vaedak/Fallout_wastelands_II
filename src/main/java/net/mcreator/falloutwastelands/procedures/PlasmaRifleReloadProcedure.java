@@ -18,14 +18,14 @@ import net.mcreator.falloutwastelands.init.FalloutWastelandsModItems;
 
 import java.util.concurrent.atomic.AtomicReference;
 
-public class Reload10mmHomemadeProcedure {
+public class PlasmaRifleReloadProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		double ammoCount = 0;
 		boolean ammoChecked = false;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() > 0) {
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(FalloutWastelandsModItems.TENMMAMMO.get())) : false) {
+			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(FalloutWastelandsModItems.ENERGY_CELL.get())) : false) {
 				if (ammoChecked == false) {
 					{
 						AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
@@ -33,7 +33,7 @@ public class Reload10mmHomemadeProcedure {
 						if (_iitemhandlerref.get() != null) {
 							for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 								ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-								if (itemstackiterator.getItem() == FalloutWastelandsModItems.TENMMAMMO.get()) {
+								if (itemstackiterator.getItem() == FalloutWastelandsModItems.ENERGY_CELL.get()) {
 									ammoCount = ammoCount + itemstackiterator.getCount();
 								}
 								ammoChecked = true;
@@ -41,7 +41,7 @@ public class Reload10mmHomemadeProcedure {
 						}
 					}
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.TENMMAMMO.get());
+						ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.ENERGY_CELL.get());
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue(),
 								_player.inventoryMenu.getCraftSlots());
 					}
@@ -49,9 +49,9 @@ public class Reload10mmHomemadeProcedure {
 					entity.getPersistentData().putBoolean("ReloadGun", false);
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_break")), SoundSource.NEUTRAL, 1, 1);
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.step")), SoundSource.PLAYERS, 1, 1);
 						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_break")), SoundSource.NEUTRAL, 1, 1, false);
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.step")), SoundSource.PLAYERS, 1, 1, false);
 						}
 					}
 					if (entity instanceof Player _player)

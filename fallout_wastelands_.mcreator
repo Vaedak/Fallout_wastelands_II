@@ -2050,7 +2050,7 @@
           "src/main/resources/assets/fallout_wastelands_/models/item/revolver_32.json"
         ]
       },
-      "path": "~/Weapons"
+      "path": "~/Weapons/Revolver32"
     },
     {
       "name": "Strippedmolderwoodlog",
@@ -2230,7 +2230,7 @@
           }
         ]
       },
-      "path": "~/Procedures"
+      "path": "~/Procedures/GunProcedures"
     },
     {
       "name": "Wastelandbrickitem",
@@ -2281,7 +2281,7 @@
           }
         ]
       },
-      "path": "~/Procedures"
+      "path": "~/Procedures/GunProcedures"
     },
     {
       "name": "IMPORTANTReloadGunProcedure",
@@ -2317,7 +2317,7 @@
           }
         ]
       },
-      "path": "~/Procedures"
+      "path": "~/Procedures/GunProcedures"
     },
     {
       "name": "TestWeapon",
@@ -2358,7 +2358,7 @@
           }
         ]
       },
-      "path": "~/Procedures"
+      "path": "~/Procedures/GunProcedures"
     },
     {
       "name": "CanUseRangedItem",
@@ -2399,7 +2399,7 @@
           }
         ]
       },
-      "path": "~/Procedures"
+      "path": "~/Procedures/GunProcedures"
     },
     {
       "name": "WhileProjectileFlyingTick",
@@ -2416,41 +2416,10 @@
           {
             "name": "immediatesourceentity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "IMPORTANTplayerShootingGun",
-      "type": "procedure",
-      "sortid": 116,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "importan_tplayer_shooting_gun",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/falloutwastelands/procedures/IMPORTANTplayerShootingGunProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Procedures"
+      "path": "~/Procedures/GunProcedures"
     },
     {
       "name": "GunInHandTick",
@@ -2467,10 +2436,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
-      "path": "~/Procedures"
+      "path": "~/Procedures/GunProcedures"
     },
     {
       "name": "SteelPole",
@@ -2818,7 +2791,7 @@
           "src/main/resources/assets/fallout_wastelands_/models/item/ninemmpistol.json"
         ]
       },
-      "path": "~/Weapons"
+      "path": "~/Weapons/9mmPistol"
     },
     {
       "name": "Neutronade",
@@ -3965,10 +3938,10 @@
       "registry_name": "wasteland_road_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_road_block.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandRoadBlockBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_road_block.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_road_block.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandRoadBlockBlock.java"
+          "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_road_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -3983,10 +3956,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fallout_wastelands_/blockstates/wasteland_road_slab.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/WastelandRoadSlabBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_road_slab_full.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_road_slab.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WastelandRoadSlabBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/item/wasteland_road_slab.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_road_slab.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/wasteland_road_slab_top.json"
         ]
       },
@@ -4001,12 +3974,12 @@
       "registry_name": "worn_metal_stairs",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/block/WornMetalStairsBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_stairs_inner.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/worn_metal_stairs.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/worn_metal_stairs.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_stairs_outer.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_stairs.json"
+          "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_stairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/worn_metal_stairs.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/WornMetalStairsBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_stairs_inner.json"
         ]
       },
       "path": "~/Blocks"
@@ -4020,11 +3993,11 @@
       "registry_name": "worn_metal_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/blockstates/worn_metal_slab.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_slab.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_slab_full.json",
           "src/main/java/net/mcreator/falloutwastelands/block/WornMetalSlabBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/worn_metal_slab.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_slab_top.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_slab_full.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/worn_metal_slab.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/worn_metal_slab.json"
         ]
       },
@@ -4039,12 +4012,12 @@
       "registry_name": "scaffolding_walkwayslab",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkwayslab_top.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkwayslab.json",
           "src/main/java/net/mcreator/falloutwastelands/block/ScaffoldingWalkwayslabBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkwayslab_full.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkwayslab.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/scaffolding_walkwayslab.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/scaffolding_walkwayslab.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkwayslab_top.json"
+          "src/main/resources/assets/fallout_wastelands_/blockstates/scaffolding_walkwayslab.json"
         ]
       },
       "path": "~/Blocks"
@@ -4058,11 +4031,11 @@
       "registry_name": "scaffolding_walkway_stairs",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/block/ScaffoldingWalkwayStairsBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkway_stairs_outer.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkway_stairs.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkway_stairs_inner.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/scaffolding_walkway_stairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkway_stairs.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkway_stairs_outer.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/ScaffoldingWalkwayStairsBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/scaffolding_walkway_stairs_inner.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/scaffolding_walkway_stairs.json"
         ]
       },
@@ -4077,10 +4050,10 @@
       "registry_name": "gore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/item/gore.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/gore.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/gore.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/GoreBlock.java"
+          "src/main/java/net/mcreator/falloutwastelands/block/GoreBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/gore.json"
         ]
       },
       "path": "~/Blocks"
@@ -4095,8 +4068,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fallout_wastelands_/models/item/supermutantgore.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/SupermutantgoreBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/block/supermutantgore.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/SupermutantgoreBlock.java",
           "src/main/resources/assets/fallout_wastelands_/blockstates/supermutantgore.json"
         ]
       },
@@ -4111,12 +4084,12 @@
       "registry_name": "double_scaffold_wall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/block/double_scaffold_wall.json",
           "src/main/java/net/mcreator/falloutwastelands/block/DoubleScaffoldWallBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/block/double_scaffold_wall_side_tall.json",
-          "src/main/resources/assets/fallout_wastelands_/models/block/double_scaffold_wall_post.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/double_scaffold_wall.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/double_scaffold_wall_inventory.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/double_scaffold_wall_post.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/double_scaffold_wall.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/double_scaffold_wall.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/double_scaffold_wall.json"
         ]
       },
@@ -4148,10 +4121,10 @@
       "registry_name": "melted_steel_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/item/melted_steel_block.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/melted_steel_block.json",
           "src/main/resources/assets/fallout_wastelands_/blockstates/melted_steel_block.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/MeltedSteelBlockBlock.java"
+          "src/main/java/net/mcreator/falloutwastelands/block/MeltedSteelBlockBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/melted_steel_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -4165,10 +4138,10 @@
       "registry_name": "melted_iron_block",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/MeltedIronBlockBlock.java",
           "src/main/resources/assets/fallout_wastelands_/models/block/melted_iron_block.json",
           "src/main/resources/assets/fallout_wastelands_/models/item/melted_iron_block.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/melted_iron_block.json",
-          "src/main/java/net/mcreator/falloutwastelands/block/MeltedIronBlockBlock.java"
+          "src/main/resources/assets/fallout_wastelands_/blockstates/melted_iron_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -4227,10 +4200,10 @@
       "registry_name": "barbed_wires",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/block/BarbedWiresBlock.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/barbed_wires.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/barbed_wires.json",
           "src/main/resources/assets/fallout_wastelands_/models/block/barbed_wires.json",
-          "src/main/resources/assets/fallout_wastelands_/blockstates/barbed_wires.json"
+          "src/main/java/net/mcreator/falloutwastelands/block/BarbedWiresBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/barbed_wires.json"
         ]
       },
       "path": "~/Blocks"
@@ -4272,7 +4245,7 @@
           "src/main/resources/assets/fallout_wastelands_/models/item/tenmmpistol.json"
         ]
       },
-      "path": "~/Weapons"
+      "path": "~/Weapons/10mmPistol"
     },
     {
       "name": "Tenmmammo",
@@ -4283,8 +4256,8 @@
       "registry_name": "tenmmammo",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/item/tenmmammo.json",
-          "src/main/java/net/mcreator/falloutwastelands/item/TenmmammoItem.java"
+          "src/main/java/net/mcreator/falloutwastelands/item/TenmmammoItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/tenmmammo.json"
         ]
       },
       "path": "~/Items"
@@ -4313,11 +4286,11 @@
       "registry_name": "tenmmhomemadeassaultrifle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/item/TenmmhomemadeassaultrifleItem.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/tenmmhomemadeassaultrifle.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/tenmmhomemadeassaultrifle.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/TenmmhomemadeassaultrifleItem.java"
         ]
       },
-      "path": "~/Weapons"
+      "path": "~/Weapons/10mmHomemade"
     },
     {
       "name": "FivemmAmmo",
@@ -4328,8 +4301,8 @@
       "registry_name": "fivemm_ammo",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/falloutwastelands/item/FivemmAmmoItem.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/fivemm_ammo.json"
+          "src/main/resources/assets/fallout_wastelands_/models/item/fivemm_ammo.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/FivemmAmmoItem.java"
         ]
       },
       "path": "~/Items"
@@ -4744,7 +4717,7 @@
           }
         ]
       },
-      "path": "~/Weapons/10mmHomemade"
+      "path": "~/Procedures/GunProcedures"
     },
     {
       "name": "TurnOffFullAuto",
@@ -4768,7 +4741,7 @@
           }
         ]
       },
-      "path": "~/Weapons/10mmHomemade"
+      "path": "~/Procedures/GunProcedures"
     },
     {
       "name": "Experiementripper",
@@ -4803,7 +4776,7 @@
           }
         ]
       },
-      "path": "~/Weapons/10mmHomemade"
+      "path": "~/Procedures/GunProcedures"
     },
     {
       "name": "Wrench",
@@ -4833,7 +4806,7 @@
           "src/main/resources/assets/fallout_wastelands_/models/item/laserrifle.json"
         ]
       },
-      "path": "~/Weapons"
+      "path": "~/Weapons/LaserRifle"
     },
     {
       "name": "Corn",
@@ -4893,7 +4866,7 @@
           "src/main/resources/assets/fallout_wastelands_/models/item/plasmarifle.json"
         ]
       },
-      "path": "~/Weapons"
+      "path": "~/Weapons/PlasmaRifle"
     },
     {
       "name": "Nailgun",
@@ -4908,7 +4881,7 @@
           "src/main/resources/assets/fallout_wastelands_/models/item/nailgun.json"
         ]
       },
-      "path": "~/Weapons"
+      "path": "~/Weapons/NailGun"
     },
     {
       "name": "Rollingpin",
@@ -4938,7 +4911,7 @@
           "src/main/java/net/mcreator/falloutwastelands/item/ChinesepistolItem.java"
         ]
       },
-      "path": "~/Weapons"
+      "path": "~/Weapons/ChinesePistol"
     },
     {
       "name": "Hachet",
@@ -5075,7 +5048,387 @@
           "src/main/resources/assets/fallout_wastelands_/models/item/fivemmminigun.json"
         ]
       },
-      "path": "~/Weapons"
+      "path": "~/Weapons/5mmMinigun"
+    },
+    {
+      "name": "LaserRifleShoot",
+      "type": "procedure",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_rifle_shoot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/LaserRifleShootProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/LaserRifle"
+    },
+    {
+      "name": "LaserRifleReload",
+      "type": "procedure",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_rifle_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/LaserRifleReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/LaserRifle"
+    },
+    {
+      "name": "PlasmaRifleShoot",
+      "type": "procedure",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasma_rifle_shoot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/PlasmaRifleShootProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/PlasmaRifle"
+    },
+    {
+      "name": "PlasmaRifleReload",
+      "type": "procedure",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasma_rifle_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/PlasmaRifleReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/PlasmaRifle"
+    },
+    {
+      "name": "NailGunReload",
+      "type": "procedure",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nail_gun_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/NailGunReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/NailGun"
+    },
+    {
+      "name": "NailGunShoot",
+      "type": "procedure",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nail_gun_shoot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/NailGunShootProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/NailGun"
+    },
+    {
+      "name": "ChinesePistolShoot",
+      "type": "procedure",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chinese_pistol_shoot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/ChinesePistolShootProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/ChinesePistol"
+    },
+    {
+      "name": "ChinesePistolReload",
+      "type": "procedure",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chinese_pistol_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/ChinesePistolReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/ChinesePistol"
+    },
+    {
+      "name": "FivemmReload",
+      "type": "procedure",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fivemm_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/FivemmReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/5mmMinigun"
+    },
+    {
+      "name": "FivemmShoot",
+      "type": "procedure",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fivemm_shoot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/FivemmShootProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/5mmMinigun"
     }
   ],
   "variable_elements": [],
@@ -5176,11 +5529,14 @@
       "item.fallout_wastelands_.combatarmor_boots": "Combat Armor Boots",
       "block.fallout_wastelands_.double_scaffold_wall": "Double Scaffold Wall",
       "block.fallout_wastelands_.wasteland_brick": "Wasteland Bricks",
+      "item.fallout_wastelands_.experiementripper": "Experiementripper",
       "item.fallout_wastelands_.psycho": "Psycho",
       "gui.fallout_wastelands_.base_menu_ui.label_inventory": "Inventory",
       "block.fallout_wastelands_.gore": "Gore",
       "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
+      "item.fallout_wastelands_.wrench": "Wrench",
       "block.fallout_wastelands_.wasteland_goldore": "Wasteland Gold Ore",
+      "item.fallout_wastelands_.laserrifle": "Laser Rifle",
       "subtitles.pistol32firing": "",
       "block.fallout_wastelands_.the_glow_dirt": "Glow Dirt",
       "item.fallout_wastelands_.antiradsuit_chestplate": "Anti-Rad Suit Chest",
@@ -5200,18 +5556,22 @@
       "item.fallout_wastelands_.combatarmor_chestplate": "Combat Armor Chestplate",
       "entity.fallout_wastelands_.cannibal_00": "Cannibal",
       "block.fallout_wastelands_.barricadeplanks": "Barricade Planks",
+      "item.fallout_wastelands_.industrialhammer": "Sledgehammer",
       "subtitles.lmgreloading": "",
       "block.fallout_wastelands_.stair_wasteland_cobblestone": "Wasteland Cobblestone Stairs",
       "gui.fallout_wastelands_.base_menu_ui.label_caps": "Caps",
       "gui.fallout_wastelands_.base_menu_ui.label_varlocalvar": "DisplaysInputName",
+      "item.fallout_wastelands_.industrialshovel": "Industrial Shovel",
       "item.fallout_wastelands_.antiradclothing": "Anti-rad Clothing",
       "item.fallout_wastelands_.ripper": "Ripper",
       "item.fallout_wastelands_.wastelandbrickitem": "Wasteland Brick",
       "item.fallout_wastelands_.asbestos": "Asbestos",
       "block.fallout_wastelands_.molder_wood_log": "Molder Wood Log",
+      "item.fallout_wastelands_.corn": "Corn",
       "biome.fallout_wastelands_.wasteland_dryland": "Wasteland Dryland",
       "block.fallout_wastelands_.wasteland_brick_stairs": "Wasteland Brick Stairs",
       "item.fallout_wastelands_.antiradsuit_helmet": "Anti-Rad Suit Helmet",
+      "item.fallout_wastelands_.plasmarifle": "Plasma Rifle",
       "block.fallout_wastelands_.rust_block": "Worn Rust Block",
       "item.fallout_wastelands_.tato": "Tato",
       "block.fallout_wastelands_.molder_wood_trapdoor": "Molder TrapDoor",
@@ -5233,9 +5593,12 @@
       "block.fallout_wastelands_.rustysheetmetalstairs": "Rusted Sheet MetalStairs",
       "subtitles.ripper": "",
       "block.fallout_wastelands_.wasteland_broken_glass": "Broken Glass",
+      "item.fallout_wastelands_.chinesepistol": "Chinese Pistol",
       "block.fallout_wastelands_.reinforced_planks": "Reinforced Wood Planks",
+      "item.fallout_wastelands_.rollingpin": "Rolling Pin",
       "item.fallout_wastelands_.raiderbasher_leggings": "Raider Basher Pants",
       "item.fallout_wastelands_.neutronade": "Neutronade",
+      "item.fallout_wastelands_.tire_iron": "Tire Iron",
       "block.fallout_wastelands_.military_metal_plate": "Military Metal Plate",
       "item.fallout_wastelands_.lead_ingot": "Lead Ingot",
       "block.fallout_wastelands_.centralunit": "Central Unit Block",
@@ -5250,6 +5613,7 @@
       "item.fallout_wastelands_.raiderduster_helmet": "Raider Duster Hood",
       "item.fallout_wastelands_.ninemmammo": "9mm Ammo",
       "block.fallout_wastelands_.scaffolding_walkway_stairs": "Scaffolding Walkway Stairs",
+      "item.fallout_wastelands_.energy_cell": "Microfusion Cell",
       "block.fallout_wastelands_.grey_tiles": "Grey Tile",
       "gui.fallout_wastelands_.base_menu_ui.NameInput": "Name",
       "block.fallout_wastelands_.wasteland_concrete_wall": "Concrete Wall",
@@ -5258,6 +5622,8 @@
       "item.fallout_wastelands_.raiderduster_boots": "Raider Duster Boots",
       "block.fallout_wastelands_.military_metal_door": "Military Metal Door",
       "block.fallout_wastelands_.rusty_sheetmetalblock": "Rusted Sheet Metal Block",
+      "key.fallout_wastelands_.stop_reload": "Stop Reload",
+      "item.fallout_wastelands_.nailed_wrench": "Wrench",
       "item.fallout_wastelands_.antiradsuit_boots": "Anti-Rad Suit Boots",
       "gui.fallout_wastelands_.locker_storage.label_locker": "Locker",
       "block.fallout_wastelands_.wastelandlapisore": "Wasteland Lapis Ore",
@@ -5268,6 +5634,7 @@
       "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
       "block.fallout_wastelands_.roof_metal": "Roof Sheet Metal Block",
       "block.fallout_wastelands_.wastelandtiles": "Wasteland Tiles",
+      "item.fallout_wastelands_.nail": "Nail",
       "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
       "item.fallout_wastelands_.fivemm_ammo": "5mm Ammo",
       "gui.fallout_wastelands_.base_menu_ui.label_done1": "Done",
@@ -5296,6 +5663,7 @@
       "block.fallout_wastelands_.supermutantgore": "Gore Bag",
       "item.fallout_wastelands_.revolver_32": "Revolver 32",
       "biome.fallout_wastelands_.wasteland_plains": "Wasteland Plains",
+      "item.fallout_wastelands_.fivemmminigun": "5mm Minigun",
       "block.fallout_wastelands_.blasted_glass_pane": "Blasted Glass Pane",
       "gui.fallout_wastelands_.base_inventory.label_note_to_make_the_white_ui_disap": "Note: to make the white ui disappear you must set it",
       "item.fallout_wastelands_.pipboy": "Pip-Boy 2500",
@@ -5315,6 +5683,7 @@
       "block.fallout_wastelands_.steel_pole": "Steel Pole ",
       "block.fallout_wastelands_.molder_wood_fence": "Molder Fence",
       "item.fallout_wastelands_.raiderduster_chestplate": "Raider Duster Chestpads",
+      "item.fallout_wastelands_.thirtytwoammo": ".32 Ammo",
       "item.fallout_wastelands_.raiderbasher_boots": "Raider Basher Boots",
       "block.fallout_wastelands_.hardconcretestairs": "Concrete Stairs",
       "block.fallout_wastelands_.wasteland_road_slab": "Wasteland Asphalt Slab",
@@ -5324,6 +5693,7 @@
       "block.fallout_wastelands_.exposed_rust_block": "Exposed Rust Block",
       "block.fallout_wastelands_.hangardoor": "Hangardoor",
       "subtitles.laserrifleshot": "",
+      "item.fallout_wastelands_.hachet": "Hachet",
       "block.fallout_wastelands_.wasteland_brick_wall": "Wasteland Stone",
       "item.fallout_wastelands_.nuka_cola": "Nuka Cola",
       "gui.fallout_wastelands_.base_inventory.label_inventory": "Inventory",
@@ -5338,6 +5708,7 @@
       "block.fallout_wastelands_.cracked_wasteland_concrete_stairs": "Cracked Concrete Stairs",
       "item.fallout_wastelands_.raiderbasher_chestplate": "Raider Basher Chestplate",
       "block.fallout_wastelands_.locker": "Locker",
+      "item.fallout_wastelands_.nailgun": "Nailgun",
       "block.fallout_wastelands_.molder_wood_door": "Molder Door",
       "item.fallout_wastelands_.taloncombatarmor_boots": "Talon Combat Armor Boots",
       "item.fallout_wastelands_.scrapmetal": "Scrap Metal",
@@ -5414,6 +5785,26 @@
           },
           {
             "name": "10mmHomemade",
+            "children": []
+          },
+          {
+            "name": "LaserRifle",
+            "children": []
+          },
+          {
+            "name": "PlasmaRifle",
+            "children": []
+          },
+          {
+            "name": "NailGun",
+            "children": []
+          },
+          {
+            "name": "ChinesePistol",
+            "children": []
+          },
+          {
+            "name": "5mmMinigun",
             "children": []
           }
         ]

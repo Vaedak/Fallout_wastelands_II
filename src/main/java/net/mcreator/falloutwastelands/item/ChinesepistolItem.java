@@ -1,8 +1,16 @@
 
 package net.mcreator.falloutwastelands.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import javax.annotation.Nullable;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.falloutwastelands.procedures.GunInHandTickProcedure;
+import net.mcreator.falloutwastelands.procedures.ChinesePistolShootProcedure;
 
 public class ChinesepistolItem extends Item {
 	public ChinesepistolItem() {
@@ -17,7 +25,7 @@ public class ChinesepistolItem extends Item {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		IMPORTANTplayerShootingGunProcedure.execute();
+		ChinesePistolShootProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 		return retval;
 	}
 
@@ -25,6 +33,6 @@ public class ChinesepistolItem extends Item {
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
 		if (selected)
-			GunInHandTickProcedure.execute(entity);
+			GunInHandTickProcedure.execute(entity, itemstack);
 	}
 }

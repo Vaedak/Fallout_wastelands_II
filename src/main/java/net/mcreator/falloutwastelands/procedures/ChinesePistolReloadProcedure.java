@@ -18,7 +18,7 @@ import net.mcreator.falloutwastelands.init.FalloutWastelandsModItems;
 
 import java.util.concurrent.atomic.AtomicReference;
 
-public class Reload10mmHomemadeProcedure {
+public class ChinesePistolReloadProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
@@ -49,9 +49,9 @@ public class Reload10mmHomemadeProcedure {
 					entity.getPersistentData().putBoolean("ReloadGun", false);
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_break")), SoundSource.NEUTRAL, 1, 1);
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistolreloading")), SoundSource.PLAYERS, (float) 0.5, (float) 0.7);
 						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_break")), SoundSource.NEUTRAL, 1, 1, false);
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fallout_wastelands_:pistolreloading")), SoundSource.PLAYERS, (float) 0.5, (float) 0.7, false);
 						}
 					}
 					if (entity instanceof Player _player)
