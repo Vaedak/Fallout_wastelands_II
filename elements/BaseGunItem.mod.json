@@ -28,6 +28,9 @@
     "onRangedItemUsed": {
       "name": "WhenRangedItemIsUsed"
     },
+    "onEntitySwing": {
+      "name": "Shoot9mmPistol"
+    },
     "useCondition": {
       "name": "CanUseRangedItem"
     },
@@ -43,6 +46,9 @@
     "customBulletModelTexture": "",
     "onBulletHitsBlock": {
       "name": "GunProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "GunProjectileHitsEntity"
     },
     "onBulletFlyingTick": {
       "name": "WhileProjectileFlyingTick"

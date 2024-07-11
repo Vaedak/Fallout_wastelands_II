@@ -16,6 +16,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.falloutwastelands.network.SwitchGameModeUtilityMessage;
+import net.mcreator.falloutwastelands.network.StopReloadMessage;
 import net.mcreator.falloutwastelands.network.GunReloadKeybindMessage;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
@@ -47,11 +48,25 @@ public class FalloutWastelandsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping STOP_RELOAD = new KeyMapping("key.fallout_wastelands_.stop_reload", GLFW.GLFW_KEY_SCROLL_LOCK, "key.categories.fallout_wastelands") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				FalloutWastelandsMod.PACKET_HANDLER.sendToServer(new StopReloadMessage(0, 0));
+				StopReloadMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(SWITCH_GAME_MODE_UTILITY);
 		event.register(GUN_RELOAD_KEYBIND);
+		event.register(STOP_RELOAD);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -61,6 +76,7 @@ public class FalloutWastelandsModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				SWITCH_GAME_MODE_UTILITY.consumeClick();
 				GUN_RELOAD_KEYBIND.consumeClick();
+				STOP_RELOAD.consumeClick();
 			}
 		}
 	}

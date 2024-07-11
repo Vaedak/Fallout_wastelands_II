@@ -7,6 +7,7 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
@@ -22,6 +23,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.falloutwastelands.procedures.WhileProjectileFlyingTickProcedure;
+import net.mcreator.falloutwastelands.procedures.GunProjectileHitsEntityProcedure;
 import net.mcreator.falloutwastelands.procedures.GunProjectileHitsBlockProcedure;
 import net.mcreator.falloutwastelands.init.FalloutWastelandsModEntities;
 
@@ -66,6 +68,12 @@ public class BaseGunItemEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	@Override
+	public void onHitEntity(EntityHitResult entityHitResult) {
+		super.onHitEntity(entityHitResult);
+		GunProjectileHitsEntityProcedure.execute(this);
+	}
+
+	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
 		GunProjectileHitsBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this);
@@ -74,7 +82,7 @@ public class BaseGunItemEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void tick() {
 		super.tick();
-		WhileProjectileFlyingTickProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		WhileProjectileFlyingTickProcedure.execute(this);
 		if (this.inGround)
 			this.discard();
 	}

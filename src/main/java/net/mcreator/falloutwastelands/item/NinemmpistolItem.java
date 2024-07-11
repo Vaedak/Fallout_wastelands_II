@@ -9,7 +9,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.falloutwastelands.procedures.IMPORTANTplayerShootingGunProcedure;
+import net.mcreator.falloutwastelands.procedures.Shoot9mmPistolProcedure;
 import net.mcreator.falloutwastelands.procedures.GunInHandTickProcedure;
 
 public class NinemmpistolItem extends Item {
@@ -25,7 +25,7 @@ public class NinemmpistolItem extends Item {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		IMPORTANTplayerShootingGunProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		Shoot9mmPistolProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 		return retval;
 	}
 
@@ -33,6 +33,6 @@ public class NinemmpistolItem extends Item {
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
 		if (selected)
-			GunInHandTickProcedure.execute(entity);
+			GunInHandTickProcedure.execute(entity, itemstack);
 	}
 }

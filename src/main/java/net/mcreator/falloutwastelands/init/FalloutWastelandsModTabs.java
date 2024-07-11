@@ -113,6 +113,21 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDTILESSLAB.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELANDHARDSTONE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.RUST_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_ROAD_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_ROAD_SLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WORN_METAL_STAIRS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WORN_METAL_SLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAYSLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.SCAFFOLDING_WALKWAY_STAIRS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.GORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.SUPERMUTANTGORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.DOUBLE_SCAFFOLD_WALL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.EXPOSED_RUST_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MELTED_STEEL_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MELTED_IRON_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.URANIUM_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BARBED_WIRES.get().asItem());
+				tabData.accept(FalloutWastelandsModItems.EXPERIEMENTRIPPER.get());
 			})
 
 					.build());
@@ -147,6 +162,11 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_LEGGINGS.get());
 				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_BOOTS.get());
 				tabData.accept(FalloutWastelandsModItems.RIPPER.get());
+				tabData.accept(FalloutWastelandsModItems.TENMMPISTOL.get());
+				tabData.accept(FalloutWastelandsModItems.TENMMAMMO.get());
+				tabData.accept(FalloutWastelandsModItems.NINEMMAMMO.get());
+				tabData.accept(FalloutWastelandsModItems.TENMMHOMEMADEASSAULTRIFLE.get());
+				tabData.accept(FalloutWastelandsModItems.FIVEMM_AMMO.get());
 			})
 
 					.build());

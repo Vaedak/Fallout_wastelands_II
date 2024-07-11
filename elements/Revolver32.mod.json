@@ -35,7 +35,7 @@
       "name": "GunInHandTick"
     },
     "onEntitySwing": {
-      "name": "IMPORTANTplayerShootingGun"
+      "name": "ShootRevolver"
     },
     "isFood": false,
     "nutritionalValue": 0,

@@ -12,11 +12,15 @@ import software.bernie.geckolib.animatable.GeoItem;
 
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 
+import net.mcreator.falloutwastelands.procedures.Shoot9mmPistolProcedure;
 import net.mcreator.falloutwastelands.item.renderer.TestWeaponItemRenderer;
 
 import java.util.function.Consumer;
@@ -81,5 +85,23 @@ public class TestWeaponItem extends Item implements GeoItem {
 	@Override
 	public AnimatableInstanceCache getAnimatableInstanceCache() {
 		return this.cache;
+	}
+
+	@Override
+	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
+		ItemStack retval = super.finishUsingItem(itemstack, world, entity);
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+
+		Shoot9mmPistolProcedure.execute(world, x, y, z, entity, itemstack);
+		return retval;
+	}
+
+	@Override
+	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
+		boolean retval = super.onEntitySwing(itemstack, entity);
+		Shoot9mmPistolProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		return retval;
 	}
 }

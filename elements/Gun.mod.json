@@ -1,0 +1,27 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Revolver32"
+      },
+      {
+        "value": "CUSTOM:Ninemmpistol"
+      },
+      {
+        "value": "CUSTOM:Tenmmpistol"
+      },
+      {
+        "value": "CUSTOM:Tenmmhomemadeassaultrifle"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "gun",
+    "namespace": "mod"
+  }
+}

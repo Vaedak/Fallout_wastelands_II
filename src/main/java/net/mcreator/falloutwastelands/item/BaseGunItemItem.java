@@ -16,6 +16,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.falloutwastelands.procedures.WhenRangedItemIsUsedProcedure;
+import net.mcreator.falloutwastelands.procedures.Shoot9mmPistolProcedure;
 import net.mcreator.falloutwastelands.procedures.CanUseRangedItemProcedure;
 import net.mcreator.falloutwastelands.entity.BaseGunItemEntity;
 
@@ -30,6 +31,13 @@ public class BaseGunItemItem extends Item {
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		entity.startUsingItem(hand);
 		return new InteractionResultHolder(InteractionResult.SUCCESS, entity.getItemInHand(hand));
+	}
+
+	@Override
+	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
+		boolean retval = super.onEntitySwing(itemstack, entity);
+		Shoot9mmPistolProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		return retval;
 	}
 
 	@Override
