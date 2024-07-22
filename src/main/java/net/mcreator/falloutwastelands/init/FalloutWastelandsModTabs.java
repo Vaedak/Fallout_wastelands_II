@@ -127,7 +127,6 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.MELTED_IRON_BLOCK.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.URANIUM_BLOCK.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.BARBED_WIRES.get().asItem());
-				tabData.accept(FalloutWastelandsModItems.EXPERIEMENTRIPPER.get());
 			})
 
 					.build());
@@ -161,7 +160,6 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_CHESTPLATE.get());
 				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_LEGGINGS.get());
 				tabData.accept(FalloutWastelandsModItems.TALONCOMBATARMOR_BOOTS.get());
-				tabData.accept(FalloutWastelandsModItems.RIPPER.get());
 				tabData.accept(FalloutWastelandsModItems.TENMMPISTOL.get());
 				tabData.accept(FalloutWastelandsModItems.TENMMAMMO.get());
 				tabData.accept(FalloutWastelandsModItems.NINEMMAMMO.get());
@@ -178,6 +176,7 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.ROLLINGPIN.get());
 				tabData.accept(FalloutWastelandsModItems.WRENCH.get());
 				tabData.accept(FalloutWastelandsModItems.NAILED_WRENCH.get());
+				tabData.accept(FalloutWastelandsModItems.RIPPER.get());
 			})
 
 					.build());

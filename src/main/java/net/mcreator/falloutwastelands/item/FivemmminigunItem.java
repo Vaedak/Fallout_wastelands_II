@@ -22,7 +22,7 @@ import net.mcreator.falloutwastelands.procedures.FivemmShootProcedure;
 
 public class FivemmminigunItem extends Item {
 	public FivemmminigunItem() {
-		super(new Item.Properties().durability(101).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).build()));
+		super(new Item.Properties().durability(101).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat().build()));
 	}
 
 	@Override
@@ -69,6 +69,6 @@ public class FivemmminigunItem extends Item {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
 		if (selected)
 			GunInHandTickProcedure.execute(entity, itemstack);
-		TurnOffFullAutoProcedure.execute(entity, itemstack);
+		TurnOffFullAutoProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 	}
 }

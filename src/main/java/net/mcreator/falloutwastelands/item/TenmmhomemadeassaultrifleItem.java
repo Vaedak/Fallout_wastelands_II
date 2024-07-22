@@ -22,7 +22,7 @@ import net.mcreator.falloutwastelands.procedures.FullAutoStartUsingProcedure;
 
 public class TenmmhomemadeassaultrifleItem extends Item {
 	public TenmmhomemadeassaultrifleItem() {
-		super(new Item.Properties().durability(26).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).build()));
+		super(new Item.Properties().durability(26).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat().build()));
 	}
 
 	@Override
@@ -69,6 +69,6 @@ public class TenmmhomemadeassaultrifleItem extends Item {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
 		if (selected)
 			GunInHandTickProcedure.execute(entity, itemstack);
-		TurnOffFullAutoProcedure.execute(entity, itemstack);
+		TurnOffFullAutoProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 	}
 }

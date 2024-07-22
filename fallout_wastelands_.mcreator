@@ -2416,6 +2416,22 @@
           {
             "name": "immediatesourceentity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3915,21 +3931,6 @@
       "path": "~/Blocks"
     },
     {
-      "name": "Ripper",
-      "type": "tool",
-      "sortid": 203,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ripper",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/falloutwastelands/item/RipperItem.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/ripper.json"
-        ]
-      },
-      "path": "~/Weapons"
-    },
-    {
       "name": "WastelandRoadBlock",
       "type": "block",
       "sortid": 204,
@@ -4319,7 +4320,7 @@
           "src/main/resources/data/fallout_wastelands_/tags/items/gun.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Weapons"
     },
     {
       "name": "StopReload",
@@ -4680,26 +4681,6 @@
       "path": "~/Weapons/10mmHomemade"
     },
     {
-      "name": "ExperiementripperRightclicked",
-      "type": "procedure",
-      "sortid": 241,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "experiementripper_rightclicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/falloutwastelands/procedures/ExperiementripperRightclickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Weapons"
-    },
-    {
       "name": "FullAutoStartUsing",
       "type": "procedure",
       "sortid": 238,
@@ -4738,25 +4719,26 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
       "path": "~/Procedures/GunProcedures"
-    },
-    {
-      "name": "Experiementripper",
-      "type": "item",
-      "sortid": 228,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "experiementripper",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/fallout_wastelands_/models/item/experiementripper.json",
-          "src/main/java/net/mcreator/falloutwastelands/item/ExperiementripperItem.java"
-        ]
-      },
-      "path": "~/Weapons"
     },
     {
       "name": "FullAutoStopUsing",
@@ -4986,6 +4968,10 @@
         ],
         "dependencies": [
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -5003,7 +4989,7 @@
           }
         ]
       },
-      "path": "~/Weapons"
+      "path": "~/Weapons/Ripper"
     },
     {
       "name": "EnergyCell",
@@ -5429,6 +5415,303 @@
         ]
       },
       "path": "~/Weapons/5mmMinigun"
+    },
+    {
+      "name": "LeftClickFireHomemade10mm",
+      "type": "procedure",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "left_click_fire_homemade_10mm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/LeftClickFireHomemade10mmProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Weapons/10mmHomemade"
+    },
+    {
+      "name": "DeleteAtShortRange",
+      "type": "procedure",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delete_at_short_range",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/DeleteAtShortRangeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons/Ripper"
+    },
+    {
+      "name": "DespawnRipperProjectile",
+      "type": "procedure",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "despawn_ripper_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/DespawnRipperProjectileProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons/Ripper"
+    },
+    {
+      "name": "RipperProjectile",
+      "type": "rangeditem",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ripper_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/entity/RipperProjectileEntity.java",
+          "src/main/java/net/mcreator/falloutwastelands/item/RipperProjectileItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/ripper_projectile.json"
+        ]
+      },
+      "path": "~/Weapons/Ripper"
+    },
+    {
+      "name": "RipperStartSawing",
+      "type": "procedure",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ripper_start_sawing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/RipperStartSawingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons/Ripper"
+    },
+    {
+      "name": "RipperStopSawing",
+      "type": "procedure",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ripper_stop_sawing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/RipperStopSawingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons/Ripper"
+    },
+    {
+      "name": "RipperStopSawingNotInHand",
+      "type": "procedure",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ripper_stop_sawing_not_in_hand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/RipperStopSawingNotInHandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons/Ripper"
+    },
+    {
+      "name": "RipperSawAttack",
+      "type": "procedure",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ripper_saw_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/RipperSawAttackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/Ripper"
+    },
+    {
+      "name": "Ripper",
+      "type": "item",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ripper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/RipperItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/ripper.json"
+        ]
+      },
+      "path": "~/Weapons/Ripper"
+    },
+    {
+      "name": "SwordTag",
+      "type": "tag",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/iron_sword.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "ShearsTag",
+      "type": "tag",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shears_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/shears.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "DontShootOnDropItem",
+      "type": "procedure",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dont_shoot_on_drop_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/DontShootOnDropItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/GunProcedures"
+    },
+    {
+      "name": "DontShootOnRightClickMob",
+      "type": "procedure",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dont_shoot_on_right_click_mob",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/DontShootOnRightClickMobProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GunProcedures"
+    },
+    {
+      "name": "DontShootOnRightClickBlock",
+      "type": "procedure",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dont_shoot_on_right_click_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/DontShootOnRightClickBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/GunProcedures"
+    },
+    {
+      "name": "BlocksWithGUIs",
+      "type": "tag",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blocks_with_gu_is",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/tags/blocks/blocks_with_gu_is.json"
+        ]
+      },
+      "path": "~/Tags"
     }
   ],
   "variable_elements": [],
@@ -5529,7 +5812,6 @@
       "item.fallout_wastelands_.combatarmor_boots": "Combat Armor Boots",
       "block.fallout_wastelands_.double_scaffold_wall": "Double Scaffold Wall",
       "block.fallout_wastelands_.wasteland_brick": "Wasteland Bricks",
-      "item.fallout_wastelands_.experiementripper": "Experiementripper",
       "item.fallout_wastelands_.psycho": "Psycho",
       "gui.fallout_wastelands_.base_menu_ui.label_inventory": "Inventory",
       "block.fallout_wastelands_.gore": "Gore",
@@ -5605,6 +5887,7 @@
       "item.fallout_wastelands_.nuka_cola_quantum": "Nuka Cola Quantum",
       "item.fallout_wastelands_.tenmmhomemadeassaultrifle": "10mm Homemade Assault Rifle",
       "item.fallout_wastelands_.cloth": "Cloth",
+      "item.fallout_wastelands_.ripper_projectile": "Ripper Projectile",
       "item.fallout_wastelands_.base_gun_item": "Base Gun Item",
       "item.fallout_wastelands_.steel_ingot": "Steel Ingot",
       "item.fallout_wastelands_.raiderblastmaster_chestplate": "Raider Blastmaster Chestplate",
@@ -5806,6 +6089,10 @@
           {
             "name": "5mmMinigun",
             "children": []
+          },
+          {
+            "name": "Ripper",
+            "children": []
           }
         ]
       },
@@ -5852,7 +6139,6 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
-      "mcreator_link",
       "geckolib"
     ],
     "currentGenerator": "forge-1.20.1",

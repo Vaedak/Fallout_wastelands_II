@@ -22,6 +22,7 @@ public class FivemmShootProcedure {
 		if (entity == null)
 			return;
 		if (entity.getPersistentData().getDouble("cooldown") == 0) {
+			DontShootOnDropItemProcedure.execute(world, entity);
 			if (itemstack.getDamageValue() < itemstack.getMaxDamage() - 1 == true && entity.getPersistentData().getBoolean("ReloadGun") == false) {
 				{
 					Entity _shootFrom = entity;
@@ -36,9 +37,9 @@ public class FivemmShootProcedure {
 								entityToSpawn.setSilent(true);
 								return entityToSpawn;
 							}
-						}.getArrow(projectileLevel, entity, 1, 0);
+						}.getArrow(projectileLevel, entity, 3, 0);
 						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 8, 8);
+						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 5, 8);
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
 				}
@@ -57,7 +58,7 @@ public class FivemmShootProcedure {
 					}
 				}
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(itemstack.getItem(), 2);
+					_player.getCooldowns().addCooldown(itemstack.getItem(), 1);
 				entity.getPersistentData().putDouble("cooldown", 1);
 			} else {
 				if (world instanceof Level _level) {
@@ -69,7 +70,7 @@ public class FivemmShootProcedure {
 				}
 				entity.getPersistentData().putDouble("cooldown", 1);
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(itemstack.getItem(), 2);
+					_player.getCooldowns().addCooldown(itemstack.getItem(), 1);
 			}
 		}
 	}

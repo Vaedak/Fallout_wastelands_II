@@ -7,6 +7,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
@@ -23,6 +24,7 @@ public class ShootRevolverProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.REVOLVER_32.get()) {
+			DontShootOnDropItemProcedure.execute(world, entity);
 			if (entity.getPersistentData().getDouble("cooldown") == 0) {
 				if (itemstack.getDamageValue() < itemstack.getMaxDamage() - 1 == true && entity.getPersistentData().getBoolean("ReloadGun") == false) {
 					{
@@ -60,6 +62,8 @@ public class ShootRevolverProcedure {
 						}
 					}
 					entity.getPersistentData().putDouble("cooldown", 5);
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(itemstack.getItem(), 5);
 				} else {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
@@ -69,6 +73,8 @@ public class ShootRevolverProcedure {
 						}
 					}
 					entity.getPersistentData().putDouble("cooldown", 10);
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(itemstack.getItem(), 10);
 				}
 			}
 		}

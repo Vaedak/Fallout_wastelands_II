@@ -2,6 +2,6 @@
   "_fv": 47,
   "_type": "procedure",
   "definition": {
-    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"item_nbt_logic_set\"><value name=\"tagName\"><block type=\"text\"><field name=\"TEXT\">autoFire</field></block></value><value name=\"item\"><block type=\"itemstack_to_mcitem\"></block></value><value name=\"tagValue\"><block type=\"logic_boolean\"><field name=\"BOOL\">FALSE</field></block></value></block></next></block></xml>"
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"item_nbt_logic_set\"><comment pinned=\"false\" h=\"80\" w=\"160\">when making the assault rifle food, the \"start using\" and \"stop using\" procedures function, this enables full auto to start when player uses the gun then stop when the player stops. super high eating time prevents player from eating their gun : )</comment><value name=\"tagName\"><block type=\"text\"><field name=\"TEXT\">autoFire</field></block></value><value name=\"item\"><block type=\"itemstack_to_mcitem\"></block></value><value name=\"tagValue\"><block type=\"logic_boolean\"><field name=\"BOOL\">FALSE</field></block></value></block></next></block></xml>"
   }
 }

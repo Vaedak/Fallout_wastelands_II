@@ -18,12 +18,6 @@ authors="anton, MCreator"
     side="BOTH"
 
 
-[[dependencies.fallout_wastelands_]]
-    modId="mcreator_link"
-    mandatory=true
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
 [[dependencies.fallout_wastelands_]]
     modId="geckolib"

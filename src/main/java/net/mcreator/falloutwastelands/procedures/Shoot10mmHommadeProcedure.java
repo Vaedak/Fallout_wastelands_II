@@ -24,6 +24,7 @@ public class Shoot10mmHommadeProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.TENMMHOMEMADEASSAULTRIFLE.get()) {
+			DontShootOnDropItemProcedure.execute(world, entity);
 			if (entity.getPersistentData().getDouble("cooldown") == 0) {
 				if (itemstack.getDamageValue() < itemstack.getMaxDamage() - 1 == true && entity.getPersistentData().getBoolean("ReloadGun") == false) {
 					{
@@ -42,7 +43,7 @@ public class Shoot10mmHommadeProcedure {
 								}
 							}.getArrow(projectileLevel, entity, 8, 0, (byte) 5);
 							_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-							_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 8, (float) 0.04);
+							_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 5, (float) 0.04);
 							projectileLevel.addFreshEntity(_entityToSpawn);
 						}
 					}

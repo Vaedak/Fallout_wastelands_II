@@ -1,0 +1,117 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.CRAFTING_TABLE"
+      },
+      {
+        "value": "Blocks.CHEST"
+      },
+      {
+        "value": "Blocks.TRAPPED_CHEST"
+      },
+      {
+        "value": "Blocks.ENDER_CHEST"
+      },
+      {
+        "value": "Blocks.BARREL"
+      },
+      {
+        "value": "Blocks.SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.WHITE_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.ORANGE_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.MAGENTA_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.LIGHT_BLUE_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.YELLOW_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.LIME_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.PINK_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.GRAY_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.SILVER_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.CYAN_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.PURPLE_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.BLUE_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.BROWN_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.GREEN_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.RED_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.BLACK_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.BLAST_FURNACE"
+      },
+      {
+        "value": "Blocks.DISPENSER"
+      },
+      {
+        "value": "Blocks.DROPPER"
+      },
+      {
+        "value": "Blocks.FURNACE"
+      },
+      {
+        "value": "Blocks.BREWING_STAND"
+      },
+      {
+        "value": "Blocks.LOOM"
+      },
+      {
+        "value": "Blocks.SMOKER"
+      },
+      {
+        "value": "Blocks.CARTOGRAPHY_TABLE"
+      },
+      {
+        "value": "Blocks.FLETCHING_TABLE"
+      },
+      {
+        "value": "Blocks.LECTERN"
+      },
+      {
+        "value": "Blocks.SMITHING_TABLE"
+      },
+      {
+        "value": "Blocks.STONECUTTER"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "blocks_with_gu_is",
+    "namespace": "mod"
+  }
+}

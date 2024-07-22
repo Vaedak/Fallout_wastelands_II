@@ -1,30 +1,59 @@
 {
   "_fv": 47,
-  "_type": "tool",
+  "_type": "item",
   "definition": {
-    "toolType": "Special",
     "renderType": 1,
     "texture": "reaper",
     "customModelName": "ripper:default",
+    "customProperties": {},
+    "states": [],
     "name": "Ripper",
-    "specialInfo": [],
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:Wastelandcombat"
     },
-    "harvestLevel": 1,
-    "efficiency": 4.0,
-    "attackSpeed": 2.0,
-    "enchantability": 2,
-    "damageVsEntity": 6.0,
-    "usageCount": 100,
-    "blocksAffected": [],
-    "hasGlow": false,
-    "repairItems": [],
+    "stackSize": 1,
+    "enchantability": 12,
+    "useDuration": 100000,
+    "toolType": 2.7,
+    "damageCount": 1500,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 8.0,
+    "specialInfo": [],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "RipperStartSawing"
+    },
     "onEntityHitWith": {
       "name": "RipperLivingEntityIsHitWithTool"
-    }
+    },
+    "onItemInInventoryTick": {
+      "name": "RipperStopSawingNotInHand"
+    },
+    "onItemInUseTick": {
+      "name": "RipperSawAttack"
+    },
+    "onStoppedUsing": {
+      "name": "RipperStopSawing"
+    },
+    "isFood": true,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "bow"
   }
 }

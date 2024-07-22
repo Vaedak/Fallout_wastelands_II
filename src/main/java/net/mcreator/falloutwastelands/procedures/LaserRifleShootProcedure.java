@@ -24,6 +24,7 @@ public class LaserRifleShootProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.LASERRIFLE.get()) {
+			DontShootOnDropItemProcedure.execute(world, entity);
 			if (entity.getPersistentData().getDouble("cooldown") == 0) {
 				if (itemstack.getDamageValue() < itemstack.getMaxDamage() - 1 == true && entity.getPersistentData().getBoolean("ReloadGun") == false) {
 					{

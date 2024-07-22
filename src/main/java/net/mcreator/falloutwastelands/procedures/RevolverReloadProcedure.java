@@ -21,8 +21,9 @@ public class RevolverReloadProcedure {
 		double ammoCount = 0;
 		boolean ammoChecked = false;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FalloutWastelandsModItems.REVOLVER_32.get()) {
+			DontShootOnDropItemProcedure.execute(world, entity);
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() > 0) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(FalloutWastelandsModItems.BOTTLE_CAP.get())) : false) {
+				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(FalloutWastelandsModItems.THIRTYTWOAMMO.get())) : false) {
 					if (entity.getPersistentData().getDouble("timer") == 10) {
 						(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).setDamageValue((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() + -1));
 						if (world instanceof Level _level) {
@@ -34,7 +35,7 @@ public class RevolverReloadProcedure {
 						}
 						entity.getPersistentData().putDouble("timer", 0);
 						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.BOTTLE_CAP.get());
+							ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.THIRTYTWOAMMO.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
 					}

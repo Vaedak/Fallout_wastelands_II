@@ -31,6 +31,7 @@ import net.mcreator.falloutwastelands.item.StimpackItem;
 import net.mcreator.falloutwastelands.item.SteelIngotItem;
 import net.mcreator.falloutwastelands.item.ScrapmetalItem;
 import net.mcreator.falloutwastelands.item.RollingpinItem;
+import net.mcreator.falloutwastelands.item.RipperProjectileItem;
 import net.mcreator.falloutwastelands.item.RipperItem;
 import net.mcreator.falloutwastelands.item.Revolver32Item;
 import net.mcreator.falloutwastelands.item.RaiderdusterItem;
@@ -56,7 +57,6 @@ import net.mcreator.falloutwastelands.item.IndustrialhammerItem;
 import net.mcreator.falloutwastelands.item.HachetItem;
 import net.mcreator.falloutwastelands.item.FivemmminigunItem;
 import net.mcreator.falloutwastelands.item.FivemmAmmoItem;
-import net.mcreator.falloutwastelands.item.ExperiementripperItem;
 import net.mcreator.falloutwastelands.item.EnergyCellItem;
 import net.mcreator.falloutwastelands.item.EmptyNukaColaBottleItem;
 import net.mcreator.falloutwastelands.item.EmptyNeutronadeBottleItem;
@@ -223,7 +223,6 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> WASTELANDTILESSLAB = block(FalloutWastelandsModBlocks.WASTELANDTILESSLAB);
 	public static final RegistryObject<Item> WASTELANDHARDSTONE = block(FalloutWastelandsModBlocks.WASTELANDHARDSTONE);
 	public static final RegistryObject<Item> RUST_BLOCK = block(FalloutWastelandsModBlocks.RUST_BLOCK);
-	public static final RegistryObject<Item> RIPPER = REGISTRY.register("ripper", () -> new RipperItem());
 	public static final RegistryObject<Item> WASTELAND_ROAD_BLOCK = block(FalloutWastelandsModBlocks.WASTELAND_ROAD_BLOCK);
 	public static final RegistryObject<Item> WASTELAND_ROAD_SLAB = block(FalloutWastelandsModBlocks.WASTELAND_ROAD_SLAB);
 	public static final RegistryObject<Item> WORN_METAL_STAIRS = block(FalloutWastelandsModBlocks.WORN_METAL_STAIRS);
@@ -244,7 +243,6 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> TENMMHOMEMADEASSAULTRIFLE = REGISTRY.register("tenmmhomemadeassaultrifle", () -> new TenmmhomemadeassaultrifleItem());
 	public static final RegistryObject<Item> FIVEMM_AMMO = REGISTRY.register("fivemm_ammo", () -> new FivemmAmmoItem());
 	public static final RegistryObject<Item> FIVEMMMINIGUN = REGISTRY.register("fivemmminigun", () -> new FivemmminigunItem());
-	public static final RegistryObject<Item> EXPERIEMENTRIPPER = REGISTRY.register("experiementripper", () -> new ExperiementripperItem());
 	public static final RegistryObject<Item> ENERGY_CELL = REGISTRY.register("energy_cell", () -> new EnergyCellItem());
 	public static final RegistryObject<Item> PLASMARIFLE = REGISTRY.register("plasmarifle", () -> new PlasmarifleItem());
 	public static final RegistryObject<Item> LASERRIFLE = REGISTRY.register("laserrifle", () -> new LaserrifleItem());
@@ -260,6 +258,8 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> ROLLINGPIN = REGISTRY.register("rollingpin", () -> new RollingpinItem());
 	public static final RegistryObject<Item> WRENCH = REGISTRY.register("wrench", () -> new WrenchItem());
 	public static final RegistryObject<Item> NAILED_WRENCH = REGISTRY.register("nailed_wrench", () -> new NailedWrenchItem());
+	public static final RegistryObject<Item> RIPPER_PROJECTILE = REGISTRY.register("ripper_projectile", () -> new RipperProjectileItem());
+	public static final RegistryObject<Item> RIPPER = REGISTRY.register("ripper", () -> new RipperItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
