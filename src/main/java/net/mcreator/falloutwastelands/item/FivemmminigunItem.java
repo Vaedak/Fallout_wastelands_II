@@ -22,7 +22,7 @@ import net.mcreator.falloutwastelands.procedures.FivemmShootProcedure;
 
 public class FivemmminigunItem extends Item {
 	public FivemmminigunItem() {
-		super(new Item.Properties().durability(101).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat().build()));
+		super(new Item.Properties().durability(201).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat().build()));
 	}
 
 	@Override
