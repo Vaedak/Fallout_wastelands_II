@@ -27,6 +27,12 @@ import net.mcreator.falloutwastelands.world.features.ores.WastelandStoneFeature;
 import net.mcreator.falloutwastelands.world.features.ores.WastelandGoldoreFeature;
 import net.mcreator.falloutwastelands.world.features.ores.WastelandDirtFeature;
 import net.mcreator.falloutwastelands.world.features.ores.WastelandCobblestoneFeature;
+import net.mcreator.falloutwastelands.world.features.ores.WastelandAluminumOreFeature;
+import net.mcreator.falloutwastelands.world.features.ores.WasteSandFeature;
+import net.mcreator.falloutwastelands.world.features.ores.UraniumOreFeature;
+import net.mcreator.falloutwastelands.world.features.ores.TinOreFeature;
+import net.mcreator.falloutwastelands.world.features.ores.LeadOreFeature;
+import net.mcreator.falloutwastelands.world.features.EXAMPLEdiamondFeatureFeature;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
 @Mod.EventBusSubscriber
@@ -48,4 +54,10 @@ public class FalloutWastelandsModFeatures {
 	public static final RegistryObject<Feature<?>> WASTELAND_GOLDORE = REGISTRY.register("wasteland_goldore", WastelandGoldoreFeature::new);
 	public static final RegistryObject<Feature<?>> WASTELANDEMERALDORE = REGISTRY.register("wastelandemeraldore", WastelandemeraldoreFeature::new);
 	public static final RegistryObject<Feature<?>> WASTELANDHARDSTONE = REGISTRY.register("wastelandhardstone", WastelandhardstoneFeature::new);
+	public static final RegistryObject<Feature<?>> EXAMPL_EDIAMOND_FEATURE = REGISTRY.register("exampl_ediamond_feature", EXAMPLEdiamondFeatureFeature::new);
+	public static final RegistryObject<Feature<?>> WASTELAND_ALUMINUM_ORE = REGISTRY.register("wasteland_aluminum_ore", WastelandAluminumOreFeature::new);
+	public static final RegistryObject<Feature<?>> LEAD_ORE = REGISTRY.register("lead_ore", LeadOreFeature::new);
+	public static final RegistryObject<Feature<?>> URANIUM_ORE = REGISTRY.register("uranium_ore", UraniumOreFeature::new);
+	public static final RegistryObject<Feature<?>> WASTE_SAND = REGISTRY.register("waste_sand", WasteSandFeature::new);
+	public static final RegistryObject<Feature<?>> TIN_ORE = REGISTRY.register("tin_ore", TinOreFeature::new);
 }

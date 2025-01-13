@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "fallout_wastelands_:tiningot"
+    },
+    "1": {
+      "item": "fallout_wastelands_:tiningot"
+    },
+    "2": {
+      "item": "fallout_wastelands_:tiningot"
+    },
+    "3": {
+      "item": "fallout_wastelands_:tiningot"
+    },
+    "4": {
+      "item": "fallout_wastelands_:tiningot"
+    },
+    "5": {
+      "item": "fallout_wastelands_:tiningot"
+    },
+    "6": {
+      "item": "fallout_wastelands_:tiningot"
+    },
+    "7": {
+      "item": "fallout_wastelands_:tiningot"
+    },
+    "8": {
+      "item": "fallout_wastelands_:tiningot"
+    }
+  },
+  "result": {
+    "item": "fallout_wastelands_:tin_block",
+    "count": 1
+  }
+}

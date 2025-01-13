@@ -18,7 +18,7 @@ import java.util.Collections;
 
 public class HardconcreteBlock extends Block {
 	public HardconcreteBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(0.8f, 6.5f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1f, 6.5f).requiresCorrectToolForDrops());
 	}
 
 	@Override
@@ -29,7 +29,7 @@ public class HardconcreteBlock extends Block {
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
 		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
-			return tieredItem.getTier().getLevel() >= 0;
+			return tieredItem.getTier().getLevel() >= 2;
 		return false;
 	}
 

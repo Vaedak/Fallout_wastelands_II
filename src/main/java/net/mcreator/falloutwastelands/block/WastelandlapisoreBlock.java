@@ -30,6 +30,6 @@ public class WastelandlapisoreBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(Items.LAPIS_LAZULI, 8));
+		return Collections.singletonList(new ItemStack(Items.LAPIS_LAZULI, 5));
 	}
 }

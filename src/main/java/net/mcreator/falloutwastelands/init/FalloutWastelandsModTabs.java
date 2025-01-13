@@ -127,6 +127,38 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.MELTED_IRON_BLOCK.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.URANIUM_BLOCK.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.BARBED_WIRES.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_ALUMINUM_ORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.ALUMINUM_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BITUMEN.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BOS_DOOR.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BOS_METAL_PLATING.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BOS_METAL_PLATING_LIGHTED.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BOS_STEEL_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.STEEL_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.ENCLAVE_DOOR.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.ENCLAVE_BUNKER_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.ENCLAVE_BUNKER_BLOCK_LOGO.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.ENCLAVE_BUNKER_FLOOR.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BUNKER_BLOCK_LIGHT.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.INDUSTRIAL_ALLOY.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.INDUSTRIAL_ALLOY_PLAIN.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.INDUSTRIAL_ALLOY_SLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.INDUSTRIAL_ALLOY_STAIR.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.INDUSTRIAL_ALLOY_WARNING.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.INDUSTRIAL_DOOR.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.INDUSTRIAL_ALLOW_MID_RIVET.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.INDUSTRIAL_ALLOY_BOTTOM_RIVET.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.INDUSTRIAL_WALKWAY.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.LEAD_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.LEAD_ORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MOLTEN_BOXITE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MOLTEN_COPPER.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MOLTEN_STEEL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MOLTEN_TIN.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.TIN_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.URANIUM_ORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.WASTE_SAND.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.TIN_ORE.get().asItem());
 			})
 
 					.build());
@@ -210,6 +242,10 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.HACHET.get());
 				tabData.accept(FalloutWastelandsModItems.INDUSTRIALHAMMER.get());
 				tabData.accept(FalloutWastelandsModItems.INDUSTRIALSHOVEL.get());
+				tabData.accept(FalloutWastelandsModItems.RAW_LEAD.get());
+				tabData.accept(FalloutWastelandsModItems.RAW_ALUMINUM.get());
+				tabData.accept(FalloutWastelandsModItems.RAW_URANIUM.get());
+				tabData.accept(FalloutWastelandsModItems.RAW_TIN.get());
 			})
 
 					.build());

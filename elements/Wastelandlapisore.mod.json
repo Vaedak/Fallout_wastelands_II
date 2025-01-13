@@ -46,7 +46,7 @@
     "customDrop": {
       "value": "Items.DYE#4"
     },
-    "dropAmount": 8,
+    "dropAmount": 5,
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
