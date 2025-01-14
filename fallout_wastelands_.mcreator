@@ -7038,6 +7038,114 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "MilitaryMetalStair",
+      "type": "block",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "military_metal_stair",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/military_metal_stair.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/military_metal_stair.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/military_metal_stair_outer.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/military_metal_stair.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/military_metal_stair_inner.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/MilitaryMetalStairBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MilitaryMetalHazard",
+      "type": "block",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "military_metal_hazard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/military_metal_hazard.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/military_metal_hazard.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/MilitaryMetalHazardBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/military_metal_hazard.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MilitaryPlatingWalkway",
+      "type": "block",
+      "sortid": 351,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "military_plating_walkway",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/military_plating_walkway.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/military_plating_walkway.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/MilitaryPlatingWalkwayBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/military_plating_walkway.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MilitaryMetalRadiation",
+      "type": "block",
+      "sortid": 352,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "military_metal_radiation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/MilitaryMetalRadiationBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/military_metal_radiation.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/military_metal_radiation.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/military_metal_radiation.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "CharredMolderSlab",
+      "type": "block",
+      "sortid": 353,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charred_molder_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/charred_molder_slab_top.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/charred_molder_slab.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/charred_molder_slab_full.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/CharredMolderSlabBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/charred_molder_slab.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/charred_molder_slab.json"
+        ]
+      },
+      "path": "~/Blocks/MolderWoodSet"
+    },
+    {
+      "name": "CharredMolderFence",
+      "type": "block",
+      "sortid": 354,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charred_molder_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/charred_molder_fence_inventory.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/charred_molder_fence.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/charred_molder_fence.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/CharredMolderFenceBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/charred_molder_fence.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/charred_molder_fence_post.json"
+        ]
+      },
+      "path": "~/Blocks/MolderWoodSet"
     }
   ],
   "variable_elements": [],
@@ -7143,19 +7251,19 @@
       "gui.fallout_wastelands_.base_menu_ui.label_inventory": "Inventory",
       "block.fallout_wastelands_.gore": "Gore",
       "block.fallout_wastelands_.plaster": "Plaster",
-      "item.fallout_wastelands_.wrench": "Wrench",
       "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
+      "item.fallout_wastelands_.wrench": "Wrench",
       "block.fallout_wastelands_.wasteland_goldore": "Wasteland Gold Ore",
       "block.fallout_wastelands_.uranium_ore": "Uranium Ore",
-      "block.fallout_wastelands_.vault_wall": "Vault Wall",
       "item.fallout_wastelands_.laserrifle": "Laser Rifle",
+      "block.fallout_wastelands_.vault_wall": "Vault Wall",
       "subtitles.pistol32firing": "",
       "block.fallout_wastelands_.rusted_sheet_metal_wall": "Rusted Sheet Metal Wall",
       "block.fallout_wastelands_.the_glow_dirt": "Glow Dirt",
       "item.fallout_wastelands_.antiradsuit_chestplate": "Anti-Rad Suit Chest",
       "subtitles.minigunfire": "",
       "gui.fallout_wastelands_.base_inventory.label_a": " to 0 every time the gui is saved",
-      "block.fallout_wastelands_.military_plating_slab": "Military Metal Slab",
+      "block.fallout_wastelands_.military_plating_slab": "Military Plated Slab",
       "item.fallout_wastelands_.empty_nuka_cola_bottle": "Empty Nuka Cola Bottle",
       "block.fallout_wastelands_.burnished_glass_pane": "Burnished Glass Pane",
       "item.fallout_wastelands_.jerrican": "Jerrican",
@@ -7163,11 +7271,12 @@
       "block.fallout_wastelands_.wastelandburntgrass": "Wasteland Burnt Grass",
       "item.fallout_wastelands_.raiderduster_leggings": "Raider Duster Loincloth",
       "gui.fallout_wastelands_.base_menu_ui.BASEName": "Name",
-      "item.fallout_wastelands_.cannibal_00_spawn_egg": "Cannibal Spawn Egg",
       "item.fallout_wastelands_.raw_uranium": "Raw Uranium",
-      "block.fallout_wastelands_.single_scaffold_block": "Scaffold Block",
+      "item.fallout_wastelands_.cannibal_00_spawn_egg": "Cannibal Spawn Egg",
       "block.fallout_wastelands_.woodedconcrete": "Wooded Concrete",
+      "block.fallout_wastelands_.single_scaffold_block": "Scaffold Block",
       "block.fallout_wastelands_.oxidized_metal_slab": "Oxidized Metal Slab",
+      "block.fallout_wastelands_.military_metal_radiation": "Military Plating (radiation)",
       "block.fallout_wastelands_.wasteland_cobblestone": "Wasteland Cobblestone",
       "block.fallout_wastelands_.wastelandventconcrete": "Concrete Vent",
       "block.fallout_wastelands_.wastelanddiamondore": "Wasteland Diamond Ore",
@@ -7182,6 +7291,7 @@
       "gui.fallout_wastelands_.base_menu_ui.label_varlocalvar": "DisplaysInputName",
       "item.fallout_wastelands_.industrialshovel": "Industrial Shovel",
       "block.fallout_wastelands_.oxidized_metal": "Oxidized Metal",
+      "block.fallout_wastelands_.military_metal_stair": "Military Plated Stair",
       "item.fallout_wastelands_.antiradclothing": "Anti-rad Clothing",
       "item.fallout_wastelands_.ripper": "Ripper",
       "item.fallout_wastelands_.wastelandbrickitem": "Wasteland Brick",
@@ -7212,6 +7322,7 @@
       "item.fallout_wastelands_.test_weapon": "Test Weapon",
       "block.fallout_wastelands_.hardconcrete": "Hard Concrete Block",
       "item.fallout_wastelands_.raiderblastmaster_helmet": "Raider Blastmaster Helmet",
+      "block.fallout_wastelands_.military_plating_walkway": "Military Plating Walkway",
       "block.fallout_wastelands_.molder_wood_wood": "Molder Log Wood",
       "block.fallout_wastelands_.wastelandredstoneore": "Wasteland Redstone Ore",
       "block.fallout_wastelands_.slab_wasteland_cobblestone": "Wasteland Cobblestone Slab",
@@ -7229,7 +7340,7 @@
       "item.fallout_wastelands_.neutronade": "Neutronade",
       "item.fallout_wastelands_.tire_iron": "Tire Iron",
       "block.fallout_wastelands_.vault_wall_exposed": "Plated Vault Wall",
-      "block.fallout_wastelands_.military_metal_plate": "Military Metal Plate",
+      "block.fallout_wastelands_.military_metal_plate": "Military Plating",
       "block.fallout_wastelands_.enclave_bunker_floor": "Enclave Bunker Block",
       "item.fallout_wastelands_.lead_ingot": "Lead Ingot",
       "block.fallout_wastelands_.industrial_alloy_plain": "Industrial Alloy",
@@ -7245,6 +7356,7 @@
       "block.fallout_wastelands_.burnished_glass": "Burnished Glass Block",
       "subtitles.nailpistolshot": "",
       "block.fallout_wastelands_.vault_wall_curved": "Curved Vault Wall",
+      "block.fallout_wastelands_.military_metal_hazard": "Military Plating (hazard)",
       "item.fallout_wastelands_.raiderduster_helmet": "Raider Duster Hood",
       "item.fallout_wastelands_.ninemmammo": "9mm Ammo",
       "block.fallout_wastelands_.bos_steel_slabs": "Bos Metal Slab",
@@ -7263,6 +7375,7 @@
       "block.fallout_wastelands_.rusty_sheetmetalblock": "Rusted Sheet Metal",
       "key.fallout_wastelands_.stop_reload": "Stop Reload",
       "item.fallout_wastelands_.nailed_wrench": "Wrench",
+      "block.fallout_wastelands_.charred_molder_fence": "Charred Molder Fence",
       "item.fallout_wastelands_.antiradsuit_boots": "Anti-Rad Suit Boots",
       "gui.fallout_wastelands_.locker_storage.label_locker": "Locker",
       "block.fallout_wastelands_.wastelandlapisore": "Wasteland Lapis Ore",
@@ -7271,7 +7384,7 @@
       "block.fallout_wastelands_.worn_metal_slab": "Worn Metal Slab",
       "block.fallout_wastelands_.tin_ore": "Tin Ore",
       "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
-      "block.fallout_wastelands_.military_metal_plate_wall": "Military Metal Wall",
+      "block.fallout_wastelands_.military_metal_plate_wall": "Military Plated Wall",
       "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
       "block.fallout_wastelands_.roof_metal": "Roof Sheet Metal Block",
       "block.fallout_wastelands_.wastelandtiles": "Wasteland Tiles",
@@ -7377,6 +7490,7 @@
       "item.fallout_wastelands_.nailgun": "Nailgun",
       "block.fallout_wastelands_.molder_wood_door": "Molder Door",
       "item.fallout_wastelands_.taloncombatarmor_boots": "Talon Combat Armor Boots",
+      "block.fallout_wastelands_.charred_molder_slab": "Charred Molder Slab",
       "block.fallout_wastelands_.ruins": "Ruins",
       "item.fallout_wastelands_.scrapmetal": "Scrap Metal",
       "block.fallout_wastelands_.ruins_base": "Rusted Ruins (base)",

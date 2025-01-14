@@ -326,6 +326,12 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> CHARRED_MOLDER_STAIRS = block(FalloutWastelandsModBlocks.CHARRED_MOLDER_STAIRS);
 	public static final RegistryObject<Item> BOS_STEEL_SLABS = block(FalloutWastelandsModBlocks.BOS_STEEL_SLABS);
 	public static final RegistryObject<Item> MILITARY_PLATING_SLAB = block(FalloutWastelandsModBlocks.MILITARY_PLATING_SLAB);
+	public static final RegistryObject<Item> MILITARY_METAL_STAIR = block(FalloutWastelandsModBlocks.MILITARY_METAL_STAIR);
+	public static final RegistryObject<Item> MILITARY_METAL_HAZARD = block(FalloutWastelandsModBlocks.MILITARY_METAL_HAZARD);
+	public static final RegistryObject<Item> MILITARY_PLATING_WALKWAY = block(FalloutWastelandsModBlocks.MILITARY_PLATING_WALKWAY);
+	public static final RegistryObject<Item> MILITARY_METAL_RADIATION = block(FalloutWastelandsModBlocks.MILITARY_METAL_RADIATION);
+	public static final RegistryObject<Item> CHARRED_MOLDER_SLAB = block(FalloutWastelandsModBlocks.CHARRED_MOLDER_SLAB);
+	public static final RegistryObject<Item> CHARRED_MOLDER_FENCE = block(FalloutWastelandsModBlocks.CHARRED_MOLDER_FENCE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

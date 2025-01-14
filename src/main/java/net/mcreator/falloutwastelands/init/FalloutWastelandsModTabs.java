@@ -185,6 +185,12 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.CHARRED_MOLDER_STAIRS.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.BOS_STEEL_SLABS.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.MILITARY_PLATING_SLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MILITARY_METAL_STAIR.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MILITARY_METAL_HAZARD.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MILITARY_PLATING_WALKWAY.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MILITARY_METAL_RADIATION.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.CHARRED_MOLDER_SLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.CHARRED_MOLDER_FENCE.get().asItem());
 			})
 
 					.build());

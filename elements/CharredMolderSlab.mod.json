@@ -2,12 +2,12 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "militmetalplating",
-    "textureTop": "militmetalplating",
-    "textureLeft": "wastelandstonedde",
-    "textureFront": "militmetalplating",
-    "textureRight": "wastelandstonedde",
-    "textureBack": "wastelandstonedde",
+    "texture": "charredmolderwood",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
     "renderType": 11,
     "customModelName": "Single texture",
     "rotationMode": 0,
@@ -34,28 +34,28 @@
         "subtract": false
       }
     ],
-    "name": "Military Plated Slab",
+    "name": "Charred Molder Slab",
     "specialInfo": [],
-    "hardness": 0.65,
-    "resistance": 9.0,
+    "hardness": 2.0,
+    "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Wastelandblockstab"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "axe",
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": true,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "IRON"
+      "value": "WOOD"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -70,7 +70,7 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 0,
+    "flammability": 5,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
@@ -80,7 +80,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""
@@ -99,7 +99,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

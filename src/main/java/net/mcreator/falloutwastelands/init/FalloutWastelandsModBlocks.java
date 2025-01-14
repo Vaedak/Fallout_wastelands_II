@@ -114,10 +114,14 @@ import net.mcreator.falloutwastelands.block.Molder_WoodFenceBlock;
 import net.mcreator.falloutwastelands.block.Molder_WoodButtonBlock;
 import net.mcreator.falloutwastelands.block.MolderWoodTrapdoorBlock;
 import net.mcreator.falloutwastelands.block.MolderWoodDoorBlock;
+import net.mcreator.falloutwastelands.block.MilitaryPlatingWalkwayBlock;
 import net.mcreator.falloutwastelands.block.MilitaryPlatingSlabBlock;
 import net.mcreator.falloutwastelands.block.MilitaryMetalwindowBlock;
+import net.mcreator.falloutwastelands.block.MilitaryMetalStairBlock;
+import net.mcreator.falloutwastelands.block.MilitaryMetalRadiationBlock;
 import net.mcreator.falloutwastelands.block.MilitaryMetalPlateWallBlock;
 import net.mcreator.falloutwastelands.block.MilitaryMetalPlateBlock;
+import net.mcreator.falloutwastelands.block.MilitaryMetalHazardBlock;
 import net.mcreator.falloutwastelands.block.MilitaryMetalDoorBlock;
 import net.mcreator.falloutwastelands.block.MeltedSteelBlockBlock;
 import net.mcreator.falloutwastelands.block.MeltedIronBlockBlock;
@@ -158,6 +162,8 @@ import net.mcreator.falloutwastelands.block.CrackedWastelandConcreteBlock;
 import net.mcreator.falloutwastelands.block.ConcreteTileBlock;
 import net.mcreator.falloutwastelands.block.CharredMolderWoodPlankBlock;
 import net.mcreator.falloutwastelands.block.CharredMolderStairsBlock;
+import net.mcreator.falloutwastelands.block.CharredMolderSlabBlock;
+import net.mcreator.falloutwastelands.block.CharredMolderFenceBlock;
 import net.mcreator.falloutwastelands.block.CentralunitBlock;
 import net.mcreator.falloutwastelands.block.CageBlock;
 import net.mcreator.falloutwastelands.block.BurnishedGlassPaneBlock;
@@ -344,6 +350,12 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> CHARRED_MOLDER_STAIRS = REGISTRY.register("charred_molder_stairs", () -> new CharredMolderStairsBlock());
 	public static final RegistryObject<Block> BOS_STEEL_SLABS = REGISTRY.register("bos_steel_slabs", () -> new BosSteelSlabsBlock());
 	public static final RegistryObject<Block> MILITARY_PLATING_SLAB = REGISTRY.register("military_plating_slab", () -> new MilitaryPlatingSlabBlock());
+	public static final RegistryObject<Block> MILITARY_METAL_STAIR = REGISTRY.register("military_metal_stair", () -> new MilitaryMetalStairBlock());
+	public static final RegistryObject<Block> MILITARY_METAL_HAZARD = REGISTRY.register("military_metal_hazard", () -> new MilitaryMetalHazardBlock());
+	public static final RegistryObject<Block> MILITARY_PLATING_WALKWAY = REGISTRY.register("military_plating_walkway", () -> new MilitaryPlatingWalkwayBlock());
+	public static final RegistryObject<Block> MILITARY_METAL_RADIATION = REGISTRY.register("military_metal_radiation", () -> new MilitaryMetalRadiationBlock());
+	public static final RegistryObject<Block> CHARRED_MOLDER_SLAB = REGISTRY.register("charred_molder_slab", () -> new CharredMolderSlabBlock());
+	public static final RegistryObject<Block> CHARRED_MOLDER_FENCE = REGISTRY.register("charred_molder_fence", () -> new CharredMolderFenceBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
