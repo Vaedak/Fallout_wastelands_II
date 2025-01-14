@@ -2,10 +2,10 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "cconcretevent",
-    "textureTop": "wastelandstonedde",
+    "texture": "test_tole_2",
+    "textureTop": "test_tole_2",
     "textureLeft": "wastelandstonedde",
-    "textureFront": "concrete",
+    "textureFront": "test_tole_2",
     "textureRight": "wastelandstonedde",
     "textureBack": "wastelandstonedde",
     "renderType": 11,
@@ -16,6 +16,7 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
+    "blockBase": "Wall",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -33,10 +34,10 @@
         "subtract": false
       }
     ],
-    "name": "Concrete Vent",
+    "name": "Rusted Sheet Metal Wall",
     "specialInfo": [],
-    "hardness": 0.7,
-    "resistance": 5.5,
+    "hardness": 0.55,
+    "resistance": 6.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -54,7 +55,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -79,7 +80,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -98,7 +99,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

@@ -319,6 +319,13 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> VAULT_FLOOR = block(FalloutWastelandsModBlocks.VAULT_FLOOR);
 	public static final RegistryObject<Item> VAULT_PILLAR = block(FalloutWastelandsModBlocks.VAULT_PILLAR);
 	public static final RegistryObject<Item> VAULT_VENT = block(FalloutWastelandsModBlocks.VAULT_VENT);
+	public static final RegistryObject<Item> OXIDIZED_METAL_SLAB = block(FalloutWastelandsModBlocks.OXIDIZED_METAL_SLAB);
+	public static final RegistryObject<Item> RUSTED_SHEET_METAL_WALL = block(FalloutWastelandsModBlocks.RUSTED_SHEET_METAL_WALL);
+	public static final RegistryObject<Item> MILITARY_METAL_PLATE_WALL = block(FalloutWastelandsModBlocks.MILITARY_METAL_PLATE_WALL);
+	public static final RegistryObject<Item> CHARRED_MOLDER_WOOD_PLANK = block(FalloutWastelandsModBlocks.CHARRED_MOLDER_WOOD_PLANK);
+	public static final RegistryObject<Item> CHARRED_MOLDER_STAIRS = block(FalloutWastelandsModBlocks.CHARRED_MOLDER_STAIRS);
+	public static final RegistryObject<Item> BOS_STEEL_SLABS = block(FalloutWastelandsModBlocks.BOS_STEEL_SLABS);
+	public static final RegistryObject<Item> MILITARY_PLATING_SLAB = block(FalloutWastelandsModBlocks.MILITARY_PLATING_SLAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

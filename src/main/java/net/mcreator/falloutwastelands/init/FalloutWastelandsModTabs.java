@@ -178,6 +178,13 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.VAULT_FLOOR.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.VAULT_PILLAR.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.VAULT_VENT.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.OXIDIZED_METAL_SLAB.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.RUSTED_SHEET_METAL_WALL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MILITARY_METAL_PLATE_WALL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.CHARRED_MOLDER_WOOD_PLANK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.CHARRED_MOLDER_STAIRS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BOS_STEEL_SLABS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MILITARY_PLATING_SLAB.get().asItem());
 			})
 
 					.build());

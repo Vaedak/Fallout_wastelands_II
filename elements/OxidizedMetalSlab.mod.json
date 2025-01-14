@@ -2,10 +2,10 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "cconcretevent",
-    "textureTop": "wastelandstonedde",
+    "texture": "oxydedmetal",
+    "textureTop": "oxydedmetal",
     "textureLeft": "wastelandstonedde",
-    "textureFront": "concrete",
+    "textureFront": "oxydedmetal",
     "textureRight": "wastelandstonedde",
     "textureBack": "wastelandstonedde",
     "renderType": 11,
@@ -16,6 +16,7 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
+    "blockBase": "Slab",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -33,9 +34,9 @@
         "subtract": false
       }
     ],
-    "name": "Concrete Vent",
+    "name": "Oxidized Metal Slab",
     "specialInfo": [],
-    "hardness": 0.7,
+    "hardness": 0.55,
     "resistance": 5.5,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -54,7 +55,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -79,7 +80,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -98,7 +99,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

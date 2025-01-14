@@ -4,8 +4,8 @@ package net.mcreator.falloutwastelands.block;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.IronBarsBlock;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
@@ -15,20 +15,15 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class SteelBarsBlock extends IronBarsBlock {
-	public SteelBarsBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(4.95f, 6.5f).requiresCorrectToolForDrops());
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
+public class MilitaryMetalPlateWallBlock extends WallBlock {
+	public MilitaryMetalPlateWallBlock() {
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(0.65f, 9f).requiresCorrectToolForDrops().dynamicShape().forceSolidOn());
 	}
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
 		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
-			return tieredItem.getTier().getLevel() >= 2;
+			return tieredItem.getTier().getLevel() >= 1;
 		return false;
 	}
 

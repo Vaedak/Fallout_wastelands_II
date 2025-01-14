@@ -2,34 +2,38 @@
 package net.mcreator.falloutwastelands.block;
 
 import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.IronBarsBlock;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import java.util.List;
 import java.util.Collections;
 
-public class SteelBarsBlock extends IronBarsBlock {
-	public SteelBarsBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(4.95f, 6.5f).requiresCorrectToolForDrops());
+public class CharredMolderStairsBlock extends StairBlock {
+	public CharredMolderStairsBlock() {
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape());
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
+	public float getExplosionResistance() {
+		return 3f;
 	}
 
 	@Override
-	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
-			return tieredItem.getTier().getLevel() >= 2;
+	public boolean isRandomlyTicking(BlockState state) {
 		return false;
+	}
+
+	@Override
+	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+		return 5;
 	}
 
 	@Override

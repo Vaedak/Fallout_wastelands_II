@@ -3,5 +3,5 @@
   "textures": {
     "layer0": "fallout_wastelands_:block/steelbars"
   },
-  "render_type": "solid"
+  "render_type": "cutout"
 }
