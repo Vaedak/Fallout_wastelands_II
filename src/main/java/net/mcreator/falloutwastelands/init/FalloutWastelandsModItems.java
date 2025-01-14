@@ -266,7 +266,6 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> RIPPER = REGISTRY.register("ripper", () -> new RipperItem());
 	public static final RegistryObject<Item> WASTELAND_ALUMINUM_ORE = block(FalloutWastelandsModBlocks.WASTELAND_ALUMINUM_ORE);
 	public static final RegistryObject<Item> ALUMINUM_BLOCK = block(FalloutWastelandsModBlocks.ALUMINUM_BLOCK);
-	public static final RegistryObject<Item> BITUMEN = block(FalloutWastelandsModBlocks.BITUMEN);
 	public static final RegistryObject<Item> BOS_DOOR = doubleBlock(FalloutWastelandsModBlocks.BOS_DOOR);
 	public static final RegistryObject<Item> BOS_METAL_PLATING = block(FalloutWastelandsModBlocks.BOS_METAL_PLATING);
 	public static final RegistryObject<Item> BOS_METAL_PLATING_LIGHTED = block(FalloutWastelandsModBlocks.BOS_METAL_PLATING_LIGHTED);
@@ -300,6 +299,26 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> WASTE_SAND = block(FalloutWastelandsModBlocks.WASTE_SAND);
 	public static final RegistryObject<Item> TIN_ORE = block(FalloutWastelandsModBlocks.TIN_ORE);
 	public static final RegistryObject<Item> RAW_TIN = REGISTRY.register("raw_tin", () -> new RawTinItem());
+	public static final RegistryObject<Item> JIGSAW_BLOCK = block(FalloutWastelandsModBlocks.JIGSAW_BLOCK);
+	public static final RegistryObject<Item> BOS_STEEL_STAIR = block(FalloutWastelandsModBlocks.BOS_STEEL_STAIR);
+	public static final RegistryObject<Item> STEEL_BARS = block(FalloutWastelandsModBlocks.STEEL_BARS);
+	public static final RegistryObject<Item> PLASTER = block(FalloutWastelandsModBlocks.PLASTER);
+	public static final RegistryObject<Item> OXIDIZED_METAL = block(FalloutWastelandsModBlocks.OXIDIZED_METAL);
+	public static final RegistryObject<Item> OXIDIZED_METAL_STAIR = block(FalloutWastelandsModBlocks.OXIDIZED_METAL_STAIR);
+	public static final RegistryObject<Item> OXIDIZED_METAL_WALL = block(FalloutWastelandsModBlocks.OXIDIZED_METAL_WALL);
+	public static final RegistryObject<Item> RUINS_BASE = block(FalloutWastelandsModBlocks.RUINS_BASE);
+	public static final RegistryObject<Item> RUINS = block(FalloutWastelandsModBlocks.RUINS);
+	public static final RegistryObject<Item> RUINS_GROUND = block(FalloutWastelandsModBlocks.RUINS_GROUND);
+	public static final RegistryObject<Item> INDUSTRIAL_PLATING = block(FalloutWastelandsModBlocks.INDUSTRIAL_PLATING);
+	public static final RegistryObject<Item> INDUSTRIAL_SUPPORT = block(FalloutWastelandsModBlocks.INDUSTRIAL_SUPPORT);
+	public static final RegistryObject<Item> SINGLE_SCAFFOLD_BLOCK = block(FalloutWastelandsModBlocks.SINGLE_SCAFFOLD_BLOCK);
+	public static final RegistryObject<Item> VAULT_WALL = block(FalloutWastelandsModBlocks.VAULT_WALL);
+	public static final RegistryObject<Item> VAULT_REINFORCED_PILLAR = block(FalloutWastelandsModBlocks.VAULT_REINFORCED_PILLAR);
+	public static final RegistryObject<Item> VAULT_WALL_CURVED = block(FalloutWastelandsModBlocks.VAULT_WALL_CURVED);
+	public static final RegistryObject<Item> VAULT_WALL_EXPOSED = block(FalloutWastelandsModBlocks.VAULT_WALL_EXPOSED);
+	public static final RegistryObject<Item> VAULT_FLOOR = block(FalloutWastelandsModBlocks.VAULT_FLOOR);
+	public static final RegistryObject<Item> VAULT_PILLAR = block(FalloutWastelandsModBlocks.VAULT_PILLAR);
+	public static final RegistryObject<Item> VAULT_VENT = block(FalloutWastelandsModBlocks.VAULT_VENT);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

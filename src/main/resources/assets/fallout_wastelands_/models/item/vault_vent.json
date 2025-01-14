@@ -1,5 +1,5 @@
 {
-  "parent": "fallout_wastelands_:block/bitumen",
+  "parent": "fallout_wastelands_:block/vault_vent",
   "display": {
     "thirdperson": {
       "rotation": [

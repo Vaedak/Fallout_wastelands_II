@@ -4,10 +4,10 @@
   "definition": {
     "texture": "industrialredplain",
     "textureTop": "industrialredplain",
-    "textureLeft": "",
+    "textureLeft": "industrialred",
     "textureFront": "industrialredrivet",
-    "textureRight": "",
-    "textureBack": "",
+    "textureRight": "industrialred",
+    "textureBack": "industrialred",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,

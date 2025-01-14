@@ -15,9 +15,9 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class BitumenBlock extends Block {
-	public BitumenBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.SLIME_BLOCK).strength(0.8f, 6f).requiresCorrectToolForDrops().friction(0.3f).speedFactor(0.4f).jumpFactor(0.6f));
+public class RuinsGroundBlock extends Block {
+	public RuinsGroundBlock() {
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(0.55f, 3.5f).requiresCorrectToolForDrops());
 	}
 
 	@Override
@@ -28,7 +28,7 @@ public class BitumenBlock extends Block {
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
 		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
-			return tieredItem.getTier().getLevel() >= 0;
+			return tieredItem.getTier().getLevel() >= 1;
 		return false;
 	}
 

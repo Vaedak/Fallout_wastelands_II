@@ -4,9 +4,9 @@
     "down": "fallout_wastelands_:block/industrialredplain",
     "up": "fallout_wastelands_:block/industrialredplain",
     "north": "fallout_wastelands_:block/industrialredrivet",
-    "east": "fallout_wastelands_:block/industrialredplain",
-    "south": "fallout_wastelands_:block/industrialredplain",
-    "west": "fallout_wastelands_:block/industrialredplain",
+    "east": "fallout_wastelands_:block/industrialred",
+    "south": "fallout_wastelands_:block/industrialred",
+    "west": "fallout_wastelands_:block/industrialred",
     "particle": "fallout_wastelands_:block/industrialredplain"
   },
   "render_type": "solid"

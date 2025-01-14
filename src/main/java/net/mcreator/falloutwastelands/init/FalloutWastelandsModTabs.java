@@ -129,7 +129,6 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.BARBED_WIRES.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTELAND_ALUMINUM_ORE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.ALUMINUM_BLOCK.get().asItem());
-				tabData.accept(FalloutWastelandsModBlocks.BITUMEN.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.BOS_DOOR.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.BOS_METAL_PLATING.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.BOS_METAL_PLATING_LIGHTED.get().asItem());
@@ -159,6 +158,26 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.URANIUM_ORE.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.WASTE_SAND.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.TIN_ORE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.JIGSAW_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BOS_STEEL_STAIR.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.STEEL_BARS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.PLASTER.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.OXIDIZED_METAL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.OXIDIZED_METAL_STAIR.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.OXIDIZED_METAL_WALL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.RUINS_BASE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.RUINS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.RUINS_GROUND.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.INDUSTRIAL_PLATING.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.INDUSTRIAL_SUPPORT.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.SINGLE_SCAFFOLD_BLOCK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.VAULT_WALL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.VAULT_REINFORCED_PILLAR.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.VAULT_WALL_CURVED.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.VAULT_WALL_EXPOSED.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.VAULT_FLOOR.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.VAULT_PILLAR.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.VAULT_VENT.get().asItem());
 			})
 
 					.build());

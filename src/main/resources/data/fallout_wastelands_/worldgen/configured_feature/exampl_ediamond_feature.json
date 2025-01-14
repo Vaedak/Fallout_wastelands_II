@@ -1,10 +1,13 @@
 {
   "type": "fallout_wastelands_:exampl_ediamond_feature",
   "config": {
-    "state_provider": {
+    "to_place": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:diamond_ore"
+        "Name": "minecraft:jigsaw",
+        "Properties": {
+          "orientation": "north_up"
+        }
       }
     }
   }
