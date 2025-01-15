@@ -191,6 +191,20 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.MILITARY_METAL_RADIATION.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.CHARRED_MOLDER_SLAB.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.CHARRED_MOLDER_FENCE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.METAL_BARREL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.RADIATION_BARREL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.CEILING_LIGHT.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.FILING_CABINET.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.FLOOR_PAPERS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.FRIDGE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MEDICAL_BOX.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.METAL_CHAIR.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.MIXER.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.PIPE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.TELEVISION.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.TERMINAL.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.TIRE_STACK.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.TRASH_BIN.get().asItem());
 			})
 
 					.build());

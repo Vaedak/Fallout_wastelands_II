@@ -332,6 +332,20 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> MILITARY_METAL_RADIATION = block(FalloutWastelandsModBlocks.MILITARY_METAL_RADIATION);
 	public static final RegistryObject<Item> CHARRED_MOLDER_SLAB = block(FalloutWastelandsModBlocks.CHARRED_MOLDER_SLAB);
 	public static final RegistryObject<Item> CHARRED_MOLDER_FENCE = block(FalloutWastelandsModBlocks.CHARRED_MOLDER_FENCE);
+	public static final RegistryObject<Item> METAL_BARREL = block(FalloutWastelandsModBlocks.METAL_BARREL);
+	public static final RegistryObject<Item> RADIATION_BARREL = block(FalloutWastelandsModBlocks.RADIATION_BARREL);
+	public static final RegistryObject<Item> CEILING_LIGHT = block(FalloutWastelandsModBlocks.CEILING_LIGHT);
+	public static final RegistryObject<Item> FILING_CABINET = block(FalloutWastelandsModBlocks.FILING_CABINET);
+	public static final RegistryObject<Item> FLOOR_PAPERS = block(FalloutWastelandsModBlocks.FLOOR_PAPERS);
+	public static final RegistryObject<Item> FRIDGE = block(FalloutWastelandsModBlocks.FRIDGE);
+	public static final RegistryObject<Item> MEDICAL_BOX = block(FalloutWastelandsModBlocks.MEDICAL_BOX);
+	public static final RegistryObject<Item> METAL_CHAIR = block(FalloutWastelandsModBlocks.METAL_CHAIR);
+	public static final RegistryObject<Item> MIXER = block(FalloutWastelandsModBlocks.MIXER);
+	public static final RegistryObject<Item> PIPE = block(FalloutWastelandsModBlocks.PIPE);
+	public static final RegistryObject<Item> TELEVISION = block(FalloutWastelandsModBlocks.TELEVISION);
+	public static final RegistryObject<Item> TERMINAL = block(FalloutWastelandsModBlocks.TERMINAL);
+	public static final RegistryObject<Item> TIRE_STACK = block(FalloutWastelandsModBlocks.TIRE_STACK);
+	public static final RegistryObject<Item> TRASH_BIN = block(FalloutWastelandsModBlocks.TRASH_BIN);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

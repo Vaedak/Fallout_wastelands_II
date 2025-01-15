@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "trash_bin_texture"
+        "1": "radiationbarrel"
       },
       "name": "default"
     }

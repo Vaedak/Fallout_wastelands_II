@@ -1,5 +1,6 @@
 {
   "credit": "Made with Blockbench",
+  "parent": "filecabinet",
   "texture_size": [
     64,
     64
@@ -7,22 +8,22 @@
   "elements": [
     {
       "from": [
-        -12,
+        -4,
         0,
-        5
+        6
       ],
       "to": [
-        12,
+        20,
         31,
-        15
+        16
       ],
       "rotation": {
         "angle": 0,
         "axis": "y",
         "origin": [
-          14,
+          22,
           8,
-          12
+          13
         ]
       },
       "faces": {
@@ -86,38 +87,43 @@
   "display": {
     "thirdperson_righthand": {
       "rotation": [
-        74,
-        0,
+        75,
+        45,
         0
       ],
       "translation": [
-        2,
-        7.5,
+        0,
+        2.5,
         0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
       ]
     },
     "thirdperson_lefthand": {
       "rotation": [
-        74,
-        0,
+        75,
+        45,
         0
       ],
       "translation": [
-        -14,
-        7.75,
+        0,
+        2.5,
         0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
       ]
     },
     "firstperson_righthand": {
       "rotation": [
-        18,
-        101,
+        0,
+        90,
         0
-      ],
-      "translation": [
-        0,
-        0,
-        -1.25
       ],
       "scale": [
         0.4,
@@ -126,6 +132,11 @@
       ]
     },
     "firstperson_lefthand": {
+      "rotation": [
+        0,
+        85,
+        0
+      ],
       "scale": [
         0.4,
         0.4,
@@ -134,31 +145,26 @@
     },
     "ground": {
       "translation": [
+        0,
         3,
-        -0.25,
-        -1
+        0
       ],
       "scale": [
-        0.4,
-        0.4,
-        0.4
+        0.25,
+        0.25,
+        0.25
       ]
     },
     "gui": {
       "rotation": [
-        -34,
-        133,
-        56
-      ],
-      "translation": [
-        -3.25,
-        -0.5,
+        30,
+        225,
         0
       ],
       "scale": [
-        0.41,
-        0.41,
-        0.41
+        0.625,
+        0.625,
+        0.625
       ]
     },
     "head": {
@@ -169,15 +175,10 @@
       ]
     },
     "fixed": {
-      "translation": [
-        8,
-        -7.75,
-        0
-      ],
       "scale": [
-        1.02,
-        1.02,
-        1.08
+        0.5,
+        0.5,
+        0.5
       ]
     }
   },

@@ -7146,6 +7146,246 @@
         ]
       },
       "path": "~/Blocks/MolderWoodSet"
+    },
+    {
+      "name": "MetalBarrel",
+      "type": "block",
+      "sortid": 355,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_barrel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/MetalBarrelBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/metal_barrel.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/metal_barrel.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/metal_barrel.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "RadiationBarrel",
+      "type": "block",
+      "sortid": 356,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_barrel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/radiation_barrel.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/RadiationBarrelBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/radiation_barrel.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/radiation_barrel.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "CeilingLight",
+      "type": "block",
+      "sortid": 357,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ceiling_light",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/ceiling_light.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/ceiling_light.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/CeilingLightBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/ceiling_light.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FilingCabinet",
+      "type": "block",
+      "sortid": 358,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "filing_cabinet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/filing_cabinet.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/filing_cabinet.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/filing_cabinet.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/FilingCabinetBlock.java",
+          "src/main/java/net/mcreator/falloutwastelands/block/entity/FilingCabinetBlockEntity.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FloorPapers",
+      "type": "block",
+      "sortid": 359,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floor_papers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/FloorPapersBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/floor_papers.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/floor_papers.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/floor_papers.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Fridge",
+      "type": "block",
+      "sortid": 360,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fridge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/FridgeBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/fridge.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/fridge.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/fridge.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MedicalBox",
+      "type": "block",
+      "sortid": 361,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "medical_box",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/medical_box.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/MedicalBoxBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/medical_box.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/medical_box.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MetalChair",
+      "type": "block",
+      "sortid": 362,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_chair",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/metal_chair.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/metal_chair.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/MetalChairBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/metal_chair.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Mixer",
+      "type": "block",
+      "sortid": 363,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mixer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/block/mixer.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/mixer.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/MixerBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/mixer.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Pipe",
+      "type": "block",
+      "sortid": 364,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/PipeBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/pipe.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/pipe.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/pipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Television",
+      "type": "block",
+      "sortid": 365,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "television",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/TelevisionBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/television.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/television.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/television.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Terminal",
+      "type": "block",
+      "sortid": 366,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/blockstates/terminal.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/terminal.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/TerminalBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/terminal.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "TireStack",
+      "type": "block",
+      "sortid": 367,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tire_stack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/block/TireStackBlock.java",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/tire_stack.json",
+          "src/main/resources/assets/fallout_wastelands_/models/block/tire_stack.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/tire_stack.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "TrashBin",
+      "type": "block",
+      "sortid": 368,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trash_bin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/trash_bin.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/entity/TrashBinBlockEntity.java",
+          "src/main/resources/assets/fallout_wastelands_/models/block/trash_bin.json",
+          "src/main/resources/assets/fallout_wastelands_/blockstates/trash_bin.json",
+          "src/main/java/net/mcreator/falloutwastelands/block/TrashBinBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -7247,16 +7487,18 @@
       "block.fallout_wastelands_.double_scaffold_wall": "Double Scaffold Wall",
       "block.fallout_wastelands_.wasteland_brick": "Wasteland Bricks",
       "block.fallout_wastelands_.steel_block": "Steel Block",
+      "block.fallout_wastelands_.tire_stack": "Tire Stack",
       "item.fallout_wastelands_.psycho": "Psycho",
       "gui.fallout_wastelands_.base_menu_ui.label_inventory": "Inventory",
       "block.fallout_wastelands_.gore": "Gore",
+      "block.fallout_wastelands_.mixer": "Mixer",
       "block.fallout_wastelands_.plaster": "Plaster",
-      "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
       "item.fallout_wastelands_.wrench": "Wrench",
+      "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
       "block.fallout_wastelands_.wasteland_goldore": "Wasteland Gold Ore",
       "block.fallout_wastelands_.uranium_ore": "Uranium Ore",
-      "item.fallout_wastelands_.laserrifle": "Laser Rifle",
       "block.fallout_wastelands_.vault_wall": "Vault Wall",
+      "item.fallout_wastelands_.laserrifle": "Laser Rifle",
       "subtitles.pistol32firing": "",
       "block.fallout_wastelands_.rusted_sheet_metal_wall": "Rusted Sheet Metal Wall",
       "block.fallout_wastelands_.the_glow_dirt": "Glow Dirt",
@@ -7265,14 +7507,15 @@
       "gui.fallout_wastelands_.base_inventory.label_a": " to 0 every time the gui is saved",
       "block.fallout_wastelands_.military_plating_slab": "Military Plated Slab",
       "item.fallout_wastelands_.empty_nuka_cola_bottle": "Empty Nuka Cola Bottle",
+      "block.fallout_wastelands_.ceiling_light": "Ceiling Light",
       "block.fallout_wastelands_.burnished_glass_pane": "Burnished Glass Pane",
       "item.fallout_wastelands_.jerrican": "Jerrican",
       "item.fallout_wastelands_.raw_lead": "Raw Lead",
       "block.fallout_wastelands_.wastelandburntgrass": "Wasteland Burnt Grass",
       "item.fallout_wastelands_.raiderduster_leggings": "Raider Duster Loincloth",
       "gui.fallout_wastelands_.base_menu_ui.BASEName": "Name",
-      "item.fallout_wastelands_.raw_uranium": "Raw Uranium",
       "item.fallout_wastelands_.cannibal_00_spawn_egg": "Cannibal Spawn Egg",
+      "item.fallout_wastelands_.raw_uranium": "Raw Uranium",
       "block.fallout_wastelands_.woodedconcrete": "Wooded Concrete",
       "block.fallout_wastelands_.single_scaffold_block": "Scaffold Block",
       "block.fallout_wastelands_.oxidized_metal_slab": "Oxidized Metal Slab",
@@ -7285,6 +7528,7 @@
       "block.fallout_wastelands_.barricadeplanks": "Barricade Planks",
       "item.fallout_wastelands_.industrialhammer": "Sledgehammer",
       "subtitles.lmgreloading": "",
+      "block.fallout_wastelands_.filing_cabinet": "Filing Cabinet",
       "block.fallout_wastelands_.stair_wasteland_cobblestone": "Wasteland Cobblestone Stairs",
       "gui.fallout_wastelands_.base_menu_ui.label_caps": "Caps",
       "block.fallout_wastelands_.enclave_bunker_block_logo": "Enclave Bunker Emblem",
@@ -7345,6 +7589,7 @@
       "item.fallout_wastelands_.lead_ingot": "Lead Ingot",
       "block.fallout_wastelands_.industrial_alloy_plain": "Industrial Alloy",
       "block.fallout_wastelands_.centralunit": "Central Unit Block",
+      "block.fallout_wastelands_.fridge": "Fridge",
       "item.fallout_wastelands_.nuka_cola_quantum": "Nuka Cola Quantum",
       "item.fallout_wastelands_.tenmmhomemadeassaultrifle": "10mm Homemade Assault Rifle",
       "item.fallout_wastelands_.raw_tin": "Raw Tin",
@@ -7386,11 +7631,13 @@
       "block.fallout_wastelands_.molder_wood_planks": "Molder Wood Planks",
       "block.fallout_wastelands_.military_metal_plate_wall": "Military Plated Wall",
       "block.fallout_wastelands_.wastelandgrassbush": "Wasteland Bush",
+      "block.fallout_wastelands_.television": "Television",
       "block.fallout_wastelands_.roof_metal": "Roof Sheet Metal Block",
       "block.fallout_wastelands_.wastelandtiles": "Wasteland Tiles",
       "item.fallout_wastelands_.nail": "Nail",
       "block.fallout_wastelands_.wasteland_brickslab": "Wasteland Brick Slab",
       "item.fallout_wastelands_.fivemm_ammo": "5mm Ammo",
+      "block.fallout_wastelands_.terminal": "Terminal",
       "gui.fallout_wastelands_.base_menu_ui.label_done1": "Done",
       "block.fallout_wastelands_.wasteland_road_block": "Wasteland Asphalt",
       "gui.fallout_wastelands_.base_menu_ui.label_done2": "Done",
@@ -7441,6 +7688,8 @@
       "block.fallout_wastelands_.wastelandcopperore": "Wasteland Copper Ore",
       "block.fallout_wastelands_.charred_molder_wood_plank": "Charred Molder Planks",
       "block.fallout_wastelands_.molten_boxite": "Melted Boxite Block",
+      "block.fallout_wastelands_.metal_chair": "Metal Chair",
+      "block.fallout_wastelands_.medical_box": "Medical Stash",
       "block.fallout_wastelands_.sheetmetalblock": "Sheet Metal Block",
       "item.fallout_wastelands_.uranium_ingot": "Uranium Ingot",
       "block.fallout_wastelands_.industrial_walkway": "Industrial Alloy",
@@ -7452,10 +7701,12 @@
       "item.fallout_wastelands_.ninemmpistol": "9mm Pistol",
       "block.fallout_wastelands_.strippedmolderwoodlog": "Stripped Molder Wood Log",
       "block.fallout_wastelands_.steel_pole": "Steel Pole ",
+      "block.fallout_wastelands_.trash_bin": "Trash Bin",
       "block.fallout_wastelands_.molder_wood_fence": "Molder Fence",
       "item.fallout_wastelands_.raiderduster_chestplate": "Raider Duster Chestpads",
       "item.fallout_wastelands_.thirtytwoammo": ".32 Ammo",
       "item.fallout_wastelands_.raiderbasher_boots": "Raider Basher Boots",
+      "block.fallout_wastelands_.pipe": "Pipe",
       "block.fallout_wastelands_.hardconcretestairs": "Concrete Stairs",
       "block.fallout_wastelands_.molten_tin": "Melted Tin Block",
       "block.fallout_wastelands_.oxidized_metal_wall": "Oxidized Metal Wall",
@@ -7491,6 +7742,7 @@
       "block.fallout_wastelands_.molder_wood_door": "Molder Door",
       "item.fallout_wastelands_.taloncombatarmor_boots": "Talon Combat Armor Boots",
       "block.fallout_wastelands_.charred_molder_slab": "Charred Molder Slab",
+      "block.fallout_wastelands_.radiation_barrel": "Radiation Barrel",
       "block.fallout_wastelands_.ruins": "Ruins",
       "item.fallout_wastelands_.scrapmetal": "Scrap Metal",
       "block.fallout_wastelands_.ruins_base": "Rusted Ruins (base)",
@@ -7506,6 +7758,7 @@
       "block.fallout_wastelands_.melted_steel_block": "Melted Steel Block",
       "block.fallout_wastelands_.landmine": "Landmine",
       "block.fallout_wastelands_.molten_copper": "Melted Copper Block",
+      "block.fallout_wastelands_.floor_papers": "Plaster",
       "block.fallout_wastelands_.scaffolding_walkways_block": "Scaffolding Walkway Block",
       "block.fallout_wastelands_.wasteland_stone": "Wasteland Stone",
       "block.fallout_wastelands_.wasteland_rooty_dirt": "Wasteland Rooty Dirt",
@@ -7517,6 +7770,7 @@
       "block.fallout_wastelands_.bunker_block_light": "Enclave Lantern Bunker Block",
       "item.fallout_wastelands_.bottle_cap": "Bottle Cap",
       "block.fallout_wastelands_.wasteland_aluminum_ore": "Aluminum Ore",
+      "block.fallout_wastelands_.metal_barrel": "Metal Barrel",
       "block.fallout_wastelands_.scaffolding_walkwayslab": "Scaffolding Walkway Slab"
     }
   },
