@@ -16,6 +16,6 @@ public class BurnishedGlassPaneBlock extends IronBarsBlock {
 
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 1;
+		return 5;
 	}
 }

@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "filingcabinet:default",
+    "customModelName": "filing_cabinets:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -36,7 +36,7 @@
     "name": "Filing Cabinet",
     "specialInfo": [],
     "hardness": 0.85,
-    "resistance": 7.5,
+    "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {

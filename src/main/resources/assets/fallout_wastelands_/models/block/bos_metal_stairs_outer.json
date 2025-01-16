@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "fallout_wastelands_:block/bosmetalplating",
+    "top": "fallout_wastelands_:block/bosmetalplatingtop",
+    "side": "fallout_wastelands_:block/bosmetalplatingside"
+  },
+  "render_type": "solid"
+}

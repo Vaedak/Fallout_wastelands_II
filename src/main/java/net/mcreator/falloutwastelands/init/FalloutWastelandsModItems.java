@@ -346,6 +346,11 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> TERMINAL = block(FalloutWastelandsModBlocks.TERMINAL);
 	public static final RegistryObject<Item> TIRE_STACK = block(FalloutWastelandsModBlocks.TIRE_STACK);
 	public static final RegistryObject<Item> TRASH_BIN = block(FalloutWastelandsModBlocks.TRASH_BIN);
+	public static final RegistryObject<Item> AMMO_BOX = block(FalloutWastelandsModBlocks.AMMO_BOX);
+	public static final RegistryObject<Item> LIGHT_TUBE = block(FalloutWastelandsModBlocks.LIGHT_TUBE);
+	public static final RegistryObject<Item> ENCLAVE_BUNKER_STAIRS = block(FalloutWastelandsModBlocks.ENCLAVE_BUNKER_STAIRS);
+	public static final RegistryObject<Item> METAL_SHELF = block(FalloutWastelandsModBlocks.METAL_SHELF);
+	public static final RegistryObject<Item> BOS_METAL_STAIRS = block(FalloutWastelandsModBlocks.BOS_METAL_STAIRS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

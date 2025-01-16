@@ -6,6 +6,45 @@
     "items": [
       {
         "value": "CUSTOM:Molder_WoodSlab"
+      },
+      {
+        "value": "CUSTOM:SlabWastelandCobblestone"
+      },
+      {
+        "value": "CUSTOM:CrackedWastelandConcreteSlabs"
+      },
+      {
+        "value": "CUSTOM:WastelandConcreteSlab"
+      },
+      {
+        "value": "CUSTOM:WastelandBrickslab"
+      },
+      {
+        "value": "CUSTOM:Wastelandtilesslab"
+      },
+      {
+        "value": "CUSTOM:WastelandRoadSlab"
+      },
+      {
+        "value": "CUSTOM:WornMetalSlab"
+      },
+      {
+        "value": "CUSTOM:ScaffoldingWalkwayslab"
+      },
+      {
+        "value": "CUSTOM:IndustrialAlloySlab"
+      },
+      {
+        "value": "CUSTOM:OxidizedMetalSlab"
+      },
+      {
+        "value": "CUSTOM:BosSteelSlabs"
+      },
+      {
+        "value": "CUSTOM:MilitaryPlatingSlab"
+      },
+      {
+        "value": "CUSTOM:CharredMolderSlab"
       }
     ],
     "blocks": [],

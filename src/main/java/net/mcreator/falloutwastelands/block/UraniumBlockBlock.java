@@ -1,6 +1,8 @@
 
 package net.mcreator.falloutwastelands.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -17,7 +19,7 @@ import java.util.Collections;
 
 public class UraniumBlockBlock extends Block {
 	public UraniumBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(8f, 20f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(8f, 20f).lightLevel(s -> 2).requiresCorrectToolForDrops());
 	}
 
 	@Override

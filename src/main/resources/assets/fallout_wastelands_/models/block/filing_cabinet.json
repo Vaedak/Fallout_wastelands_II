@@ -1,5 +1,5 @@
 {
-  "parent": "fallout_wastelands_:custom/filingcabinet",
+  "parent": "fallout_wastelands_:custom/filing_cabinets",
   "textures": {
     "all": "fallout_wastelands_:block/filing_cabinets",
     "particle": "fallout_wastelands_:block/oldmetalblock",

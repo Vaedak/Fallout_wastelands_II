@@ -57,7 +57,7 @@ public class FilingCabinetBlock extends Block implements SimpleWaterloggedBlock,
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public FilingCabinetBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(0.85f, 7.5f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(0.85f, 1f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 

@@ -19,6 +19,18 @@
       },
       {
         "value": "CUSTOM:Barricadesheetmetalblock"
+      },
+      {
+        "value": "CUSTOM:DoubleScaffoldWall"
+      },
+      {
+        "value": "CUSTOM:OxidizedMetalWall"
+      },
+      {
+        "value": "CUSTOM:RustedSheetMetalWall"
+      },
+      {
+        "value": "CUSTOM:MilitaryMetalPlateWall"
       }
     ],
     "functions": [],

@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "fallout_wastelands_:block/enclavemetalplating1",
+    "top": "fallout_wastelands_:block/enclavemetalplatingfloortop",
+    "side": "fallout_wastelands_:block/enclavemetalplating1"
+  },
+  "render_type": "solid"
+}

@@ -205,6 +205,11 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModBlocks.TERMINAL.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.TIRE_STACK.get().asItem());
 				tabData.accept(FalloutWastelandsModBlocks.TRASH_BIN.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.AMMO_BOX.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.LIGHT_TUBE.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.ENCLAVE_BUNKER_STAIRS.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.METAL_SHELF.get().asItem());
+				tabData.accept(FalloutWastelandsModBlocks.BOS_METAL_STAIRS.get().asItem());
 			})
 
 					.build());

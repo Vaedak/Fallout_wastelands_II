@@ -7,6 +7,15 @@
     "blocks": [
       {
         "value": "CUSTOM:Molder_WoodFence"
+      },
+      {
+        "value": "CUSTOM:Molder_WoodFenceGate"
+      },
+      {
+        "value": "CUSTOM:Wirefence"
+      },
+      {
+        "value": "CUSTOM:CharredMolderFence"
       }
     ],
     "functions": [],

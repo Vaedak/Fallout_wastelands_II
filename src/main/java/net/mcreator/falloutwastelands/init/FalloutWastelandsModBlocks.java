@@ -130,6 +130,7 @@ import net.mcreator.falloutwastelands.block.MilitaryMetalPlateWallBlock;
 import net.mcreator.falloutwastelands.block.MilitaryMetalPlateBlock;
 import net.mcreator.falloutwastelands.block.MilitaryMetalHazardBlock;
 import net.mcreator.falloutwastelands.block.MilitaryMetalDoorBlock;
+import net.mcreator.falloutwastelands.block.MetalShelfBlock;
 import net.mcreator.falloutwastelands.block.MetalChairBlock;
 import net.mcreator.falloutwastelands.block.MetalBarrelBlock;
 import net.mcreator.falloutwastelands.block.MeltedSteelBlockBlock;
@@ -137,6 +138,7 @@ import net.mcreator.falloutwastelands.block.MeltedIronBlockBlock;
 import net.mcreator.falloutwastelands.block.MedicalBoxBlock;
 import net.mcreator.falloutwastelands.block.LockerBlock;
 import net.mcreator.falloutwastelands.block.LinedconcreteBlock;
+import net.mcreator.falloutwastelands.block.LightTubeBlock;
 import net.mcreator.falloutwastelands.block.LeadOreBlock;
 import net.mcreator.falloutwastelands.block.LeadBlockBlock;
 import net.mcreator.falloutwastelands.block.LandmineBlock;
@@ -163,6 +165,7 @@ import net.mcreator.falloutwastelands.block.FloorPapersBlock;
 import net.mcreator.falloutwastelands.block.FilingCabinetBlock;
 import net.mcreator.falloutwastelands.block.ExposedRustBlockBlock;
 import net.mcreator.falloutwastelands.block.EnclaveDoorBlock;
+import net.mcreator.falloutwastelands.block.EnclaveBunkerStairsBlock;
 import net.mcreator.falloutwastelands.block.EnclaveBunkerFloorBlock;
 import net.mcreator.falloutwastelands.block.EnclaveBunkerBlockLogoBlock;
 import net.mcreator.falloutwastelands.block.EnclaveBunkerBlockBlock;
@@ -186,6 +189,7 @@ import net.mcreator.falloutwastelands.block.BunkerBlockLightBlock;
 import net.mcreator.falloutwastelands.block.BosSteelStairBlock;
 import net.mcreator.falloutwastelands.block.BosSteelSlabsBlock;
 import net.mcreator.falloutwastelands.block.BosSteelBlockBlock;
+import net.mcreator.falloutwastelands.block.BosMetalStairsBlock;
 import net.mcreator.falloutwastelands.block.BosMetalPlatingLightedBlock;
 import net.mcreator.falloutwastelands.block.BosMetalPlatingBlock;
 import net.mcreator.falloutwastelands.block.BosDoorBlock;
@@ -196,6 +200,7 @@ import net.mcreator.falloutwastelands.block.BarricadesheetmetalblockBlock;
 import net.mcreator.falloutwastelands.block.BarricadeplanksBlock;
 import net.mcreator.falloutwastelands.block.BarbedWiresBlock;
 import net.mcreator.falloutwastelands.block.BASEcoreBlock;
+import net.mcreator.falloutwastelands.block.AmmoBoxBlock;
 import net.mcreator.falloutwastelands.block.AluminumBlockBlock;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
@@ -384,6 +389,11 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> TERMINAL = REGISTRY.register("terminal", () -> new TerminalBlock());
 	public static final RegistryObject<Block> TIRE_STACK = REGISTRY.register("tire_stack", () -> new TireStackBlock());
 	public static final RegistryObject<Block> TRASH_BIN = REGISTRY.register("trash_bin", () -> new TrashBinBlock());
+	public static final RegistryObject<Block> AMMO_BOX = REGISTRY.register("ammo_box", () -> new AmmoBoxBlock());
+	public static final RegistryObject<Block> LIGHT_TUBE = REGISTRY.register("light_tube", () -> new LightTubeBlock());
+	public static final RegistryObject<Block> ENCLAVE_BUNKER_STAIRS = REGISTRY.register("enclave_bunker_stairs", () -> new EnclaveBunkerStairsBlock());
+	public static final RegistryObject<Block> METAL_SHELF = REGISTRY.register("metal_shelf", () -> new MetalShelfBlock());
+	public static final RegistryObject<Block> BOS_METAL_STAIRS = REGISTRY.register("bos_metal_stairs", () -> new BosMetalStairsBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
