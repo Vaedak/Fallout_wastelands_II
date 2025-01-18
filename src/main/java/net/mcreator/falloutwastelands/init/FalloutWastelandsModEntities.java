@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.falloutwastelands.entity.RipperProjectileEntity;
+import net.mcreator.falloutwastelands.entity.PowerArmorFrameEntity;
 import net.mcreator.falloutwastelands.entity.Cannibal00Entity;
 import net.mcreator.falloutwastelands.entity.BaseGunItemEntity;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
@@ -32,6 +33,8 @@ public class FalloutWastelandsModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<RipperProjectileEntity>> RIPPER_PROJECTILE = register("projectile_ripper_projectile", EntityType.Builder.<RipperProjectileEntity>of(RipperProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(RipperProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<PowerArmorFrameEntity>> POWER_ARMOR_FRAME = register("power_armor_frame", EntityType.Builder.<PowerArmorFrameEntity>of(PowerArmorFrameEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PowerArmorFrameEntity::new).fireImmune().sized(0.8f, 2f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -41,11 +44,13 @@ public class FalloutWastelandsModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			Cannibal00Entity.init();
+			PowerArmorFrameEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(CANNIBAL_00.get(), Cannibal00Entity.createAttributes().build());
+		event.put(POWER_ARMOR_FRAME.get(), PowerArmorFrameEntity.createAttributes().build());
 	}
 }

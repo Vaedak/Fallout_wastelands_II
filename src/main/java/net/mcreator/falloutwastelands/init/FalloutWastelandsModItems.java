@@ -42,6 +42,7 @@ import net.mcreator.falloutwastelands.item.RaiderdusterItem;
 import net.mcreator.falloutwastelands.item.RaiderblastmasterItem;
 import net.mcreator.falloutwastelands.item.RaiderbasherItem;
 import net.mcreator.falloutwastelands.item.PsychoItem;
+import net.mcreator.falloutwastelands.item.PowerArmorFrameArmorItem;
 import net.mcreator.falloutwastelands.item.PlasmarifleItem;
 import net.mcreator.falloutwastelands.item.PipboyItem;
 import net.mcreator.falloutwastelands.item.NukaColaQuantumItem;
@@ -351,6 +352,11 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> ENCLAVE_BUNKER_STAIRS = block(FalloutWastelandsModBlocks.ENCLAVE_BUNKER_STAIRS);
 	public static final RegistryObject<Item> METAL_SHELF = block(FalloutWastelandsModBlocks.METAL_SHELF);
 	public static final RegistryObject<Item> BOS_METAL_STAIRS = block(FalloutWastelandsModBlocks.BOS_METAL_STAIRS);
+	public static final RegistryObject<Item> POWER_ARMOR_FRAME_SPAWN_EGG = REGISTRY.register("power_armor_frame_spawn_egg", () -> new ForgeSpawnEggItem(FalloutWastelandsModEntities.POWER_ARMOR_FRAME, -11382217, -9939410, new Item.Properties()));
+	public static final RegistryObject<Item> POWER_ARMOR_FRAME_ARMOR_HELMET = REGISTRY.register("power_armor_frame_armor_helmet", () -> new PowerArmorFrameArmorItem.Helmet());
+	public static final RegistryObject<Item> POWER_ARMOR_FRAME_ARMOR_CHESTPLATE = REGISTRY.register("power_armor_frame_armor_chestplate", () -> new PowerArmorFrameArmorItem.Chestplate());
+	public static final RegistryObject<Item> POWER_ARMOR_FRAME_ARMOR_LEGGINGS = REGISTRY.register("power_armor_frame_armor_leggings", () -> new PowerArmorFrameArmorItem.Leggings());
+	public static final RegistryObject<Item> POWER_ARMOR_FRAME_ARMOR_BOOTS = REGISTRY.register("power_armor_frame_armor_boots", () -> new PowerArmorFrameArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

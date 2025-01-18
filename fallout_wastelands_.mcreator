@@ -7475,9 +7475,678 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "PowerArmorFrame",
+      "type": "livingentity",
+      "sortid": 375,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_armor_frame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/entity/PowerArmorFrameEntity.java",
+          "src/main/java/net/mcreator/falloutwastelands/client/renderer/PowerArmorFrameRenderer.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/power_armor_frame_spawn_egg.json"
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PowerArmorFrameGUI",
+      "type": "gui",
+      "sortid": 377,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_armor_frame_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/world/inventory/PowerArmorFrameGUIMenu.java",
+          "src/main/java/net/mcreator/falloutwastelands/network/PowerArmorFrameGUIButtonMessage.java",
+          "src/main/java/net/mcreator/falloutwastelands/client/gui/PowerArmorFrameGUIScreen.java"
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PowerArmorFrameRightClicked",
+      "type": "procedure",
+      "sortid": 378,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_armor_frame_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/PowerArmorFrameRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PowerArmorFrameTickUpdate",
+      "type": "procedure",
+      "sortid": 380,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_armor_frame_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/PowerArmorFrameTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "FrameInitialSpawn",
+      "type": "procedure",
+      "sortid": 381,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frame_initial_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/FrameInitialSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "HelperProcedureGetFrameEntity",
+      "type": "procedure",
+      "sortid": 382,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "helper_procedure_get_frame_entity",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/HelperProcedureGetFrameEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PickupFrame",
+      "type": "procedure",
+      "sortid": 383,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pickup_frame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/PickupFrameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "CheckIfRiding",
+      "type": "procedure",
+      "sortid": 384,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_if_riding",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/CheckIfRidingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "DeleteArmorStandIfNotRiding",
+      "type": "potioneffect",
+      "sortid": 385,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delete_armor_stand_if_not_riding",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/potion/DeleteArmorStandIfNotRidingMobEffect.java"
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PAHelmet",
+      "type": "tag",
+      "sortid": 387,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pa_helmet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/tags/items/pa_helmet.json"
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PAChestplate",
+      "type": "tag",
+      "sortid": 388,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pa_chestplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/tags/items/pa_chestplate.json"
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PALeggings",
+      "type": "tag",
+      "sortid": 389,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pa_leggings",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/tags/items/pa_leggings.json"
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PABoots",
+      "type": "tag",
+      "sortid": 390,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pa_boots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/tags/items/pa_boots.json"
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "ExitPowerArmorKeyPressed",
+      "type": "procedure",
+      "sortid": 391,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exit_power_armor_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/ExitPowerArmorKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "ExitPowerArmor",
+      "type": "keybind",
+      "sortid": 392,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exit_power_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/network/ExitPowerArmorMessage.java"
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PowerArmorFrameArmor",
+      "type": "armor",
+      "sortid": 393,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_armor_frame_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/power_armor_frame_armor_leggings.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/power_armor_frame_armor_boots.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/power_armor_frame_armor_chestplate.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/PowerArmorFrameArmorItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/power_armor_frame_armor_helmet.json"
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PowerArmorFrameGUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 394,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_armor_frame_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/PowerArmorFrameGUIWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PlayerInPowerArmor",
+      "type": "procedure",
+      "sortid": 395,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_in_power_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/PlayerInPowerArmorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PAFrame",
+      "type": "tag",
+      "sortid": 396,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pa_frame",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/tags/items/pa_frame.json"
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "FrameDroppedDelete",
+      "type": "procedure",
+      "sortid": 397,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frame_dropped_delete",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/FrameDroppedDeleteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PlayerPressE",
+      "type": "procedure",
+      "sortid": 402,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_press_e",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/PlayerPressEProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PlayerOpensInventory",
+      "type": "keybind",
+      "sortid": 403,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_opens_inventory",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/network/PlayerOpensInventoryMessage.java"
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PlayerPressesESC",
+      "type": "keybind",
+      "sortid": 404,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_presses_esc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/network/PlayerPressesESCMessage.java"
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "TurnOffFramecheck",
+      "type": "procedure",
+      "sortid": 405,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turn_off_framecheck",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/TurnOffFramecheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "FramePickedUp",
+      "type": "procedure",
+      "sortid": 406,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frame_picked_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/FramePickedUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PlayerInteractWithBlockGUI",
+      "type": "procedure",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_interact_with_block_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/PlayerInteractWithBlockGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "BlocksWithGUI",
+      "type": "tag",
+      "sortid": 408,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blocks_with_gui",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/tags/blocks/blocks_with_gui.json"
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "PlayerInteractWIthEntity",
+      "type": "procedure",
+      "sortid": 409,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_interact_w_ith_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/PlayerInteractWIthEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "G",
+      "type": "code",
+      "sortid": 413,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "g",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/G.java"
+        ]
+      }
+    },
+    {
+      "name": "SpawnInvisibleArmorStand",
+      "type": "procedure",
+      "sortid": 414,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_invisible_armor_stand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/SpawnInvisibleArmorStandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "paFrameXcord",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "paFrameYcord",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "paFrameZcord",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "inPowerArmor",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
   "sound_elements": [
     {
       "name": "pistol32firing",
@@ -7568,6 +8237,7 @@
       "item.fallout_wastelands_.antiradsuit_leggings": "Anti-Rad Suit Leggings",
       "block.fallout_wastelands_.metal_shelf": "Metal Shelf",
       "subtitles.ninemmshot": "",
+      "key.fallout_wastelands_.player_presses_esc": "Player Closes Inventory",
       "block.fallout_wastelands_.cracked_wasteland_concrete_wall": "Cracked Concrete Slab",
       "item.fallout_wastelands_.copperwires": "Copper Wires",
       "item.fallout_wastelands_.neutronade_cap": "Bottle Cap",
@@ -7592,6 +8262,7 @@
       "subtitles.pistol32firing": "",
       "block.fallout_wastelands_.rusted_sheet_metal_wall": "Rusted Sheet Metal Wall",
       "block.fallout_wastelands_.the_glow_dirt": "Glow Dirt",
+      "effect.fallout_wastelands_.delete_armor_stand_if_not_riding": "despawnArmorStand",
       "item.fallout_wastelands_.antiradsuit_chestplate": "Anti-Rad Suit Chest",
       "subtitles.minigunfire": "",
       "gui.fallout_wastelands_.base_inventory.label_a": " to 0 every time the gui is saved",
@@ -7684,6 +8355,7 @@
       "item.fallout_wastelands_.nuka_cola_quantum": "Nuka Cola Quantum",
       "item.fallout_wastelands_.tenmmhomemadeassaultrifle": "10mm Homemade Assault Rifle",
       "item.fallout_wastelands_.raw_tin": "Raw Tin",
+      "item.fallout_wastelands_.power_armor_frame_spawn_egg": "Power Armor Frame Spawn Egg",
       "item.fallout_wastelands_.cloth": "Cloth",
       "item.fallout_wastelands_.ripper_projectile": "Ripper Projectile",
       "item.fallout_wastelands_.base_gun_item": "Base Gun Item",
@@ -7698,9 +8370,12 @@
       "block.fallout_wastelands_.bos_steel_slabs": "Bos Metal Slab",
       "block.fallout_wastelands_.bos_steel_block": "Bos Metal Plating",
       "item.fallout_wastelands_.raw_aluminum": "Raw Aluminum",
+      "item.fallout_wastelands_.power_armor_frame_armor_boots": "Power Armor Frame",
       "block.fallout_wastelands_.scaffolding_walkway_stairs": "Scaffolding Walkway Stairs",
+      "item.fallout_wastelands_.power_armor_frame_armor_leggings": "Power Armor Frame",
       "item.fallout_wastelands_.energy_cell": "Microfusion Cell",
       "block.fallout_wastelands_.grey_tiles": "Grey Tile",
+      "item.fallout_wastelands_.power_armor_frame_armor_helmet": "Power Armor Frame",
       "gui.fallout_wastelands_.base_menu_ui.NameInput": "Name",
       "block.fallout_wastelands_.industrial_support": "Industrial Support",
       "block.fallout_wastelands_.wasteland_concrete_wall": "Concrete Wall",
@@ -7739,6 +8414,7 @@
       "block.fallout_wastelands_.worn_metal": "Worn Metal Block",
       "block.fallout_wastelands_.industrial_alloy_slab": "Industrial Alloy Slab",
       "block.fallout_wastelands_.vault_pillar": "Vault Pillar",
+      "key.fallout_wastelands_.exit_power_armor": "Exit Power Armor",
       "block.fallout_wastelands_.wasteland_cracked_brick": "Wasteland Cracked Bricks",
       "key.fallout_wastelands_.switch_game_mode_utility": "Switch Game Mode Utility",
       "block.fallout_wastelands_.industrial_alloy": "Industrial Alloy (upper rivet)",
@@ -7768,6 +8444,7 @@
       "item.fallout_wastelands_.fivemmminigun": "5mm Minigun",
       "block.fallout_wastelands_.industrial_allow_mid_rivet": "Industrial Alloy (mid rivet)",
       "block.fallout_wastelands_.molten_steel": "Melted Steel Block",
+      "item.fallout_wastelands_.power_armor_frame_armor_chestplate": "Power Armor Frame",
       "block.fallout_wastelands_.blasted_glass_pane": "Blasted Glass Pane",
       "block.fallout_wastelands_.tin_block": "Tin Block",
       "gui.fallout_wastelands_.base_inventory.label_note_to_make_the_white_ui_disap": "Note: to make the white ui disappear you must set it",
@@ -7830,6 +8507,7 @@
       "block.fallout_wastelands_.wastelandgrassblock": "Wasteland Grass Block",
       "gui.fallout_wastelands_.base_menu_ui.label_done": "Done",
       "block.fallout_wastelands_.cracked_wasteland_concrete_stairs": "Cracked Concrete Stairs",
+      "gui.fallout_wastelands_.power_armor_frame_gui.button_pickup": "Pickup",
       "item.fallout_wastelands_.raiderbasher_chestplate": "Raider Basher Chestplate",
       "block.fallout_wastelands_.locker": "Locker",
       "item.fallout_wastelands_.nailgun": "Nailgun",
@@ -7837,6 +8515,7 @@
       "item.fallout_wastelands_.taloncombatarmor_boots": "Talon Combat Armor Boots",
       "block.fallout_wastelands_.charred_molder_slab": "Charred Molder Slab",
       "block.fallout_wastelands_.radiation_barrel": "Radiation Barrel",
+      "entity.fallout_wastelands_.power_armor_frame": "Power Armor Frame",
       "block.fallout_wastelands_.ruins": "Ruins",
       "item.fallout_wastelands_.scrapmetal": "Scrap Metal",
       "block.fallout_wastelands_.ruins_base": "Rusted Ruins (base)",
@@ -7865,7 +8544,8 @@
       "item.fallout_wastelands_.bottle_cap": "Bottle Cap",
       "block.fallout_wastelands_.wasteland_aluminum_ore": "Aluminum Ore",
       "block.fallout_wastelands_.metal_barrel": "Metal Barrel",
-      "block.fallout_wastelands_.scaffolding_walkwayslab": "Scaffolding Walkway Slab"
+      "block.fallout_wastelands_.scaffolding_walkwayslab": "Scaffolding Walkway Slab",
+      "key.fallout_wastelands_.player_opens_inventory": "Player Opens Inventory"
     }
   },
   "foldersRoot": {
@@ -7968,7 +8648,12 @@
       },
       {
         "name": "Armors",
-        "children": []
+        "children": [
+          {
+            "name": "PowerArmor",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Mobs",

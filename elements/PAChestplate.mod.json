@@ -1,0 +1,21 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Antiradsuit.body"
+      },
+      {
+        "value": "CUSTOM:PowerArmorFrameArmor.body"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "pa_chestplate",
+    "namespace": "mod"
+  }
+}

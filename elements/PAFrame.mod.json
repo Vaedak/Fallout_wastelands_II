@@ -1,0 +1,27 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:PowerArmorFrameArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:PowerArmorFrameArmor.body"
+      },
+      {
+        "value": "CUSTOM:PowerArmorFrameArmor.legs"
+      },
+      {
+        "value": "CUSTOM:PowerArmorFrameArmor.boots"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "pa_frame",
+    "namespace": "mod"
+  }
+}

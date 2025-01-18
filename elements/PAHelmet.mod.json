@@ -1,0 +1,21 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Antiradsuit.helmet"
+      },
+      {
+        "value": "CUSTOM:PowerArmorFrameArmor.helmet"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "pa_helmet",
+    "namespace": "mod"
+  }
+}
