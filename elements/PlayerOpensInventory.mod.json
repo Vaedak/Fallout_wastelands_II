@@ -1,0 +1,12 @@
+{
+  "_fv": 47,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "E",
+    "keyBindingName": "Player Opens Inventory",
+    "keyBindingCategoryKey": "fallout_wastelands",
+    "onKeyPressed": {
+      "name": "PlayerPressE"
+    }
+  }
+}

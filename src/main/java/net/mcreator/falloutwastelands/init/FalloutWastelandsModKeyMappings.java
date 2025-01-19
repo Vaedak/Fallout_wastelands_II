@@ -17,7 +17,10 @@ import net.minecraft.client.KeyMapping;
 
 import net.mcreator.falloutwastelands.network.SwitchGameModeUtilityMessage;
 import net.mcreator.falloutwastelands.network.StopReloadMessage;
+import net.mcreator.falloutwastelands.network.PlayerPressesESCMessage;
+import net.mcreator.falloutwastelands.network.PlayerOpensInventoryMessage;
 import net.mcreator.falloutwastelands.network.GunReloadKeybindMessage;
+import net.mcreator.falloutwastelands.network.ExitPowerArmorMessage;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -61,12 +64,54 @@ public class FalloutWastelandsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping EXIT_POWER_ARMOR = new KeyMapping("key.fallout_wastelands_.exit_power_armor", GLFW.GLFW_KEY_X, "key.categories.fallout_wastelands_") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				FalloutWastelandsMod.PACKET_HANDLER.sendToServer(new ExitPowerArmorMessage(0, 0));
+				ExitPowerArmorMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping PLAYER_OPENS_INVENTORY = new KeyMapping("key.fallout_wastelands_.player_opens_inventory", GLFW.GLFW_KEY_E, "key.categories.fallout_wastelands") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				FalloutWastelandsMod.PACKET_HANDLER.sendToServer(new PlayerOpensInventoryMessage(0, 0));
+				PlayerOpensInventoryMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping PLAYER_PRESSES_ESC = new KeyMapping("key.fallout_wastelands_.player_presses_esc", GLFW.GLFW_KEY_ESCAPE, "key.categories.fallout_wastelands") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				FalloutWastelandsMod.PACKET_HANDLER.sendToServer(new PlayerPressesESCMessage(0, 0));
+				PlayerPressesESCMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(SWITCH_GAME_MODE_UTILITY);
 		event.register(GUN_RELOAD_KEYBIND);
 		event.register(STOP_RELOAD);
+		event.register(EXIT_POWER_ARMOR);
+		event.register(PLAYER_OPENS_INVENTORY);
+		event.register(PLAYER_PRESSES_ESC);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -77,6 +122,9 @@ public class FalloutWastelandsModKeyMappings {
 				SWITCH_GAME_MODE_UTILITY.consumeClick();
 				GUN_RELOAD_KEYBIND.consumeClick();
 				STOP_RELOAD.consumeClick();
+				EXIT_POWER_ARMOR.consumeClick();
+				PLAYER_OPENS_INVENTORY.consumeClick();
+				PLAYER_PRESSES_ESC.consumeClick();
 			}
 		}
 	}

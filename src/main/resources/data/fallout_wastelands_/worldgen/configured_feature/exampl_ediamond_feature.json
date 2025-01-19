@@ -4,9 +4,9 @@
     "to_place": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:jigsaw",
+        "Name": "fallout_wastelands_:jigsaw_block",
         "Properties": {
-          "orientation": "north_up"
+          "facing": "north"
         }
       }
     }

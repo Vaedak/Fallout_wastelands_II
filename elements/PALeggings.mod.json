@@ -1,0 +1,21 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Antiradsuit.legs"
+      },
+      {
+        "value": "CUSTOM:PowerArmorFrameArmor.legs"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "pa_leggings",
+    "namespace": "mod"
+  }
+}
