@@ -1,14 +1,6 @@
 package net.mcreator.falloutwastelands.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-
-import net.minecraft.world.entity.npc.Villager;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.falloutwastelands.entity.PowerArmorFrameEntity;
 
 import javax.annotation.Nullable;
 

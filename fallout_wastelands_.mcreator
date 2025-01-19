@@ -7727,7 +7727,7 @@
           "src/main/resources/data/fallout_wastelands_/tags/items/pa_helmet.json"
         ]
       },
-      "path": "~/Armors/AddingNewPAIMPORTANT"
+      "path": "~/Armors/PowerArmor"
     },
     {
       "name": "PAChestplate",
@@ -7741,7 +7741,7 @@
           "src/main/resources/data/fallout_wastelands_/tags/items/pa_chestplate.json"
         ]
       },
-      "path": "~/Armors/AddingNewPAIMPORTANT"
+      "path": "~/Armors/PowerArmor"
     },
     {
       "name": "PALeggings",
@@ -7755,7 +7755,7 @@
           "src/main/resources/data/fallout_wastelands_/tags/items/pa_leggings.json"
         ]
       },
-      "path": "~/Armors/AddingNewPAIMPORTANT"
+      "path": "~/Armors/PowerArmor"
     },
     {
       "name": "PABoots",
@@ -7769,7 +7769,7 @@
           "src/main/resources/data/fallout_wastelands_/tags/items/pa_boots.json"
         ]
       },
-      "path": "~/Armors/AddingNewPAIMPORTANT"
+      "path": "~/Armors/PowerArmor"
     },
     {
       "name": "ExitPowerArmorKeyPressed",
@@ -8108,24 +8108,6 @@
       "path": "~/Armors/PowerArmor"
     },
     {
-      "name": "T45PA",
-      "type": "armor",
-      "sortid": 415,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "t_45_pa",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/falloutwastelands/item/T45PAItem.java",
-          "src/main/resources/assets/fallout_wastelands_/models/item/t_45_pa_leggings.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/t_45_pa_helmet.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/t_45_pa_chestplate.json",
-          "src/main/resources/assets/fallout_wastelands_/models/item/t_45_pa_boots.json"
-        ]
-      },
-      "path": "~/Armors/AddingNewPAIMPORTANT"
-    },
-    {
       "name": "ReplacepaFrames",
       "type": "procedure",
       "sortid": 416,
@@ -8144,6 +8126,239 @@
         ]
       },
       "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "T45PA",
+      "type": "armor",
+      "sortid": 415,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "t_45_pa",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/T45PAItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/t_45_pa_leggings.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/t_45_pa_helmet.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/t_45_pa_chestplate.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/t_45_pa_boots.json"
+        ]
+      },
+      "path": "~/Armors/AddingNewPAIMPORTANT"
+    },
+    {
+      "name": "Aluminiumingottonugget",
+      "type": "recipe",
+      "sortid": 382,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminiumingottonugget",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/aluminiumingottonugget.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Uraniumnuggettoingot",
+      "type": "recipe",
+      "sortid": 387,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uraniumnuggettoingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/uraniumnuggettoingot.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Tinnuggettoingot",
+      "type": "recipe",
+      "sortid": 385,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tinnuggettoingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/tinnuggettoingot.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Steelnuggettoingot",
+      "type": "recipe",
+      "sortid": 389,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steelnuggettoingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/steelnuggettoingot.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Uraniumingottonugget",
+      "type": "recipe",
+      "sortid": 381,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uraniumingottonugget",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/uraniumingottonugget.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Aluminiumnugget",
+      "type": "item",
+      "sortid": 375,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminiumnugget",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/AluminiumnuggetItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/aluminiumnugget.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Tiningottonugget",
+      "type": "recipe",
+      "sortid": 379,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiningottonugget",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/tiningottonugget.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Leadnuggettoingot",
+      "type": "recipe",
+      "sortid": 386,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leadnuggettoingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/leadnuggettoingot.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Aluminiumnuggettoingot",
+      "type": "recipe",
+      "sortid": 388,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminiumnuggettoingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/aluminiumnuggettoingot.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "LeadNugget",
+      "type": "item",
+      "sortid": 376,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_nugget",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/LeadNuggetItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/lead_nugget.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Steelnugget",
+      "type": "item",
+      "sortid": 383,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steelnugget",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/steelnugget.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/SteelnuggetItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Steelingottonugget",
+      "type": "recipe",
+      "sortid": 384,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steelingottonugget",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/steelingottonugget.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Tinnugget",
+      "type": "item",
+      "sortid": 378,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tinnugget",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/TinnuggetItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/tinnugget.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "UraniumNugget",
+      "type": "item",
+      "sortid": 377,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_nugget",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fallout_wastelands_/models/item/uranium_nugget.json",
+          "src/main/java/net/mcreator/falloutwastelands/item/UraniumNuggetItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Leadingottonugget",
+      "type": "recipe",
+      "sortid": 380,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leadingottonugget",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fallout_wastelands_/recipes/leadingottonugget.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -8168,7 +8383,7 @@
     {
       "name": "inPowerArmor",
       "type": "logic",
-      "scope": "player_lifetime",
+      "scope": "player_persistent",
       "value": "false"
     }
   ],
@@ -8262,7 +8477,6 @@
       "item.fallout_wastelands_.antiradsuit_leggings": "Anti-Rad Suit Leggings",
       "block.fallout_wastelands_.metal_shelf": "Metal Shelf",
       "subtitles.ninemmshot": "",
-      "key.fallout_wastelands_.player_presses_esc": "Player Closes Inventory",
       "block.fallout_wastelands_.cracked_wasteland_concrete_wall": "Cracked Concrete Slab",
       "item.fallout_wastelands_.copperwires": "Copper Wires",
       "item.fallout_wastelands_.neutronade_cap": "Bottle Cap",
@@ -8278,16 +8492,15 @@
       "block.fallout_wastelands_.gore": "Gore",
       "block.fallout_wastelands_.mixer": "Mixer",
       "block.fallout_wastelands_.plaster": "Plaster",
-      "item.fallout_wastelands_.wrench": "Wrench",
       "block.fallout_wastelands_.wastelandshortburntgrass": "Wasteland Short Burnt Grass",
+      "item.fallout_wastelands_.wrench": "Wrench",
       "block.fallout_wastelands_.wasteland_goldore": "Wasteland Gold Ore",
       "block.fallout_wastelands_.uranium_ore": "Uranium Ore",
-      "block.fallout_wastelands_.vault_wall": "Vault Wall",
       "item.fallout_wastelands_.laserrifle": "Laser Rifle",
+      "block.fallout_wastelands_.vault_wall": "Vault Wall",
       "subtitles.pistol32firing": "",
       "block.fallout_wastelands_.rusted_sheet_metal_wall": "Rusted Sheet Metal Wall",
       "block.fallout_wastelands_.the_glow_dirt": "Glow Dirt",
-      "effect.fallout_wastelands_.delete_armor_stand_if_not_riding": "despawnArmorStand",
       "item.fallout_wastelands_.antiradsuit_chestplate": "Anti-Rad Suit Chest",
       "subtitles.minigunfire": "",
       "gui.fallout_wastelands_.base_inventory.label_a": " to 0 every time the gui is saved",
@@ -8296,9 +8509,7 @@
       "block.fallout_wastelands_.ceiling_light": "Ceiling Light",
       "block.fallout_wastelands_.burnished_glass_pane": "Burnished Glass Pane",
       "item.fallout_wastelands_.jerrican": "Jerrican",
-      "item.fallout_wastelands_.t_45_pa_chestplate": "T45 Chestplate",
       "item.fallout_wastelands_.raw_lead": "Raw Lead",
-      "item.fallout_wastelands_.t_45_pa_boots": "T45 Boots",
       "block.fallout_wastelands_.wastelandburntgrass": "Wasteland Burnt Grass",
       "item.fallout_wastelands_.raiderduster_leggings": "Raider Duster Loincloth",
       "gui.fallout_wastelands_.base_menu_ui.BASEName": "Name",
@@ -8339,7 +8550,6 @@
       "block.fallout_wastelands_.vault_floor": "Vault Floor",
       "item.fallout_wastelands_.plasmarifle": "Plasma Rifle",
       "block.fallout_wastelands_.rust_block": "Rust Block",
-      "item.fallout_wastelands_.t_45_pa_leggings": "T45 Leggings",
       "item.fallout_wastelands_.tato": "Tato",
       "block.fallout_wastelands_.steel_bars": "Steel Bars",
       "block.fallout_wastelands_.molder_wood_trapdoor": "Molder TrapDoor",
@@ -8398,12 +8608,9 @@
       "block.fallout_wastelands_.bos_steel_slabs": "Bos Metal Slab",
       "block.fallout_wastelands_.bos_steel_block": "Bos Metal Plating",
       "item.fallout_wastelands_.raw_aluminum": "Raw Aluminum",
-      "item.fallout_wastelands_.power_armor_frame_armor_boots": "Power Armor Frame",
       "block.fallout_wastelands_.scaffolding_walkway_stairs": "Scaffolding Walkway Stairs",
-      "item.fallout_wastelands_.power_armor_frame_armor_leggings": "Power Armor Frame",
       "item.fallout_wastelands_.energy_cell": "Microfusion Cell",
       "block.fallout_wastelands_.grey_tiles": "Grey Tile",
-      "item.fallout_wastelands_.power_armor_frame_armor_helmet": "Power Armor Frame",
       "gui.fallout_wastelands_.base_menu_ui.NameInput": "Name",
       "block.fallout_wastelands_.industrial_support": "Industrial Support",
       "block.fallout_wastelands_.wasteland_concrete_wall": "Concrete Wall",
@@ -8442,7 +8649,6 @@
       "block.fallout_wastelands_.worn_metal": "Worn Metal Block",
       "block.fallout_wastelands_.industrial_alloy_slab": "Industrial Alloy Slab",
       "block.fallout_wastelands_.vault_pillar": "Vault Pillar",
-      "key.fallout_wastelands_.exit_power_armor": "Exit Power Armor",
       "block.fallout_wastelands_.wasteland_cracked_brick": "Wasteland Cracked Bricks",
       "key.fallout_wastelands_.switch_game_mode_utility": "Switch Game Mode Utility",
       "block.fallout_wastelands_.industrial_alloy": "Industrial Alloy (upper rivet)",
@@ -8472,7 +8678,6 @@
       "item.fallout_wastelands_.fivemmminigun": "5mm Minigun",
       "block.fallout_wastelands_.industrial_allow_mid_rivet": "Industrial Alloy (mid rivet)",
       "block.fallout_wastelands_.molten_steel": "Melted Steel Block",
-      "item.fallout_wastelands_.power_armor_frame_armor_chestplate": "Power Armor Frame",
       "block.fallout_wastelands_.blasted_glass_pane": "Blasted Glass Pane",
       "block.fallout_wastelands_.tin_block": "Tin Block",
       "gui.fallout_wastelands_.base_inventory.label_note_to_make_the_white_ui_disap": "Note: to make the white ui disappear you must set it",
@@ -8535,7 +8740,6 @@
       "block.fallout_wastelands_.wastelandgrassblock": "Wasteland Grass Block",
       "gui.fallout_wastelands_.base_menu_ui.label_done": "Done",
       "block.fallout_wastelands_.cracked_wasteland_concrete_stairs": "Cracked Concrete Stairs",
-      "gui.fallout_wastelands_.power_armor_frame_gui.button_pickup": "Pickup",
       "item.fallout_wastelands_.raiderbasher_chestplate": "Raider Basher Chestplate",
       "block.fallout_wastelands_.locker": "Locker",
       "item.fallout_wastelands_.nailgun": "Nailgun",
@@ -8545,7 +8749,6 @@
       "block.fallout_wastelands_.radiation_barrel": "Radiation Barrel",
       "entity.fallout_wastelands_.power_armor_frame": "Power Armor Frame",
       "block.fallout_wastelands_.ruins": "Ruins",
-      "item.fallout_wastelands_.t_45_pa_helmet": "T45 Helmet",
       "item.fallout_wastelands_.scrapmetal": "Scrap Metal",
       "block.fallout_wastelands_.ruins_base": "Rusted Ruins (base)",
       "block.fallout_wastelands_.melted_iron_block": "Melted Iron Block",
@@ -8573,13 +8776,16 @@
       "item.fallout_wastelands_.bottle_cap": "Bottle Cap",
       "block.fallout_wastelands_.wasteland_aluminum_ore": "Aluminum Ore",
       "block.fallout_wastelands_.metal_barrel": "Metal Barrel",
-      "block.fallout_wastelands_.scaffolding_walkwayslab": "Scaffolding Walkway Slab",
-      "key.fallout_wastelands_.player_opens_inventory": "Player Opens Inventory"
+      "block.fallout_wastelands_.scaffolding_walkwayslab": "Scaffolding Walkway Slab"
     }
   },
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "jigsaw",
+        "children": []
+      },
       {
         "name": "Procedures",
         "children": [
@@ -8618,7 +8824,31 @@
             "children": []
           },
           {
+            "name": "ChinesePistol",
+            "children": []
+          },
+          {
+            "name": "LaserRifle",
+            "children": []
+          },
+          {
+            "name": "NailGun",
+            "children": []
+          },
+          {
+            "name": "Ripper",
+            "children": []
+          },
+          {
             "name": "10mmPistol",
+            "children": []
+          },
+          {
+            "name": "PlasmaRifle",
+            "children": []
+          },
+          {
+            "name": "5mmMinigun",
             "children": []
           },
           {
@@ -8627,30 +8857,6 @@
           },
           {
             "name": "10mmHomemade",
-            "children": []
-          },
-          {
-            "name": "LaserRifle",
-            "children": []
-          },
-          {
-            "name": "PlasmaRifle",
-            "children": []
-          },
-          {
-            "name": "NailGun",
-            "children": []
-          },
-          {
-            "name": "ChinesePistol",
-            "children": []
-          },
-          {
-            "name": "5mmMinigun",
-            "children": []
-          },
-          {
-            "name": "Ripper",
             "children": []
           }
         ]
@@ -8679,21 +8885,17 @@
         "name": "Armors",
         "children": [
           {
-            "name": "PowerArmor",
+            "name": "AddingNewPAIMPORTANT",
             "children": []
           },
           {
-            "name": "AddingNewPAIMPORTANT",
+            "name": "PowerArmor",
             "children": []
           }
         ]
       },
       {
         "name": "Mobs",
-        "children": []
-      },
-      {
-        "name": "jigsaw",
         "children": []
       }
     ]

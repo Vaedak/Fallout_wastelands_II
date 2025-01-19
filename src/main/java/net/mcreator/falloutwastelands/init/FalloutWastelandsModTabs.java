@@ -301,6 +301,11 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.RAW_ALUMINUM.get());
 				tabData.accept(FalloutWastelandsModItems.RAW_URANIUM.get());
 				tabData.accept(FalloutWastelandsModItems.RAW_TIN.get());
+				tabData.accept(FalloutWastelandsModItems.ALUMINIUMNUGGET.get());
+				tabData.accept(FalloutWastelandsModItems.LEAD_NUGGET.get());
+				tabData.accept(FalloutWastelandsModItems.URANIUM_NUGGET.get());
+				tabData.accept(FalloutWastelandsModItems.TINNUGGET.get());
+				tabData.accept(FalloutWastelandsModItems.STEELNUGGET.get());
 			})
 
 					.build());

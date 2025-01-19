@@ -18,7 +18,7 @@ import java.util.Collections;
 
 public class WastelandhardstoneBlock extends Block {
 	public WastelandhardstoneBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(0.6f, 7f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(0.9f, 7f).requiresCorrectToolForDrops());
 	}
 
 	@Override

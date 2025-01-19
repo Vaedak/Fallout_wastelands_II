@@ -1,8 +1,8 @@
 package net.mcreator.falloutwastelands.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
+import net.minecraftforge.eventbus.api.Event;
+
+import javax.annotation.Nullable;
 
 public class PlayerPressEProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {

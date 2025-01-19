@@ -1,14 +1,6 @@
 package net.mcreator.falloutwastelands.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.resources.ResourceLocation;
 
 import javax.annotation.Nullable;
 

@@ -1,9 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "fallout_wastelands_:power_armor_frame_armor_boots",
-    "fallout_wastelands_:power_armor_frame_armor_chestplate",
-    "fallout_wastelands_:power_armor_frame_armor_leggings",
-    "fallout_wastelands_:power_armor_frame_armor_helmet"
-  ]
+  "values": []
 }
