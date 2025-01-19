@@ -23,6 +23,6 @@ public class PowerArmorFrameRenderer extends MobRenderer<PowerArmorFrameEntity, 
 
 	@Override
 	public ResourceLocation getTextureLocation(PowerArmorFrameEntity entity) {
-		return new ResourceLocation("fallout_wastelands_:textures/entities/zonetexture.png");
+		return new ResourceLocation("fallout_wastelands_:textures/entities/invisible.png");
 	}
 }

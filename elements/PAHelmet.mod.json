@@ -5,10 +5,7 @@
     "type": "Items",
     "items": [
       {
-        "value": "CUSTOM:Antiradsuit.helmet"
-      },
-      {
-        "value": "CUSTOM:PowerArmorFrameArmor.helmet"
+        "value": "CUSTOM:T45PA.helmet"
       }
     ],
     "blocks": [],

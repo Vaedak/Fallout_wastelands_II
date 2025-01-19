@@ -1,5 +1,6 @@
 package net.mcreator.falloutwastelands.procedures;
 
+import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -17,7 +18,6 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.falloutwastelands.network.FalloutWastelandsModVariables;
-import net.mcreator.falloutwastelands.init.FalloutWastelandsModItems;
 
 import javax.annotation.Nullable;
 
@@ -39,86 +39,33 @@ public class PlayerInPowerArmorProcedure {
 			return;
 		if ((entity.getCapability(FalloutWastelandsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new FalloutWastelandsModVariables.PlayerVariables())).inPowerArmor == true) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 20, 255, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 25, 255, false, false));
+			if (entity instanceof Player _player)
+				_player.getFoodData().setSaturation((float) ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) + 1));
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("fallout_wastelands_:pa_frame"))) == false) {
+				if (entity.isInWater()) {
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 25, 1, false, false));
+				}
+			}
 			if (entity.getPersistentData().getBoolean("inventoryOpen") == true) {
-				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
+				ReplacepaFramesProcedure.execute(entity);
+			}
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("fallout_wastelands_:pa_helmet"))) == false) {
+				if (((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) == false) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_HELMET.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 2, _player.inventoryMenu.getCraftSlots());
+						ItemStack _setstack = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY);
+						_setstack.setCount(1);
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					{
 						Entity _entity = entity;
 						if (_entity instanceof Player _player) {
-							_player.getInventory().armor.set(3, new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_HELMET.get()));
+							_player.getInventory().armor.set(3, new ItemStack(Blocks.AIR));
 							_player.getInventory().setChanged();
 						} else if (_entity instanceof LivingEntity _living) {
-							_living.setItemSlot(EquipmentSlot.HEAD, new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_HELMET.get()));
+							_living.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Blocks.AIR));
 						}
-					}
-				} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("fallout_wastelands_:pa_frame"))) == false) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_HELMET.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-					}
-				}
-				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_CHESTPLATE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 2, _player.inventoryMenu.getCraftSlots());
-					}
-					{
-						Entity _entity = entity;
-						if (_entity instanceof Player _player) {
-							_player.getInventory().armor.set(2, new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_CHESTPLATE.get()));
-							_player.getInventory().setChanged();
-						} else if (_entity instanceof LivingEntity _living) {
-							_living.setItemSlot(EquipmentSlot.CHEST, new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_CHESTPLATE.get()));
-						}
-					}
-				} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("fallout_wastelands_:pa_frame"))) == false) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_CHESTPLATE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-					}
-				}
-				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_LEGGINGS.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 2, _player.inventoryMenu.getCraftSlots());
-					}
-					{
-						Entity _entity = entity;
-						if (_entity instanceof Player _player) {
-							_player.getInventory().armor.set(1, new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_LEGGINGS.get()));
-							_player.getInventory().setChanged();
-						} else if (_entity instanceof LivingEntity _living) {
-							_living.setItemSlot(EquipmentSlot.LEGS, new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_LEGGINGS.get()));
-						}
-					}
-				} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("fallout_wastelands_:pa_frame"))) == false) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_LEGGINGS.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-					}
-				}
-				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_BOOTS.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 2, _player.inventoryMenu.getCraftSlots());
-					}
-					{
-						Entity _entity = entity;
-						if (_entity instanceof Player _player) {
-							_player.getInventory().armor.set(0, new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_BOOTS.get()));
-							_player.getInventory().setChanged();
-						} else if (_entity instanceof LivingEntity _living) {
-							_living.setItemSlot(EquipmentSlot.FEET, new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_BOOTS.get()));
-						}
-					}
-				} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("fallout_wastelands_:pa_frame"))) == false) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(FalloutWastelandsModItems.POWER_ARMOR_FRAME_ARMOR_BOOTS.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 				}
 			}

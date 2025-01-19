@@ -69,8 +69,8 @@ public class FalloutWastelandsModVariables {
 			clone.paFrameXcord = original.paFrameXcord;
 			clone.paFrameYcord = original.paFrameYcord;
 			clone.paFrameZcord = original.paFrameZcord;
-			clone.inPowerArmor = original.inPowerArmor;
 			if (!event.isWasDeath()) {
+				clone.inPowerArmor = original.inPowerArmor;
 			}
 		}
 	}

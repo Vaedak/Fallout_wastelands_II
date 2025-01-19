@@ -72,7 +72,7 @@ public class PowerArmorFrameEntity extends PathfinderMob {
 		super(type, world);
 		setMaxUpStep(0.6f);
 		xpReward = 0;
-		setNoAi(true);
+		setNoAi(false);
 		setPersistenceRequired();
 		this.setPathfindingMalus(BlockPathTypes.WATER, 0);
 		this.moveControl = new MoveControl(this) {
@@ -117,6 +117,12 @@ public class PowerArmorFrameEntity extends PathfinderMob {
 	@Override
 	protected PathNavigation createNavigation(Level world) {
 		return new WaterBoundPathNavigation(this, world);
+	}
+
+	@Override
+	protected void registerGoals() {
+		super.registerGoals();
+
 	}
 
 	@Override

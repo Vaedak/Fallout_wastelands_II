@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "powerarmor_helmet",
+    "textureHelmet": "blankitem",
     "enableBody": true,
-    "textureBody": "powerarmorchestpiece",
+    "textureBody": "blankitem",
     "enableLeggings": true,
-    "textureLeggings": "powerarmorlegs",
+    "textureLeggings": "blankitem",
     "enableBoots": true,
-    "textureBoots": "powerarmorboots",
+    "textureBoots": "blankitem",
     "creativeTab": {
       "value": "No creative tab entry"
     },

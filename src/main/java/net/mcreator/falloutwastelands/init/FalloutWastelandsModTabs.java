@@ -260,6 +260,10 @@ public class FalloutWastelandsModTabs {
 				tabData.accept(FalloutWastelandsModItems.WRENCH.get());
 				tabData.accept(FalloutWastelandsModItems.NAILED_WRENCH.get());
 				tabData.accept(FalloutWastelandsModItems.RIPPER.get());
+				tabData.accept(FalloutWastelandsModItems.T_45_PA_HELMET.get());
+				tabData.accept(FalloutWastelandsModItems.T_45_PA_CHESTPLATE.get());
+				tabData.accept(FalloutWastelandsModItems.T_45_PA_LEGGINGS.get());
+				tabData.accept(FalloutWastelandsModItems.T_45_PA_BOOTS.get());
 			})
 
 					.build());

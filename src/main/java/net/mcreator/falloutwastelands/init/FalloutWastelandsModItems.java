@@ -27,6 +27,7 @@ import net.mcreator.falloutwastelands.item.TenmmhomemadeassaultrifleItem;
 import net.mcreator.falloutwastelands.item.TenmmammoItem;
 import net.mcreator.falloutwastelands.item.TatoItem;
 import net.mcreator.falloutwastelands.item.TaloncombatarmorItem;
+import net.mcreator.falloutwastelands.item.T45PAItem;
 import net.mcreator.falloutwastelands.item.StimpackItem;
 import net.mcreator.falloutwastelands.item.SteelIngotItem;
 import net.mcreator.falloutwastelands.item.ScrapmetalItem;
@@ -352,11 +353,15 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> ENCLAVE_BUNKER_STAIRS = block(FalloutWastelandsModBlocks.ENCLAVE_BUNKER_STAIRS);
 	public static final RegistryObject<Item> METAL_SHELF = block(FalloutWastelandsModBlocks.METAL_SHELF);
 	public static final RegistryObject<Item> BOS_METAL_STAIRS = block(FalloutWastelandsModBlocks.BOS_METAL_STAIRS);
-	public static final RegistryObject<Item> POWER_ARMOR_FRAME_SPAWN_EGG = REGISTRY.register("power_armor_frame_spawn_egg", () -> new ForgeSpawnEggItem(FalloutWastelandsModEntities.POWER_ARMOR_FRAME, -11382217, -9939410, new Item.Properties()));
+	public static final RegistryObject<Item> POWER_ARMOR_FRAME_SPAWN_EGG = REGISTRY.register("power_armor_frame_spawn_egg", () -> new ForgeSpawnEggItem(FalloutWastelandsModEntities.POWER_ARMOR_FRAME, -5000297, -2828339, new Item.Properties()));
 	public static final RegistryObject<Item> POWER_ARMOR_FRAME_ARMOR_HELMET = REGISTRY.register("power_armor_frame_armor_helmet", () -> new PowerArmorFrameArmorItem.Helmet());
 	public static final RegistryObject<Item> POWER_ARMOR_FRAME_ARMOR_CHESTPLATE = REGISTRY.register("power_armor_frame_armor_chestplate", () -> new PowerArmorFrameArmorItem.Chestplate());
 	public static final RegistryObject<Item> POWER_ARMOR_FRAME_ARMOR_LEGGINGS = REGISTRY.register("power_armor_frame_armor_leggings", () -> new PowerArmorFrameArmorItem.Leggings());
 	public static final RegistryObject<Item> POWER_ARMOR_FRAME_ARMOR_BOOTS = REGISTRY.register("power_armor_frame_armor_boots", () -> new PowerArmorFrameArmorItem.Boots());
+	public static final RegistryObject<Item> T_45_PA_HELMET = REGISTRY.register("t_45_pa_helmet", () -> new T45PAItem.Helmet());
+	public static final RegistryObject<Item> T_45_PA_CHESTPLATE = REGISTRY.register("t_45_pa_chestplate", () -> new T45PAItem.Chestplate());
+	public static final RegistryObject<Item> T_45_PA_LEGGINGS = REGISTRY.register("t_45_pa_leggings", () -> new T45PAItem.Leggings());
+	public static final RegistryObject<Item> T_45_PA_BOOTS = REGISTRY.register("t_45_pa_boots", () -> new T45PAItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

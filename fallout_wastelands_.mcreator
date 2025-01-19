@@ -7727,7 +7727,7 @@
           "src/main/resources/data/fallout_wastelands_/tags/items/pa_helmet.json"
         ]
       },
-      "path": "~/Armors/PowerArmor"
+      "path": "~/Armors/AddingNewPAIMPORTANT"
     },
     {
       "name": "PAChestplate",
@@ -7741,7 +7741,7 @@
           "src/main/resources/data/fallout_wastelands_/tags/items/pa_chestplate.json"
         ]
       },
-      "path": "~/Armors/PowerArmor"
+      "path": "~/Armors/AddingNewPAIMPORTANT"
     },
     {
       "name": "PALeggings",
@@ -7755,7 +7755,7 @@
           "src/main/resources/data/fallout_wastelands_/tags/items/pa_leggings.json"
         ]
       },
-      "path": "~/Armors/PowerArmor"
+      "path": "~/Armors/AddingNewPAIMPORTANT"
     },
     {
       "name": "PABoots",
@@ -7769,7 +7769,7 @@
           "src/main/resources/data/fallout_wastelands_/tags/items/pa_boots.json"
         ]
       },
-      "path": "~/Armors/PowerArmor"
+      "path": "~/Armors/AddingNewPAIMPORTANT"
     },
     {
       "name": "ExitPowerArmorKeyPressed",
@@ -8076,19 +8076,6 @@
       "path": "~/Armors/PowerArmor"
     },
     {
-      "name": "G",
-      "type": "code",
-      "sortid": 413,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "g",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/falloutwastelands/G.java"
-        ]
-      }
-    },
-    {
       "name": "SpawnInvisibleArmorStand",
       "type": "procedure",
       "sortid": 414,
@@ -8119,6 +8106,44 @@
         ]
       },
       "path": "~/Armors/PowerArmor"
+    },
+    {
+      "name": "T45PA",
+      "type": "armor",
+      "sortid": 415,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "t_45_pa",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/item/T45PAItem.java",
+          "src/main/resources/assets/fallout_wastelands_/models/item/t_45_pa_leggings.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/t_45_pa_helmet.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/t_45_pa_chestplate.json",
+          "src/main/resources/assets/fallout_wastelands_/models/item/t_45_pa_boots.json"
+        ]
+      },
+      "path": "~/Armors/AddingNewPAIMPORTANT"
+    },
+    {
+      "name": "ReplacepaFrames",
+      "type": "procedure",
+      "sortid": 416,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "replacepa_frames",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/falloutwastelands/procedures/ReplacepaFramesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armors/PowerArmor"
     }
   ],
   "variable_elements": [
@@ -8143,7 +8168,7 @@
     {
       "name": "inPowerArmor",
       "type": "logic",
-      "scope": "player_persistent",
+      "scope": "player_lifetime",
       "value": "false"
     }
   ],
@@ -8271,7 +8296,9 @@
       "block.fallout_wastelands_.ceiling_light": "Ceiling Light",
       "block.fallout_wastelands_.burnished_glass_pane": "Burnished Glass Pane",
       "item.fallout_wastelands_.jerrican": "Jerrican",
+      "item.fallout_wastelands_.t_45_pa_chestplate": "T45 Chestplate",
       "item.fallout_wastelands_.raw_lead": "Raw Lead",
+      "item.fallout_wastelands_.t_45_pa_boots": "T45 Boots",
       "block.fallout_wastelands_.wastelandburntgrass": "Wasteland Burnt Grass",
       "item.fallout_wastelands_.raiderduster_leggings": "Raider Duster Loincloth",
       "gui.fallout_wastelands_.base_menu_ui.BASEName": "Name",
@@ -8312,6 +8339,7 @@
       "block.fallout_wastelands_.vault_floor": "Vault Floor",
       "item.fallout_wastelands_.plasmarifle": "Plasma Rifle",
       "block.fallout_wastelands_.rust_block": "Rust Block",
+      "item.fallout_wastelands_.t_45_pa_leggings": "T45 Leggings",
       "item.fallout_wastelands_.tato": "Tato",
       "block.fallout_wastelands_.steel_bars": "Steel Bars",
       "block.fallout_wastelands_.molder_wood_trapdoor": "Molder TrapDoor",
@@ -8517,6 +8545,7 @@
       "block.fallout_wastelands_.radiation_barrel": "Radiation Barrel",
       "entity.fallout_wastelands_.power_armor_frame": "Power Armor Frame",
       "block.fallout_wastelands_.ruins": "Ruins",
+      "item.fallout_wastelands_.t_45_pa_helmet": "T45 Helmet",
       "item.fallout_wastelands_.scrapmetal": "Scrap Metal",
       "block.fallout_wastelands_.ruins_base": "Rusted Ruins (base)",
       "block.fallout_wastelands_.melted_iron_block": "Melted Iron Block",
@@ -8651,6 +8680,10 @@
         "children": [
           {
             "name": "PowerArmor",
+            "children": []
+          },
+          {
+            "name": "AddingNewPAIMPORTANT",
             "children": []
           }
         ]

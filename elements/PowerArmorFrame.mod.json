@@ -5,7 +5,7 @@
     "mobName": "Power Armor Frame",
     "mobLabel": "",
     "mobModelName": "Villager",
-    "mobModelTexture": "zonetexture.png",
+    "mobModelTexture": "invisible.png",
     "mobModelGlowTexture": "",
     "solidBoundingBox": {
       "fixedValue": true
@@ -16,11 +16,11 @@
     "mountedYOffset": -1.6,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -11382217,
+      "value": -5000297,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -9939410,
+      "value": -2828339,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -105,7 +105,7 @@
     "onInitialSpawn": {
       "name": "FrameInitialSpawn"
     },
-    "hasAI": false,
+    "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
     "breedable": false,

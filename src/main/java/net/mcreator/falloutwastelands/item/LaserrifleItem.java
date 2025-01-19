@@ -14,7 +14,7 @@ import net.mcreator.falloutwastelands.procedures.GunInHandTickProcedure;
 
 public class LaserrifleItem extends Item {
 	public LaserrifleItem() {
-		super(new Item.Properties().durability(16).rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(16).rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

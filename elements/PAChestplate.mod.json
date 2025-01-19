@@ -5,10 +5,7 @@
     "type": "Items",
     "items": [
       {
-        "value": "CUSTOM:Antiradsuit.body"
-      },
-      {
-        "value": "CUSTOM:PowerArmorFrameArmor.body"
+        "value": "CUSTOM:T45PA.body"
       }
     ],
     "blocks": [],
