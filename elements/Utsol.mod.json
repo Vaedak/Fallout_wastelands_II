@@ -44,7 +44,7 @@
     },
     "destroyTool": "shovel",
     "customDrop": {
-      "value": ""
+      "value": "Items.STICK"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,

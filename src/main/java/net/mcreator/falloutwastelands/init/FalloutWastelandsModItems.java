@@ -17,8 +17,10 @@ import net.minecraft.world.item.BlockItem;
 import net.mcreator.falloutwastelands.item.WrenchItem;
 import net.mcreator.falloutwastelands.item.WastelandsItem;
 import net.mcreator.falloutwastelands.item.WastelandbrickitemItem;
+import net.mcreator.falloutwastelands.item.UraniumNuggetItem;
 import net.mcreator.falloutwastelands.item.UraniumIngotItem;
 import net.mcreator.falloutwastelands.item.TireIronItem;
+import net.mcreator.falloutwastelands.item.TinnuggetItem;
 import net.mcreator.falloutwastelands.item.TiningotItem;
 import net.mcreator.falloutwastelands.item.ThirtytwoammoItem;
 import net.mcreator.falloutwastelands.item.TestWeaponItem;
@@ -28,6 +30,7 @@ import net.mcreator.falloutwastelands.item.TenmmammoItem;
 import net.mcreator.falloutwastelands.item.TatoItem;
 import net.mcreator.falloutwastelands.item.TaloncombatarmorItem;
 import net.mcreator.falloutwastelands.item.StimpackItem;
+import net.mcreator.falloutwastelands.item.SteelnuggetItem;
 import net.mcreator.falloutwastelands.item.SteelIngotItem;
 import net.mcreator.falloutwastelands.item.ScrapmetalItem;
 import net.mcreator.falloutwastelands.item.RollingpinItem;
@@ -53,6 +56,7 @@ import net.mcreator.falloutwastelands.item.NeutronadeCapItem;
 import net.mcreator.falloutwastelands.item.NailgunItem;
 import net.mcreator.falloutwastelands.item.NailedWrenchItem;
 import net.mcreator.falloutwastelands.item.NailItem;
+import net.mcreator.falloutwastelands.item.LeadNuggetItem;
 import net.mcreator.falloutwastelands.item.LeadIngotItem;
 import net.mcreator.falloutwastelands.item.LaserrifleItem;
 import net.mcreator.falloutwastelands.item.JerricanItem;
@@ -77,6 +81,7 @@ import net.mcreator.falloutwastelands.item.AsbestosItem;
 import net.mcreator.falloutwastelands.item.AntiradsuitItem;
 import net.mcreator.falloutwastelands.item.AntiradclothingItem;
 import net.mcreator.falloutwastelands.item.AluminumIngotItem;
+import net.mcreator.falloutwastelands.item.AluminiumnuggetItem;
 import net.mcreator.falloutwastelands.block.display.BASEcoreDisplayItem;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
@@ -351,6 +356,11 @@ public class FalloutWastelandsModItems {
 	public static final RegistryObject<Item> ENCLAVE_BUNKER_STAIRS = block(FalloutWastelandsModBlocks.ENCLAVE_BUNKER_STAIRS);
 	public static final RegistryObject<Item> METAL_SHELF = block(FalloutWastelandsModBlocks.METAL_SHELF);
 	public static final RegistryObject<Item> BOS_METAL_STAIRS = block(FalloutWastelandsModBlocks.BOS_METAL_STAIRS);
+	public static final RegistryObject<Item> ALUMINIUMNUGGET = REGISTRY.register("aluminiumnugget", () -> new AluminiumnuggetItem());
+	public static final RegistryObject<Item> LEAD_NUGGET = REGISTRY.register("lead_nugget", () -> new LeadNuggetItem());
+	public static final RegistryObject<Item> URANIUM_NUGGET = REGISTRY.register("uranium_nugget", () -> new UraniumNuggetItem());
+	public static final RegistryObject<Item> TINNUGGET = REGISTRY.register("tinnugget", () -> new TinnuggetItem());
+	public static final RegistryObject<Item> STEELNUGGET = REGISTRY.register("steelnugget", () -> new SteelnuggetItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

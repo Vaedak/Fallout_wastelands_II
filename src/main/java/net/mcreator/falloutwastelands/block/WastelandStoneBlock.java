@@ -13,12 +13,14 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.falloutwastelands.init.FalloutWastelandsModBlocks;
+
 import java.util.List;
 import java.util.Collections;
 
 public class WastelandStoneBlock extends Block {
 	public WastelandStoneBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(0.35f, 6f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(0.6f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override
@@ -38,6 +40,6 @@ public class WastelandStoneBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
+		return Collections.singletonList(new ItemStack(FalloutWastelandsModBlocks.WASTELAND_COBBLESTONE.get()));
 	}
 }

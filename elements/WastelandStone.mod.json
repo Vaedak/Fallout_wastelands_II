@@ -35,7 +35,7 @@
     ],
     "name": "Wasteland Stone",
     "specialInfo": [],
-    "hardness": 0.35000000000000003,
+    "hardness": 0.6,
     "resistance": 6.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -44,7 +44,7 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:WastelandCobblestone"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
