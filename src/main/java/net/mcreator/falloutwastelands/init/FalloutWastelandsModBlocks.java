@@ -206,55 +206,55 @@ import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
 public class FalloutWastelandsModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, FalloutWastelandsMod.MODID);
-	public static final RegistryObject<Block> WASTELAND_STONE = REGISTRY.register("wasteland_stone", () -> new WastelandStoneBlock());
 	public static final RegistryObject<Block> WASTELAND_DIRT = REGISTRY.register("wasteland_dirt", () -> new WastelandDirtBlock());
+	public static final RegistryObject<Block> WASTELAND_STONE = REGISTRY.register("wasteland_stone", () -> new WastelandStoneBlock());
 	public static final RegistryObject<Block> WASTELANDS_PORTAL = REGISTRY.register("wastelands_portal", () -> new WastelandsPortalBlock());
 	public static final RegistryObject<Block> WASTELANDGRASSBLOCK = REGISTRY.register("wastelandgrassblock", () -> new WastelandgrassblockBlock());
-	public static final RegistryObject<Block> WASTELAND_CONCRETE = REGISTRY.register("wasteland_concrete", () -> new WastelandConcreteBlock());
-	public static final RegistryObject<Block> CRACKED_WASTELAND_CONCRETE = REGISTRY.register("cracked_wasteland_concrete", () -> new CrackedWastelandConcreteBlock());
-	public static final RegistryObject<Block> WASTELAND_CONCRETE_STAIRS = REGISTRY.register("wasteland_concrete_stairs", () -> new WastelandConcreteStairsBlock());
-	public static final RegistryObject<Block> WASTELAND_CONCRETE_SLAB = REGISTRY.register("wasteland_concrete_slab", () -> new WastelandConcreteSlabBlock());
-	public static final RegistryObject<Block> WASTELAND_CONCRETE_WALL = REGISTRY.register("wasteland_concrete_wall", () -> new WastelandConcreteWallBlock());
-	public static final RegistryObject<Block> CRACKED_WASTELAND_CONCRETE_STAIRS = REGISTRY.register("cracked_wasteland_concrete_stairs", () -> new CrackedWastelandConcreteStairsBlock());
-	public static final RegistryObject<Block> CRACKED_WASTELAND_CONCRETE_SLABS = REGISTRY.register("cracked_wasteland_concrete_slabs", () -> new CrackedWastelandConcreteSlabsBlock());
 	public static final RegistryObject<Block> CRACKED_WASTELAND_CONCRETE_WALL = REGISTRY.register("cracked_wasteland_concrete_wall", () -> new CrackedWastelandConcreteWallBlock());
+	public static final RegistryObject<Block> MOLDER_WOOD_BUTTON = REGISTRY.register("molder_wood_button", () -> new Molder_WoodButtonBlock());
+	public static final RegistryObject<Block> WASTELAND_CONCRETE_STAIRS = REGISTRY.register("wasteland_concrete_stairs", () -> new WastelandConcreteStairsBlock());
+	public static final RegistryObject<Block> MOLDER_WOOD_PRESSURE_PLATE = REGISTRY.register("molder_wood_pressure_plate", () -> new Molder_WoodPressurePlateBlock());
+	public static final RegistryObject<Block> WASTELAND_ROOTY_DIRT = REGISTRY.register("wasteland_rooty_dirt", () -> new UtsolBlock());
+	public static final RegistryObject<Block> MOLDER_WOOD_LOG = REGISTRY.register("molder_wood_log", () -> new Molder_WoodLogBlock());
+	public static final RegistryObject<Block> CRACKED_WASTELAND_CONCRETE = REGISTRY.register("cracked_wasteland_concrete", () -> new CrackedWastelandConcreteBlock());
+	public static final RegistryObject<Block> MOLDER_WOOD_DOOR = REGISTRY.register("molder_wood_door", () -> new MolderWoodDoorBlock());
+	public static final RegistryObject<Block> THE_GLOW_DIRT = REGISTRY.register("the_glow_dirt", () -> new TheGlowDirtBlock());
+	public static final RegistryObject<Block> MOLDER_WOOD_TRAPDOOR = REGISTRY.register("molder_wood_trapdoor", () -> new MolderWoodTrapdoorBlock());
+	public static final RegistryObject<Block> SLAB_WASTELAND_COBBLESTONE = REGISTRY.register("slab_wasteland_cobblestone", () -> new SlabWastelandCobblestoneBlock());
 	public static final RegistryObject<Block> WASTELAND_COBBLESTONE = REGISTRY.register("wasteland_cobblestone", () -> new WastelandCobblestoneBlock());
 	public static final RegistryObject<Block> STAIR_WASTELAND_COBBLESTONE = REGISTRY.register("stair_wasteland_cobblestone", () -> new StairWastelandCobblestoneBlock());
-	public static final RegistryObject<Block> SLAB_WASTELAND_COBBLESTONE = REGISTRY.register("slab_wasteland_cobblestone", () -> new SlabWastelandCobblestoneBlock());
-	public static final RegistryObject<Block> WALL_WASTELAND_COBBLESTONE = REGISTRY.register("wall_wasteland_cobblestone", () -> new WallWastelandCobblestoneBlock());
-	public static final RegistryObject<Block> THE_GLOW_DIRT = REGISTRY.register("the_glow_dirt", () -> new TheGlowDirtBlock());
-	public static final RegistryObject<Block> WASTELAND_ROOTY_DIRT = REGISTRY.register("wasteland_rooty_dirt", () -> new UtsolBlock());
-	public static final RegistryObject<Block> WASTELAND_BRICK = REGISTRY.register("wasteland_brick", () -> new WastelandBrickBlock());
-	public static final RegistryObject<Block> MOLDER_WOOD_WOOD = REGISTRY.register("molder_wood_wood", () -> new Molder_WoodWoodBlock());
-	public static final RegistryObject<Block> MOLDER_WOOD_LOG = REGISTRY.register("molder_wood_log", () -> new Molder_WoodLogBlock());
-	public static final RegistryObject<Block> MOLDER_WOOD_PLANKS = REGISTRY.register("molder_wood_planks", () -> new Molder_WoodPlanksBlock());
+	public static final RegistryObject<Block> WASTELAND_CONCRETE = REGISTRY.register("wasteland_concrete", () -> new WastelandConcreteBlock());
 	public static final RegistryObject<Block> MOLDER_WOOD_STAIRS = REGISTRY.register("molder_wood_stairs", () -> new Molder_WoodStairsBlock());
-	public static final RegistryObject<Block> MOLDER_WOOD_SLAB = REGISTRY.register("molder_wood_slab", () -> new Molder_WoodSlabBlock());
+	public static final RegistryObject<Block> CRACKED_WASTELAND_CONCRETE_STAIRS = REGISTRY.register("cracked_wasteland_concrete_stairs", () -> new CrackedWastelandConcreteStairsBlock());
+	public static final RegistryObject<Block> MOLDER_WOOD_PLANKS = REGISTRY.register("molder_wood_planks", () -> new Molder_WoodPlanksBlock());
+	public static final RegistryObject<Block> WASTELAND_BRICK = REGISTRY.register("wasteland_brick", () -> new WastelandBrickBlock());
 	public static final RegistryObject<Block> MOLDER_WOOD_FENCE = REGISTRY.register("molder_wood_fence", () -> new Molder_WoodFenceBlock());
+	public static final RegistryObject<Block> WASTELAND_CONCRETE_WALL = REGISTRY.register("wasteland_concrete_wall", () -> new WastelandConcreteWallBlock());
+	public static final RegistryObject<Block> MOLDER_WOOD_WOOD = REGISTRY.register("molder_wood_wood", () -> new Molder_WoodWoodBlock());
+	public static final RegistryObject<Block> CRACKED_WASTELAND_CONCRETE_SLABS = REGISTRY.register("cracked_wasteland_concrete_slabs", () -> new CrackedWastelandConcreteSlabsBlock());
+	public static final RegistryObject<Block> MOLDER_WOOD_SLAB = REGISTRY.register("molder_wood_slab", () -> new Molder_WoodSlabBlock());
+	public static final RegistryObject<Block> WALL_WASTELAND_COBBLESTONE = REGISTRY.register("wall_wasteland_cobblestone", () -> new WallWastelandCobblestoneBlock());
 	public static final RegistryObject<Block> MOLDER_WOOD_FENCE_GATE = REGISTRY.register("molder_wood_fence_gate", () -> new Molder_WoodFenceGateBlock());
-	public static final RegistryObject<Block> MOLDER_WOOD_PRESSURE_PLATE = REGISTRY.register("molder_wood_pressure_plate", () -> new Molder_WoodPressurePlateBlock());
-	public static final RegistryObject<Block> MOLDER_WOOD_BUTTON = REGISTRY.register("molder_wood_button", () -> new Molder_WoodButtonBlock());
-	public static final RegistryObject<Block> MOLDER_WOOD_DOOR = REGISTRY.register("molder_wood_door", () -> new MolderWoodDoorBlock());
-	public static final RegistryObject<Block> MOLDER_WOOD_TRAPDOOR = REGISTRY.register("molder_wood_trapdoor", () -> new MolderWoodTrapdoorBlock());
+	public static final RegistryObject<Block> WASTELAND_CONCRETE_SLAB = REGISTRY.register("wasteland_concrete_slab", () -> new WastelandConcreteSlabBlock());
 	public static final RegistryObject<Block> WASTELANDGRASSBUSH = REGISTRY.register("wastelandgrassbush", () -> new WastelandgrassbushBlock());
 	public static final RegistryObject<Block> WASTELANDBURNTGRASS = REGISTRY.register("wastelandburntgrass", () -> new WastelandburntgrassBlock());
 	public static final RegistryObject<Block> WASTELANDSHORTBURNTGRASS = REGISTRY.register("wastelandshortburntgrass", () -> new WastelandshortburntgrassBlock());
 	public static final RegistryObject<Block> WASTELAND_BRICK_STAIRS = REGISTRY.register("wasteland_brick_stairs", () -> new WastelandBrickStairsBlock());
-	public static final RegistryObject<Block> WASTELANDGRAVEL = REGISTRY.register("wastelandgravel", () -> new WastelandgravelBlock());
 	public static final RegistryObject<Block> WASTELAND_BRICKSLAB = REGISTRY.register("wasteland_brickslab", () -> new WastelandBrickslabBlock());
 	public static final RegistryObject<Block> WASTELANDPEBBLE = REGISTRY.register("wastelandpebble", () -> new WastelandpebbleBlock());
+	public static final RegistryObject<Block> WASTELANDGRAVEL = REGISTRY.register("wastelandgravel", () -> new WastelandgravelBlock());
 	public static final RegistryObject<Block> WASTELANDCOALORE = REGISTRY.register("wastelandcoalore", () -> new WastelandcoaloreBlock());
-	public static final RegistryObject<Block> WASTELANDIRONORE = REGISTRY.register("wastelandironore", () -> new WastelandironoreBlock());
 	public static final RegistryObject<Block> WASTELANDCOPPERORE = REGISTRY.register("wastelandcopperore", () -> new WastelandcopperoreBlock());
-	public static final RegistryObject<Block> WASTELANDREDSTONEORE = REGISTRY.register("wastelandredstoneore", () -> new WastelandredstoneoreBlock());
-	public static final RegistryObject<Block> WASTELANDLAPISORE = REGISTRY.register("wastelandlapisore", () -> new WastelandlapisoreBlock());
-	public static final RegistryObject<Block> WASTELANDDIAMONDORE = REGISTRY.register("wastelanddiamondore", () -> new WastelanddiamondoreBlock());
 	public static final RegistryObject<Block> WASTELAND_GOLDORE = REGISTRY.register("wasteland_goldore", () -> new WastelandGoldoreBlock());
+	public static final RegistryObject<Block> WASTELANDIRONORE = REGISTRY.register("wastelandironore", () -> new WastelandironoreBlock());
+	public static final RegistryObject<Block> WASTELANDDIAMONDORE = REGISTRY.register("wastelanddiamondore", () -> new WastelanddiamondoreBlock());
 	public static final RegistryObject<Block> WASTELANDEMERALDORE = REGISTRY.register("wastelandemeraldore", () -> new WastelandemeraldoreBlock());
-	public static final RegistryObject<Block> WASTELAND_BRICK_WALL = REGISTRY.register("wasteland_brick_wall", () -> new WastelandBrickWallBlock());
+	public static final RegistryObject<Block> WASTELANDLAPISORE = REGISTRY.register("wastelandlapisore", () -> new WastelandlapisoreBlock());
+	public static final RegistryObject<Block> WASTELANDREDSTONEORE = REGISTRY.register("wastelandredstoneore", () -> new WastelandredstoneoreBlock());
 	public static final RegistryObject<Block> WASTELAND_BROKEN_GLASS = REGISTRY.register("wasteland_broken_glass", () -> new WastelandBrokenGlassBlock());
-	public static final RegistryObject<Block> LOCKER = REGISTRY.register("locker", () -> new LockerBlock());
 	public static final RegistryObject<Block> LANDMINE = REGISTRY.register("landmine", () -> new LandmineBlock());
+	public static final RegistryObject<Block> WASTELAND_BRICK_WALL = REGISTRY.register("wasteland_brick_wall", () -> new WastelandBrickWallBlock());
+	public static final RegistryObject<Block> LOCKER = REGISTRY.register("locker", () -> new LockerBlock());
 	public static final RegistryObject<Block> WORN_METAL = REGISTRY.register("worn_metal", () -> new WornMetalBlock());
 	public static final RegistryObject<Block> HANGARDOOR = REGISTRY.register("hangardoor", () -> new HangardoorBlock());
 	public static final RegistryObject<Block> WASTELAND_CRACKED_BRICK = REGISTRY.register("wasteland_cracked_brick", () -> new WastelandCrackedBrickBlock());
@@ -262,8 +262,8 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> STRIPPEDMOLDERWOODLOG = REGISTRY.register("strippedmolderwoodlog", () -> new StrippedmolderwoodlogBlock());
 	public static final RegistryObject<Block> WASTELANDBRICKS = REGISTRY.register("wastelandbricks", () -> new WastelandbricksBlock());
 	public static final RegistryObject<Block> SUBWAYBRICKS = REGISTRY.register("subwaybricks", () -> new SubwaybricksBlock());
-	public static final RegistryObject<Block> CAGE = REGISTRY.register("cage", () -> new CageBlock());
 	public static final RegistryObject<Block> DOUBLE_SCAFFOLD_BLOCK = REGISTRY.register("double_scaffold_block", () -> new DoubleScaffoldBlockBlock());
+	public static final RegistryObject<Block> CAGE = REGISTRY.register("cage", () -> new CageBlock());
 	public static final RegistryObject<Block> SCAFFOLDING_WALKWAYS_BLOCK = REGISTRY.register("scaffolding_walkways_block", () -> new ScaffoldingWalkwaysBlockBlock());
 	public static final RegistryObject<Block> STEEL_POLE = REGISTRY.register("steel_pole", () -> new SteelPoleBlock());
 	public static final RegistryObject<Block> ROOF_METAL = REGISTRY.register("roof_metal", () -> new RoofMetalBlock());
@@ -395,8 +395,10 @@ public class FalloutWastelandsModBlocks {
 	public static final RegistryObject<Block> METAL_SHELF = REGISTRY.register("metal_shelf", () -> new MetalShelfBlock());
 	public static final RegistryObject<Block> BOS_METAL_STAIRS = REGISTRY.register("bos_metal_stairs", () -> new BosMetalStairsBlock());
 
+	// Start of user code block custom blocks
+	// End of user code block custom blocks
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-	public static class ClientSideHandler {
+	public static class BlocksClientSideHandler {
 		@SubscribeEvent
 		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
 			WastelandgrassblockBlock.blockColorLoad(event);

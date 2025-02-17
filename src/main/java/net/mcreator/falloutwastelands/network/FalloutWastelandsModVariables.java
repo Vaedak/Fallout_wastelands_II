@@ -125,8 +125,8 @@ public class FalloutWastelandsModVariables {
 			return nbt;
 		}
 
-		public void readNBT(Tag Tag) {
-			CompoundTag nbt = (CompoundTag) Tag;
+		public void readNBT(Tag tag) {
+			CompoundTag nbt = (CompoundTag) tag;
 			paFrameXcord = nbt.getDouble("paFrameXcord");
 			paFrameYcord = nbt.getDouble("paFrameYcord");
 			paFrameZcord = nbt.getDouble("paFrameZcord");
@@ -135,7 +135,7 @@ public class FalloutWastelandsModVariables {
 	}
 
 	public static class PlayerVariablesSyncMessage {
-		public PlayerVariables data;
+		private final PlayerVariables data;
 
 		public PlayerVariablesSyncMessage(FriendlyByteBuf buffer) {
 			this.data = new PlayerVariables();

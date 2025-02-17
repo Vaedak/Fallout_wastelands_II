@@ -16,25 +16,24 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.falloutwastelands.entity.RipperProjectileEntity;
 import net.mcreator.falloutwastelands.entity.PowerArmorFrameEntity;
 import net.mcreator.falloutwastelands.entity.Cannibal00Entity;
-import net.mcreator.falloutwastelands.entity.BaseGunItemEntity;
 import net.mcreator.falloutwastelands.FalloutWastelandsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class FalloutWastelandsModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, FalloutWastelandsMod.MODID);
-	public static final RegistryObject<EntityType<BaseGunItemEntity>> BASE_GUN_ITEM = register("projectile_base_gun_item",
-			EntityType.Builder.<BaseGunItemEntity>of(BaseGunItemEntity::new, MobCategory.MISC).setCustomClientFactory(BaseGunItemEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<Cannibal00Entity>> CANNIBAL_00 = register("cannibal_00",
 			EntityType.Builder.<Cannibal00Entity>of(Cannibal00Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(Cannibal00Entity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<RipperProjectileEntity>> RIPPER_PROJECTILE = register("projectile_ripper_projectile", EntityType.Builder.<RipperProjectileEntity>of(RipperProjectileEntity::new, MobCategory.MISC)
-			.setCustomClientFactory(RipperProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<PowerArmorFrameEntity>> POWER_ARMOR_FRAME = register("power_armor_frame", EntityType.Builder.<PowerArmorFrameEntity>of(PowerArmorFrameEntity::new, MobCategory.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PowerArmorFrameEntity::new).fireImmune().sized(0.8f, 2f));
+	public static final RegistryObject<EntityType<BaseGunItemProjectileEntity>> BASE_GUN_ITEM_PROJECTILE = register("base_gun_item_projectile", EntityType.Builder.<BaseGunItemProjectileEntity>of(BaseGunItemProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(BaseGunItemProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<RipperProjectileProjectileEntity>> RIPPER_PROJECTILE_PROJECTILE = register("ripper_projectile_projectile",
+			EntityType.Builder.<RipperProjectileProjectileEntity>of(RipperProjectileProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(RipperProjectileProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
